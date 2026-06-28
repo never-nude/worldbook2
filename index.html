@@ -287,7 +287,7 @@ map.addControl(new maplibregl.AttributionControl({compact:true, customAttributio
 // Touch arbitration: one-finger drag = spin globe, two-finger pinch = zoom, tap = select.
 try{ map.touchPitch.disable(); map.touchZoomRotate.disableRotation(); }catch(e){}
 
-let activeLayer="drugs";   // open on Drug routes by default
+let activeLayer="flow_drugs";   // open on Drug routes by default
 let subOn=false;          // subnational mode active
 let currentISO=null;
 
@@ -328,7 +328,7 @@ map.on("load",()=>{
   wireInteractions();
   buildLayerUI();
   simEpoch=Date.now(); simDays=0; paused=false; simSpeed=524/1440; solarDate=new Date();   // default = 524× real time
-  setLayer("drugs");   // default opening layer = Drug routes
+  setLayer("flow_drugs");   // default opening layer = Drug routes
   startSpin();
   initSky();
   wireTimeBar(); updateTimeLabel();
