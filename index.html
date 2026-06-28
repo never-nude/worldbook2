@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Atlas — A Layered World Map</title>
 <link href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css" rel="stylesheet" />
 <style>
@@ -139,6 +139,11 @@
   #minP{position:absolute;top:14px;right:50px;background:var(--chip);border:1px solid var(--line);color:var(--ink);
     width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:14px;line-height:1}
   #panel.min .body{display:none}
+  #panel .body{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  /* bottom-sheet grab handle (mobile only) */
+  .grab{display:none;height:20px;position:relative;flex:none;touch-action:none;cursor:grab}
+  .grab::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);
+    width:42px;height:5px;border-radius:3px;background:#46566e}
 
   /* deep-time date popover */
   #datepop{position:absolute;bottom:64px;left:50%;transform:translateX(-50%);z-index:7;display:none;gap:9px;align-items:flex-end;
@@ -155,19 +160,26 @@
   #orrInset.collapsed .panel-head{padding-bottom:0}
 
   @media (max-width:700px){
-    #layers{width:auto;max-width:62vw;top:50px;left:10px;padding:8px 9px}
-    #legend{max-width:54vw;max-height:38vh;bottom:84px;left:10px;padding:9px 11px}
-    #panel{top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;height:auto;max-height:78vh;
-      border-left:none;border-top:1px solid var(--line);border-radius:16px 16px 0 0;transform:translateY(101%)}
-    #panel.open{transform:translateY(0)}
+    #topbar{padding-top:calc(12px + env(safe-area-inset-top))}
+    #layers{width:auto;max-width:62vw;top:calc(50px + env(safe-area-inset-top));left:calc(10px + env(safe-area-inset-left));padding:8px 9px}
+    #legend{max-width:54vw;max-height:34vh;bottom:calc(78px + env(safe-area-inset-bottom));left:calc(10px + env(safe-area-inset-left));padding:9px 11px}
+    /* Two-detent bottom sheet — the map stays live & interactive above it */
+    #panel{top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;height:88vh;max-height:88vh;
+      border-left:none;border-top:1px solid var(--line);border-radius:18px 18px 0 0;
+      transform:translateY(101%);transition:transform .3s cubic-bezier(.4,0,.2,1);
+      padding-bottom:env(safe-area-inset-bottom);box-shadow:0 -12px 40px rgba(0,0,0,.5)}
+    #panel.open{transform:translateY(0)}                 /* full detent */
+    #panel.open.peek{transform:translateY(46vh)}         /* peek detent → ~42vh visible, globe live above */
     #panel.min .body{display:block}
-    #panel.open.min{transform:translateY(calc(100% - 58px))}
+    .grab{display:block}
+    #minP{display:none}
+    #panel header{padding-top:4px}
     #hint{display:none}
-    #timebar{bottom:10px;gap:6px;padding:6px 9px;flex-wrap:wrap;max-width:95vw;justify-content:center}
+    #timebar{bottom:calc(10px + env(safe-area-inset-bottom));gap:6px;padding:6px 9px;flex-wrap:wrap;max-width:95vw;justify-content:center}
     #timebar input[type=range]{width:88px}
     #timebar #tbDate{min-width:0;width:100%;text-align:center;order:9}
-    #datepop{bottom:104px;flex-wrap:wrap;max-width:92vw;justify-content:center}
-    #orrInset{right:10px;bottom:auto;top:50px;width:130px}
+    #datepop{bottom:calc(104px + env(safe-area-inset-bottom));flex-wrap:wrap;max-width:92vw;justify-content:center}
+    #orrInset{right:calc(10px + env(safe-area-inset-right));bottom:auto;top:calc(50px + env(safe-area-inset-top));width:130px}
     #orrInset canvas{width:108px;height:108px}
   }
   #skyTip{position:absolute;z-index:6;pointer-events:none;background:rgba(13,17,23,.96);
@@ -227,6 +239,7 @@
 <div id="hint">Drag to spin · scroll to zoom · click a country to drill in</div>
 
 <div id="panel">
+  <div class="grab" id="grab" title="Drag to resize"></div>
   <header>
     <button id="minP" title="Minimize">▾</button>
     <button id="closeP">×</button>
@@ -267,6 +280,9 @@ const map = new maplibregl.Map({
 });
 map.addControl(new maplibregl.NavigationControl({visualizePitch:false}),"bottom-right");
 map.addControl(new maplibregl.AttributionControl({customAttribution:"Boundaries: Natural Earth · Data: see country panels"}),"bottom-right");
+// Touch arbitration: one-finger drag = spin globe, two-finger pinch = zoom, tap = select.
+// Disable accidental pitch (two-finger tilt) and bearing-twist so gestures stay predictable on phones.
+try{ map.touchPitch.disable(); map.touchZoomRotate.disableRotation(); }catch(e){}
 
 let activeLayer="religion";
 let subOn=false;          // subnational mode active
@@ -577,7 +593,9 @@ const RELCOL=META.palettes.religion;
 
 function openCountry(p){
   currentISO=p.iso3; subOn=false; cleanupSub(); panelOpen=true;
-  document.getElementById("panel").classList.add("open"); document.getElementById("panel").classList.remove("min");
+  { const _pn=document.getElementById("panel"); _pn.style.transform=""; _pn.style.transition="";
+    _pn.classList.add("open"); _pn.classList.remove("min");
+    _pn.classList.toggle("peek", window.matchMedia("(max-width:700px)").matches); }   // phones open at the peek detent
   document.getElementById("minP").textContent="▾";
   document.getElementById("hint").style.right="398px";
   document.getElementById("pName").textContent=p.name;
@@ -655,12 +673,31 @@ function openCountry(p){
   document.getElementById("pBody").innerHTML=h;
 }
 
-document.getElementById("closeP").onclick=()=>{
-  document.getElementById("panel").classList.remove("open","min");
+function closePanel(){
+  const pn=document.getElementById("panel");
+  pn.style.transition=""; pn.style.transform="";
+  pn.classList.remove("open","min","peek");
   document.getElementById("hint").style.right="16px";
   panelOpen=false; lastInteract=Date.now();
   if(subOn) drillOut();
-};
+}
+document.getElementById("closeP").onclick=closePanel;
+/* mobile bottom-sheet grab handle: drag between peek ⇄ full, or down to close (tap toggles) */
+(function(){
+  const pn=document.getElementById("panel"), grab=document.getElementById("grab");
+  if(!grab) return;
+  let sy=0, st=0, moved=0, on=false;
+  const vh=()=>window.innerHeight/100;
+  const baseT=()=>pn.classList.contains("peek")?46*vh():0;
+  grab.addEventListener("touchstart",e=>{ on=true; sy=e.touches[0].clientY; st=baseT(); moved=0; pn.style.transition="none"; lastInteract=Date.now(); },{passive:true});
+  grab.addEventListener("touchmove",e=>{ if(!on)return; moved=e.touches[0].clientY-sy; pn.style.transform="translateY("+Math.max(0,st+moved)+"px)"; },{passive:true});
+  grab.addEventListener("touchend",()=>{ if(!on)return; on=false; pn.style.transition=""; pn.style.transform="";
+    const peek=pn.classList.contains("peek");
+    if(Math.abs(moved)<8){ pn.classList.toggle("peek"); return; }      // tap toggles detent
+    if(peek){ if(moved>70) closePanel(); else if(moved<-45) pn.classList.remove("peek"); }   // up→full, down→close
+    else { if(moved>70) pn.classList.add("peek"); }                    // down→peek
+  });
+})();
 document.getElementById("minP").onclick=()=>{
   const pn=document.getElementById("panel"); const m=pn.classList.toggle("min");
   document.getElementById("minP").textContent=m?"▴":"▾";
