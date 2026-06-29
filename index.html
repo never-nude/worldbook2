@@ -1270,7 +1270,7 @@ let _ISO_NAME=null;
 function isoName(c){ if(!_ISO_NAME){ _ISO_NAME={}; try{ MAPDATA.features.forEach(f=>{ _ISO_NAME[f.properties.iso3]=f.properties.name; }); }catch(_){} } return _ISO_NAME[c]||c; }
 function arcPoints(a,b,segs){ var gc=gcPoints(a,b,segs); unwrapLng(gc);
   var bl=b[0]; while(bl-a[0]>180)bl-=360; while(bl-a[0]<-180)bl+=360;
-  var K=0.35;
+  var K=1;
   for(var i=0;i<gc.length;i++){ var f=i/segs, linLng=a[0]+(bl-a[0])*f, linLat=a[1]+(b[1]-a[1])*f;
     gc[i][0]=linLng+(gc[i][0]-linLng)*K; gc[i][1]=linLat+(gc[i][1]-linLat)*K; }
   return gc; }
