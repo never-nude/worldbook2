@@ -137,7 +137,7 @@ def patch(text,a,b,label):
 
 # --------------------------- load ---------------------------
 lines=open(INP,encoding='utf-8').read().split('\n')
-assert 'color_debtgdp' not in '\n'.join(lines[:300]), 'Already applied - aborting.'
+assert 'color_govdebt' not in '\n'.join(lines[:300]), 'Already applied - aborting.'
 mi=next(i for i,l in enumerate(lines) if l.startswith('const MAPDATA = '))
 me=next(i for i,l in enumerate(lines) if l.startswith('const META = '))
 
@@ -147,7 +147,7 @@ nb=0
 for f in MAP['features']:
     p=f['properties']; iso=p.get('iso3')
     if iso and iso in GDEBT:
-        p['debtGdp']=GDEBT[iso]; p['color_debtgdp']=ramp(GDEBT[iso],DEBT_STOPS); nb+=1
+        p['debtGdp']=GDEBT[iso]; p['color_govdebt']=ramp(GDEBT[iso],DEBT_STOPS); nb+=1
 lines[mi]='const MAPDATA = '+json.dumps(MAP,separators=(',',':'))+';'
 
 # add META choropleth layer after 'internet'
