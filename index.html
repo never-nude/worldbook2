@@ -1230,7 +1230,7 @@ function roleLabels(key){
 function setFlowBase(key){
   if(subOn) return;
   if(FLOWS[key]&&FLOWS[key].geo){ map.setPaintProperty("fills","fill-color","#162130"); map.setPaintProperty("fills","fill-opacity",0.72); return; }
-  if(FLOWS[key]&&FLOWS[key].baseColorProp){ map.setPaintProperty("fills","fill-color",["coalesce",["get",FLOWS[key].baseColorProp],"#1a2433"]); map.setPaintProperty("fills","fill-opacity",0.92); return; }
+  if(FLOWS[key]&&FLOWS[key].baseColorProp){ map.setPaintProperty("fills","fill-color",["coalesce",["get",FLOWS[key].baseColorProp],"#3b4655"]); map.setPaintProperty("fills","fill-opacity",0.92); return; }
   const role=rolesFor(key, flowIso), pairs=[];
   Object.entries(role).forEach(([iso,r])=>{ pairs.push(iso, ROLE_COL[r]); });
   map.setPaintProperty("fills","fill-color", pairs.length?["match",["get","iso3"], ...pairs, ROLE_COL.none]:ROLE_COL.none);
@@ -1503,6 +1503,13 @@ function wireInteractions(){
 function hoverHTML(p,isSub){
   const c=layerCfg(activeLayer);
   if(c.type==="raster") return `<div class="pop-name">${p.name}</div>`;
+  if(c.type==="flow"){
+    const F=FLOWS[c.flowKey]||{};
+    if(F.baseColorProp){ const v=p[F.baseColorProp.replace("color_","")];
+      const lab=F.dir==="in"?"Owes bilaterally":"Lends bilaterally";
+      return `<div class="pop-name">${p.name}</div><div class="pop-sub">${v!=null?lab+": $"+v+"B":lab+": none"}</div>`; }
+    return `<div class="pop-name">${p.name}</div>`;
+  }
   const val = c.type==="categorical" ? (p[c.prop]||"No data") : labelFor(c,p[c.prop]);
   return `<div class="pop-name">${p.name}</div><div class="pop-sub">${c.short}: ${val}</div>`;
 }
