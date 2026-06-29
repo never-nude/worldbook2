@@ -1201,12 +1201,13 @@ function clearFlow(){
 function applyFlowStyle(){
   if(!map.getLayer("flow-lines")) return;
   const m=isMobileV();
-  const wlo=m?1.7:1.2, whi=m?4.4:3.2, rlo=m?1.9:1.5, rhi=m?4.0:3.0;
-  const opI=["interpolate",["linear"],["get","w"], 0, m?0.66:0.58, 1, m?0.95:0.90];
+  const wlo=m?2.4:2.0, whi=m?5.6:4.6, rlo=m?2.2:1.8, rhi=m?4.4:3.4;
+  const opI=["interpolate",["linear"],["get","w"], 0, m?0.82:0.74, 1, m?0.98:0.95];
   const wI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,wlo,1,whi], 9,["interpolate",["linear"],["get","w"],0,wlo*3,1,whi*3]];
   const rI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,rlo,1,rhi], 9,["interpolate",["linear"],["get","w"],0,rlo*2.4,1,rhi*2.4]];
   map.setPaintProperty("flow-lines","line-opacity", flowIso?["case",["==",["get","c"],flowIso], opI, 0.05]:opI);
   map.setPaintProperty("flow-lines","line-width", wI);
+  map.setPaintProperty("flow-lines","line-blur", 0.18);
   map.setPaintProperty("flow-dots","circle-opacity", flowIso?["case",["==",["get","c"],flowIso], 0.95, 0.04]:0.95);
   map.setPaintProperty("flow-dots","circle-radius", rI);
 }
