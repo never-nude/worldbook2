@@ -454,6 +454,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     layout:{"text-field":["get","name"],"text-font":["Noto Sans Regular"],
       "text-size":["get","size"],"text-max-width":7,"text-padding":2,
       "text-rotate":["get","rot"],"text-rotation-alignment":"map","text-pitch-alignment":"map",
+      "symbol-sort-key":["*",-1,["get","size"]],
       "symbol-placement":"point","text-allow-overlap":false,"visibility":"none"},
     paint:{"text-color":"#3a3226","text-halo-color":"rgba(255,255,255,0.55)","text-halo-width":1.1}});
 window.USE_3D_LABELS=false;
