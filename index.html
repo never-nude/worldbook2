@@ -29,7 +29,7 @@
   /* Layer switcher */
   #layers{position:absolute;top:56px;left:16px;z-index:5;background:var(--panel);border:1px solid var(--line);
     border-radius:14px;padding:10px;backdrop-filter:blur(10px);width:212px;
-    max-height:calc(100vh - 340px);overflow-y:auto;overscroll-behavior:contain}
+    max-height:calc(60vh - 48px);overflow-y:auto;overscroll-behavior:contain}
   #layers .panel-head{position:sticky;top:0;background:var(--panel);z-index:1}
   #layers .grp{font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--muted);
     margin:8px 4px 5px;font-weight:600}
@@ -45,7 +45,7 @@
 
   /* Legend */
   #legend{position:absolute;bottom:18px;left:16px;z-index:5;background:var(--panel);border:1px solid var(--line);
-    border-radius:14px;padding:12px 14px;backdrop-filter:blur(10px);max-width:240px;max-height:64vh;overflow-y:auto}
+    border-radius:14px;padding:12px 14px;backdrop-filter:blur(10px);max-width:240px;max-height:calc(38vh - 36px);overflow-y:auto}
   #legend h3{margin:0 0 9px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
   .lg-row{display:flex;align-items:center;gap:8px;padding:2px 0;font-size:12.5px}
   .sw{width:14px;height:14px;border-radius:3px;flex:none;border:1px solid rgba(255,255,255,.15)}
@@ -181,7 +181,7 @@
     .grab{display:block}
     #minP{display:none}
     #panel header{padding-top:4px}
-    #hint{display:none}
+    #hint{display:block;right:auto;left:50%;transform:translateX(-50%);bottom:auto;top:calc(116px + env(safe-area-inset-top));max-width:88vw;text-align:center;font-size:11px;line-height:1.35;pointer-events:none}
     #timebar{bottom:calc(10px + env(safe-area-inset-bottom));gap:5px;padding:6px 9px;flex-wrap:wrap;max-width:96vw;justify-content:center}
     #timebar input[type=range]{width:84px}
     #timebar #tbSpeedLbl{display:none}
@@ -220,6 +220,7 @@
   #guide .g-foot{color:var(--muted);font-size:11.5px;margin-top:16px}
   #legend .lg-src{font-size:11px;line-height:1.35;color:#9fb0c0;padding:5px 0 1px;margin-top:3px;cursor:pointer;border-top:1px solid rgba(255,255,255,.09);letter-spacing:.2px;white-space:normal}
   #legend .lg-src:hover{color:#dce8f4;text-decoration:underline}
+  #hint.wbfade{opacity:0 !important;pointer-events:none}
 </style>
 </head>
 <body>
@@ -501,7 +502,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
   buildLayerUI();
   simEpoch=Date.now(); simDays=0; paused=false; simSpeed=524/1440; solarDate=new Date();   // default = 524× real time
   setLayer("religion");   // default opening layer = Religion (static choropleth — fast, reliable first paint)
-  wireTimeBar(); try{ initGuide(); }catch(e){} updateTimeLabel();
+  wireTimeBar(); try{ initGuide(); }catch(e){} try{ initHint(); }catch(e){} updateTimeLabel();
   let _revealed=false;
   const _reveal=()=>{ if(_revealed) return; _revealed=true;
     document.getElementById("loading").style.display="none";
@@ -563,13 +564,25 @@ function buildGuide(){
 }
 function openGuide(){ var el=document.getElementById("guide"); if(!el)return; if(!el.dataset.built){ buildGuide(); el.dataset.built="1"; } el.classList.add("open"); }
 function closeGuide(){ var el=document.getElementById("guide"); if(el) el.classList.remove("open"); try{ localStorage.setItem("wb_seen_guide","1"); }catch(e){} }
+function initHint(){
+  var h=document.getElementById("hint"); if(!h) return;
+  var touch=(window.matchMedia && window.matchMedia("(pointer:coarse)").matches) || ("ontouchstart" in window);
+  if(touch){ h.textContent="Tap a country for details \u00b7 pinch to zoom \u00b7 drag to spin \u00b7 Layers, top-left"; }
+  var done=false;
+  var fade=function(){ if(done) return; done=true; h.classList.add("wbfade");
+    setTimeout(function(){ if(h) h.style.display="none"; }, 700); };
+  setTimeout(fade, 7000);
+  ["pointerdown","wheel","touchstart","keydown"].forEach(function(ev){
+    try{ window.addEventListener(ev, fade, {once:true, passive:true}); }catch(e){ window.addEventListener(ev, fade); }
+  });
+}
+
 function initGuide(){
   var b=document.getElementById("guideBtn"); if(b) b.onclick=openGuide;
   var el=document.getElementById("guide");
   if(el) el.addEventListener("click",function(e){ if(e.target===el) closeGuide(); });
   document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeGuide(); });
-  var seen=false; try{ seen=!!localStorage.getItem("wb_seen_guide"); }catch(e){}
-  if(!seen) setTimeout(openGuide,800);
+  /* intro modal no longer auto-opens; discover via labeled controls + hint; reopen with the ? button */
 }
 function wireTimeBar(){
   const pb=document.getElementById("tbPlay"), sp=document.getElementById("tbSpeed"), lbl=document.getElementById("tbSpeedLbl");
@@ -1976,6 +1989,7 @@ function _legendSrc(key){
     var F=FLOWS[provKeyFor(key)];
     if(F && F.sources && F.sources[0]){ org=String(F.sources[0].label||"").split("\u2014")[0].trim(); }
   }
+  if(!org){ try{ var _cfg=(typeof layerCfg==="function")?layerCfg(key):null; if(_cfg && _cfg.sources && _cfg.sources[0]){ org=(typeof publisherFor==="function")?publisherFor(_cfg.sources[0]):String(_cfg.sources[0].label||_cfg.sources[0].org||"").split("\u2014")[0].trim(); } }catch(e){} }
   if(!org) return "";
   var txt="Source: "+escapeHTML(org)+(yr?", "+escapeHTML(String(yr)):"");
   return '<div class="lg-src" onclick="openSourcesIndex()" title="View all sources and methodology">'+txt+' \u2197</div>';
@@ -1998,7 +2012,7 @@ function drawLegend(key){
     b+=`<div class="lg-scale"><span>${labelFor(c,s[0].v)}</span><span>${labelFor(c,s[s.length-1].v)}</span></div>`;
     if(c.unit) b+=`<div class="lg-scale" style="margin-top:4px"><span>${c.unit}</span></div>`;
   }
-  b+=renderSourceBlock(c.sources);
+  /* source shown as one always-visible line (_legendSrc); full list lives in the Sources panel */
   el.innerHTML=`<h3>${c.label}<span class="caret">▾</span></h3>${_legendSrc(key)}<div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
