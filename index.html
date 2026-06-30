@@ -474,7 +474,7 @@ map.addControl(new maplibregl.AttributionControl({compact:true, customAttributio
 // Touch arbitration: one-finger drag = spin globe, two-finger pinch = zoom, tap = select.
 try{ map.touchPitch.disable(); map.touchZoomRotate.disableRotation(); }catch(e){}
 
-let activeLayer="flow_drugs";   // open on Drug routes by default
+let activeLayer="countries";   // Countries reference map opens by default
 let subOn=false;          // subnational mode active
 let currentISO=null;
 
@@ -487,19 +487,20 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
   map.addSource("ocean",{type:"geojson",data:oceanGrid()});
   map.addLayer({id:"ocean",type:"fill",source:"ocean",paint:{"fill-color":"#0a1b30"}});
 
+    MAPDATA.features.forEach(function(f,i){ f.properties.color_countries = COUNTRY_PASTEL[i]; });
   map.addSource("world",{type:"geojson",data:MAPDATA,promoteId:"iso3"});
   map.addLayer({id:"fills",type:"fill",source:"world",
     paint:{"fill-color":colorExpr("religion"),"fill-opacity":1,
       "fill-color-transition":{duration:500,delay:0},"fill-opacity-transition":{duration:400}}});
   map.addLayer({id:"borders",type:"line",source:"world",
     paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
-  MAPDATA.features.forEach(function(f,i){ f.properties.color_countries = COUNTRY_PASTEL[i]; });
   map.addSource("country-labels",{type:"geojson",data:COUNTRY_LABELS});
   map.addLayer({id:"country-labels",type:"symbol",source:"country-labels",
     layout:{"text-field":["get","name"],"text-font":["Open Sans Regular"],
       "text-size":["get","size"],"text-max-width":7,"text-padding":2,
       "symbol-placement":"point","text-allow-overlap":false,"visibility":"none"},
     paint:{"text-color":"#3a3226","text-halo-color":"rgba(255,255,255,0.55)","text-halo-width":1.1}});
+  setLayer("countries");
   (function(){
     var HS=10, cv=document.createElement("canvas"); cv.width=cv.height=HS;
     var cx=cv.getContext("2d"); cx.clearRect(0,0,HS,HS);
