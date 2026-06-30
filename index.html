@@ -556,19 +556,30 @@ function _wbApplyGeo(){
         +'<div class="wb-geo-pop-s">Located from your IP address - city/region accuracy, not exact. VPNs and proxies will show their own location instead of yours.</div>'
       ))
       .addTo(map);
-    if(typeof lastInteract==="undefined" || Date.now()-lastInteract>1200){
-      map.flyTo({center:[_wbGeo.lng,_wbGeo.lat], zoom:3.6, bearing:0, pitch:0, duration:2200});
-    }
-  }catch(e){ if(window.console) console.warn("geo marker failed", e); }
+    map.flyTo({center:[_wbGeo.lng,_wbGeo.lat], zoom:3.6, bearing:0, pitch:0, duration:2200});
+    if(window.console) console.info("[worldbook geo] centered on", _wbGeo.place||(_wbGeo.lat+","+_wbGeo.lng));
+  }catch(e){ if(window.console) console.warn("[worldbook geo] marker/fly-to failed", e); }
 }
-fetch("https://ipwho.is/").then(function(r){ return r.json(); }).then(function(d){
-  if(d && d.success && typeof d.latitude==="number" && typeof d.longitude==="number"){
-    _wbGeo={lat:d.latitude, lng:d.longitude,
-      place:[d.city,d.region,d.country].filter(Boolean).join(", "),
-      flag:(d.flag && d.flag.emoji) || ""};
-    _wbApplyGeo();
-  }
-}).catch(function(e){ if(window.console) console.warn("IP geolocation lookup failed", e); });
+function _wbGeoFromIpwhois(){
+  return fetch("https://ipwho.is/").then(function(r){ return r.json(); }).then(function(d){
+    var lat=Number(d&&d.latitude), lng=Number(d&&d.longitude);
+    if(!d || d.success===false || !isFinite(lat) || !isFinite(lng)) throw new Error("ipwho.is: no usable result");
+    return {lat:lat, lng:lng, place:[d.city,d.region,d.country].filter(Boolean).join(", "), flag:(d.flag&&d.flag.emoji)||""};
+  });
+}
+function _wbGeoFromGeojs(){
+  return fetch("https://get.geojs.io/v1/ip/geo.json").then(function(r){ return r.json(); }).then(function(d){
+    var lat=Number(d&&d.latitude), lng=Number(d&&d.longitude);
+    if(!d || !isFinite(lat) || !isFinite(lng)) throw new Error("geojs.io: no usable result");
+    return {lat:lat, lng:lng, place:[d.city,d.region,d.country].filter(Boolean).join(", "), flag:""};
+  });
+}
+_wbGeoFromIpwhois().catch(function(e){
+  if(window.console) console.warn("[worldbook geo] primary lookup failed, trying fallback", e);
+  return _wbGeoFromGeojs();
+}).then(function(g){
+  _wbGeo=g; _wbApplyGeo();
+}).catch(function(e){ if(window.console) console.warn("[worldbook geo] all lookups failed - no marker this visit", e); });
 map.on("load", function(){ _wbGeoMapReady=true; _wbApplyGeo(); });
 { let _w=0; const _wi=setInterval(function(){ if(_atlasBooted||_w++>40){ clearInterval(_wi); return; } if(map.isStyleLoaded()) _atlasBoot(); }, 250); }
 
