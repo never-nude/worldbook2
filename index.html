@@ -196,6 +196,11 @@
   .dbar span{display:block;height:100%}
   .dleg{display:flex;flex-wrap:wrap;gap:9px;font-size:11px;color:var(--muted)}
   .dleg i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle}
+
+  /* dark, unobtrusive attribution (was a white pill) */
+  .maplibregl-ctrl-attrib{background:rgba(10,15,25,0.5)!important;border-radius:8px!important;backdrop-filter:blur(6px)}
+  .maplibregl-ctrl-attrib-inner,.maplibregl-ctrl-attrib a{color:#6b7787!important;font-size:9px!important}
+  .maplibregl-ctrl-attrib-button{filter:invert(1) brightness(.55)}
 </style>
 </head>
 <body>
@@ -1379,8 +1384,8 @@ function migRefreshEra(){ const kf=MIG_BY[MIG_DECCUR]||{}; const e=document.getE
 function migSetYear(y){ y=Math.max(MIG_Y0,Math.min(MIG_Y1,Math.round(y))); MIG_YEAR=y; const dec=migDecadeOf(y); if(dec!==MIG_DECCUR){ MIG_DECCUR=dec; migApplyDecade(dec); migRefreshEra(); } migRefreshYear(); }
 function migStop(){ MIG_PLAYING=false; if(MIG_RAF){ cancelAnimationFrame(MIG_RAF); MIG_RAF=null; } const b=document.getElementById("migPlay"); if(b) b.textContent="\u25b6"; }
 function migPlayPause(){ if(MIG_PLAYING){ migStop(); return; } if(MIG_YEAR>=MIG_Y1) migSetYear(MIG_Y0); MIG_PLAYING=true; const b=document.getElementById("migPlay"); if(b) b.textContent="\u23f8"; MIG_LAST=performance.now(); if(!MIG_RAF) MIG_RAF=requestAnimationFrame(migTick); }
-function migTick(t){ if(!MIG_PLAYING||typeof flowKey==="undefined"||flowKey!=="migtime"){ migStop(); return; } const dt=Math.min(0.1,(t-MIG_LAST)/1000); MIG_LAST=t; let ny=MIG_YEAR+MIG_BASE_YPS*MIG_SPEED*dt; if(ny>=MIG_Y1){ migSetYear(MIG_Y1); migStop(); return; } migSetYear(ny); MIG_RAF=requestAnimationFrame(migTick); }
-function migSetSpeed(s){ MIG_SPEED=s; const w=document.getElementById("migSpeeds"); if(w) w.querySelectorAll("button").forEach(b=>{ b.style.fontWeight=((+b.dataset.s)===s)?"700":"400"; b.style.color=((+b.dataset.s)===s)?"#e8eef6":"#9fb0c4"; }); }
+function migTick(t){ if(!MIG_PLAYING||typeof flowKey==="undefined"||flowKey!=="migtime"){ migStop(); return; } const dt=Math.min(0.1,(t-MIG_LAST)/1000); MIG_LAST=t; try{ let ny=MIG_YEAR+MIG_BASE_YPS*MIG_SPEED*dt; if(ny>=MIG_Y1){ migSetYear(MIG_Y1); migStop(); return; } migSetYear(ny); }catch(err){ if(window.console)console.warn("migTick",err); } MIG_RAF=requestAnimationFrame(migTick); }
+function migSetSpeed(s){ MIG_SPEED=s; MIG_LAST=performance.now(); const w=document.getElementById("migSpeeds"); if(w) w.querySelectorAll("button").forEach(b=>{ b.style.fontWeight=((+b.dataset.s)===s)?"700":"400"; b.style.color=((+b.dataset.s)===s)?"#e8eef6":"#9fb0c4"; }); }
 function drawMigLegend(key,F,el){
   if(MIG_DECCUR===null){ MIG_DECCUR=migDecadeOf(MIG_YEAR); migApplyDecade(MIG_DECCUR); }
   const kf=MIG_BY[MIG_DECCUR]||{corridors:[],era:""};
