@@ -1,16 +1,16 @@
-# Atlas — A Layered World Map, inside a Live Solar System
+# Worldbook — A Layered World Map, inside a Live Solar System
 
 An interactive 3D globe that you can spin, zoom, and drill into — sitting inside a real‑time
 depiction of the solar system. Built as a single self‑contained `index.html` (no build step
 required to run; just open it in a browser).
 
-**Live demo:** once GitHub Pages is enabled → `https://never-nude.github.io/atlas/`
+**Live demo:** `https://worldbook.earth`
 
 ---
 
 ## What it does
 
-**The atlas globe** (MapLibre GL, Natural Earth 50 m geometry)
+**The Worldbook globe** (MapLibre GL, Natural Earth 50 m geometry)
 
 - 11 toggleable data layers:
   - **Religion (by branch)** — colored by dominant branch (Catholic / Protestant / Orthodox,
