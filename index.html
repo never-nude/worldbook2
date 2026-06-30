@@ -500,7 +500,6 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
       "text-size":["get","size"],"text-max-width":7,"text-padding":2,
       "symbol-placement":"point","text-allow-overlap":false,"visibility":"none"},
     paint:{"text-color":"#3a3226","text-halo-color":"rgba(255,255,255,0.55)","text-halo-width":1.1}});
-  setLayer("countries");
   (function(){
     var HS=10, cv=document.createElement("canvas"); cv.width=cv.height=HS;
     var cx=cv.getContext("2d"); cx.clearRect(0,0,HS,HS);
@@ -529,7 +528,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
   wireInteractions();
   buildLayerUI();
   simEpoch=Date.now(); simDays=0; paused=false; simSpeed=524/1440; solarDate=new Date();   // default = 524× real time
-  setLayer("religion");   // default opening layer = Religion (static choropleth — fast, reliable first paint)
+  setLayer("countries");   // default opening layer = Countries reference map (static choropleth — fast, reliable first paint)
   wireTimeBar(); try{ initGuide(); }catch(e){} try{ initHint(); }catch(e){} updateTimeLabel();
   let _revealed=false;
   const _reveal=()=>{ if(_revealed) return; _revealed=true;
