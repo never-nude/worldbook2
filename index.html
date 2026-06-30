@@ -362,10 +362,18 @@ function sourceLabel(s){
   return s.year && label.indexOf(String(s.year))<0 ? `${label} (${s.year})` : label;
 }
 function sourceLink(s){ return `<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">↗ ${escapeHTML(sourceLabel(s))}</a>`; }
-function renderSourceBlock(sources){
+function renderSourceBlock(sources){ /* condensed-by-publisher */
   const srcs=uniqueSources(sources);
   if(!srcs.length) return "";
-  return `<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${srcs.length>1?"Sources":"Source"}</div><div class="src">${srcs.map(sourceLink).join("")}</div>`;
+  const groups={}, order=[];
+  srcs.forEach(s=>{ const p=publisherFor(s); if(!groups[p]){ groups[p]=[]; order.push(p); } groups[p].push(s); });
+  const body=order.map(p=>{
+    const list=groups[p];
+    if(list.length===1) return `<div class="src">${sourceLink(list[0])}</div>`;
+    const items=list.map(s=>{ const full=sourceLabel(s); const i=full.indexOf(" \u2014 "); const ds=i>=0?full.slice(i+3):full; return `<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">${escapeHTML(ds)}</a>`; }).join(`<span style="color:#5a6b80"> &middot; </span>`);
+    return `<div style="margin-top:5px;line-height:1.6"><span style="color:#c4cfdd;font-size:11.5px;font-weight:600">${escapeHTML(p)}</span> <span style="font-size:11px">${items}</span></div>`;
+  }).join("");
+  return `<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${srcs.length>1?"Sources":"Source"}</div>${body}`;
 }
 function layerSources(layer){
   if(!layer) return [];
@@ -1339,7 +1347,7 @@ function clearFlow(){
 function applyFlowStyle(){
   if(!map.getLayer("flow-lines")) return;
   const m=isMobileV();
-  const wlo=m?7.0:3.0, whi=m?13.0:6.5, rlo=m?2.2:1.8, rhi=m?4.4:3.4;
+  const wlo=m?10.0:8.0, whi=m?20.0:16.0, rlo=m?2.2:1.8, rhi=m?4.4:3.4;
   const wI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,wlo,1,whi], 9,["interpolate",["linear"],["get","w"],0,wlo*3,1,whi*3]];
   const rI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,rlo,1,rhi], 9,["interpolate",["linear"],["get","w"],0,rlo*2.4,1,rhi*2.4]];
   // MapLibre keeps this surface layer for hover/click hit-testing only. The visible
