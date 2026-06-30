@@ -218,6 +218,8 @@
   #guide .g-l{font-size:13px;font-weight:600}
   #guide .g-d{font-size:12px;color:var(--muted);line-height:1.4;margin-top:1px}
   #guide .g-foot{color:var(--muted);font-size:11.5px;margin-top:16px}
+  #legend .lg-src{font-size:11px;line-height:1.35;color:#9fb0c0;padding:5px 0 1px;margin-top:3px;cursor:pointer;border-top:1px solid rgba(255,255,255,.09);letter-spacing:.2px;white-space:normal}
+  #legend .lg-src:hover{color:#dce8f4;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -1468,7 +1470,7 @@ function drawMigLegend(key,F,el){
   b+=`<div class="lg-row" style="color:var(--muted);font-size:11px;margin-top:6px">Thicker arc = more people that decade. ${F.unit}.</div>`;
   b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;margin-top:4px">Click a country to isolate just its routes.</div>`;
   b+=`<div id="migSrc">${renderSourceBlock(F.sources)}</div>`;
-  el.innerHTML=`<h3>${F.label}<span class="caret">\u25be</span></h3><div class="lg-body">${b}</div>`;
+  el.innerHTML=`<h3>${F.label}<span class="caret">\u25be</span></h3>${_legendSrc(key)}<div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
   const pl=el.querySelector("#migPlay"); if(pl) pl.onclick=e=>{ e.stopPropagation(); migPlayPause(); };
@@ -1828,7 +1830,7 @@ function drawFlowLegend(key){
   else { b+=`<div class="lg-row" style="margin-top:7px;color:var(--muted);font-size:10.5px">Click a country to isolate just its connections.</div>`; }
   if(F.note) b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;font-style:italic;margin-top:6px;line-height:1.4">${F.note}</div>`;
   b+=renderSourceBlock(F.sources);
-  el.innerHTML=`<h3>${F.label}<span class="caret">▾</span></h3><div class="lg-body">${b}</div>`;
+  el.innerHTML=`<h3>${F.label}<span class="caret">▾</span></h3>${_legendSrc(key)}<div class="lg-body">${b}</div>`;
   { const _cf=el.querySelector("#lgClearFocus"); if(_cf) _cf.onclick=ev=>{ ev.stopPropagation(); clearFlowFocus(); }; }
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
@@ -1966,6 +1968,19 @@ function setLayer(key){
 function layerCfg(key){ return META.layers.find(l=>l.key===key); }
 
 let legendCollapsed=(window.innerWidth<=700);   // start collapsed on phones
+function _legendSrc(key){
+  var pv=LAYER_PROV[provKeyFor(key)];
+  var org="", yr="";
+  if(pv && pv.primarySource){ org=pv.primarySource.org||""; yr=pv.primarySource.year||""; }
+  if(!org){
+    var F=FLOWS[provKeyFor(key)];
+    if(F && F.sources && F.sources[0]){ org=String(F.sources[0].label||"").split("\u2014")[0].trim(); }
+  }
+  if(!org) return "";
+  var txt="Source: "+escapeHTML(org)+(yr?", "+escapeHTML(String(yr)):"");
+  return '<div class="lg-src" onclick="openSourcesIndex()" title="View all sources and methodology">'+txt+' \u2197</div>';
+}
+
 function drawLegend(key){
   const c=layerCfg(key), el=document.getElementById("legend");
   let b="";
@@ -1984,7 +1999,7 @@ function drawLegend(key){
     if(c.unit) b+=`<div class="lg-scale" style="margin-top:4px"><span>${c.unit}</span></div>`;
   }
   b+=renderSourceBlock(c.sources);
-  el.innerHTML=`<h3>${c.label}<span class="caret">▾</span></h3><div class="lg-body">${b}</div>`;
+  el.innerHTML=`<h3>${c.label}<span class="caret">▾</span></h3>${_legendSrc(key)}<div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
 }
