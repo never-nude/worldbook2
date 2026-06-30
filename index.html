@@ -231,6 +231,14 @@
   #legend .lg-src{font-size:11px;line-height:1.35;color:#9fb0c0;padding:5px 0 1px;margin-top:3px;cursor:pointer;border-top:1px solid rgba(255,255,255,.09);letter-spacing:.2px;white-space:normal}
   #legend .lg-src:hover{color:#dce8f4;text-decoration:underline}
   #hint.wbfade{opacity:0 !important;pointer-events:none}
+
+/* visitor IP-location marker */
+.wb-geo-marker{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px 3px rgba(110,168,254,.85);cursor:pointer;position:relative}
+.wb-geo-marker::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid var(--accent);opacity:.6;animation:wbGeoPulse 2.4s ease-out infinite}
+@keyframes wbGeoPulse{0%{transform:scale(.35);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+.wb-geo-pop-h{font-weight:600;font-size:13px;color:var(--ink);margin-bottom:2px}
+.wb-geo-pop-d{font-size:12px;color:var(--ink);opacity:.85;margin-bottom:6px}
+.wb-geo-pop-s{font-size:10.5px;color:var(--muted);line-height:1.4}
 </style>
 </head>
 <body>
@@ -534,6 +542,34 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
   }catch(_e){ console.error("Atlas init error:",_e); document.getElementById("loading").style.display="none"; }
 }
 if(map.isStyleLoaded()) _atlasBoot(); else map.on("load", _atlasBoot);
+var _wbGeo=null, _wbGeoMapReady=false;
+function _wbApplyGeo(){
+  if(!_wbGeo || !_wbGeoMapReady) return;
+  try{
+    var el=document.createElement("div");
+    el.className="wb-geo-marker";
+    new maplibregl.Marker({element:el})
+      .setLngLat([_wbGeo.lng,_wbGeo.lat])
+      .setPopup(new maplibregl.Popup({closeButton:false,offset:10}).setHTML(
+        '<div class="wb-geo-pop-h">You are approximately here'+(_wbGeo.flag?(" "+_wbGeo.flag):"")+'</div>'
+        +'<div class="wb-geo-pop-d">'+(_wbGeo.place||"Unknown location")+'</div>'
+        +'<div class="wb-geo-pop-s">Located from your IP address - city/region accuracy, not exact. VPNs and proxies will show their own location instead of yours.</div>'
+      ))
+      .addTo(map);
+    if(typeof lastInteract==="undefined" || Date.now()-lastInteract>1200){
+      map.flyTo({center:[_wbGeo.lng,_wbGeo.lat], zoom:3.6, bearing:0, pitch:0, duration:2200});
+    }
+  }catch(e){ if(window.console) console.warn("geo marker failed", e); }
+}
+fetch("https://ipwho.is/").then(function(r){ return r.json(); }).then(function(d){
+  if(d && d.success && typeof d.latitude==="number" && typeof d.longitude==="number"){
+    _wbGeo={lat:d.latitude, lng:d.longitude,
+      place:[d.city,d.region,d.country].filter(Boolean).join(", "),
+      flag:(d.flag && d.flag.emoji) || ""};
+    _wbApplyGeo();
+  }
+}).catch(function(e){ if(window.console) console.warn("IP geolocation lookup failed", e); });
+map.on("load", function(){ _wbGeoMapReady=true; _wbApplyGeo(); });
 { let _w=0; const _wi=setInterval(function(){ if(_atlasBooted||_w++>40){ clearInterval(_wi); return; } if(map.isStyleLoaded()) _atlasBoot(); }, 250); }
 
 /* ---- idle auto-rotation ---- */
