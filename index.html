@@ -97,9 +97,9 @@
 
   /* Solar system mode */
   .top-actions{margin-left:auto;pointer-events:auto}
-  #solarBtn{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:9px;
+  #solarBtn,#sourcesBtn{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:9px;
     padding:7px 13px;font-size:13px;cursor:pointer}
-  #solarBtn:hover{border-color:var(--accent)}
+  #solarBtn:hover,#sourcesBtn:hover{border-color:var(--accent)}
   #solar{position:absolute;inset:0;z-index:30;display:none;
     background:radial-gradient(circle at 50% 46%, #0b1330 0%, #060a16 45%, #03050b 100%)}
   #solar.open{display:block}
@@ -225,6 +225,10 @@
 
 <div id="topbar">
   <h1>Atlas<span id="subtitle">a layered world map</span></h1>
+  <div class="top-actions">
+    <button id="sourcesBtn">Sources</button>
+    <button id="solarBtn">Solar system</button>
+  </div>
 </div>
 
 <div id="solar">
@@ -268,6 +272,123 @@ const META = {"layers":[{"group":"Belief","key":"religion","label":"Religion (by
 const NODATA = "#262f3d";
 const DEBT_NODATA = "#15110d";
 function noDataFor(k){ return k==="govdebt" ? DEBT_NODATA : NODATA; }
+const SOURCE_DETAILS = {
+  pew_religion:{publisher:"Pew Research Center",label:"Pew Research Center — Religious Composition by Country",url:"https://www.pewresearch.org/religion/feature/religious-composition-by-country/",year:2010},
+  cia_factbook:{publisher:"CIA",label:"CIA World Factbook — Country profiles",url:"https://www.cia.gov/the-world-factbook/countries/",year:"latest available"},
+  eiu_democracy:{publisher:"Economist Intelligence Unit",label:"Economist Intelligence Unit — Democracy Index",url:"https://www.eiu.com/n/campaigns/democracy-index-2023/",year:2023},
+  worldbank_population:{publisher:"World Bank",label:"World Bank — Population, total",url:"https://data.worldbank.org/indicator/SP.POP.TOTL",year:"latest available"},
+  worldbank_popdensity:{publisher:"World Bank",label:"World Bank — Population density",url:"https://data.worldbank.org/indicator/EN.POP.DNST",year:"latest available"},
+  worldbank_gdppc:{publisher:"World Bank",label:"World Bank — GDP per capita, current US dollars",url:"https://data.worldbank.org/indicator/NY.GDP.PCAP.CD",year:"latest available"},
+  worldbank_lifeexp:{publisher:"World Bank",label:"World Bank — Life expectancy at birth",url:"https://data.worldbank.org/indicator/SP.DYN.LE00.IN",year:"latest available"},
+  worldbank_internet:{publisher:"World Bank",label:"World Bank — Individuals using the Internet",url:"https://data.worldbank.org/indicator/IT.NET.USER.ZS",year:"latest available"},
+  worldbank_co2:{publisher:"World Bank",label:"World Bank — CO2 emissions per capita",url:"https://data.worldbank.org/indicator/EN.ATM.CO2E.PC",year:"latest available"},
+  imf_debt:{publisher:"IMF",label:"IMF — World Economic Outlook database",url:"https://www.imf.org/en/Publications/WEO/weo-database/2024/October",year:2024},
+  worldbank_ids:{publisher:"World Bank",label:"World Bank — International Debt Statistics",url:"https://www.worldbank.org/en/programs/debt-statistics/ids",year:"latest available"},
+  aiddata_china:{publisher:"AidData",label:"AidData — Global Chinese Development Finance Dataset",url:"https://www.aiddata.org/china-official-finance",year:"latest available"},
+  koppen:{publisher:"GloH2O",label:"GloH2O — Koppen-Geiger climate classification maps",url:"https://www.gloh2o.org/koppen/",year:2018},
+  ilga:{publisher:"ILGA World",label:"ILGA World — Laws on Us / global LGBTI maps",url:"https://ilga.org/maps-sexual-orientation-laws/",year:2025},
+  equaldex:{publisher:"Equaldex",label:"Equaldex — LGBT rights by country",url:"https://www.equaldex.com/",year:"current"},
+  wb_under5:{publisher:"World Bank",label:"World Bank — Mortality rate, under-5",url:"https://data.worldbank.org/indicator/SH.DYN.MORT",year:"latest available"},
+  wb_matmort:{publisher:"World Bank",label:"World Bank — Maternal mortality ratio",url:"https://data.worldbank.org/indicator/SH.STA.MMRT",year:"latest available"},
+  wb_physicians:{publisher:"World Bank",label:"World Bank — Physicians per 1,000 people",url:"https://data.worldbank.org/indicator/SH.MED.PHYS.ZS",year:"latest available"},
+  wb_healthspend:{publisher:"World Bank",label:"World Bank — Current health expenditure",url:"https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",year:"latest available"},
+  wb_hiv:{publisher:"World Bank",label:"World Bank — HIV prevalence",url:"https://data.worldbank.org/indicator/SH.DYN.AIDS.ZS",year:"latest available"},
+  wb_water:{publisher:"World Bank",label:"World Bank — Safely managed drinking water",url:"https://data.worldbank.org/indicator/SH.H2O.SMDW.ZS",year:"latest available"},
+  wb_sanitation:{publisher:"World Bank",label:"World Bank — Safely managed sanitation",url:"https://data.worldbank.org/indicator/SH.STA.SMSS.ZS",year:"latest available"},
+  esri_imagery:{publisher:"Esri",label:"Esri — World Imagery map service",url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",year:"current"},
+  esri_physical:{publisher:"Esri",label:"Esri — World Physical Map service",url:"https://services.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer",year:"current"},
+  natural_earth:{publisher:"Natural Earth",label:"Natural Earth — Admin 0 countries",url:"https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/",year:"latest available"},
+  mit_election:{publisher:"MIT Election Data and Science Lab",label:"MIT Election Data and Science Lab — U.S. President election data",url:"https://electionlab.mit.edu/data",year:2024},
+  iea_oil:{publisher:"IEA",label:"IEA — Oil Market Report",url:"https://www.iea.org/topics/oil-market-report",year:"latest available"},
+  eia_petroleum:{publisher:"U.S. EIA",label:"U.S. EIA — International petroleum and other liquids data",url:"https://www.eia.gov/international/data/world",year:"latest available",aliases:["https://www.eia.gov/petroleum/"]},
+  fao_food:{publisher:"FAO",label:"FAO — Food Outlook",url:"https://www.fao.org/giews/reports/food-outlook/en/",year:"latest available"},
+  usda_fas:{publisher:"USDA FAS",label:"USDA Foreign Agricultural Service — Production, Supply and Distribution",url:"https://apps.fas.usda.gov/psdonline/app/index.html",year:"latest available",aliases:["https://www.fas.usda.gov/data"]},
+  usgs_minerals:{publisher:"USGS",label:"USGS — Mineral Commodity Summaries",url:"https://www.usgs.gov/centers/national-minerals-information-center/mineral-commodity-summaries",year:2025,aliases:["https://www.usgs.gov/centers/national-minerals-information-center"]},
+  fao_forestry:{publisher:"FAO",label:"FAO — Forest Products Statistics",url:"https://www.fao.org/faostat/en/#data/FO",year:"latest available",aliases:["https://www.fao.org/forestry/statistics/en/"]},
+  noaa_currents:{publisher:"NOAA",label:"NOAA — Ocean currents",url:"https://oceanservice.noaa.gov/education/tutorial_currents/",year:"current"},
+  cms_flyways:{publisher:"Convention on Migratory Species",label:"Convention on Migratory Species — Flyways",url:"https://www.cms.int/en/page/flyways",year:"current"},
+  nasa_dust:{publisher:"NASA Earth Observatory",label:"NASA Earth Observatory — Saharan dust",url:"https://earthobservatory.nasa.gov/images/event/86353/saharan-dust",year:"current"},
+  unesco_silk:{publisher:"UNESCO",label:"UNESCO — Silk Roads Programme",url:"https://en.unesco.org/silkroad/",year:"current"},
+  britannica_voyages:{publisher:"Britannica",label:"Britannica — Age of Discovery",url:"https://www.britannica.com/topic/European-exploration",year:"current"},
+  iata_flights:{publisher:"IATA",label:"IATA — Economics and air traffic publications",url:"https://www.iata.org/en/publications/economics/",year:"latest available"},
+  unctad_shipping:{publisher:"UNCTAD",label:"UNCTAD — Review of Maritime Transport",url:"https://unctad.org/rmt",year:"latest available"},
+  unhcr_refugees:{publisher:"UNHCR",label:"UNHCR — Refugee Data Finder",url:"https://www.unhcr.org/refugee-statistics/",year:"latest available"},
+  uis_students:{publisher:"UNESCO Institute for Statistics",label:"UNESCO Institute for Statistics — Global Flow of Tertiary Students",url:"https://uis.unesco.org/en/uis-student-flow",year:"latest available"},
+  unodc_trafficking:{publisher:"UNODC",label:"UNODC — Global Report on Trafficking in Persons",url:"https://www.unodc.org/unodc/en/human-trafficking/global-report-on-trafficking-in-persons.html",year:2024},
+  unodc_wildlife:{publisher:"UNODC",label:"UNODC — World Wildlife Crime Report",url:"https://www.unodc.org/unodc/en/data-and-analysis/wildlife.html",year:2024},
+  cites_trade:{publisher:"CITES",label:"CITES — Trade Database",url:"https://trade.cites.org/",year:"current",aliases:["https://cites.org/"]},
+  oecd_counterfeit:{publisher:"OECD/EUIPO",label:"OECD/EUIPO — Trade in Counterfeit and Pirated Goods",url:"https://www.oecd.org/gov/risk/trade-in-counterfeit-and-pirated-goods-g2g9f533-en.htm",year:2021},
+  who_hrh:{publisher:"WHO",label:"WHO — Global strategy on human resources for health",url:"https://www.who.int/publications/i/item/9789241511131",year:2016},
+  oecd_healthworkforce:{publisher:"OECD",label:"OECD — Health workforce",url:"https://www.oecd.org/en/topics/health-workforce.html",year:"current"},
+  knomad_remit:{publisher:"KNOMAD",label:"KNOMAD — Bilateral Remittance Matrix",url:"https://www.knomad.org/data/remittances",year:"latest available"},
+  wb_migration_brief:{publisher:"World Bank",label:"World Bank — Migration and Development Brief 39",url:"https://www.worldbank.org/en/news/press-release/2023/12/18/remittance-flows-grow-2023-slower-pace-migration-development-brief",year:2023},
+  iom_migration:{publisher:"IOM",label:"IOM — World Migration Report",url:"https://worldmigrationreport.iom.int/what-we-do/world-migration-report-2024",year:2024},
+  undesa_migrant_stock:{publisher:"UN DESA",label:"UN DESA — International Migrant Stock",url:"https://www.un.org/development/desa/pd/content/international-migrant-stock",year:2020},
+  un_comtrade:{publisher:"UN Comtrade",label:"UN Comtrade — International Trade Statistics",url:"https://comtradeplus.un.org/",year:"latest available"},
+  wto_trade:{publisher:"WTO",label:"WTO — Trade statistics",url:"https://www.wto.org/english/res_e/statis_e/statis_e.htm",year:"latest available"},
+  telegeography_cables:{publisher:"TeleGeography",label:"TeleGeography — Submarine Cable Map",url:"https://www.submarinecablemap.com/",year:"current"},
+  unodc_drugs:{publisher:"UNODC",label:"UNODC — World Drug Report",url:"https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report.html",year:"latest available"},
+  emcdda_drugs:{publisher:"EMCDDA",label:"EMCDDA — European Drug Report",url:"https://www.euda.europa.eu/publications/european-drug-report_en",year:"latest available"},
+  small_arms:{publisher:"Small Arms Survey",label:"Small Arms Survey — illicit small arms research",url:"https://www.smallarmssurvey.org/",year:"current"},
+  unodc_firearms:{publisher:"UNODC",label:"UNODC — Global Study on Firearms Trafficking",url:"https://www.unodc.org/unodc/en/firearms-protocol/firearms-study.html",year:2020}
+};
+const LAYER_SOURCE_KEYS = {
+  religion:["pew_religion","cia_factbook"], govtype:["cia_factbook"], regime:["eiu_democracy"],
+  language:["cia_factbook"], popdensity:["worldbank_popdensity","worldbank_population"], gdppc:["worldbank_gdppc"],
+  lifeexp:["worldbank_lifeexp"], internet:["worldbank_internet"], govdebt:["imf_debt","worldbank_ids"],
+  co2pc:["worldbank_co2"], climate:["koppen"], lgbt:["ilga","equaldex"],
+  under5mort:["wb_under5"], matmort:["wb_matmort"], physicians:["wb_physicians"], healthspend:["wb_healthspend"],
+  hiv:["wb_hiv"], water:["wb_water"], sanitation:["wb_sanitation"], satellite:["esri_imagery"], topo:["esri_physical"]
+};
+let EXTRA_SOURCES = [];
+function sourceRefs(keys){ return (keys||[]).map(k=>SOURCE_DETAILS[k]).filter(Boolean).map(s=>Object.assign({},s)); }
+function escapeHTML(s){ return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+function normalizeSource(s){
+  if(!s) return null;
+  const byUrl=Object.values(SOURCE_DETAILS).find(d=>d.url===s.url||(d.aliases||[]).includes(s.url));
+  const out=Object.assign({},s,byUrl||{});
+  out.label=String(out.label||"Source").replace(/\s+-\s+/g," — ");
+  if(out.year==null){ const m=out.label.match(/\b(18|19|20)\d{2}\b/); out.year=m?m[0]:"current"; }
+  return out.url?out:null;
+}
+function uniqueSources(sources){
+  const seen=new Set(), out=[];
+  (sources||[]).forEach(raw=>{ const s=normalizeSource(raw); if(!s) return;
+    const k=s.url||s.label; if(seen.has(k)) return; seen.add(k); out.push(s); });
+  return out;
+}
+function sourceLabel(s){
+  const label=String(s.label||"Source").replace(/\s+-\s+/g," — ");
+  return s.year && label.indexOf(String(s.year))<0 ? `${label} (${s.year})` : label;
+}
+function sourceLink(s){ return `<a href="${escapeHTML(s.url)}" target="_blank" rel="noopener">↗ ${escapeHTML(sourceLabel(s))}</a>`; }
+function renderSourceBlock(sources){
+  const srcs=uniqueSources(sources);
+  if(!srcs.length) return "";
+  return `<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${srcs.length>1?"Sources":"Source"}</div><div class="src">${srcs.map(sourceLink).join("")}</div>`;
+}
+function layerSources(layer){
+  if(!layer) return [];
+  if(layer.type==="flow" && layer.flowKey && typeof FLOWS!=="undefined" && FLOWS[layer.flowKey]) return FLOWS[layer.flowKey].sources||[];
+  return sourceRefs(LAYER_SOURCE_KEYS[layer.key]);
+}
+function hydrateSources(){
+  Object.keys(FLOWS).forEach(k=>{ FLOWS[k].sources=uniqueSources(FLOWS[k].sources||[]); });
+  META.layers.forEach(l=>{ l.sources=uniqueSources(layerSources(l)); });
+  META.sources._default=uniqueSources(["religion","govtype","regime","language","popdensity","gdppc","lifeexp","internet","govdebt","lgbt"].flatMap(k=>sourceRefs(LAYER_SOURCE_KEYS[k])));
+  const missing=auditSourceCoverage();
+  if(missing.length) console.warn("Worldbook source audit: missing citations",missing);
+}
+function auditSourceCoverage(){
+  const missing=[];
+  META.layers.forEach(l=>{ if(!l.sources||!l.sources.length||l.sources.some(s=>!s.url)) missing.push(l.key); });
+  Object.keys(FLOWS).forEach(k=>{ const srcs=FLOWS[k].sources||[]; if(!srcs.length||srcs.some(s=>!s.url)) missing.push("flow:"+k); });
+  return missing;
+}
+function allSources(){
+  return uniqueSources([...EXTRA_SOURCES,...sourceRefs(["natural_earth","mit_election"]),...(META.sources._default||[]),...META.layers.flatMap(l=>l.sources||[]),...Object.values(FLOWS).flatMap(f=>f.sources||[]),...Object.values(META.subnat||{}).flatMap(s=>s.sources||[])]);
+}
+function publisherFor(s){ return s.publisher || sourceLabel(s).split(" — ")[0] || "Other"; }
 const fmt = {
   pop:v=>v>=1e9?(v/1e9).toFixed(2)+"B":v>=1e6?(v/1e6).toFixed(1)+"M":v>=1e3?(v/1e3).toFixed(0)+"K":v,
   money:v=>"$"+Math.round(v).toLocaleString(),
@@ -291,7 +412,7 @@ const map = new maplibregl.Map({
   center:[10,28], zoom:1.45, attributionControl:false, maxZoom:9
 });
 map.addControl(new maplibregl.NavigationControl({visualizePitch:false}),"bottom-right");
-map.addControl(new maplibregl.AttributionControl({compact:true, customAttribution:"Boundaries: Natural Earth · Data: see country panels"}),"bottom-right");
+map.addControl(new maplibregl.AttributionControl({compact:true, customAttribution:"Boundaries: Natural Earth · Data: Sources panel"}),"bottom-right");
 // Touch arbitration: one-finger drag = spin globe, two-finger pinch = zoom, tap = select.
 try{ map.touchPitch.disable(); map.touchZoomRotate.disableRotation(); }catch(e){}
 
@@ -1123,6 +1244,7 @@ const FLOWS = {
     ]
   }
 };
+hydrateSources();
 
 /* ---- build animated GeoJSON for the active flow ---- */
 let flowAnim=null, flowKey=null;
@@ -1244,7 +1366,7 @@ function migSetDecade(dec){
   if(MIG_BY[dec]===undefined) return;
   MIG_CUR=dec; const kf=MIG_BY[dec];
   FLOWS.migtime.edges=migEdgesFor(dec);
-  FLOWS.migtime.sources=kf.sources||[];
+  FLOWS.migtime.sources=uniqueSources(kf.sources||[]);
   if(typeof flowKey!=="undefined" && flowKey==="migtime"){ buildFlowGeo("migtime"); drawFlowLegend("migtime"); }
 }
 function drawMigLegend(key,F,el){
@@ -1263,7 +1385,7 @@ function drawMigLegend(key,F,el){
   b+=`<div class="lg-row" style="color:var(--muted);font-size:11px;margin-top:6px">Thicker arc = more people that decade. ${F.unit}.</div>`;
   if(!kf.corridors||!kf.corridors.length) b+=`<div class="lg-row" style="color:var(--muted);font-size:11px;font-style:italic;margin-top:4px">No major documented flows for this decade.</div>`;
   else b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;margin-top:4px">Click a country to isolate just its routes.</div>`;
-  if(F.sources&&F.sources.length){ b+=`<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${F.sources.length>1?"Sources":"Source"}</div><div class="src">`; F.sources.forEach(s=>{ b+=`<a href="${s.url}" target="_blank" rel="noopener">\u2197 ${s.label}</a>`; }); b+=`</div>`; }
+  b+=renderSourceBlock(F.sources);
   el.innerHTML=`<h3>${F.label}<span class="caret">\u25be</span></h3><div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
@@ -1273,12 +1395,14 @@ function drawMigLegend(key,F,el){
 }
 FLOWS.migtime={label:"Migration over time",group:"Connections",timeline:true,color:"#6ea8fe",dotColor:"#dfeaff",unit:"documented major flows",legend:"Migration by decade.",edges:[],sources:[]};
 FLOWS.migtime.edges=migEdgesFor(MIG_CUR);
-FLOWS.migtime.sources=(MIG_BY[MIG_CUR]||{}).sources||[];
+FLOWS.migtime.sources=uniqueSources((MIG_BY[MIG_CUR]||{}).sources||[]);
 if(typeof META!=="undefined" && META.layers && !META.layers.some(l=>l.key==="flow_migtime")){
   const _mi=META.layers.findIndex(l=>l.key==="flow_migration");
   const _e={group:"Connections",key:"flow_migtime",label:"Migration over time",type:"flow",flowKey:"migtime"};
   if(_mi>=0) META.layers.splice(_mi+1,0,_e); else META.layers.push(_e);
 }
+EXTRA_SOURCES=uniqueSources([...EXTRA_SOURCES,...MIG_KEYFRAMES.flatMap(k=>k.sources||[])]);
+hydrateSources();
 /* ===== end migration over time ============================================== */
 
 function isIllicit(key){ return key==="drugs"||key==="arms"; }
@@ -1572,7 +1696,7 @@ function drawFlowLegend(key){
   if(flowFocusIso){ b+=`<div class="lg-row" style="margin-top:7px;color:var(--accent);font-size:11px">Isolated: <b>${flowFocusIso}</b>'s connections — <span id="lgClearFocus" style="text-decoration:underline;cursor:pointer">show all</span></div>`; }
   else { b+=`<div class="lg-row" style="margin-top:7px;color:var(--muted);font-size:10.5px">Click a country to isolate just its connections.</div>`; }
   if(F.note) b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;font-style:italic;margin-top:6px;line-height:1.4">${F.note}</div>`;
-  if(F.sources&&F.sources.length){ b+=`<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${F.sources.length>1?"Sources":"Source"}</div><div class="src">`; F.sources.forEach(s=>{ b+=`<a href="${s.url}" target="_blank" rel="noopener">↗ ${s.label}</a>`; }); b+=`</div>`; }
+  b+=renderSourceBlock(F.sources);
   el.innerHTML=`<h3>${F.label}<span class="caret">▾</span></h3><div class="lg-body">${b}</div>`;
   { const _cf=el.querySelector("#lgClearFocus"); if(_cf) _cf.onclick=ev=>{ ev.stopPropagation(); clearFlowFocus(); }; }
   el.classList.toggle("collapsed",legendCollapsed);
@@ -1659,7 +1783,8 @@ function drawPartyLegend(){
    `<h3>2024 Presidential vote</h3>
     <div class="lg-grad" style="background:linear-gradient(90deg,#1c4fc0,#a9c0e6,#cdcdcd,#c9a6a6,#b81414)"></div>
     <div class="lg-scale"><span>Dem +25</span><span>Rep +25</span></div>
-    <div class="lg-row" style="margin-top:6px;color:var(--muted);font-size:11px">Color = winning margin · 2024</div>`;
+    <div class="lg-row" style="margin-top:6px;color:var(--muted);font-size:11px">Color = winning margin · 2024</div>
+    ${renderSourceBlock(sourceRefs(["mit_election"]))}`;
 }
 
 /* ---------------- Layer UI ---------------- */
@@ -1727,9 +1852,30 @@ function drawLegend(key){
     b+=`<div class="lg-scale"><span>${labelFor(c,s[0].v)}</span><span>${labelFor(c,s[s.length-1].v)}</span></div>`;
     if(c.unit) b+=`<div class="lg-scale" style="margin-top:4px"><span>${c.unit}</span></div>`;
   }
+  b+=renderSourceBlock(c.sources);
   el.innerHTML=`<h3>${c.label}<span class="caret">▾</span></h3><div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
+}
+function buildSourcesIndex(){
+  const groups={};
+  allSources().forEach(s=>{ const p=publisherFor(s); (groups[p]=groups[p]||[]).push(s); });
+  return Object.keys(groups).sort((a,b)=>a.localeCompare(b)).map(p=>{
+    const links=groups[p].sort((a,b)=>sourceLabel(a).localeCompare(sourceLabel(b))).map(sourceLink).join("");
+    return `<div class="sec"><h4>${escapeHTML(p)}</h4><div class="src">${links}</div></div>`;
+  }).join("");
+}
+function openSourcesIndex(){
+  currentISO=null; panelOpen=true;
+  const pn=document.getElementById("panel");
+  pn.style.transform=""; pn.style.transition="";
+  pn.classList.add("open"); pn.classList.remove("min");
+  pn.classList.toggle("peek", window.matchMedia("(max-width:700px)").matches);
+  document.getElementById("minP").textContent="▾";
+  document.getElementById("hint").style.right="398px";
+  document.getElementById("pName").textContent="Sources";
+  document.getElementById("pMaj").textContent=`${allSources().length} cited datasets, reports, and services`;
+  document.getElementById("pBody").innerHTML=buildSourcesIndex();
 }
 
 /* ---------------- Interactions ---------------- */
@@ -1773,6 +1919,31 @@ function hoverHTML(p,isSub){
   }
   const val = c.type==="categorical" ? (p[c.prop]||"No data") : labelFor(c,p[c.prop]);
   return `<div class="pop-name">${p.name}</div><div class="pop-sub">${c.short}: ${val}</div>`;
+}
+function countrySources(p){
+  const keys=[];
+  if(p.relBreakdown||p.relMajority) keys.push("religion");
+  if(p.govtype) keys.push("govtype");
+  if(p.regime) keys.push("regime");
+  if(p.lgbtStatus) keys.push("lgbt");
+  if(p.population!=null) keys.push("popdensity");
+  if(p.popDensity!=null) keys.push("popdensity");
+  if(p.gdppc!=null) keys.push("gdppc");
+  if(p.lifeExp!=null) keys.push("lifeexp");
+  if(p.internet!=null) keys.push("internet");
+  if(p.debtGdp!=null||p.creditorDebt||p.debtorDebt) keys.push("govdebt");
+  if(p.under5mort!=null) keys.push("under5mort");
+  if(p.matmort!=null) keys.push("matmort");
+  if(p.physicians!=null) keys.push("physicians");
+  if(p.healthspend!=null) keys.push("healthspend");
+  if(p.hiv!=null) keys.push("hiv");
+  if(p.water!=null) keys.push("water");
+  if(p.sanitation!=null) keys.push("sanitation");
+  if(p.languages) keys.push("language");
+  const srcs=keys.flatMap(k=>{ const l=layerCfg(k); return l?l.sources||[]:[]; });
+  if(p.creditorDebt||p.debtorDebt) srcs.push(...(FLOWS.debt?FLOWS.debt.sources:[]));
+  if(META.subnat[p.iso3]&&META.subnat[p.iso3].sources) srcs.push(...META.subnat[p.iso3].sources);
+  return uniqueSources(srcs.length?srcs:META.sources._default);
 }
 
 /* ---------------- Country detail ---------------- */
@@ -1891,8 +2062,7 @@ function openCountry(p){
 
   // Sources
   h+=`<div class="sec" style="margin-top:18px"><h4>Sources</h4><div class="src">`;
-  const srcs=(META.subnat[p.iso3]&&META.subnat[p.iso3].sources)||META.sources._default;
-  srcs.forEach(s=>{ h+=`<a href="${s.url}" target="_blank" rel="noopener">↗ ${s.label}</a>`; });
+  countrySources(p).forEach(s=>{ h+=sourceLink(s); });
   h+=`</div></div>`;
 
   document.getElementById("pBody").innerHTML=h;
@@ -2057,7 +2227,8 @@ function initSolar(){
   document.getElementById("playBtn").onclick=togglePlay;
   document.getElementById("todayBtn").onclick=()=>{ simEpoch=Date.now(); simDays=0; simLast=0; solarDate=new Date(); di.value=toISO(solarDate); updatePlanets(); };
   document.getElementById("solarBack").onclick=closeSolar;
-  document.getElementById("solarBtn").onclick=openSolar;
+  { const b=document.getElementById("solarBtn"); if(b) b.onclick=openSolar; }
+  { const b=document.getElementById("sourcesBtn"); if(b) b.onclick=openSourcesIndex; }
   const sl=document.getElementById("spinSlider");
   if(sl) sl.addEventListener("input",()=>{ simSpeed=+sl.value; const l=document.getElementById("spinLbl"); if(l)l.textContent=spinLabel(simSpeed); });
   window.addEventListener("resize",()=>{ if(solarOpen) resize3D(); });
@@ -2314,6 +2485,7 @@ function skyClick(e){
     clearTimeout(window._skyTipT); window._skyTipT=setTimeout(()=>tip.style.opacity=0,3500);
   } else { tip.style.opacity=0; }
 }
+try{ initSolar(); }catch(e){ console.warn("Solar/source controls init failed",e); }
 </script>
 </body>
 </html>
