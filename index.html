@@ -1520,6 +1520,7 @@ function drawFlowLegend(key){
   if(flowFocusIso){ b+=`<div class="lg-row" style="margin-top:7px;color:var(--accent);font-size:11px">Isolated: <b>${flowFocusIso}</b>'s connections — <span id="lgClearFocus" style="text-decoration:underline;cursor:pointer">show all</span></div>`; }
   else { b+=`<div class="lg-row" style="margin-top:7px;color:var(--muted);font-size:10.5px">Click a country to isolate just its connections.</div>`; }
   if(F.note) b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;font-style:italic;margin-top:6px;line-height:1.4">${F.note}</div>`;
+  if(F.sources&&F.sources.length){ b+=`<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${F.sources.length>1?"Sources":"Source"}</div><div class="src">`; F.sources.forEach(s=>{ b+=`<a href="${s.url}" target="_blank" rel="noopener">↗ ${s.label}</a>`; }); b+=`</div>`; }
   el.innerHTML=`<h3>${F.label}<span class="caret">▾</span></h3><div class="lg-body">${b}</div>`;
   { const _cf=el.querySelector("#lgClearFocus"); if(_cf) _cf.onclick=ev=>{ ev.stopPropagation(); clearFlowFocus(); }; }
   el.classList.toggle("collapsed",legendCollapsed);
