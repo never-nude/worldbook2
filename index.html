@@ -4,14 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Worldbook — A Layered World Map</title>
-<meta name="description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration, plus a real-time solar system." />
+<meta name="description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://worldbook.earth/" />
 <meta property="og:title" content="Worldbook — A Layered World Map" />
-<meta property="og:description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration, plus a real-time solar system." />
+<meta property="og:description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Worldbook — A Layered World Map" />
-<meta name="twitter:description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration, plus a real-time solar system." />
+<meta name="twitter:description" content="Worldbook is an interactive 3D globe reference work: sourced data on every country across religion, politics, economy, health, debt, trade, and migration." />
 <link href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css" rel="stylesheet" />
 <style>
   :root{
@@ -103,29 +103,10 @@
   .maplibregl-ctrl-group{background:var(--panel)!important;border:1px solid var(--line)!important}
   .maplibregl-ctrl-group button+button{border-top:1px solid var(--line)!important}
 
-  /* Solar system mode */
   .top-actions{margin-left:auto;pointer-events:auto}
-  #solarBtn,#sourcesBtn{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:9px;
+  #sourcesBtn{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:9px;
     padding:7px 13px;font-size:13px;cursor:pointer}
-  #solarBtn:hover,#sourcesBtn:hover{border-color:var(--accent)}
-  #solar{position:absolute;inset:0;z-index:30;display:none;
-    background:radial-gradient(circle at 50% 46%, #0b1330 0%, #060a16 45%, #03050b 100%)}
-  #solar.open{display:block}
-  #solar canvas{width:100%;height:100%;display:block;cursor:grab}
-  #solarTitle{position:absolute;top:16px;left:20px;font-size:15px;font-weight:650;letter-spacing:.3px;
-    color:var(--ink);pointer-events:none}
-  #solarTitle small{display:block;color:var(--muted);font-size:11.5px;font-weight:400;letter-spacing:.2px;margin-top:2px}
-  .solar-ui{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:9px;align-items:center;
-    background:rgba(16,21,30,.92);border:1px solid var(--line);border-radius:13px;padding:9px 12px;backdrop-filter:blur(10px)}
-  .solar-ui .sbtn{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:9px;
-    padding:7px 12px;font-size:13px;cursor:pointer}
-  .solar-ui .sbtn:hover{border-color:var(--accent)}
-  .solar-ui input[type=date]{background:var(--chip);color:var(--ink);border:1px solid var(--line);
-    border-radius:9px;padding:6px 9px;font-size:13px;color-scheme:dark}
-  #solarDateLbl{color:var(--muted);font-size:12.5px;min-width:60px}
-  .planet-label{position:absolute;transform:translate(-50%,-170%);color:#c4cfdd;font-size:11.5px;
-    pointer-events:none;white-space:nowrap;text-shadow:0 0 4px #000,0 0 4px #000;z-index:2}
-  .planet-label.earth{color:#dce8ff;font-weight:600}
+  #sourcesBtn:hover{border-color:var(--accent)}
   #sky{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
   #moonCv{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none}
   #timebar{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:6;display:flex;gap:10px;align-items:center;
@@ -162,22 +143,16 @@
   #datepop label{font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
   #datepop input{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:5px 7px;font-size:13px;width:64px}
   #datepop #dpEra{font-size:12px;color:#c4cfdd;padding-bottom:6px}
-  /* heliocentric inset orrery — removed from the UI */
-  #orrInset{display:none!important;position:absolute;right:14px;bottom:72px;z-index:5;width:190px;background:var(--panel);
-    border:1px solid var(--line);border-radius:13px;padding:9px 11px 7px;backdrop-filter:blur(10px)}
-  #orrInset canvas{width:168px;height:168px;display:block;margin-top:2px}
-  #orrInset.collapsed canvas{display:none}
-  #orrInset.collapsed .panel-head{padding-bottom:0}
 
   @media (max-width:700px){
     #topbar{padding-top:calc(12px + env(safe-area-inset-top))}
     #layers{width:auto;max-width:60vw;top:calc(50px + env(safe-area-inset-top));left:calc(10px + env(safe-area-inset-left));padding:8px 9px;max-height:50vh}
     #layers .layer-btn{padding:6px 8px;font-size:12.5px}
     #layers .grp{margin:6px 4px 3px}
-    #legend{left:50%;right:auto;transform:translateX(-50%);width:min(340px,86vw);max-width:min(340px,86vw);max-height:36vh;bottom:calc(156px + env(safe-area-inset-bottom));padding:9px 11px}
-    /* declutter: drop the zoom +/- (pinch handles it) and the orrery inset on phones */
+    #legend{left:50%;right:auto;transform:translateX(-50%);width:min(340px,86vw);max-width:min(340px,86vw);max-height:36vh;bottom:calc(80px + env(safe-area-inset-bottom));padding:9px 11px}
+    #sourcesBtn{position:fixed!important;top:auto!important;left:auto!important;margin-left:0!important;bottom:calc(14px + env(safe-area-inset-bottom));right:calc(10px + env(safe-area-inset-right));padding:5px 10px;font-size:11px;z-index:6}
+    /* declutter: drop the zoom +/- (pinch handles it) */
     .maplibregl-ctrl-group{display:none!important}
-    #orrInset{display:none}
     /* Two-detent country bottom sheet — map stays live & interactive above it */
     #panel{top:auto;bottom:0;left:0;right:0;width:100%;max-width:100%;height:88vh;max-height:88vh;
       border-left:none;border-top:1px solid var(--line);border-radius:18px 18px 0 0;
@@ -262,10 +237,6 @@
   <label>Day<input type="number" id="dpDay" min="1" max="31" step="1" value="23"></label>
   <button id="dpApply" class="tbtn">Go</button>
 </div>
-<div id="orrInset">
-  <div class="panel-head" id="orrHead">Solar system · heliocentric<span class="caret">▾</span></div>
-  <canvas id="orrCv"></canvas>
-</div>
 <div class="loading" id="loading">Building your world…</div>
 
 <div id="guide"></div>
@@ -274,22 +245,6 @@
   <button id="guideBtn" title="Guide and index - what is this?">?</button>
   <div class="top-actions">
     <button id="sourcesBtn">Sources</button>
-    <button id="solarBtn">Solar system</button>
-  </div>
-</div>
-
-<div id="solar">
-  <canvas id="orrery"></canvas>
-  <div id="solarTitle">The Solar System<small id="solarSub"></small></div>
-  <div class="solar-ui">
-    <button class="sbtn" id="solarBack">⊕ Enter Worldbook</button>
-    <button class="sbtn" id="playBtn">⏸ Pause</button>
-    <button class="sbtn" id="todayBtn">Now</button>
-    <input type="date" id="solarDate">
-    <span id="solarDateLbl"></span>
-    <label style="font-size:12px;color:var(--muted);margin-left:6px">Speed</label>
-    <input type="range" id="spinSlider" min="0.1" max="120" step="0.1" value="1" style="width:120px;accent-color:#6ea8fe">
-    <span id="spinLbl" style="font-size:12px;color:var(--muted);min-width:80px">1.0 days / min</span>
   </div>
 </div>
 
@@ -496,7 +451,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
   map.addSource("country-labels",{type:"geojson",data:COUNTRY_LABELS});
   map.addLayer({id:"country-labels",type:"symbol",source:"country-labels",
-    layout:{"text-field":["get","name"],"text-font":["Open Sans Regular"],
+    layout:{"text-field":["get","name"],"text-font":["Noto Sans Regular"],
       "text-size":["get","size"],"text-max-width":7,"text-padding":2,
       "symbol-placement":"point","text-allow-overlap":false,"visibility":"none"},
     paint:{"text-color":"#3a3226","text-halo-color":"rgba(255,255,255,0.55)","text-halo-width":1.1}});
@@ -541,19 +496,16 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     updateSunShade();
     addFlowLayers();
     initSky();
-    sizeOrr(); drawOrr();
-    { const oh=document.getElementById("orrHead"); if(oh) oh.onclick=()=>document.getElementById("orrInset").classList.toggle("collapsed");
-      if(window.innerWidth<=700) document.getElementById("orrInset").classList.add("collapsed"); }
-    window.addEventListener("resize",()=>{ sizeOrr(); drawOrr(); });
   }catch(e2){ console.error("Atlas deferred init:",e2); } });
   };
   map.once("idle", _reveal); setTimeout(_reveal, 4500);
   }catch(_e){ console.error("Atlas init error:",_e); document.getElementById("loading").style.display="none"; }
 }
 if(map.isStyleLoaded()) _atlasBoot(); else map.on("load", _atlasBoot);
-var _wbGeo=null, _wbGeoMapReady=false;
+var _wbGeo=null, _wbGeoMapReady=false, _wbGeoApplied=false;
 function _wbApplyGeo(){
-  if(!_wbGeo || !_wbGeoMapReady) return;
+  if(!_wbGeo || !_wbGeoMapReady || _wbGeoApplied) return;
+  _wbGeoApplied=true;
   try{
     var el=document.createElement("div");
     el.className="wb-geo-marker";
@@ -693,22 +645,6 @@ function wireTimeBar(){
   };
 }
 /* heliocentric inset orrery — true Sun-centred positions for the current sim time */
-function sizeOrr(){ const cv=document.getElementById("orrCv"); if(!cv)return; const dpr=Math.min(window.devicePixelRatio||1,2);
-  cv.width=168*dpr; cv.height=168*dpr; const x=cv.getContext("2d"); if(x) x.setTransform(dpr,0,0,dpr,0,0); }
-function drawOrr(){
-  const cv=document.getElementById("orrCv"); if(!cv)return; const x=cv.getContext("2d"); if(!x)return;
-  const W=168,cx=W/2,cy=W/2; x.clearRect(0,0,W,W);
-  const maxR=W/2-8, scale=r=>maxR*Math.pow(r,0.5)/Math.pow(30.3,0.5), T=julianCenturies(solarDate);
-  x.fillStyle="#ffd24d"; x.beginPath(); x.arc(cx,cy,3.2,0,6.2832); x.fill();
-  PLANETS.forEach(p=>{ const el=elemAt(p,T);
-    x.strokeStyle="rgba(174,190,224,0.5)"; x.lineWidth=1.1; x.beginPath();
-    for(let a=0;a<=360;a+=8){ const q=orbXY(el,a*DEG); const sx=cx+scale(q.r)*q.x/q.r, sy=cy-scale(q.r)*q.y/q.r; a===0?x.moveTo(sx,sy):x.lineTo(sx,sy); }
-    x.closePath(); x.stroke();
-    const q=planetXY(p,T), px=cx+scale(q.r)*q.x/q.r, py=cy-scale(q.r)*q.y/q.r, isE=p.name==="Earth";
-    if(isE){ x.strokeStyle="#9cc3ff"; x.lineWidth=1.2; x.beginPath(); x.arc(px,py,4,0,6.2832); x.stroke(); }
-    x.fillStyle=isE?"#6ea8fe":p.color; x.beginPath(); x.arc(px,py,isE?2.4:1.8,0,6.2832); x.fill();
-  });
-}
 function startSpin(){
   // ── ONE master clock ───────────────────────────────────────────────────────
   // While playing, simulated time advances at simSpeed (sim-days per real minute) and
@@ -717,7 +653,6 @@ function startSpin(){
   // Pause freezes the instant. Dragging / zooming only move your viewpoint — they never
   // change time, and the lit & dark sides stay correct for that instant from any angle.
   let last=0, dragging=false, lastShade=0;
-  const orrOn=(()=>{const e=document.getElementById("orrInset");return e&&getComputedStyle(e).display!=="none";})();
   map.on("dragstart",()=>dragging=true); map.on("dragend",()=>dragging=false);
   function frame(t){
     try{
@@ -735,7 +670,6 @@ function startSpin(){
       // even at 5 days/min (instead of the old 1 Hz step).
       if(t-lastShade>160){ updateSunShade(); lastShade=t; }
     }
-    if(orrOn) drawOrr();
     if(flowActive()){                                      // dots ride the master loop, perfectly in sync with the globe
       if(!FLOWGEO || FLOWGEO.key!==flowKey || FLOWGEO.focus!==flowFocusIso) buildFlowGeo(flowKey);
       const ds=map.getSource("flow-dots"); if(ds) ds.setData(flowDotsFC(((t-flowT0)/9000)%1));
@@ -2042,6 +1976,7 @@ function setLayer(key){
     map.setPaintProperty("sub-fills","fill-color",["coalesce",["get","color_"+key],noDataFor(key)]);
   }
   updateNoDataHatch(key);
+  if(map.getLayer("country-labels")) map.setLayoutProperty("country-labels","visibility", (key==="countries"&&!subOn)?"visible":"none");
   drawLegend(key);
 }
 
@@ -2064,6 +1999,8 @@ function _legendSrc(key){
 
 function drawLegend(key){
   const c=layerCfg(key), el=document.getElementById("legend");
+  if(c.type==="reference"){ el.style.display="none"; return; }
+  el.style.display="";
   let b="";
   if(c.type==="raster"){
     const note = key==="topo" ? "Shaded physical relief — mountains, basins, seafloor." : "Real-world satellite imagery — zoom in for cities &amp; terrain.";
@@ -2483,135 +2420,9 @@ function orbXY(el,E){
 function planetXY(p,T){ const el=elemAt(p,T); let M=((el.L-el.w)%360); if(M>180)M-=360; if(M<-180)M+=360; return orbXY(el,solveKepler(M*DEG,el.e)); }
 
 let solarDate=new Date(), solarRAF=null, TH=null, paused=false, simEpoch=null, simDays=0, simSpeed=1, simLast=0;
-function toISO(d){ return d.toISOString().slice(0,10); }
-function spinLabel(s){ return s.toFixed(1)+" days / min"; }
 function initSolar(){
-  const di=document.getElementById("solarDate"); di.value=toISO(solarDate);
-  di.addEventListener("change",()=>{ const d=new Date(di.value+"T12:00:00Z"); if(!isNaN(d.getTime())){ simEpoch=d.getTime(); simDays=0; simLast=0; solarDate=d; updatePlanets(); } });
-  document.getElementById("playBtn").onclick=togglePlay;
-  document.getElementById("todayBtn").onclick=()=>{ simEpoch=Date.now(); simDays=0; simLast=0; solarDate=new Date(); di.value=toISO(solarDate); updatePlanets(); };
-  document.getElementById("solarBack").onclick=closeSolar;
-  { const b=document.getElementById("solarBtn"); if(b) b.onclick=openSolar; }
   { const b=document.getElementById("sourcesBtn"); if(b) b.onclick=openSourcesIndex; }
-  const sl=document.getElementById("spinSlider");
-  if(sl) sl.addEventListener("input",()=>{ simSpeed=+sl.value; const l=document.getElementById("spinLbl"); if(l)l.textContent=spinLabel(simSpeed); });
-  window.addEventListener("resize",()=>{ if(solarOpen) resize3D(); });
 }
-const AUk=26, SUNU=9;
-function auScale(r){ return AUk*Math.pow(r,0.62); }       // compressed radial distance (scene units)
-const MOONS=[
-  {host:2,name:"Moon",     r:5.5, period:27.32,size:0.8, color:0xcfcfcf},
-  {host:4,name:"Io",       r:11,  period:1.77, size:0.7, color:0xdacb7a},
-  {host:4,name:"Europa",   r:13.5,period:3.55, size:0.65,color:0xd2d4d0},
-  {host:4,name:"Ganymede", r:16.5,period:7.15, size:0.85,color:0xb9a98f},
-  {host:4,name:"Callisto", r:20,  period:16.69,size:0.8, color:0x8d8377},
-  {host:5,name:"Titan",    r:13,  period:15.95,size:0.8, color:0xc9a35a}
-];
-function build3D(){
-  if(TH) return true;
-  if(typeof THREE==="undefined") return false;
-  const cv=document.getElementById("orrery");
-  const renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true});
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
-  renderer.setClearColor(0x04060c,1);
-  const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(55,1,0.1,40000);
-  scene.add(new THREE.AmbientLight(0x223046,0.32));
-  scene.add(new THREE.PointLight(0xfff2d0,2.9,0,0));      // the Sun lights everything
-  scene.add(new THREE.Mesh(new THREE.SphereGeometry(SUNU,40,40),new THREE.MeshBasicMaterial({color:0xffd24d})));
-  scene.add(new THREE.Mesh(new THREE.SphereGeometry(SUNU*1.7,32,32),new THREE.MeshBasicMaterial({color:0xffb12e,transparent:true,opacity:0.16})));
-  // native 3D starfield — no banding
-  const N=4200, arr=new Float32Array(N*3);
-  for(let i=0;i<N;i++){ const rr=8000+Math.random()*8000, th=Math.random()*6.2832, ph=Math.acos(2*Math.random()-1);
-    arr[i*3]=rr*Math.sin(ph)*Math.cos(th); arr[i*3+1]=rr*Math.cos(ph); arr[i*3+2]=rr*Math.sin(ph)*Math.sin(th); }
-  const stg=new THREE.BufferGeometry(); stg.setAttribute("position",new THREE.BufferAttribute(arr,3));
-  scene.add(new THREE.Points(stg,new THREE.PointsMaterial({color:0xffffff,size:2,sizeAttenuation:false})));
-  // planets (real spheres), orbits, labels
-  const meshes=[], labels=[], T0=julianCenturies(solarDate); let earth=null;
-  PLANETS.forEach((p,i)=>{
-    const isEarth=p.name==="Earth";
-    const rad=isEarth?3.4:Math.max(2.4,p.rad*0.7);
-    const mesh=new THREE.Mesh(new THREE.SphereGeometry(rad,isEarth?48:32,isEarth?48:32),
-      new THREE.MeshStandardMaterial({color:isEarth?0x2b6fb0:p.color,roughness:1,metalness:0}));
-    if(isEarth) mesh.rotation.z=23.4*DEG;
-    scene.add(mesh); meshes.push(mesh); if(isEarth)earth=mesh;
-    const pts=[], el=elemAt(p,T0);
-    for(let a=0;a<=360;a+=2){ const q=orbXY(el,a*DEG); pts.push(new THREE.Vector3(auScale(q.r)*q.x/q.r,0,-auScale(q.r)*q.y/q.r)); }
-    scene.add(new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(pts),
-      new THREE.LineBasicMaterial({color:0x6f86ad,transparent:true,opacity:0.28})));
-    if(p.name==="Saturn"){ const ring=new THREE.Mesh(new THREE.RingGeometry(rad*1.4,rad*2.3,56),
-        new THREE.MeshBasicMaterial({color:0xcdb98a,side:THREE.DoubleSide,transparent:true,opacity:0.55}));
-      ring.rotation.x=Math.PI/2.3; mesh.add(ring); }
-    const d=document.createElement("div"); d.className="planet-label"+(isEarth?" earth":"");
-    d.textContent=p.name+(isEarth?" ◄ click to enter":""); document.getElementById("solar").appendChild(d); labels.push(d);
-  });
-  // Earth texture (opaque oceans); falls back to the blue sphere if it can't load
-  try{ const tl=new THREE.TextureLoader(); if(tl.setCrossOrigin)tl.setCrossOrigin("anonymous");
-    tl.load("https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/textures/planets/earth_atmos_2048.jpg",
-      t=>{ if(earth){ earth.material.map=t; earth.material.color.set(0xffffff); earth.material.needsUpdate=true; } },undefined,()=>{}); }catch(_){}
-  // moons + their orbit rings, parented to host groups that ride along with each planet
-  const moonHosts={}, moons=[];
-  MOONS.forEach(mn=>{ if(!moonHosts[mn.host]){ const g=new THREE.Group(); scene.add(g); moonHosts[mn.host]=g; }
-    const host=moonHosts[mn.host];
-    const m=new THREE.Mesh(new THREE.SphereGeometry(mn.size,18,18),new THREE.MeshStandardMaterial({color:mn.color,roughness:1}));
-    host.add(m);
-    const rp=[]; for(let a=0;a<=360;a+=6) rp.push(new THREE.Vector3(Math.cos(a*DEG)*mn.r,0,Math.sin(a*DEG)*mn.r));
-    host.add(new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(rp),new THREE.LineBasicMaterial({color:0x5a6b86,transparent:true,opacity:0.3})));
-    moons.push({mesh:m,host:mn.host,r:mn.r,period:mn.period}); });
-  const ctrl={theta:0.85,phi:1.0,radius:auScale(30)*1.4,target:new THREE.Vector3(0,0,0)};
-  TH={renderer,scene,camera,meshes,labels,earth,moonHosts,moons,ctrl};
-  attachControls(cv); updatePlanets(); resize3D();
-  return true;
-}
-function camPos(){ const c=TH.ctrl,cam=TH.camera;
-  cam.position.set(c.target.x+c.radius*Math.sin(c.phi)*Math.cos(c.theta),
-                   c.target.y+c.radius*Math.cos(c.phi),
-                   c.target.z+c.radius*Math.sin(c.phi)*Math.sin(c.theta));
-  cam.lookAt(c.target); }
-function attachControls(cv){
-  let drag=false,lx=0,ly=0;
-  cv.addEventListener("pointerdown",e=>{drag=true;lx=e.clientX;ly=e.clientY;try{cv.setPointerCapture(e.pointerId);}catch(_){}});
-  cv.addEventListener("pointerup",()=>{drag=false;});
-  cv.addEventListener("pointermove",e=>{ if(!drag)return; const dx=e.clientX-lx,dy=e.clientY-ly;lx=e.clientX;ly=e.clientY;
-    TH.ctrl.theta-=dx*0.005; TH.ctrl.phi=Math.max(0.18,Math.min(2.96,TH.ctrl.phi-dy*0.005)); });
-  cv.addEventListener("wheel",e=>{ e.preventDefault();
-    TH.ctrl.radius=Math.max(auScale(1)*0.5,Math.min(auScale(30)*4.5,TH.ctrl.radius*(1+(e.deltaY>0?0.09:-0.09)))); },{passive:false});
-  cv.addEventListener("click",e=>{ const r=cv.getBoundingClientRect();
-    const m=new THREE.Vector2(((e.clientX-r.left)/r.width)*2-1,-((e.clientY-r.top)/r.height)*2+1);
-    const rc=new THREE.Raycaster(); rc.setFromCamera(m,TH.camera);
-    if(rc.intersectObject(TH.meshes[2]).length) closeSolar(); });
-}
-function updatePlanets(){
-  if(!TH) return; const T=julianCenturies(solarDate);
-  PLANETS.forEach((p,i)=>{ const q=planetXY(p,T); const x=auScale(q.r)*q.x/q.r, z=-auScale(q.r)*q.y/q.r;
-    TH.meshes[i].position.set(x,0,z); if(TH.moonHosts[i]) TH.moonHosts[i].position.set(x,0,z); });
-  document.getElementById("solarDateLbl").textContent=solarDate.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"});
-  document.getElementById("solarSub").textContent="Real-time solar system · "+solarDate.toLocaleString(undefined,{month:"short",day:"numeric",year:"numeric",hour:"2-digit",minute:"2-digit"});
-}
-function updateMoons(){ if(!TH)return; TH.moons.forEach(mn=>{ const a=(simDays/mn.period)*2*Math.PI; mn.mesh.position.set(Math.cos(a)*mn.r,0,Math.sin(a)*mn.r); }); }
-function resize3D(){ if(!TH)return; const cv=TH.renderer.domElement,w=cv.clientWidth,h=cv.clientHeight;
-  if(!w||!h)return; TH.renderer.setSize(w,h,false); TH.camera.aspect=w/h; TH.camera.updateProjectionMatrix(); }
-function renderSolar(){
-  if(!solarOpen||!TH) return;
-  const now=performance.now(); if(!simLast)simLast=now; const dt=(now-simLast)/1000; simLast=now;
-  if(!paused){ simDays += dt*(simSpeed/60); solarDate=new Date(simEpoch+simDays*86400000); updatePlanets(); }
-  if(TH.earth) TH.earth.rotation.y = simDays*2*Math.PI;     // 1 rotation per simulated day
-  updateMoons();
-  TH.ctrl.theta+=0.0004; camPos();
-  const cv=TH.renderer.domElement,w=cv.clientWidth,h=cv.clientHeight;
-  TH.meshes.forEach((mesh,i)=>{ const v=mesh.position.clone().project(TH.camera); const lab=TH.labels[i];
-    if(v.z>1){lab.style.display="none";return;} lab.style.display="block";
-    lab.style.left=((v.x*0.5+0.5)*w)+"px"; lab.style.top=((-v.y*0.5+0.5)*h)+"px"; });
-  TH.renderer.render(TH.scene,TH.camera);
-  solarRAF=requestAnimationFrame(renderSolar);
-}
-function openSolar(){ solarOpen=true; document.getElementById("solar").classList.add("open");
-  if(!build3D()){ closeSolar(); return; }
-  if(!simEpoch){ simEpoch=Date.now(); simDays=0; solarDate=new Date(); }
-  simLast=0; resize3D(); renderSolar(); }
-function closeSolar(){ solarOpen=false;
-  if(solarRAF){cancelAnimationFrame(solarRAF);solarRAF=null;} document.getElementById("solar").classList.remove("open"); lastInteract=Date.now(); }
-function togglePlay(){ paused=!paused; document.getElementById("playBtn").textContent=paused?"▶ Resume":"⏸ Pause"; if(!paused)simLast=0; }
 
 /* ====================================================================
    Live solar system AROUND the globe — one screen.
