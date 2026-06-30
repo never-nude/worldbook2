@@ -456,7 +456,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
       "text-rotate":["get","rot"],"text-rotation-alignment":"map","text-pitch-alignment":"map",
       "symbol-placement":"point","text-allow-overlap":false,"visibility":"none"},
     paint:{"text-color":"#3a3226","text-halo-color":"rgba(255,255,255,0.55)","text-halo-width":1.1}});
-const USE_3D_LABELS=true;
+window.USE_3D_LABELS=false;
 function _cl3dCorners(lng,lat,rotDeg,halfW,halfH){
   const upBrg=(-rotDeg)*DEG, diag=Math.hypot(halfW,halfH), off=Math.atan2(halfW,halfH);
   const c1=destPoint(lat,lng,upBrg+off,diag*DEG);
@@ -487,7 +487,7 @@ function _cl3dTexture(gl,name,sizeUnits){
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
   return {tex:tex,w:w,h:h};
 }
-const countryLabels3D={
+window.countryLabels3D={
   id:"country-labels-3d",type:"custom",renderingMode:"3d",
   shaderMap:new Map(), visible:false, items:null,
   getShader(gl,shaderDescription){
