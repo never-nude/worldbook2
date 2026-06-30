@@ -1365,10 +1365,9 @@ let MIG_YEAR=MIG_Y0, MIG_PLAYING=false, MIG_SPEED=2, MIG_RAF=null, MIG_LAST=0, M
 function migDecadeOf(y){ let d=Math.floor(y/10)*10; const lo=MIG_DECADES[0], hi=MIG_DECADES[MIG_DECADES.length-1]; return d<lo?lo:(d>hi?hi:d); }
 function _migAmt(p){ return p>=1e6?(p/1e6).toFixed(1)+"M people":Math.round(p/1e3)+"k people"; }
 function migEdgesFor(dec){ const kf=MIG_BY[dec]; return (kf&&kf.corridors?kf.corridors:[]).map(c=>({from:c.from,to:c.to,w:c.people,c:MIG_KIND_COL[c.kind]||"#6ea8fe",nm:c.label,amt:_migAmt(c.people)})); }
-function migApplyDecade(dec){ FLOWS.migtime.edges=migEdgesFor(dec); const kf=MIG_BY[dec]||{}; FLOWS.migtime.sources=kf.sources||[]; if(typeof flowKey!=="undefined"&&flowKey==="migtime") buildFlowGeo("migtime"); }
-function migSrcHtml(){ const ss=FLOWS.migtime.sources||[]; if(!ss.length) return ""; return `<div class="lg-row" style="margin-top:9px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.6px">${ss.length>1?"Sources":"Source"}</div><div class="src">`+ss.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">\u2197 ${s.label}</a>`).join("")+`</div>`; }
+function migApplyDecade(dec){ FLOWS.migtime.edges=migEdgesFor(dec); const kf=MIG_BY[dec]||{}; FLOWS.migtime.sources=uniqueSources(kf.sources||[]); if(typeof flowKey!=="undefined"&&flowKey==="migtime") buildFlowGeo("migtime"); }
 function migRefreshYear(){ const e=document.getElementById("migYearLbl"); if(e) e.textContent=MIG_YEAR; const s=document.getElementById("migSlider"); if(s&&(+s.value)!==MIG_YEAR) s.value=MIG_YEAR; }
-function migRefreshEra(){ const kf=MIG_BY[MIG_DECCUR]||{}; const e=document.getElementById("migEraLbl"); if(e) e.textContent=kf.era||""; const sc=document.getElementById("migSrc"); if(sc) sc.innerHTML=migSrcHtml(); }
+function migRefreshEra(){ const kf=MIG_BY[MIG_DECCUR]||{}; const e=document.getElementById("migEraLbl"); if(e) e.textContent=kf.era||""; const sc=document.getElementById("migSrc"); if(sc) sc.innerHTML=renderSourceBlock(FLOWS.migtime.sources); }
 function migSetYear(y){ y=Math.max(MIG_Y0,Math.min(MIG_Y1,Math.round(y))); MIG_YEAR=y; const dec=migDecadeOf(y); if(dec!==MIG_DECCUR){ MIG_DECCUR=dec; migApplyDecade(dec); migRefreshEra(); } migRefreshYear(); }
 function migStop(){ MIG_PLAYING=false; if(MIG_RAF){ cancelAnimationFrame(MIG_RAF); MIG_RAF=null; } const b=document.getElementById("migPlay"); if(b) b.textContent="\u25b6"; }
 function migPlayPause(){ if(MIG_PLAYING){ migStop(); return; } if(MIG_YEAR>=MIG_Y1) migSetYear(MIG_Y0); MIG_PLAYING=true; const b=document.getElementById("migPlay"); if(b) b.textContent="\u23f8"; MIG_LAST=performance.now(); if(!MIG_RAF) MIG_RAF=requestAnimationFrame(migTick); }
@@ -1391,7 +1390,7 @@ function drawMigLegend(key,F,el){
   MIG_KIND_LBL.forEach(p=>{ b+=`<div class="lg-row"><span style="display:inline-block;width:22px;height:0;border-top:3px solid ${MIG_KIND_COL[p[0]]};border-radius:3px;margin-right:8px"></span>${p[1]}</div>`; });
   b+=`<div class="lg-row" style="color:var(--muted);font-size:11px;margin-top:6px">Thicker arc = more people that decade. ${F.unit}.</div>`;
   b+=`<div class="lg-row" style="color:var(--muted);font-size:10.5px;margin-top:4px">Click a country to isolate just its routes.</div>`;
-  b+=`<div id="migSrc">${migSrcHtml()}</div>`;
+  b+=`<div id="migSrc">${renderSourceBlock(F.sources)}</div>`;
   el.innerHTML=`<h3>${F.label}<span class="caret">\u25be</span></h3><div class="lg-body">${b}</div>`;
   el.classList.toggle("collapsed",legendCollapsed);
   el.querySelector("h3").onclick=()=>{ legendCollapsed=!legendCollapsed; el.classList.toggle("collapsed",legendCollapsed); };
@@ -1406,6 +1405,8 @@ if(typeof META!=="undefined"&&META.layers&&!META.layers.some(l=>l.key==="flow_mi
   const _e={group:"Connections",key:"flow_migtime",label:"Migration over time",type:"flow",flowKey:"migtime"};
   if(_mi>=0) META.layers.splice(_mi+1,0,_e); else META.layers.push(_e);
 }
+EXTRA_SOURCES=uniqueSources([...EXTRA_SOURCES,...MIG_KEYFRAMES.flatMap(k=>k.sources||[])]);
+hydrateSources();
 /* ===== end migration over time ============================================== */
 
 function isIllicit(key){ return key==="drugs"||key==="arms"; }
