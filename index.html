@@ -2448,6 +2448,7 @@ function wireInteractions(){
 function hoverHTML(p,isSub){
   const c=layerCfg(activeLayer);
   if(c.type==="raster") return `<div class="pop-name">${p.name}</div>`;
+  if(c.type==="reference") return `<div class="pop-name">${p.name}</div>`;
   if(c.type==="flow"){
     const F=FLOWS[c.flowKey]||{};
     if(F.baseColorProp){ const v=p[F.baseColorProp.replace("color_","")];
