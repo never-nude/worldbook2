@@ -109,6 +109,7 @@
   #sourcesBtn:hover{border-color:var(--accent)}
   #sky{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none}
   #moonCv{position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none}
+  #glossHi{position:absolute;top:0;left:0;width:100%;height:100%;z-index:3;pointer-events:none}
   #timebar{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:6;display:flex;gap:10px;align-items:center;
     background:rgba(16,21,30,.92);border:1px solid var(--line);border-radius:13px;padding:8px 13px;backdrop-filter:blur(10px)}
   #timebar .tbtn{background:var(--chip);color:var(--ink);border:1px solid var(--line);border-radius:9px;padding:6px 11px;font-size:13px;cursor:pointer}
@@ -220,6 +221,7 @@
 <div id="map"></div>
 <canvas id="sky"></canvas>
 <canvas id="moonCv"></canvas>
+<div id="glossHi"></div>
 <div id="skyTip"></div>
 <div id="timebar">
   <button id="tbPlay" class="tbtn" title="Play / pause time">⏸</button>
@@ -2640,6 +2642,17 @@ function updateBodies(){ if(!SKY)return; const T=julianCenturies(solarDate);
     const r=Math.hypot(gx,gy)||1e-6; b.distAU=r;
     b.mesh.position.set((gx/r)*60,0,-(gy/r)*60); });
 }
+// classroom-globe gloss: a soft off-center highlight (overhead-light sheen on the
+// laminate) plus a faint dark vignette right at the sphere's true limb. Positioned
+// from the globe's real projected center/radius, so it tracks zoom and pan exactly.
+function _wbUpdateGloss(cx,cy,r){
+  const el=document.getElementById("glossHi"); if(!el) return;
+  if(!r || !isFinite(r)){ el.style.background="none"; return; }
+  const hx=cx-r*0.32, hy=cy-r*0.38;
+  el.style.background=
+    "radial-gradient(circle at "+hx+"px "+hy+"px, rgba(255,255,255,.55) 0%, rgba(255,255,255,.26) 16%, rgba(255,255,255,.08) 38%, rgba(255,255,255,0) 65%),"+
+    "radial-gradient(circle at "+cx+"px "+cy+"px, rgba(5,10,20,0) 76%, rgba(5,10,20,.10) 90%, rgba(5,10,20,.24) 100%)";
+}
 function renderSky(){
   requestAnimationFrame(renderSky);
   if(!SKY) return;
@@ -2659,7 +2672,7 @@ function renderSky(){
       for(let th=20; th<=90; th+=10){
         const p=map.project(destPoint(C.lat,C.lng,br,th*DEG));
         const r=Math.hypot(p.x-c0.x,p.y-c0.y); if(isFinite(r)&&r<6000) mx=Math.max(mx,r); } }
-    if(mx>2) gpx=mx; }catch(e){}
+    if(mx>2) gpx=mx; _wbUpdateGloss(c0.x,c0.y,gpx); }catch(e){}
   SKY.lunaA=(simDays/27.32)*2*Math.PI; SKY.luna.position.set(Math.cos(SKY.lunaA),Math.sin(SKY.lunaA),0);
   SKY.bodies.forEach(b=>{ if(!b.sun) b.mesh.rotation.y=simDays*0.4; });   // gentle axial spin
   const rx=(C.lat*DEG)+0.4101, ry=-(C.lng*DEG)-brg;
