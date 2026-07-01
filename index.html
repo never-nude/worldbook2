@@ -460,7 +460,7 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     paint:{"fill-color":colorExpr("religion"),"fill-opacity":1,
       "fill-color-transition":{duration:500,delay:0},"fill-opacity-transition":{duration:400}}});
   map.addLayer({id:"borders",type:"line",source:"world",
-    paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
+    paint:{"line-color":"#05080f","line-width":1.3,"line-opacity-transition":{duration:400}}});
   map.addLayer({id:"country-glow-soft",type:"line",source:"world",
     layout:{visibility:"none"},
     paint:{"line-color":["get","color_countries_dark"],"line-width":["interpolate",["linear"],["zoom"],0,3.5,2,11.2,5,25],"line-blur":["interpolate",["linear"],["zoom"],0,2.1,2,7.1,5,14.2],"line-opacity":0.6}}, "borders");
@@ -764,7 +764,7 @@ map.addLayer(countryLabels3D);
     requestAnimationFrame(()=>{ try{
     map.addSource("sunshade",{type:"geojson",data:sunGrid()});
     map.addLayer({id:"sunshade",type:"fill",source:"sunshade",
-      paint:{"fill-color":"#02040a","fill-opacity":["coalesce",["feature-state","op"],0],"fill-opacity-transition":{duration:1500}}}, "hover");
+      paint:{"fill-color":"#02040a","fill-opacity":["coalesce",["feature-state","op"],0],"fill-opacity-transition":{duration:1500}}}, "borders");   // was "hover" - inserting before "borders" instead puts borders ON TOP of the terminator, so the day/night shading no longer washes out border-line contrast
     updateSunShade();
     }catch(e2){ console.error("Atlas deferred init (sunshade):",e2); }
     try{ addFlowLayers(); }catch(e2){ console.error("Atlas deferred init (flow layers):",e2); }
