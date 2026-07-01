@@ -53,7 +53,7 @@
 
   /* Legend */
   #legend{position:absolute;bottom:18px;left:16px;z-index:5;background:var(--panel);border:1px solid var(--line);
-    border-radius:14px;padding:12px 14px;backdrop-filter:blur(10px);max-width:240px;max-height:calc(38vh - 36px);overflow-y:auto}
+    border-radius:14px;padding:12px 14px;backdrop-filter:blur(10px);max-width:240px;max-height:min(calc(38vh - 36px), calc(100vh - 190px));overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
   #legend h3{margin:0 0 9px;font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600}
   .lg-row{display:flex;align-items:center;gap:8px;padding:2px 0;font-size:12.5px}
   .sw{width:14px;height:14px;border-radius:3px;flex:none;border:1px solid rgba(255,255,255,.15)}
@@ -460,10 +460,10 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
   map.addLayer({id:"country-glow-soft",type:"line",source:"world",
     layout:{visibility:"none"},
-    paint:{"line-color":["get","color_countries"],"line-width":9,"line-blur":7,"line-opacity":0.42}}, "borders");
+    paint:{"line-color":["get","color_countries"],"line-width":18,"line-blur":10,"line-opacity":0.5}}, "borders");
   map.addLayer({id:"country-glow-tight",type:"line",source:"world",
     layout:{visibility:"none"},
-    paint:{"line-color":["get","color_countries"],"line-width":3.2,"line-blur":1.6,"line-opacity":0.62}}, "borders");
+    paint:{"line-color":["get","color_countries"],"line-width":7,"line-blur":2.2,"line-opacity":0.75}}, "borders");
   map.addSource("country-labels",{type:"geojson",data:COUNTRY_LABELS});
   map.addLayer({id:"country-labels",type:"symbol",source:"country-labels",
     layout:{"text-field":["get","name"],"text-font":["Noto Sans Regular"],
@@ -1684,6 +1684,7 @@ const ROLE_COL={source:"#2f9e6e", transit:"#d9a441", consumer:"#c0556b", none:"#
 
 function setFlow(key){
   flowKey = key; flowIso=null; flowFocusIso=null;
+  const _flEl=document.getElementById("legend"); if(_flEl) _flEl.style.display="";   // flow layers never go through drawLegend(), which is the only other place that clears a reference layer's display:none
   const F=FLOWS[key];
   ["flow-lines","flow-dots"].forEach(id=>map.setLayoutProperty(id,"visibility","visible"));
   map.setPaintProperty("flow-lines","line-color",["coalesce",["get","c"],F.color]);
