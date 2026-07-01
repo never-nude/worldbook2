@@ -455,7 +455,6 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
     paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
   map.addSource("country-labels",{type:"geojson",data:COUNTRY_LABELS});
   map.addLayer({id:"country-labels",type:"symbol",source:"country-labels",
-    filter:[">=",["zoom"],["get","minZoom"]],
     layout:{"text-field":["get","name"],"text-font":["Noto Sans Regular"],
       "text-size":["get","size"],"text-max-width":7,"text-padding":2,
       "text-rotate":["get","rot"],"text-rotation-alignment":"map","text-pitch-alignment":"map",
