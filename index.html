@@ -758,9 +758,14 @@ map.addLayer(countryLabels3D);
   setLayer("countries");   // default opening layer = Countries reference map (static choropleth — fast, reliable first paint)
   wireTimeBar(); try{ initGuide(); }catch(e){} try{ initHint(); }catch(e){} updateTimeLabel();
   let _revealed=false;
+/* WB_SMOOTH_REVEAL_V1 */
   const _reveal=()=>{ if(_revealed) return; _revealed=true;
     document.getElementById("loading").style.display="none";
     startSpin();
+  };
+  let _heavyBooted=false;
+  const _bootHeavyLayers=()=>{ if(_heavyBooted) return; _heavyBooted=true;
+    { const _ld=document.getElementById("loading"); if(_ld) _ld.textContent="Finishing touches\u2026"; }
     requestAnimationFrame(()=>{ try{
     map.addSource("sunshade",{type:"geojson",data:sunGrid()});
     map.addLayer({id:"sunshade",type:"fill",source:"sunshade",
@@ -820,11 +825,14 @@ map.moveLayer("country-labels");   // fix: MapLibre resolves cross-layer symbol 
       }); }
     }catch(e2){ console.error("Atlas deferred init (visibility toggle):",e2); }
     try{ initSky(); }catch(e2){ console.error("Atlas deferred init (sky):",e2); }
+    { let _wbHeavyWD; const _armHeavyWatch=()=>{ if(_revealed) return; clearTimeout(_wbHeavyWD); _wbHeavyWD=setTimeout(_reveal, 16000); };
+      map.on("data",_armHeavyWatch); map.on("dataloading",_armHeavyWatch); _armHeavyWatch();
+      map.once("idle", _reveal); }   // phase 2: only reveal once sunshade/flow/cities/sea-collar/sky are ALSO settled - deliberately slower, never shows a half-loaded scene
   });
   };
-  { let _wbRevealWD; const _wbArmReveal=()=>{ if(_revealed) return; clearTimeout(_wbRevealWD); _wbRevealWD=setTimeout(_reveal, 8000); };
+  { let _wbRevealWD; const _wbArmReveal=()=>{ if(_heavyBooted) return; clearTimeout(_wbRevealWD); _wbRevealWD=setTimeout(_bootHeavyLayers, 8000); };
     map.on("data",_wbArmReveal); map.on("dataloading",_wbArmReveal); _wbArmReveal();
-    map.once("idle", _reveal);
+    map.once("idle", _bootHeavyLayers);
     /* WB_VISIBILITY_RESYNC_V1 */
     let _wbHiddenDuringLoad=false;
     document.addEventListener("visibilitychange", ()=>{
@@ -836,8 +844,8 @@ map.moveLayer("country-labels");   // fix: MapLibre resolves cross-layer symbol 
       try{ map.resize(); }catch(e){}
       if(!_revealed){
         const _ld=document.getElementById("loading");
-        if(_ld) _ld.textContent = _wbHiddenDuringLoad ? "Building your world\u2026 (resuming)" : "Building your world\u2026";
-        if(map.isStyleLoaded()) _reveal(); else _wbArmReveal();
+        if(_ld && !_heavyBooted) _ld.textContent = _wbHiddenDuringLoad ? "Building your world\u2026 (resuming)" : "Building your world\u2026";
+        if(map.isStyleLoaded()) _bootHeavyLayers(); else _wbArmReveal();
       }
     });
     }   // ironclad+dynamic: re-arms an 8s last-resort timer on every style/source/tile; visibility-aware (see WB_VISIBILITY_RESYNC_V1)
