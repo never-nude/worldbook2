@@ -209,7 +209,7 @@
 
 /* visitor IP-location marker */
 .wb-geo-marker{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px 3px rgba(110,168,254,.85);cursor:pointer;position:relative}
-.wb-geo-marker::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid var(--accent);opacity:.6;animation:wbGeoPulse 2.4s ease-out infinite}
+.wb-geo-marker::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid var(--accent);opacity:.6;animation:wbGeoPulse 2.4s ease-out 1 forwards}
 @keyframes wbGeoPulse{0%{transform:scale(.35);opacity:.8}100%{transform:scale(2.4);opacity:0}}
 .wb-geo-pop-h{font-weight:600;font-size:13px;color:var(--ink);margin-bottom:2px}
 .wb-geo-pop-d{font-size:12px;color:var(--ink);opacity:.85;margin-bottom:6px}
@@ -223,12 +223,12 @@
 <div id="skyTip"></div>
 <div id="timebar">
   <button id="tbPlay" class="tbtn" title="Play / pause time">⏸</button>
-  <button id="tbNow" class="tbtn" title="Jump to now">Now</button>
+  <button id="tbNow" class="tbtn" title="Reset to real-time, now">Now</button>
   <button id="tbSet" class="tbtn" title="Jump to any date (now – year 10000)">Date…</button>
   <button id="tbSun" class="tbtn" title="Face the Sun — orient the globe to where the Sun is overhead at this date/time">☀</button>
   <button id="tbHome" class="tbtn" title="Recenter / reset the view (north up)">⌖</button>
-  <input type="range" id="tbSpeed" min="0" max="1" step="0.005" value="0.705" title="Time speed — left = real-time, right = 5 days/min">
-  <span id="tbSpeedLbl">524× speed</span>
+  <input type="range" id="tbSpeed" min="0" max="1" step="0.005" value="0" title="Time speed — left = real-time, right = 5 days/min">
+  <span id="tbSpeedLbl">real-time</span>
   <span id="tbDate"></span>
 </div>
 <div id="datepop">
@@ -425,9 +425,9 @@ const map = new maplibregl.Map({
   style:{version:8, projection:{type:"globe"},
     sources:{}, glyphs:"https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
     layers:[{id:"bg",type:"background",paint:{"background-color":"rgba(7,11,20,0)"}}]},
-  center:[10,28], zoom:1.45, attributionControl:false, maxZoom:9,
-  padding:_wbDesktop()?{top:0,bottom:0,left:340,right:0}:{top:0,bottom:0,left:0,right:0}
+  center:[10,28], zoom:1.45, attributionControl:false, maxZoom:9
 });
+if(_wbDesktop()) map.setPadding({top:0,bottom:0,left:340,right:0});   // padding is NOT a Map constructor option in MapLibre (silently ignored there) - must be applied via setPadding()/jumpTo() after construction; verified live
 map.addControl(new maplibregl.NavigationControl({visualizePitch:false}),"bottom-right");
 map.addControl(new maplibregl.AttributionControl({compact:true, customAttribution:"Boundaries: Natural Earth · Data: Sources panel"}),"bottom-right");
 // Touch arbitration: one-finger drag = spin globe, two-finger pinch = zoom, tap = select.
@@ -606,7 +606,7 @@ map.addLayer(countryLabels3D);
 
   wireInteractions();
   buildLayerUI();
-  simEpoch=Date.now(); simDays=0; paused=false; simSpeed=524/1440; solarDate=new Date();   // default = 524× real time
+  simEpoch=Date.now(); simDays=0; paused=false; simSpeed=1/1440; solarDate=new Date();   // default = real time (1x); rate and date both remain fully manual after this
   setLayer("countries");   // default opening layer = Countries reference map (static choropleth — fast, reliable first paint)
   wireTimeBar(); try{ initGuide(); }catch(e){} try{ initHint(); }catch(e){} updateTimeLabel();
   let _revealed=false;
@@ -738,7 +738,9 @@ function wireTimeBar(){
     const pbn=document.getElementById("playBtn"); if(pbn) pbn.textContent=paused?"▶ Resume":"⏸ Pause";
   });
   const nb=document.getElementById("tbNow");
-  if(nb) nb.onclick=()=>{ simEpoch=Date.now(); simDays=0; simLast=0; solarDate=new Date(); updateTimeLabel(); updateSunShade(); };
+  if(nb) nb.onclick=()=>{ simEpoch=Date.now(); simDays=0; simLast=0; solarDate=new Date(); simSpeed=1/1440;
+    if(sp) sp.value=0; if(lbl) lbl.textContent="real-time";
+    updateTimeLabel(); updateSunShade(); };
   const sunB=document.getElementById("tbSun");
   if(sunB) sunB.onclick=()=>{ const ss=subsolarPoint(solarDate); map.flyTo({center:[((ss.lng+540)%360)-180, ss.lat], zoom:1.6, bearing:0, pitch:0, duration:900}); lastInteract=Date.now()+4000; };
   const homeB=document.getElementById("tbHome");
