@@ -824,7 +824,23 @@ map.moveLayer("country-labels");   // fix: MapLibre resolves cross-layer symbol 
   };
   { let _wbRevealWD; const _wbArmReveal=()=>{ if(_revealed) return; clearTimeout(_wbRevealWD); _wbRevealWD=setTimeout(_reveal, 8000); };
     map.on("data",_wbArmReveal); map.on("dataloading",_wbArmReveal); _wbArmReveal();
-    map.once("idle", _reveal); }   // ironclad+dynamic: re-arms an 8s last-resort timer on every style/source/tile
+    map.once("idle", _reveal);
+    /* WB_VISIBILITY_RESYNC_V1 */
+    let _wbHiddenDuringLoad=false;
+    document.addEventListener("visibilitychange", ()=>{
+      if(document.hidden){
+        if(!_revealed){ _wbHiddenDuringLoad=true;
+          const _ld=document.getElementById("loading"); if(_ld) _ld.textContent="Building your world\u2026 (paused \u2014 tab is in background)"; }
+        return;
+      }
+      try{ map.resize(); }catch(e){}
+      if(!_revealed){
+        const _ld=document.getElementById("loading");
+        if(_ld) _ld.textContent = _wbHiddenDuringLoad ? "Building your world\u2026 (resuming)" : "Building your world\u2026";
+        if(map.isStyleLoaded()) _reveal(); else _wbArmReveal();
+      }
+    });
+    }   // ironclad+dynamic: re-arms an 8s last-resort timer on every style/source/tile; visibility-aware (see WB_VISIBILITY_RESYNC_V1)
     // event, so it only fires after 8s of true inactivity (a real stall) -- never mid-load, no matter how much
     // data or how many layers are in flight. idle still wins in the normal case; this only changes what the
     // fallback means when idle is unusually slow. Scales with future layers automatically: no timeout to retune.
