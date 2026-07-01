@@ -426,7 +426,7 @@ const map = new maplibregl.Map({
     sources:{}, glyphs:"https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
     layers:[{id:"bg",type:"background",paint:{"background-color":"rgba(7,11,20,0)"}}]},
   center:[10,28], zoom:1.45, attributionControl:false, maxZoom:9,
-  padding:_wbDesktop()?{top:0,bottom:0,left:240,right:0}:{top:0,bottom:0,left:0,right:0}
+  padding:_wbDesktop()?{top:0,bottom:0,left:340,right:0}:{top:0,bottom:0,left:0,right:0}
 });
 map.addControl(new maplibregl.NavigationControl({visualizePitch:false}),"bottom-right");
 map.addControl(new maplibregl.AttributionControl({compact:true, customAttribution:"Boundaries: Natural Earth · Data: Sources panel"}),"bottom-right");
@@ -2199,7 +2199,7 @@ function openSourcesIndex(){
   pn.style.transform=""; pn.style.transition="";
   pn.classList.add("open"); pn.classList.remove("min");
   pn.classList.toggle("peek", window.matchMedia("(max-width:700px)").matches);
-  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:240,right:380}, duration:280});
+  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:340,right:380}, duration:280});
   document.getElementById("minP").textContent="▾";
   document.getElementById("hint").style.right="398px";
   document.getElementById("pName").textContent="Sources & Methodology";
@@ -2296,7 +2296,7 @@ function openCountry(p){
   { const _pn=document.getElementById("panel"); _pn.style.transform=""; _pn.style.transition="";
     _pn.classList.add("open"); _pn.classList.remove("min");
     _pn.classList.toggle("peek", window.matchMedia("(max-width:700px)").matches); }   // phones open at the peek detent
-  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:240,right:380}, duration:280});   // make room for the open detail panel
+  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:340,right:380}, duration:280});   // make room for the open detail panel
   document.getElementById("minP").textContent="▾";
   document.getElementById("hint").style.right="398px";
   document.getElementById("pName").textContent=p.name;
@@ -2405,7 +2405,7 @@ function closePanel(){
   document.getElementById("hint").style.right="16px";
   panelOpen=false; lastInteract=Date.now();
   if(subOn) drillOut();
-  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:240,right:0}, duration:280});   // back to just the left panel
+  if(_wbDesktop()) map.easeTo({padding:{top:0,bottom:0,left:340,right:0}, duration:280});   // back to just the left panel
 }
 document.getElementById("closeP").onclick=closePanel;
 /* mobile bottom-sheet grab handle: drag peek ⇄ full, fling down to close (tap toggles) */
