@@ -36,7 +36,13 @@ INP = sys.argv[1] if len(sys.argv) > 1 else "index.html"
 OUT = sys.argv[2] if len(sys.argv) > 2 else "index.html"
 text = open(INP, encoding="utf-8").read()
 
-EDITS = []  # (name, old, new, mode)  mode: "delete" old-first, "insert" new-first
+EDITS = []  # (name, old, new, mode, sentinel)  mode: "delete" old-first, "insert" new-first
+# sentinel = a minimal, order-independent marker used for the already-applied check instead
+# of the full `new` text - needed because a LATER patch (worldbook_fix_glow_layer_order.py)
+# reorders these same three addLayer calls, which would otherwise make the exact contiguous
+# `new1` string stop matching and cause this edit to silently re-apply (and duplicate the
+# glow layers -> MapLibre "layer already exists" error) if this script ever runs again after
+# that fix. Checking a stable substring instead of the whole reordered block sidesteps that.
 
 # ---- 1. insert the two new glow line layers right before "borders" ----
 old1 = 'map.addLayer({id:"borders",type:"line",source:"world",\n    paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});'
@@ -50,12 +56,12 @@ new1 = (
     '  map.addLayer({id:"borders",type:"line",source:"world",\n'
     '    paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});'
 )
-EDITS.append(("insert country-glow-soft/tight halo layers before borders", old1, new1, "insert"))
+EDITS.append(("insert country-glow-soft/tight halo layers before borders", old1, new1, "insert", 'id:"country-glow-soft"'))
 
 # ---- 2. flat fill becomes warm off-white for countries only ----
 old2 = 'if(!isRaster) map.setPaintProperty("fills","fill-color",colorExpr(key));'
 new2 = 'if(!isRaster) map.setPaintProperty("fills","fill-color", key==="countries"?"#f5f0e4":colorExpr(key));'
-EDITS.append(("countries fill goes pale off-white, other layers unchanged", old2, new2, "delete"))
+EDITS.append(("countries fill goes pale off-white, other layers unchanged", old2, new2, "delete", new2))
 
 # ---- 3. toggle the two glow layers on/off alongside the existing _isAntique block ----
 old3 = (
@@ -69,12 +75,12 @@ new3 = (
     '    if(map.getLayer("country-glow-soft")) map.setLayoutProperty("country-glow-soft","visibility",_isCountriesRef?"visible":"none");\n'
     '    if(map.getLayer("country-glow-tight")) map.setLayoutProperty("country-glow-tight","visibility",_isCountriesRef?"visible":"none"); }'
 )
-EDITS.append(("toggle glow layers on for countries, off elsewhere", old3, new3, "insert"))
+EDITS.append(("toggle glow layers on for countries, off elsewhere", old3, new3, "insert", "_isCountriesRef"))
 
 res = []
-for name, old, new, mode in EDITS:
+for name, old, new, mode, sentinel in EDITS:
     if mode == "insert":
-        if new in text:
+        if sentinel in text:
             res.append((name, "already-applied"))
         elif old in text:
             text = text.replace(old, new, 1)
@@ -85,7 +91,7 @@ for name, old, new, mode in EDITS:
         if old in text:
             text = text.replace(old, new, 1)
             res.append((name, "patched"))
-        elif new in text:
+        elif sentinel in text:
             res.append((name, "already-applied"))
         else:
             res.append((name, "ANCHOR-NOT-FOUND"))
