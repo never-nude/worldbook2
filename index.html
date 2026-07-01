@@ -455,6 +455,12 @@ function _atlasBoot(){ if(_atlasBooted) return; _atlasBooted=true; try{
   map.addLayer({id:"fills",type:"fill",source:"world",
     paint:{"fill-color":colorExpr("religion"),"fill-opacity":1,
       "fill-color-transition":{duration:500,delay:0},"fill-opacity-transition":{duration:400}}});
+  map.addLayer({id:"country-glow-soft",type:"line",source:"world",
+    layout:{visibility:"none"},
+    paint:{"line-color":["get","color_countries"],"line-width":9,"line-blur":7,"line-opacity":0.42}}, "borders");
+  map.addLayer({id:"country-glow-tight",type:"line",source:"world",
+    layout:{visibility:"none"},
+    paint:{"line-color":["get","color_countries"],"line-width":3.2,"line-blur":1.6,"line-opacity":0.62}}, "borders");
   map.addLayer({id:"borders",type:"line",source:"world",
     paint:{"line-color":"#05080f","line-width":0.5,"line-opacity-transition":{duration:400}}});
   map.addSource("country-labels",{type:"geojson",data:COUNTRY_LABELS});
@@ -2105,7 +2111,7 @@ function setLayer(key){
   Object.values(RASTERS).forEach(id=>{ if(map.getLayer(id)) map.setLayoutProperty(id,"visibility", id===rid?"visible":"none"); });
   if(!subOn){
     map.setPaintProperty("fills","fill-opacity",isRaster?0:1);
-    if(!isRaster) map.setPaintProperty("fills","fill-color",colorExpr(key));
+    if(!isRaster) map.setPaintProperty("fills","fill-color", key==="countries"?"#f5f0e4":colorExpr(key));
   } else if(map.getLayer("sub-fills") && !isRaster){
     map.setPaintProperty("sub-fills","fill-color",["coalesce",["get","color_"+key],noDataFor(key)]);
   }
@@ -2116,6 +2122,9 @@ function setLayer(key){
   { const _isAntique=(key==="antique"&&!subOn);   // Library Globe: mahogany borders + surface grain
     if(map.getLayer("borders")) map.setPaintProperty("borders","line-color", _isAntique?"#2b1f16":"#05080f");
     const _atx=document.getElementById("antiqueTexture"); if(_atx) _atx.style.opacity=_isAntique?"1":"0"; }
+  { const _isCountriesRef=(key==="countries"&&!subOn);   // relief-map look: colored glow hugging each border
+    if(map.getLayer("country-glow-soft")) map.setLayoutProperty("country-glow-soft","visibility",_isCountriesRef?"visible":"none");
+    if(map.getLayer("country-glow-tight")) map.setLayoutProperty("country-glow-tight","visibility",_isCountriesRef?"visible":"none"); }
   drawLegend(key);
 }
 
