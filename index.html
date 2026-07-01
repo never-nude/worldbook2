@@ -208,9 +208,10 @@
   #hint.wbfade{opacity:0 !important;pointer-events:none}
 
 /* visitor IP-location marker */
-.wb-geo-marker{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px 3px rgba(110,168,254,.85);cursor:pointer;position:relative}
-.wb-geo-marker::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid var(--accent);opacity:.6;animation:wbGeoPulse 2.4s ease-out 1 forwards}
-@keyframes wbGeoPulse{0%{transform:scale(.35);opacity:.8}100%{transform:scale(2.4);opacity:0}}
+.wb-geo-marker{width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px 3px rgba(110,168,254,.85);cursor:pointer;position:relative;animation:wbGeoFlash 2.4s ease-out 1 forwards}
+.wb-geo-marker::after{content:"";position:absolute;inset:-13px;border-radius:50%;background:radial-gradient(circle,rgba(110,168,254,0) 0%,rgba(110,168,254,.95) 40%,rgba(110,168,254,.4) 62%,rgba(110,168,254,0) 78%);filter:blur(1px);animation:wbGeoPulse 2.4s ease-out 1 forwards}
+@keyframes wbGeoPulse{0%{transform:scale(.3);opacity:0}18%{transform:scale(.6);opacity:1}100%{transform:scale(2.6);opacity:0}}
+@keyframes wbGeoFlash{0%{box-shadow:0 0 10px 3px rgba(110,168,254,.85)}18%{box-shadow:0 0 32px 14px rgba(110,168,254,1),0 0 58px 24px rgba(110,168,254,.55)}100%{box-shadow:0 0 10px 3px rgba(110,168,254,.85)}}
 .wb-geo-pop-h{font-weight:600;font-size:13px;color:var(--ink);margin-bottom:2px}
 .wb-geo-pop-d{font-size:12px;color:var(--ink);opacity:.85;margin-bottom:6px}
 .wb-geo-pop-s{font-size:10.5px;color:var(--muted);line-height:1.4}
