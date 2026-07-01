@@ -1747,7 +1747,7 @@ function clearFlow(){
 function applyFlowStyle(){
   if(!map.getLayer("flow-lines")) return;
   const m=isMobileV();
-  const wlo=m?10.0:8.0, whi=m?20.0:16.0, rlo=m?2.2:1.8, rhi=m?4.4:3.4;
+  const wlo=m?13.0:10.0, whi=m?26.0:20.0, rlo=m?2.9:2.3, rhi=m?5.7:4.4;
   const wI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,wlo,1,whi], 9,["interpolate",["linear"],["get","w"],0,wlo*3,1,whi*3]];
   const rI=["interpolate",["linear"],["zoom"], 1.5,["interpolate",["linear"],["get","w"],0,rlo,1,rhi], 9,["interpolate",["linear"],["get","w"],0,rlo*2.4,1,rhi*2.4]];
   // MapLibre keeps this surface layer for hover/click hit-testing only. The visible
@@ -1960,8 +1960,8 @@ function _flowElevations(pts,pathMode){
   const dist=[0]; let total=0;
   for(let i=1;i<pts.length;i++){ total+=_angular(pts[i-1],pts[i]); dist[i]=total; }
   const far=Math.min(1,total/Math.PI);
-  const base=pathMode?21000:60000;
-  const peak=pathMode?(92000+172000*far):(290000+595000*far);
+  const base=pathMode?21000:40000;
+  const peak=pathMode?(92000+172000*far):(180000+380000*far);
   return pts.map((_,i)=>base+peak*Math.sin(Math.PI*(total?dist[i]/total:i/(pts.length-1||1))));
 }
 function _mercXY(p){
