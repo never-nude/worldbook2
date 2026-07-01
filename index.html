@@ -1744,7 +1744,7 @@ const ROLE_COL={source:"#2f9e6e", transit:"#d9a441", consumer:"#c0556b", none:"#
 
 function setFlow(key){
   flowKey = key; flowIso=null; flowFocusIso=null;
-  if(map.getLayer("borders")) map.setPaintProperty("borders","line-opacity",0);
+  if(map.getLayer("borders")) map.setPaintProperty("borders","line-opacity",1);   // borders show on every layer except satellite (flow is never satellite - it's hidden above setFlow is called)
   const _flEl=document.getElementById("legend"); if(_flEl) _flEl.style.display="";   // flow layers never go through drawLegend(), which is the only other place that clears a reference layer's display:none
   const F=FLOWS[key];
   ["flow-lines","flow-dots"].forEach(id=>map.setLayoutProperty(id,"visibility","visible"));
@@ -2323,7 +2323,8 @@ function setLayer(key){
     const _atx=document.getElementById("antiqueTexture"); if(_atx) _atx.style.opacity=_isAntique?"1":"0";
     const _ash=document.getElementById("antiqueSheen"); if(_ash) _ash.style.opacity=_isAntique?"1":"0"; }
   { const _isCountriesRef=(key==="countries"&&!subOn);   // relief-map look: colored glow hugging each border
-    if(map.getLayer("borders")) map.setPaintProperty("borders","line-opacity",_isCountriesRef?1:0);
+    const _showBorders=(key!=="satellite"&&!subOn);   // country borders: every layer except satellite imagery (matches the country-label visibility rule above) - independent of the Countries-only glow/sea-collar/city bundle below
+    if(map.getLayer("borders")) map.setPaintProperty("borders","line-opacity",_showBorders?1:0);
     if(map.getLayer("country-glow-soft")) map.setLayoutProperty("country-glow-soft","visibility",_isCountriesRef?"visible":"none");
     if(map.getLayer("country-glow-tight")) map.setLayoutProperty("country-glow-tight","visibility",_isCountriesRef?"visible":"none");
     if(map.getLayer("sea-collar")) map.setLayoutProperty("sea-collar","visibility",_isCountriesRef?"visible":"none");
@@ -2912,6 +2913,11 @@ function renderSky(){
   // origin. The Moon mesh depth-tests against it like any normal opaque object, so it slides
   // behind Earth's actual silhouette pixel-by-pixel instead of popping on a hard cutoff circle.
   SKY.luna.visible = true;
+  SKY.fr.resetState();   // fix: resyncs Three.js's cached GL state (colorMask among it) with real hardware
+  // state before this draw - without it, earthOccluder's colorWrite:false (meant to make it invisible,
+  // depth-only) can silently fail to apply, painting a large opaque-ish circle over the globe that blocks
+  // whatever MapLibre layer is underneath (confirmed live: this is why the day/night terminator rendered
+  // zero visible shading on production despite correct data). ~0.6ms/frame, negligible.
   SKY.fr.render(SKY.fscene,SKY.frontCam);
 }
 function skyClick(e){
