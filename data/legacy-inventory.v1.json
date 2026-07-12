@@ -1,0 +1,3106 @@
+{
+  "counts": {
+    "countryFeatures": 241,
+    "directFlowEdges": 643,
+    "layers": 49,
+    "migrationCorridors": 0,
+    "migrationFrames": 52,
+    "physicalFlows": 27,
+    "provenanceCards": 47
+  },
+  "exceptions": {
+    "duplicateIso3": [
+      {
+        "iso3": "AUS",
+        "names": [
+          "Australia",
+          "Indian Ocean Ter.",
+          "Ashmore and Cartier Is."
+        ]
+      }
+    ],
+    "nullIso3FeatureNames": [
+      "Somaliland",
+      "N. Cyprus",
+      "Siachen Glacier"
+    ]
+  },
+  "features": [
+    {
+      "featureId": "zimbabwe-a77a05d6a5e5",
+      "geometryHash": "a77a05d6a5e51dfc9f2e5d9788ae86c3c566bb9af56928bc1f31e8b3df1a11be",
+      "geometryType": "Polygon",
+      "index": 0,
+      "iso3": "ZWE",
+      "name": "Zimbabwe",
+      "propertiesHash": "64f738affd02e0fcd25818476fbba386785a25fa33c5a8aa269f51b42c881366"
+    },
+    {
+      "featureId": "zambia-5bfc38452a07",
+      "geometryHash": "5bfc38452a07456bc6bbe1b1a1b4752bdf2681f9f04da36bd3447583cb3dd615",
+      "geometryType": "Polygon",
+      "index": 1,
+      "iso3": "ZMB",
+      "name": "Zambia",
+      "propertiesHash": "ad11c5d2e26061f3c4fdffa5829dc8128317db697f3b6b13972d91354dbf837c"
+    },
+    {
+      "featureId": "yemen-8256ddd816fa",
+      "geometryHash": "8256ddd816facff03da9efd4f0a6f00758630379983b83293eeef78041e11465",
+      "geometryType": "MultiPolygon",
+      "index": 2,
+      "iso3": "YEM",
+      "name": "Yemen",
+      "propertiesHash": "23620c61357db08844aa6126ed141832f3fa37896249d88a72348be3f0469bb4"
+    },
+    {
+      "featureId": "vietnam-458bc7205ade",
+      "geometryHash": "458bc7205adea8536275fc7ae2eae29698c8346d6d7f0488fdc9dd9962100039",
+      "geometryType": "MultiPolygon",
+      "index": 3,
+      "iso3": "VNM",
+      "name": "Vietnam",
+      "propertiesHash": "31b7d353002d4f39541cc943f7b9f47ec695546277215d567f335cb6fa76014c"
+    },
+    {
+      "featureId": "venezuela-60f08b2f297e",
+      "geometryHash": "60f08b2f297edf89504be628d0c2dd72e900b222e9d3999d722cf82ff5aacee0",
+      "geometryType": "MultiPolygon",
+      "index": 4,
+      "iso3": "VEN",
+      "name": "Venezuela",
+      "propertiesHash": "6c86fba3a51d503fe91f12b4718e31de00f77b519579367efab8f1bc368f8702"
+    },
+    {
+      "featureId": "vatican-d8509184a104",
+      "geometryHash": "d8509184a104e8a1194c44613915f370aba56cb875d339440be04e2171c84188",
+      "geometryType": "Polygon",
+      "index": 5,
+      "iso3": "VAT",
+      "name": "Vatican",
+      "propertiesHash": "58c456b57e98c1f02c2fcbeaf15ffc0edf1ea0c455269f43eb4f6f8a395a8fdb"
+    },
+    {
+      "featureId": "vanuatu-a80cb56c4ea1",
+      "geometryHash": "a80cb56c4ea196d6917bfa327a6ae7132d4067f7b930c5ca1ad806aa56ad0fe4",
+      "geometryType": "MultiPolygon",
+      "index": 6,
+      "iso3": "VUT",
+      "name": "Vanuatu",
+      "propertiesHash": "98ee9de2acce60c344c514df00365016b89206b12db9ebfe5f30c92f040d4879"
+    },
+    {
+      "featureId": "uzbekistan-cff495ea6e5e",
+      "geometryHash": "cff495ea6e5e73e4c32bf62f81abb5929aee1b8c8529566c2f9c9e547e4e25af",
+      "geometryType": "MultiPolygon",
+      "index": 7,
+      "iso3": "UZB",
+      "name": "Uzbekistan",
+      "propertiesHash": "5f65e0ac8ee85482305875807edfe94cf5451298b482e3d943faf79a8be04b04"
+    },
+    {
+      "featureId": "uruguay-10485cc0509b",
+      "geometryHash": "10485cc0509b7f3204e878ed7b90b425db5a31cb8093efe6e31d33620cef07b6",
+      "geometryType": "Polygon",
+      "index": 8,
+      "iso3": "URY",
+      "name": "Uruguay",
+      "propertiesHash": "c81b5bdf20c053bab01c2c1d7a69df6bb424b08d805550f285d2a188c13229d1"
+    },
+    {
+      "featureId": "micronesia-1ad4097d6043",
+      "geometryHash": "1ad4097d6043d67f91115cff705fd3859436940fe6b64c413821a3caed22f1a2",
+      "geometryType": "Polygon",
+      "index": 9,
+      "iso3": "FSM",
+      "name": "Micronesia",
+      "propertiesHash": "9e8d4b1fe6ddff6bafd1b64302d55b027530826201cc181952405ee212dc7f46"
+    },
+    {
+      "featureId": "marshall-is-ec8171ce3ba0",
+      "geometryHash": "ec8171ce3ba07ce5d76d6cc8e0d706756c93cba2ffe19f91aa16174dcfb88f6f",
+      "geometryType": "Polygon",
+      "index": 10,
+      "iso3": "MHL",
+      "name": "Marshall Is.",
+      "propertiesHash": "9a838793ba9b5aa38d3b018dbc9863ebb55d3d363f7e086aa6f949cdd0666715"
+    },
+    {
+      "featureId": "n-mariana-is-690343e75203",
+      "geometryHash": "690343e752039013db445e9b9b1ca9fb725f53d2b6238cd8dffc0791a256ea96",
+      "geometryType": "Polygon",
+      "index": 11,
+      "iso3": "MNP",
+      "name": "N. Mariana Is.",
+      "propertiesHash": "d2a3543c447f32f30a539c6f393b5969a57d851fb820d03b076a82a48a28164a"
+    },
+    {
+      "featureId": "u-s-virgin-is-770e2794e5bf",
+      "geometryHash": "770e2794e5bfcd173089c12355ca4ecbea5d4dce00171847da8493c4d44ab4eb",
+      "geometryType": "Polygon",
+      "index": 12,
+      "iso3": "VIR",
+      "name": "U.S. Virgin Is.",
+      "propertiesHash": "835d5cdf1fba91ae21ecffc9fa733f2a2bf43bef09e91aa83b7118f25b2d1c5e"
+    },
+    {
+      "featureId": "guam-4a2816117f49",
+      "geometryHash": "4a2816117f49ac02a61f52847d08cd8aab60f0585132ad2e8a18f7dea9a4c0d1",
+      "geometryType": "Polygon",
+      "index": 13,
+      "iso3": "GUM",
+      "name": "Guam",
+      "propertiesHash": "e7a37435e7370a9b3324951f8a27a242b0a43a53f2c6057bf25c6b6bad58a7aa"
+    },
+    {
+      "featureId": "american-samoa-e5a78b2a6a1f",
+      "geometryHash": "e5a78b2a6a1fc3ab48cb5382a0aa718d73bc784d9e126f0e8118910f7fd0443b",
+      "geometryType": "Polygon",
+      "index": 14,
+      "iso3": "ASM",
+      "name": "American Samoa",
+      "propertiesHash": "a3e2d4d1b39a7cfd2e945f868452493899f0b95e65588c397ba2cadc62c483ef"
+    },
+    {
+      "featureId": "puerto-rico-ecc27353d64a",
+      "geometryHash": "ecc27353d64a6467acac099540126a0367bc7cee64f8c3dbe92412e069f43092",
+      "geometryType": "Polygon",
+      "index": 15,
+      "iso3": "PRI",
+      "name": "Puerto Rico",
+      "propertiesHash": "d8abfb154570cb81a9d6d1d362f66e3a71d08f3e842f9d3f18ad23e87cd85f70"
+    },
+    {
+      "featureId": "united-states-of-america-55221707d5b8",
+      "geometryHash": "55221707d5b802c05d178faf2ccea9e16711c110d0fc00e309f4aa2250178647",
+      "geometryType": "MultiPolygon",
+      "index": 16,
+      "iso3": "USA",
+      "name": "United States of America",
+      "propertiesHash": "6a37a2bcf4c28820ef78570bf6bbc1757dd84180b3947938c0b283d98990a085"
+    },
+    {
+      "featureId": "s-geo-and-the-is-037f2177cad7",
+      "geometryHash": "037f2177cad78c96b19296aca63f2a1bcdac28e7c2a884af58f9fe848f7363f4",
+      "geometryType": "Polygon",
+      "index": 17,
+      "iso3": "SGS",
+      "name": "S. Geo. and the Is.",
+      "propertiesHash": "6ab39867677d3420a298d72071d2f4df7ef39c53caff1031c67b064f36a3f3bf"
+    },
+    {
+      "featureId": "br-indian-ocean-ter-e532e852d0a5",
+      "geometryHash": "e532e852d0a52afba50fb808207ca34272900fd5f9f4352a22b94bffcabf41f9",
+      "geometryType": "Polygon",
+      "index": 18,
+      "iso3": "IOT",
+      "name": "Br. Indian Ocean Ter.",
+      "propertiesHash": "e92007ede438f5e188662640f3b507c8197d145beb163d7c7343f32f1623d6e8"
+    },
+    {
+      "featureId": "saint-helena-5efa1e6c3ec4",
+      "geometryHash": "5efa1e6c3ec45747fb51e2583ff45324fac8b47cd5659e5460d6a380ba6b2fde",
+      "geometryType": "Polygon",
+      "index": 19,
+      "iso3": "SHN",
+      "name": "Saint Helena",
+      "propertiesHash": "91a2ecd32c8f10b377f818b5945c896bc31d177a27bde3be75d2f0ceeb1cdc6c"
+    },
+    {
+      "featureId": "pitcairn-is-88355a07b0c9",
+      "geometryHash": "88355a07b0c9532fde3b091f7397f2881cca3ec1abce43c285fd8ea23bd52356",
+      "geometryType": "Polygon",
+      "index": 20,
+      "iso3": "PCN",
+      "name": "Pitcairn Is.",
+      "propertiesHash": "055712425bcf4835bfae50c6cafecec87970e371aa5fed261cc775245dba0930"
+    },
+    {
+      "featureId": "anguilla-d2e1432fbb20",
+      "geometryHash": "d2e1432fbb2019c431f29c8285b1620e8d29741c391539fe2fa0590f460e0d13",
+      "geometryType": "Polygon",
+      "index": 21,
+      "iso3": "AIA",
+      "name": "Anguilla",
+      "propertiesHash": "edd5b5ee8115b01c8dfff236ca93f088f57a6c03948a4f660cf2f1cb6d4515ff"
+    },
+    {
+      "featureId": "falkland-is-56874a458624",
+      "geometryHash": "56874a458624ddc5e878ddc6bc589a332afa8264a1123bbdf2c2824436724237",
+      "geometryType": "MultiPolygon",
+      "index": 22,
+      "iso3": "FLK",
+      "name": "Falkland Is.",
+      "propertiesHash": "5647aa907068b0f9d59f9ba88a70a0715e96991d3aa96167ce89c01ebc636102"
+    },
+    {
+      "featureId": "cayman-is-9a670565e505",
+      "geometryHash": "9a670565e5051ec992d9df2c504d68bd833583972b002a57149e8f1227866fce",
+      "geometryType": "Polygon",
+      "index": 23,
+      "iso3": "CYM",
+      "name": "Cayman Is.",
+      "propertiesHash": "cb4324ff81b52bc2eb97b9cc29a4e8a968f58557303581c1bc1b2aa05c842121"
+    },
+    {
+      "featureId": "bermuda-f5421c4a639e",
+      "geometryHash": "f5421c4a639ef9496677bf244ab00d1f95c1059beaaf63a9e547f5e767b38170",
+      "geometryType": "Polygon",
+      "index": 24,
+      "iso3": "BMU",
+      "name": "Bermuda",
+      "propertiesHash": "8777da5bf16314c6ac85176636666eeb72e79c9c1b6b4ae96288f2957b95624c"
+    },
+    {
+      "featureId": "british-virgin-is-8c55424bc04e",
+      "geometryHash": "8c55424bc04ef91de510f49d1b022c3b648902dfb2e7fbcc99e32a32f12a2d39",
+      "geometryType": "Polygon",
+      "index": 25,
+      "iso3": "VGB",
+      "name": "British Virgin Is.",
+      "propertiesHash": "20b669d3e7b4c5969894d046d7bcf4fb4ff113981df590aef469937d78b46dca"
+    },
+    {
+      "featureId": "turks-and-caicos-is-9c117402e78d",
+      "geometryHash": "9c117402e78d24c77ab57947fc632a6157293349642453ef7cf2c47675415aa2",
+      "geometryType": "Polygon",
+      "index": 26,
+      "iso3": "TCA",
+      "name": "Turks and Caicos Is.",
+      "propertiesHash": "436cb956260fce0c4a5eba38e99f6af92af568333fbc9ed91ec5815753ef12e2"
+    },
+    {
+      "featureId": "montserrat-2655e4539e28",
+      "geometryHash": "2655e4539e287448960496b9078e36140229c47fccd719da663290dd37b32d13",
+      "geometryType": "Polygon",
+      "index": 27,
+      "iso3": "MSR",
+      "name": "Montserrat",
+      "propertiesHash": "c7701adb5541ad5f855471253e65bfefdda5aae462faf45839338562bdbe360b"
+    },
+    {
+      "featureId": "jersey-9d2ee59bed57",
+      "geometryHash": "9d2ee59bed5712beee5a0cc795bc35de6ce41311b079fce4f846c428c2f2bfb8",
+      "geometryType": "Polygon",
+      "index": 28,
+      "iso3": "JEY",
+      "name": "Jersey",
+      "propertiesHash": "2d4886ac778df5a6482576a1de38c087450410f5d9139483331decab2b61cbe1"
+    },
+    {
+      "featureId": "guernsey-69d243cabe6b",
+      "geometryHash": "69d243cabe6ba3a1466ed1918583d513754913d5df48c24ca564cb835b4168ea",
+      "geometryType": "Polygon",
+      "index": 29,
+      "iso3": "GGY",
+      "name": "Guernsey",
+      "propertiesHash": "c6153a6bd23ae23bf3946b68e54ca4106cc6d470611a1463adf1adb9e9344d00"
+    },
+    {
+      "featureId": "isle-of-man-f4960b8be5a8",
+      "geometryHash": "f4960b8be5a85ed96ec0408e2509692aa0fed301ecf5b408579548a879922303",
+      "geometryType": "Polygon",
+      "index": 30,
+      "iso3": "IMN",
+      "name": "Isle of Man",
+      "propertiesHash": "29ede9f047885973a842f46b59c653b3f745b86ddb0dd2659b11b870f6830a75"
+    },
+    {
+      "featureId": "united-kingdom-b8b57e84e24b",
+      "geometryHash": "b8b57e84e24bb0ca23d74af2fb028db3d7aebfe10b47977019a96ebf2d6da4fc",
+      "geometryType": "MultiPolygon",
+      "index": 31,
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "propertiesHash": "52d37b30aa56a01ecdf7f7f5504ab8bc3efe60660447e26cd35cef5357c011af"
+    },
+    {
+      "featureId": "united-arab-emirates-f0ed82ae87ed",
+      "geometryHash": "f0ed82ae87ede7dd5c325e18b6739c4020df61b28b00cfe3e2d2efd8b35390a8",
+      "geometryType": "Polygon",
+      "index": 32,
+      "iso3": "ARE",
+      "name": "United Arab Emirates",
+      "propertiesHash": "8396491a7b4cdab457fd0138791c03f4a8ea5d2f95c2576139aec5e86f9840b9"
+    },
+    {
+      "featureId": "ukraine-9254c25fe601",
+      "geometryHash": "9254c25fe6010f95ff13b0eca0de53c8d512cdf74ea2db20d26f177b53bf488c",
+      "geometryType": "Polygon",
+      "index": 33,
+      "iso3": "UKR",
+      "name": "Ukraine",
+      "propertiesHash": "7fed188d2a8730df3d029a4acc3e69006224f2f651903bd7ead7423bee48b623"
+    },
+    {
+      "featureId": "uganda-1f64fd300427",
+      "geometryHash": "1f64fd300427134d952bbf3a6595232c4aef5168067d1c6a3c4a62df8bfc9234",
+      "geometryType": "Polygon",
+      "index": 34,
+      "iso3": "UGA",
+      "name": "Uganda",
+      "propertiesHash": "2e63602174029337712577f3b8670b457f39024dc538720ac603d38257db7a34"
+    },
+    {
+      "featureId": "turkmenistan-5bc3fd80f37c",
+      "geometryHash": "5bc3fd80f37ccd5bfa65bd21f55b0856bee69206e01f2c7643d8d0b4c0d31b0e",
+      "geometryType": "Polygon",
+      "index": 35,
+      "iso3": "TKM",
+      "name": "Turkmenistan",
+      "propertiesHash": "42bc7d9736636e4c8897fb631aee3e6c62ec9995d3ca49050551f10fec9af878"
+    },
+    {
+      "featureId": "turkey-5d1201be7479",
+      "geometryHash": "5d1201be74794f1b52f02979ff9543f400e9b407e4558b1da417e3dc66afda84",
+      "geometryType": "MultiPolygon",
+      "index": 36,
+      "iso3": "TUR",
+      "name": "Turkey",
+      "propertiesHash": "e5053c550a55e218be261b8c5d3c6829c3403b4d2b6c85d04ae2273f0303d0fd"
+    },
+    {
+      "featureId": "tunisia-d8101c01bae6",
+      "geometryHash": "d8101c01bae6dfba7174de4e26c42845d0289a96618e1411e0bc487bd25bc381",
+      "geometryType": "MultiPolygon",
+      "index": 37,
+      "iso3": "TUN",
+      "name": "Tunisia",
+      "propertiesHash": "1310f499c64591f596309c56173bf0de9eb6f64846980c5bbf7240d4bcd14a56"
+    },
+    {
+      "featureId": "trinidad-and-tobago-aecd3cb95395",
+      "geometryHash": "aecd3cb953952f0ae53e3a7c53448c5a1b3e4bd753314fbf57e40668044ffc37",
+      "geometryType": "Polygon",
+      "index": 38,
+      "iso3": "TTO",
+      "name": "Trinidad and Tobago",
+      "propertiesHash": "75f9b0b39972d12876fae643c27afe20140f004b998dcd4822fdbe1f8c62cf56"
+    },
+    {
+      "featureId": "tonga-80b5f44009b6",
+      "geometryHash": "80b5f44009b6c603d26b0d1b1104d513618c4a74d62121b52ef61d76fc25788f",
+      "geometryType": "Polygon",
+      "index": 39,
+      "iso3": "TON",
+      "name": "Tonga",
+      "propertiesHash": "72a9cd5a775d9da4be916a11ee6b5989af2edb1c4a347ea2e7e7092ac8c40963"
+    },
+    {
+      "featureId": "togo-9ab6b6cf387b",
+      "geometryHash": "9ab6b6cf387bdd0a9f2dbc347c919e5c1b1d66f28da99868a52bb297d5f30ad5",
+      "geometryType": "Polygon",
+      "index": 40,
+      "iso3": "TGO",
+      "name": "Togo",
+      "propertiesHash": "e990ef007c15e7378eb7831963591b1e0746714d6490f526cf839f48056a1873"
+    },
+    {
+      "featureId": "timor-leste-34950a70b156",
+      "geometryHash": "34950a70b15665960e3c3a5620a5e775587817eb052e04fdf1fa28e559f4222d",
+      "geometryType": "MultiPolygon",
+      "index": 41,
+      "iso3": "TLS",
+      "name": "Timor-Leste",
+      "propertiesHash": "df5fb601c8b1c68fa6de7027c5f41fd3044408acfca94469ac836e9eae6f01c2"
+    },
+    {
+      "featureId": "thailand-ccf05b559625",
+      "geometryHash": "ccf05b5596254d5d457bd5241257a00c0f01ecebca0d85b1ded8a0bcc33b639e",
+      "geometryType": "MultiPolygon",
+      "index": 42,
+      "iso3": "THA",
+      "name": "Thailand",
+      "propertiesHash": "af3506fe42426a3f2bf3cb1e4472f29a535c625eedbd6efba40c773af654f1d5"
+    },
+    {
+      "featureId": "tanzania-7a82a3a084f2",
+      "geometryHash": "7a82a3a084f2b4135375ca7dfefe0d3289853b391998fbd81f58356ec80f8e64",
+      "geometryType": "MultiPolygon",
+      "index": 43,
+      "iso3": "TZA",
+      "name": "Tanzania",
+      "propertiesHash": "66be03b89da9809701a06c994120516805612f9c49d338dcf05e3b8acfc6d860"
+    },
+    {
+      "featureId": "tajikistan-175bff01b91b",
+      "geometryHash": "175bff01b91b2ba8032905881b2d6de27e4ccfe57a2b83450dbaaef66963dd42",
+      "geometryType": "Polygon",
+      "index": 44,
+      "iso3": "TJK",
+      "name": "Tajikistan",
+      "propertiesHash": "658eb36a0a3eb7ac37fd6040fb8f226102f081f5341b94078460914738a697da"
+    },
+    {
+      "featureId": "taiwan-74e037845582",
+      "geometryHash": "74e037845582dcfa073c374188d1ffb1ab5969ebed4da59c43b436715a4af99f",
+      "geometryType": "Polygon",
+      "index": 45,
+      "iso3": "TWN",
+      "name": "Taiwan",
+      "propertiesHash": "9128238a00c89e3260e7a7ed12cc6ce01dd7c6b9299a9a0f81efe50316ca4e97"
+    },
+    {
+      "featureId": "syria-4a34d98e2947",
+      "geometryHash": "4a34d98e294777a71e5f0223cf728007c26228a0a6b802fbaa803b87638dbf38",
+      "geometryType": "Polygon",
+      "index": 46,
+      "iso3": "SYR",
+      "name": "Syria",
+      "propertiesHash": "4ad23d2ebfc56844e0f6bbd5e011411b7156e41efd7e72ef4bad12f5c9d9c496"
+    },
+    {
+      "featureId": "switzerland-ca47e7c28fff",
+      "geometryHash": "ca47e7c28fff8e6a6fc06ee854b2cd0d728d9d91d24101b8dd8858ee2f21b511",
+      "geometryType": "Polygon",
+      "index": 47,
+      "iso3": "CHE",
+      "name": "Switzerland",
+      "propertiesHash": "678a5346074a80e30a1c4d768e3a26f656fd7611a1d7e82af0e3ec12f20ec984"
+    },
+    {
+      "featureId": "sweden-c393ad2d8a0e",
+      "geometryHash": "c393ad2d8a0ea56fb5023d9f070b2e9d742c634ea1d3276709865638e6d7e4cb",
+      "geometryType": "MultiPolygon",
+      "index": 48,
+      "iso3": "SWE",
+      "name": "Sweden",
+      "propertiesHash": "e5ad5a7a018ede9ad4ca6b743152e9d623f003d8ef306046d00f8fe75c0b0d7d"
+    },
+    {
+      "featureId": "eswatini-6e3f8fa0a973",
+      "geometryHash": "6e3f8fa0a9735aedfc7d7013ad494d802a4ee49062db2c4e7c56acbd175ce52d",
+      "geometryType": "Polygon",
+      "index": 49,
+      "iso3": "SWZ",
+      "name": "eSwatini",
+      "propertiesHash": "4b5713704a146e8c3d9a73277b8a89db8b52b386d5ca95c234b118483476729c"
+    },
+    {
+      "featureId": "suriname-99744e15000a",
+      "geometryHash": "99744e15000a04ca988bb028128077fe6362c940e226b8d631bb7ac9a33d2b64",
+      "geometryType": "Polygon",
+      "index": 50,
+      "iso3": "SUR",
+      "name": "Suriname",
+      "propertiesHash": "639c27ecd74a5ae32abf05cd979b9849b983c0bda9bf72133ebe3d484f669ec6"
+    },
+    {
+      "featureId": "s-sudan-4e96dda84a57",
+      "geometryHash": "4e96dda84a5710108307b996cfeffc7e37cf70878697336638d4e0b3237a65b3",
+      "geometryType": "Polygon",
+      "index": 51,
+      "iso3": "SSD",
+      "name": "S. Sudan",
+      "propertiesHash": "2220ba44a49ef25e6e518bba54422d982c37b8d8c92a98e50d2283132acdfd18"
+    },
+    {
+      "featureId": "sudan-d375c77aed16",
+      "geometryHash": "d375c77aed16a6569ed6160d0854e05948a7016564eb7fe60c7ab8c9c5971101",
+      "geometryType": "Polygon",
+      "index": 52,
+      "iso3": "SDN",
+      "name": "Sudan",
+      "propertiesHash": "c840d92b79e6ee5420d7137fa11b5f3a99ad40fbfa250e26d48500cc8ae0b9a6"
+    },
+    {
+      "featureId": "sri-lanka-100b40c17ad5",
+      "geometryHash": "100b40c17ad53ce7136cd39577340c1995561b95f3129d1ab7b9a245cef51f08",
+      "geometryType": "Polygon",
+      "index": 53,
+      "iso3": "LKA",
+      "name": "Sri Lanka",
+      "propertiesHash": "c6f1cf4a65e7244d402a75fae410bd1c6a4f972f8720629778da51cad83b1094"
+    },
+    {
+      "featureId": "spain-4f0a876214fa",
+      "geometryHash": "4f0a876214fa6d83ec4480b7fce1ea073a533aa23e697307594a4cd23b0728cf",
+      "geometryType": "MultiPolygon",
+      "index": 54,
+      "iso3": "ESP",
+      "name": "Spain",
+      "propertiesHash": "8e2c2e461ef6dff705903944b6ce2a42361726df23c76f20cb4afc7094e343ea"
+    },
+    {
+      "featureId": "south-korea-d900b96fe412",
+      "geometryHash": "d900b96fe412dda68b3c66b56b8e37b77be6bbfa7762385f87588a57b16c97c7",
+      "geometryType": "MultiPolygon",
+      "index": 55,
+      "iso3": "KOR",
+      "name": "South Korea",
+      "propertiesHash": "f8fbaf47d57e15d64694e811c35c9f336edad663c47fdfa638453126ebb069d8"
+    },
+    {
+      "featureId": "south-africa-b8fc4405be2b",
+      "geometryHash": "b8fc4405be2bb417e141a0df589a25a7c93c43708b99f8833e796ec9449e462a",
+      "geometryType": "MultiPolygon",
+      "index": 56,
+      "iso3": "ZAF",
+      "name": "South Africa",
+      "propertiesHash": "8b3e38dd7736f77d5098f80a18580afeab3a27ce90407aa1454730c383ef9fa1"
+    },
+    {
+      "featureId": "somalia-6bdb1c5edc61",
+      "geometryHash": "6bdb1c5edc616fe9b39cbae8c2bb8831b470274e17f4be7d01e95b4dc182dec1",
+      "geometryType": "Polygon",
+      "index": 57,
+      "iso3": "SOM",
+      "name": "Somalia",
+      "propertiesHash": "4fd3d6501c76560403863fa9b3a7e4294439768386b0d61e3379e75fa5b1b13e"
+    },
+    {
+      "featureId": "somaliland-a0753e5bed42",
+      "geometryHash": "a0753e5bed4256e2607d098fd1169b5e2501e1ba2ce52561599a10044a75aab3",
+      "geometryType": "Polygon",
+      "index": 58,
+      "iso3": null,
+      "name": "Somaliland",
+      "propertiesHash": "c11e1e8133f50492b727838dfe30c317eab7bf412fc6d3c0eccd9cc9ba8fb386"
+    },
+    {
+      "featureId": "solomon-is-a8cdcc97a7f5",
+      "geometryHash": "a8cdcc97a7f5e8ad4f5c240dbffeab0af6768695d0119b6dff56772d947be358",
+      "geometryType": "MultiPolygon",
+      "index": 59,
+      "iso3": "SLB",
+      "name": "Solomon Is.",
+      "propertiesHash": "94d4913153839f933c39bd96f0374c35f85cfc1c46e66c2fb15a1a8f01add666"
+    },
+    {
+      "featureId": "slovakia-d02e570b3039",
+      "geometryHash": "d02e570b3039ba8cc50de50801407541fa2c0e5742868f99a42c837089db6efb",
+      "geometryType": "Polygon",
+      "index": 60,
+      "iso3": "SVK",
+      "name": "Slovakia",
+      "propertiesHash": "d64c2939165c4ecea383ab4e67e4606a446a6bc5728ffe262709da2366326be0"
+    },
+    {
+      "featureId": "slovenia-36b5c690fe65",
+      "geometryHash": "36b5c690fe658d89ce5d8ba93c5ac68086cf1eba6a202c6912ba2922e309a88a",
+      "geometryType": "Polygon",
+      "index": 61,
+      "iso3": "SVN",
+      "name": "Slovenia",
+      "propertiesHash": "bf5b0722dadddc91d88ada715504c8b89a7e9c38d760159e6dc0ec50bcc5831c"
+    },
+    {
+      "featureId": "singapore-94ffa2cc7c48",
+      "geometryHash": "94ffa2cc7c483b8fe8fabacddc6acc0258f58f57294c7e159d66265f652169d9",
+      "geometryType": "Polygon",
+      "index": 62,
+      "iso3": "SGP",
+      "name": "Singapore",
+      "propertiesHash": "00ebc5296396fe281c9ae42085c36744d80dbfdf8d3f3389ef4b5144e97898c2"
+    },
+    {
+      "featureId": "sierra-leone-dcc0d28bf59d",
+      "geometryHash": "dcc0d28bf59d77ab346bf44a256037401978cb6264a6e7bda807b869ad6aee2f",
+      "geometryType": "MultiPolygon",
+      "index": 63,
+      "iso3": "SLE",
+      "name": "Sierra Leone",
+      "propertiesHash": "e151766697a043b1fba7b4427a34bd824860cc48030829c8a1e0479c60221e94"
+    },
+    {
+      "featureId": "seychelles-b5dab2276872",
+      "geometryHash": "b5dab227687280e6a5be29a796fc1e7d8ccb061b1d4cedc99621f7ab00f3c374",
+      "geometryType": "Polygon",
+      "index": 64,
+      "iso3": "SYC",
+      "name": "Seychelles",
+      "propertiesHash": "b1017bce1acf099e7cd116f7cab1e220f8a976c08f071fc8c862b6ce343335f4"
+    },
+    {
+      "featureId": "serbia-48f4e62132cb",
+      "geometryHash": "48f4e62132cbb8b112c458c4fbc7a53c4d7b38ba1228c2d23d7b16e6de58c63f",
+      "geometryType": "Polygon",
+      "index": 65,
+      "iso3": "SRB",
+      "name": "Serbia",
+      "propertiesHash": "0677490b82006659cf6810489af9800c5064a29e8c211a2c09ee805020715feb"
+    },
+    {
+      "featureId": "senegal-56e9349a9000",
+      "geometryHash": "56e9349a90001928aba5d5955aa2630c10821233b0d19ba0956bec2e1e94bb03",
+      "geometryType": "Polygon",
+      "index": 66,
+      "iso3": "SEN",
+      "name": "Senegal",
+      "propertiesHash": "225a414fc62a5cfe5e302fcf1d035ad2c80ad12c6bba18b92158f1d866a2cd08"
+    },
+    {
+      "featureId": "saudi-arabia-422b283e9cc6",
+      "geometryHash": "422b283e9cc634cbb34816f68623279a7475b126804e0a1bee1e6f165df28e62",
+      "geometryType": "MultiPolygon",
+      "index": 67,
+      "iso3": "SAU",
+      "name": "Saudi Arabia",
+      "propertiesHash": "980761cf679764f33240736d9dd51b50896599582c16544d4e2f7962df9fd50f"
+    },
+    {
+      "featureId": "sa-o-tome-and-principe-2f85555ae78c",
+      "geometryHash": "2f85555ae78c454a9a0aacd5dc3df4d813895d6ad778a1946f1e89ffd80b27fe",
+      "geometryType": "Polygon",
+      "index": 68,
+      "iso3": "STP",
+      "name": "São Tomé and Principe",
+      "propertiesHash": "6fd2dc8b700ba86558cce4c9b0fd29c03f6317830054f78b0c696a67838c0d7b"
+    },
+    {
+      "featureId": "san-marino-87eb6ad45030",
+      "geometryHash": "87eb6ad45030f7f1b784946a7c54695f739d8efd968fccb502a8a30826a1ac16",
+      "geometryType": "Polygon",
+      "index": 69,
+      "iso3": "SMR",
+      "name": "San Marino",
+      "propertiesHash": "30b7644e41a721a867be703495d751947a2e9764719dd5cf7a278a3db2ea215a"
+    },
+    {
+      "featureId": "samoa-4fdd0a6f58c1",
+      "geometryHash": "4fdd0a6f58c1f8ddb1205afa92645b64335841efb36869aff3b892ae56be2c8f",
+      "geometryType": "MultiPolygon",
+      "index": 70,
+      "iso3": "WSM",
+      "name": "Samoa",
+      "propertiesHash": "94ec4c4177880ee763ab117b2052f9c8ddc41cd729abced6658772b219887db6"
+    },
+    {
+      "featureId": "st-vin-and-gren-f88ed2700079",
+      "geometryHash": "f88ed2700079333e9ac8a27ca81b9e570898186f05d5644102b5924b309805a9",
+      "geometryType": "Polygon",
+      "index": 71,
+      "iso3": "VCT",
+      "name": "St. Vin. and Gren.",
+      "propertiesHash": "83bc8e6e63371af408dc91fad7ca10cc0969d602d1ce88c4d55722dfaf7ff846"
+    },
+    {
+      "featureId": "saint-lucia-28c5f4d64ec3",
+      "geometryHash": "28c5f4d64ec375760d64eb1d7b6183aebe4ae3b39c77108884e04b3bfdd96ca3",
+      "geometryType": "Polygon",
+      "index": 72,
+      "iso3": "LCA",
+      "name": "Saint Lucia",
+      "propertiesHash": "191f0b27c9b0bf565846dd3d9d4ff2aa9667abf8bfe27dba52dec9d9bad4e730"
+    },
+    {
+      "featureId": "st-kitts-and-nevis-f5f8d76083a7",
+      "geometryHash": "f5f8d76083a73bc21c1abff9a4a8ac1fd13c714b2c670fb6debff5f6967d137c",
+      "geometryType": "Polygon",
+      "index": 73,
+      "iso3": "KNA",
+      "name": "St. Kitts and Nevis",
+      "propertiesHash": "242bf3abe0f65921106c232cf1d2611208ae7960c88266e48ea7be4c0b71b672"
+    },
+    {
+      "featureId": "rwanda-6c7ac85311c3",
+      "geometryHash": "6c7ac85311c3406005597d7cac640daa209ac60c686b3cc2ab8322b99312759a",
+      "geometryType": "Polygon",
+      "index": 74,
+      "iso3": "RWA",
+      "name": "Rwanda",
+      "propertiesHash": "bc745a2a2ef5f9082c49616e98aec939d25eacb38349393f9a010ddbb19045ab"
+    },
+    {
+      "featureId": "russia-86af5b4d86f6",
+      "geometryHash": "86af5b4d86f621520141a222f855bcb0ba7bd4a542352c100c63cf352e3d9a73",
+      "geometryType": "MultiPolygon",
+      "index": 75,
+      "iso3": "RUS",
+      "name": "Russia",
+      "propertiesHash": "2e0f403a76b180a05cc9a8b66b119edd516e60a08cf2a7b45536d20b55179090"
+    },
+    {
+      "featureId": "romania-89fdc718f1e6",
+      "geometryHash": "89fdc718f1e66ac51093be418a9a038ea3e37dd2ab79045f31c899170c5bd6c1",
+      "geometryType": "Polygon",
+      "index": 76,
+      "iso3": "ROU",
+      "name": "Romania",
+      "propertiesHash": "dc3883ecba4a284d64677409f623598933f3402e6207e50c9e014af38791f81b"
+    },
+    {
+      "featureId": "qatar-750f8c4411d3",
+      "geometryHash": "750f8c4411d3a86759e1512db8d85a603b40eba40d3d41856274c3dae5a827b4",
+      "geometryType": "Polygon",
+      "index": 77,
+      "iso3": "QAT",
+      "name": "Qatar",
+      "propertiesHash": "deb02f56c0cbce0ad832a8305341d7b8390dfab63770102cb6d968e0ff7ca2cf"
+    },
+    {
+      "featureId": "portugal-d521cd7ec932",
+      "geometryHash": "d521cd7ec932b4fceae24768b2ad5cd7d7a1897a7e71799d17b92a89d775c21a",
+      "geometryType": "MultiPolygon",
+      "index": 78,
+      "iso3": "PRT",
+      "name": "Portugal",
+      "propertiesHash": "677c5df1244921dfc098cd35682c191ea824be9f4d24eb86d3f7dbb652c85bd0"
+    },
+    {
+      "featureId": "poland-f685e6867968",
+      "geometryHash": "f685e6867968fa9912caca7543af6a6ae15ddf7162189e186f02404d6b1c65c6",
+      "geometryType": "Polygon",
+      "index": 79,
+      "iso3": "POL",
+      "name": "Poland",
+      "propertiesHash": "683e22d6ba11d641ce5e3538e1c696cf90786b8bee58802ae5c25f95abc18b42"
+    },
+    {
+      "featureId": "philippines-96e082a29295",
+      "geometryHash": "96e082a292957d753a34b6a1e94dfe8225726410808b3ab7232e977158259a7e",
+      "geometryType": "MultiPolygon",
+      "index": 80,
+      "iso3": "PHL",
+      "name": "Philippines",
+      "propertiesHash": "cc9ae60c03b402813fdc396b08b074867d8650a7c77a57b9e41095f97d7271cc"
+    },
+    {
+      "featureId": "peru-0d5f76f9a0ef",
+      "geometryHash": "0d5f76f9a0efc7e825adee906d21eb2ec46101c55432e0702700e2357b27946a",
+      "geometryType": "Polygon",
+      "index": 81,
+      "iso3": "PER",
+      "name": "Peru",
+      "propertiesHash": "25be38486f9e7664f68b757ea91706f5f0773d99fd11138bfbd252b7ba07d44d"
+    },
+    {
+      "featureId": "paraguay-e6baf0bee42f",
+      "geometryHash": "e6baf0bee42fe3fc599e8a96366f41750ff2790fc57b926be2ed6daa550928fd",
+      "geometryType": "Polygon",
+      "index": 82,
+      "iso3": "PRY",
+      "name": "Paraguay",
+      "propertiesHash": "4a89690c657b0a8fce340cf4bc23791244005d95187b0f39bd0617b38f1fab22"
+    },
+    {
+      "featureId": "papua-new-guinea-968b94d1c2bc",
+      "geometryHash": "968b94d1c2bcd342f34490bd465bf9bd797eccedea5739db9ca2be69024148b6",
+      "geometryType": "MultiPolygon",
+      "index": 83,
+      "iso3": "PNG",
+      "name": "Papua New Guinea",
+      "propertiesHash": "f7fd3c23ecc4d2a409c67572c4d8ed78c1193fb6107f306b7177b2385b6d9f05"
+    },
+    {
+      "featureId": "panama-1215088de6d4",
+      "geometryHash": "1215088de6d475867d591b9bbe513f1050c1cabf5649a9c90d880d2de7a6d045",
+      "geometryType": "MultiPolygon",
+      "index": 84,
+      "iso3": "PAN",
+      "name": "Panama",
+      "propertiesHash": "2571e9c7c6bde13ee5b8770a849d513d8d92f4a295ec4cd5294aec4dc8433732"
+    },
+    {
+      "featureId": "palau-a6078b144458",
+      "geometryHash": "a6078b144458fdf9e6a55ed7bfa3f8b3a278457efc3222e10238daaf72ef8e04",
+      "geometryType": "Polygon",
+      "index": 85,
+      "iso3": "PLW",
+      "name": "Palau",
+      "propertiesHash": "44c03d553f0db764425859297d19837540e6ab9f67d5839d6c8f48bbec453d63"
+    },
+    {
+      "featureId": "pakistan-04530df4b82f",
+      "geometryHash": "04530df4b82fb45f0a879e52c3aab5dcd0704441bc175555464c2524128e4b4d",
+      "geometryType": "Polygon",
+      "index": 86,
+      "iso3": "PAK",
+      "name": "Pakistan",
+      "propertiesHash": "9cd3cc1bc4e3a2495c38cb007a8a0c6cd5dd7d9176ab46914d27eac6266922f4"
+    },
+    {
+      "featureId": "oman-69ef488339f3",
+      "geometryHash": "69ef488339f378700a916152fd7c57ac31c8942f931b6a380e5f7972fa34011c",
+      "geometryType": "MultiPolygon",
+      "index": 87,
+      "iso3": "OMN",
+      "name": "Oman",
+      "propertiesHash": "12064e26a3c21cde6140c0452584b90b744188f40dd9faa72ecba87f5003117a"
+    },
+    {
+      "featureId": "norway-60dccf801e35",
+      "geometryHash": "60dccf801e35611dc951fb175878dda01c56202956518955ec80e90649335f2d",
+      "geometryType": "MultiPolygon",
+      "index": 88,
+      "iso3": "NOR",
+      "name": "Norway",
+      "propertiesHash": "b3166c162080ecb7be4f59f89d7300cb6ebdf5907d904b64f761da6307247706"
+    },
+    {
+      "featureId": "north-korea-a373b9ecdaa9",
+      "geometryHash": "a373b9ecdaa9ab703f8e0e4337bd3cfc0307b67076033b0368f347ec1e654c9c",
+      "geometryType": "Polygon",
+      "index": 89,
+      "iso3": "PRK",
+      "name": "North Korea",
+      "propertiesHash": "4a12b21335b9eb3c826dc2c72634a6b3f9bce2dac3e2ccbca548fb688008f9cd"
+    },
+    {
+      "featureId": "nigeria-fbbe6acc6482",
+      "geometryHash": "fbbe6acc64827cc26501ce1add1eac58debb8e0515346f3711cff48b93cb6a59",
+      "geometryType": "Polygon",
+      "index": 90,
+      "iso3": "NGA",
+      "name": "Nigeria",
+      "propertiesHash": "48d00f05ef3290b128e6215cae9f0ab25a3d52a82ede9416ff85306a4a0bb8da"
+    },
+    {
+      "featureId": "niger-012743e26b86",
+      "geometryHash": "012743e26b867c050d3f0d6060895473f3200cafefa20e1bdc0db7a6a7589889",
+      "geometryType": "Polygon",
+      "index": 91,
+      "iso3": "NER",
+      "name": "Niger",
+      "propertiesHash": "1497aae225c7d12dcb1f88cb368efe821124283d04286a3b425987ae4b2fcbf2"
+    },
+    {
+      "featureId": "nicaragua-943015f14ffc",
+      "geometryHash": "943015f14ffc67674159a70461168622f76f77042bace0e4d46d12787a17213b",
+      "geometryType": "Polygon",
+      "index": 92,
+      "iso3": "NIC",
+      "name": "Nicaragua",
+      "propertiesHash": "c74c45e240f619a7a2e6b923ef68fea2e8ce51eba71582f1f8700e4b387575ba"
+    },
+    {
+      "featureId": "new-zealand-ccb4a27686d9",
+      "geometryHash": "ccb4a27686d988da5437c45b7a01bac2a7075de1c3de73c16795592bbe665eed",
+      "geometryType": "MultiPolygon",
+      "index": 93,
+      "iso3": "NZL",
+      "name": "New Zealand",
+      "propertiesHash": "001287575bd2fe3746a1f74f99620eab2f62bcd2bc3066a3f889603169beb565"
+    },
+    {
+      "featureId": "niue-45b8c29ba74c",
+      "geometryHash": "45b8c29ba74c817a37387d910c13dfa6f990b8df52af5ce2c55a0a0850b5ab17",
+      "geometryType": "Polygon",
+      "index": 94,
+      "iso3": "NIU",
+      "name": "Niue",
+      "propertiesHash": "2dc5e8160483d67bc2b9b440a0f2c17eb5afd05879d4e1e17a1d16d4df978062"
+    },
+    {
+      "featureId": "cook-is-5a5a199a35c4",
+      "geometryHash": "5a5a199a35c4b2024f876fd1b188d262e8b6e5705060d8cc00e844bd77eeab00",
+      "geometryType": "Polygon",
+      "index": 95,
+      "iso3": "COK",
+      "name": "Cook Is.",
+      "propertiesHash": "fb0509e3ab5a168caf0e4b8716487d72ecabf63c4609d85bdaa40a2c1e701b2e"
+    },
+    {
+      "featureId": "netherlands-3ad00947a639",
+      "geometryHash": "3ad00947a6393b9a0a3e30801e1a9b6ee1a83deda032ab0decfb0c1cd4cfecb1",
+      "geometryType": "MultiPolygon",
+      "index": 96,
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "propertiesHash": "a9935e49b1b3994d0ca573e3d90beb92d72e121269c13eafd7649f40580bf63b"
+    },
+    {
+      "featureId": "aruba-870c3f0f545d",
+      "geometryHash": "870c3f0f545d093850b3f6895258493d86daa6bf4de2f5f3bdea774122636e75",
+      "geometryType": "Polygon",
+      "index": 97,
+      "iso3": "ABW",
+      "name": "Aruba",
+      "propertiesHash": "c4816bbd3b11ab14956d122c5aa954c44bc0d02b7443e67f113962cdd0361c2f"
+    },
+    {
+      "featureId": "curac-ao-ab6476be3170",
+      "geometryHash": "ab6476be317025820201fdfe86a54a70d9e5bc4a2ba0b9fc3bdea7cd58ea2095",
+      "geometryType": "Polygon",
+      "index": 98,
+      "iso3": "CUW",
+      "name": "Curaçao",
+      "propertiesHash": "ba0fea15a108abfefc346a8d9e1df93acedfd2a1e0f628835921ee83d9dff443"
+    },
+    {
+      "featureId": "nepal-c771b45be321",
+      "geometryHash": "c771b45be321a7b1efec8cbde2e7bb10642b7c20b79fbb3181061d64f715fbb5",
+      "geometryType": "Polygon",
+      "index": 99,
+      "iso3": "NPL",
+      "name": "Nepal",
+      "propertiesHash": "2e560c7eff5281d3be390a560a3bac7af1ed9b41527c74c542c8a6148a2145a1"
+    },
+    {
+      "featureId": "nauru-0a00632e84f9",
+      "geometryHash": "0a00632e84f94b0cc7146e67688188b13eed6df66e7c2eb18a7820dfa6896544",
+      "geometryType": "Polygon",
+      "index": 100,
+      "iso3": "NRU",
+      "name": "Nauru",
+      "propertiesHash": "eade5418a2ede0d347b6ac0d9539ac12d1e9321d33ac344ddd61c1a5a61e6c62"
+    },
+    {
+      "featureId": "namibia-aaa4a1ece139",
+      "geometryHash": "aaa4a1ece139ce1b9123da1162cca98554288aa99fd114171b29c634e4322419",
+      "geometryType": "Polygon",
+      "index": 101,
+      "iso3": "NAM",
+      "name": "Namibia",
+      "propertiesHash": "3d6b831b88863310ee61b7721250ae039ce84f77e10322861e4093c9c9e78c7a"
+    },
+    {
+      "featureId": "mozambique-dea18dab18cc",
+      "geometryHash": "dea18dab18cc74b0df04c3e9647dbe66ad22bc685da7bab00517650ebaa1bb3b",
+      "geometryType": "Polygon",
+      "index": 102,
+      "iso3": "MOZ",
+      "name": "Mozambique",
+      "propertiesHash": "9b652bd75bf177b26b9e1b68182a0bc132474bf0c740b98535914b55f5cefd56"
+    },
+    {
+      "featureId": "morocco-7a10707b58c8",
+      "geometryHash": "7a10707b58c829b79d5ba303bbcfa5d6f03c8c4d3f7c6166e1c4d89fac6888b2",
+      "geometryType": "Polygon",
+      "index": 103,
+      "iso3": "MAR",
+      "name": "Morocco",
+      "propertiesHash": "b794661cf451058a6ecd53ce5373172bbfa8f37bccefb05d12029fc6fdf62d3e"
+    },
+    {
+      "featureId": "w-sahara-e82883a68267",
+      "geometryHash": "e82883a682673eb508ff024617bb2e485ef584f8da62face2ee1128eb2be8634",
+      "geometryType": "Polygon",
+      "index": 104,
+      "iso3": "ESH",
+      "name": "W. Sahara",
+      "propertiesHash": "9fad762c07c5787a9a442c5133402d9a2cbf8bb7436dde85e40d67229ce5fb00"
+    },
+    {
+      "featureId": "montenegro-b299f9bd5380",
+      "geometryHash": "b299f9bd5380d008b5eede2617c2459bb253af2e15fd24d2ff1afa0d5ff77668",
+      "geometryType": "Polygon",
+      "index": 105,
+      "iso3": "MNE",
+      "name": "Montenegro",
+      "propertiesHash": "d3bda9a4ce45644a10afbe43ce443b08f43a6735b17c6ed5013159790903638a"
+    },
+    {
+      "featureId": "mongolia-f547be16e808",
+      "geometryHash": "f547be16e808fd8db3a4311d41733383387fbc4f4bb4ce0d80ea78bd308a4cea",
+      "geometryType": "Polygon",
+      "index": 106,
+      "iso3": "MNG",
+      "name": "Mongolia",
+      "propertiesHash": "401b63bd5b710d884eac3dfe5da21e8df67ec5181ca2bac614c0912e77d8074e"
+    },
+    {
+      "featureId": "moldova-130c7b396824",
+      "geometryHash": "130c7b396824206146a4211b8de613416cabc917a1443142eb52b3d9acd63050",
+      "geometryType": "Polygon",
+      "index": 107,
+      "iso3": "MDA",
+      "name": "Moldova",
+      "propertiesHash": "d6ac9cc05f726057e8b1645131b1fd00f1e63279ad9cbeafa52db4383be01166"
+    },
+    {
+      "featureId": "monaco-399535e0ce36",
+      "geometryHash": "399535e0ce362ecd588c70baa5747f83029da01090e0d3a23fa94de274fa897c",
+      "geometryType": "Polygon",
+      "index": 108,
+      "iso3": "MCO",
+      "name": "Monaco",
+      "propertiesHash": "fb01d331c8a3d7986a47bf7a890835350f927dba9d5cde62bd6ec6139cd35d3b"
+    },
+    {
+      "featureId": "mexico-f858da47f990",
+      "geometryHash": "f858da47f990b129bc2f926b86485b97eb92536393e6a966df81b6b88fab4ac1",
+      "geometryType": "MultiPolygon",
+      "index": 109,
+      "iso3": "MEX",
+      "name": "Mexico",
+      "propertiesHash": "95e9c9ca9029db35f0ca4e6eb35aaab464e1757b2fd438337698ca8fa72cdc15"
+    },
+    {
+      "featureId": "mauritius-4c4eefd9a597",
+      "geometryHash": "4c4eefd9a597dcbc1ec381c874d40c7d5f0e061b223bd9b84301a6cc8b699a30",
+      "geometryType": "Polygon",
+      "index": 110,
+      "iso3": "MUS",
+      "name": "Mauritius",
+      "propertiesHash": "77fda91e7ba3c74da4b105e372105b1f7788a90b85f64ef88352d1217709f1f5"
+    },
+    {
+      "featureId": "mauritania-3b636b89bd6d",
+      "geometryHash": "3b636b89bd6dbc645a1b192265783954fe6e749313b2b78728fa363acdb573b8",
+      "geometryType": "Polygon",
+      "index": 111,
+      "iso3": "MRT",
+      "name": "Mauritania",
+      "propertiesHash": "098354d8fd65400a3c540e2820a6b89ebfe719d23798ffa5cfd62ca4e79cce38"
+    },
+    {
+      "featureId": "malta-6ef8bada5cbd",
+      "geometryHash": "6ef8bada5cbdc8ac2ad0b713925cfc9bdbb917ef5c1681eea306a7f8701de2b6",
+      "geometryType": "Polygon",
+      "index": 112,
+      "iso3": "MLT",
+      "name": "Malta",
+      "propertiesHash": "7d576b24c9f5f24277ec236442b100de62f6a8ea4fa195f8e1f9726b52832220"
+    },
+    {
+      "featureId": "mali-c83d5f5f9962",
+      "geometryHash": "c83d5f5f996291ee774fd6684b89f3c6205d03b0a889871b9ce1a5fb6f616cc3",
+      "geometryType": "Polygon",
+      "index": 113,
+      "iso3": "MLI",
+      "name": "Mali",
+      "propertiesHash": "7fc72784960ea9d17f222f81cdbcee3c6a2b4c59817087f8f9bcaba4dfe52b48"
+    },
+    {
+      "featureId": "maldives-3cbf487967d6",
+      "geometryHash": "3cbf487967d6c7894572782f746b1475113fb27bf3c9d346060fe1ef3bde4c18",
+      "geometryType": "Polygon",
+      "index": 114,
+      "iso3": "MDV",
+      "name": "Maldives",
+      "propertiesHash": "56e4ec609c0d6678ed5b8e4435c1037d15dd305d54213480415b22c7c168c878"
+    },
+    {
+      "featureId": "malaysia-e701888fca7b",
+      "geometryHash": "e701888fca7bf9bb1fbb2de73819717caa6b9719b9da93eb754a21354c0723c4",
+      "geometryType": "MultiPolygon",
+      "index": 115,
+      "iso3": "MYS",
+      "name": "Malaysia",
+      "propertiesHash": "61b327be041e2cb288120759b776ad18cdfdea6a3c1df2501f13b8aca2ad4bc3"
+    },
+    {
+      "featureId": "malawi-d880a2066470",
+      "geometryHash": "d880a2066470ed838e5a8c8414c4028f0024fbc2efe40c8169a64d427282152d",
+      "geometryType": "Polygon",
+      "index": 116,
+      "iso3": "MWI",
+      "name": "Malawi",
+      "propertiesHash": "d41b35d54b0aaa7a0981854e22d9dcabbf63958c7d15dc26886348d9604ecfb2"
+    },
+    {
+      "featureId": "madagascar-57ef883762f4",
+      "geometryHash": "57ef883762f4585263c9e8ac57c768b918c95befbc7f4bd5eca2e662b07769d3",
+      "geometryType": "MultiPolygon",
+      "index": 117,
+      "iso3": "MDG",
+      "name": "Madagascar",
+      "propertiesHash": "782e8e09ce9c94cef73f4cda5a8f0dccd656dfce64219585c15fa057de9c48bb"
+    },
+    {
+      "featureId": "north-macedonia-a0dfdf8ad59b",
+      "geometryHash": "a0dfdf8ad59b31e78e770e27285f4b5029ae6df6d5def356b996b58fbcdfbdcb",
+      "geometryType": "Polygon",
+      "index": 118,
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "propertiesHash": "bfa05f4ef0c87baae1ce16ce19d9e829503439b55a01311511943ae69013d54e"
+    },
+    {
+      "featureId": "luxembourg-0f91e3c11bf1",
+      "geometryHash": "0f91e3c11bf1fd4118bde679feed2d5edd758e3c6a5dbc395093a6a6686e0706",
+      "geometryType": "Polygon",
+      "index": 119,
+      "iso3": "LUX",
+      "name": "Luxembourg",
+      "propertiesHash": "79bebc62c22e033d327bfa8a7809757b969e0255e37a09c4004eb1fe34fa49ed"
+    },
+    {
+      "featureId": "lithuania-7f2b5044a17d",
+      "geometryHash": "7f2b5044a17dcf9dc582fb19f1ab8acf492a918ec87f9d9aa817c8502ea2f5ee",
+      "geometryType": "Polygon",
+      "index": 120,
+      "iso3": "LTU",
+      "name": "Lithuania",
+      "propertiesHash": "c104efe96aa5cfb38685e260fc8abb38c6c0ee5cad03b0df28305be9d35f935e"
+    },
+    {
+      "featureId": "liechtenstein-e3aa53d3a5be",
+      "geometryHash": "e3aa53d3a5be34404262240d2949a9f028ef652c04332309f07377366be933ae",
+      "geometryType": "Polygon",
+      "index": 121,
+      "iso3": "LIE",
+      "name": "Liechtenstein",
+      "propertiesHash": "8812092ce0062565431df68bde65ef029429e0a17eebd9a9517bbd7d89baaf45"
+    },
+    {
+      "featureId": "libya-e374731ce14e",
+      "geometryHash": "e374731ce14e282492f9486859d1b439462b47ae5bfe7a1065c46102e0f8898e",
+      "geometryType": "Polygon",
+      "index": 122,
+      "iso3": "LBY",
+      "name": "Libya",
+      "propertiesHash": "a6903cba5f3e833f70b66a8132fb4d436b94e52f5104009a40dbf01d98320bdd"
+    },
+    {
+      "featureId": "liberia-ac5e69cc70e7",
+      "geometryHash": "ac5e69cc70e789c270d27ee9eb0b9344133cb595b00bb1303fd886af78e81ba8",
+      "geometryType": "Polygon",
+      "index": 123,
+      "iso3": "LBR",
+      "name": "Liberia",
+      "propertiesHash": "d79df6c127e36482ebde1d3b18d080c9449bf69931eb8ee6fa8ae20f652686e8"
+    },
+    {
+      "featureId": "lesotho-310bf08c49ca",
+      "geometryHash": "310bf08c49ca6d87ba26bac58383d1a6b647dc77c27e1c402df27c94ffeb2684",
+      "geometryType": "Polygon",
+      "index": 124,
+      "iso3": "LSO",
+      "name": "Lesotho",
+      "propertiesHash": "9b580599c3f3cb846e86c5795c662fbdb7d7a39e9f8f0ddaedb3f5fd88c9766a"
+    },
+    {
+      "featureId": "lebanon-e05f9645ffe9",
+      "geometryHash": "e05f9645ffe9d876991fd7b4b83fc7344de42e2c00705b156106d0244594d7ed",
+      "geometryType": "Polygon",
+      "index": 125,
+      "iso3": "LBN",
+      "name": "Lebanon",
+      "propertiesHash": "d5ba211047310720269582d1f121ffd34b0b568eb18c8b85b2fc50e13f4a2032"
+    },
+    {
+      "featureId": "latvia-6b9c80478508",
+      "geometryHash": "6b9c804785080261b78552407046da26fa0f085d96e7e0a506b880519ef136b3",
+      "geometryType": "Polygon",
+      "index": 126,
+      "iso3": "LVA",
+      "name": "Latvia",
+      "propertiesHash": "3f1e16fe8f07978e69b564f8cf58c1cbbadd0010ad7498cb17930e7edc168cd3"
+    },
+    {
+      "featureId": "laos-4b00c229b76d",
+      "geometryHash": "4b00c229b76da763c6bdf5402807771ea2de7644168beee19da5511bbfa584cb",
+      "geometryType": "Polygon",
+      "index": 127,
+      "iso3": "LAO",
+      "name": "Laos",
+      "propertiesHash": "5cb88485580b29fdbe82081daadded5ca5b057087956fe592c0c444467b0ed5a"
+    },
+    {
+      "featureId": "kyrgyzstan-294ed75bb29b",
+      "geometryHash": "294ed75bb29ba03afe6f31c4fb20fb8a8607e6bc66cb97bb03345328af7ea7ea",
+      "geometryType": "Polygon",
+      "index": 128,
+      "iso3": "KGZ",
+      "name": "Kyrgyzstan",
+      "propertiesHash": "5cd8cff0aaa6aad8de3eb408ab12a73ac68a402c65f5dbd02417216a9790b6c5"
+    },
+    {
+      "featureId": "kuwait-2d73cb0f809c",
+      "geometryHash": "2d73cb0f809c652ccd42ca59c007f235efbc664a485edf37bd6c686377c56ea4",
+      "geometryType": "MultiPolygon",
+      "index": 129,
+      "iso3": "KWT",
+      "name": "Kuwait",
+      "propertiesHash": "a72094993a1d4ce9a5007ff6bac0fb43862584cf60da9158e7628bf67159fca7"
+    },
+    {
+      "featureId": "kosovo-ea7554cf52f3",
+      "geometryHash": "ea7554cf52f3e96631da0985476e889d0b1effafd109d6d9c75041d83d3731c8",
+      "geometryType": "Polygon",
+      "index": 130,
+      "iso3": "XKX",
+      "name": "Kosovo",
+      "propertiesHash": "649551703c6770387d6b1f18a5deabadc4476417f37c37074d78cedcba76333d"
+    },
+    {
+      "featureId": "kiribati-ffc38d19b687",
+      "geometryHash": "ffc38d19b687454c0d734fdbf29fafe248d4a09cd8baa75d8f8be430e238d9d6",
+      "geometryType": "Polygon",
+      "index": 131,
+      "iso3": "KIR",
+      "name": "Kiribati",
+      "propertiesHash": "ab7a8f2d77cfc0020c6189f22a8fa37319562e2f25db274c8f6b080623e6015c"
+    },
+    {
+      "featureId": "kenya-124161329945",
+      "geometryHash": "124161329945a3c7c8a5465ea293d8db2eb00e5e9acd38d35b6c1e5134c26b27",
+      "geometryType": "Polygon",
+      "index": 132,
+      "iso3": "KEN",
+      "name": "Kenya",
+      "propertiesHash": "b49d0607fb6030b80488a9388757521337f0ee5a8dc715e62a5bc895a22c369d"
+    },
+    {
+      "featureId": "kazakhstan-5f9bc22ef0fc",
+      "geometryHash": "5f9bc22ef0fc9ecd5ce9e1cd97a08c13d4e54966c5c388a85abf714c6b3449a6",
+      "geometryType": "Polygon",
+      "index": 133,
+      "iso3": "KAZ",
+      "name": "Kazakhstan",
+      "propertiesHash": "c292f4c0a2713c0445de52a51789979cb8ac44b4ee0e9c20ac22c0f5909bce19"
+    },
+    {
+      "featureId": "jordan-476432fcd52b",
+      "geometryHash": "476432fcd52b957b289ea71f787aee50eafd2bae6f5a53eb2ef4b2d040650ea8",
+      "geometryType": "Polygon",
+      "index": 134,
+      "iso3": "JOR",
+      "name": "Jordan",
+      "propertiesHash": "60a3656a0a9c574a0548f1c458b490fe9b7eac03b7a1003fc9a4702a2d42167f"
+    },
+    {
+      "featureId": "japan-4adeb0f42bdc",
+      "geometryHash": "4adeb0f42bdc07ca8b0d78efe387186405fb16fb3773458ee84e422c5ad15a60",
+      "geometryType": "MultiPolygon",
+      "index": 135,
+      "iso3": "JPN",
+      "name": "Japan",
+      "propertiesHash": "8eea6519dd412eadd79da3db5c034d649eaf1fa0b869124de865c701a996656c"
+    },
+    {
+      "featureId": "jamaica-906e1c9e2881",
+      "geometryHash": "906e1c9e288131c7309ee3dc265490c68a8a1cb18ad56bb19a5fd51263d90607",
+      "geometryType": "Polygon",
+      "index": 136,
+      "iso3": "JAM",
+      "name": "Jamaica",
+      "propertiesHash": "21dec4ca7f776daed6dcbb583e9ea13d363fa475f269320b9d0ffdf9bea2ae32"
+    },
+    {
+      "featureId": "italy-429936225966",
+      "geometryHash": "429936225966ccd4789ec71b38328819e1bd8a0705156abc0a2f6bca4083e3c5",
+      "geometryType": "MultiPolygon",
+      "index": 137,
+      "iso3": "ITA",
+      "name": "Italy",
+      "propertiesHash": "504874f13cb6db32a37b8622428063fcdb48b1b5bf8c0f1afaea316632b06e33"
+    },
+    {
+      "featureId": "israel-fbe87aa2326e",
+      "geometryHash": "fbe87aa2326e4839a929179f62b5d47f6c3192ea6dc08a62e3f2576d97cd837c",
+      "geometryType": "Polygon",
+      "index": 138,
+      "iso3": "ISR",
+      "name": "Israel",
+      "propertiesHash": "a3e30d987dcde4cc10f5993f5f614dd6d25556e6906978d5180a2445f8831b4c"
+    },
+    {
+      "featureId": "palestine-dd31993e61cd",
+      "geometryHash": "dd31993e61cdccfa12cfbd89bfdec86b42700630c615fefc84c60245c89db058",
+      "geometryType": "MultiPolygon",
+      "index": 139,
+      "iso3": "PSE",
+      "name": "Palestine",
+      "propertiesHash": "3e01e39e70452168a9c938e76fd672defa0ccb138ce116490d8890701893b45b"
+    },
+    {
+      "featureId": "ireland-5b21ba3a27c3",
+      "geometryHash": "5b21ba3a27c39c7d3959a12bb307d0779d2bd4c5a7ea356cdc4313ac9cbe4371",
+      "geometryType": "Polygon",
+      "index": 140,
+      "iso3": "IRL",
+      "name": "Ireland",
+      "propertiesHash": "bee9952fdcb6013c2606571fd0897b18507f2542502ac84e9548bd15fac21e06"
+    },
+    {
+      "featureId": "iraq-aac2a8b97570",
+      "geometryHash": "aac2a8b975704a004f167599a4cada5d4a23bb0589f57594cf5e8b696062d703",
+      "geometryType": "Polygon",
+      "index": 141,
+      "iso3": "IRQ",
+      "name": "Iraq",
+      "propertiesHash": "64cb1b2c5d1887e22e89f86c1bc8388b6954b285dce747806f02b4919b347cac"
+    },
+    {
+      "featureId": "iran-2814b26e6929",
+      "geometryHash": "2814b26e6929d2a63ad07bcdb5739f3dbbd60ee328cf1ec3363500bd709b977b",
+      "geometryType": "MultiPolygon",
+      "index": 142,
+      "iso3": "IRN",
+      "name": "Iran",
+      "propertiesHash": "c3a321e56f30f98c3d35f3140a63b71917d829d3d477f4d5ed08a64ca86274b0"
+    },
+    {
+      "featureId": "indonesia-f4efd8898bcd",
+      "geometryHash": "f4efd8898bcdc48ce6957d87ec88a8234c7597d08d123ec5ce85633bb3931787",
+      "geometryType": "MultiPolygon",
+      "index": 143,
+      "iso3": "IDN",
+      "name": "Indonesia",
+      "propertiesHash": "d901e0336d9d9143863fef1e252c0de53ef330a6247dbe03de8e54e91cb58831"
+    },
+    {
+      "featureId": "india-d520711ea9a0",
+      "geometryHash": "d520711ea9a0487da08f0bbacfff25d924090137f2a31d17ab488e932dfe47d6",
+      "geometryType": "MultiPolygon",
+      "index": 144,
+      "iso3": "IND",
+      "name": "India",
+      "propertiesHash": "9eed5d1b2f019865ac08bda02d22031e4c1178fefc927dd4cb8aac362f3c5d3d"
+    },
+    {
+      "featureId": "iceland-265564cc2ee7",
+      "geometryHash": "265564cc2ee7a2fd2a45ff7a09f79029ab265d2dd6d8fda0bae2ab59e58e9518",
+      "geometryType": "Polygon",
+      "index": 145,
+      "iso3": "ISL",
+      "name": "Iceland",
+      "propertiesHash": "fae6b1ff6eb98e2b3749faf39e0029ad674381ffa536fa87d4a4f054a59cf98e"
+    },
+    {
+      "featureId": "hungary-0394da989f41",
+      "geometryHash": "0394da989f41f74b69de0122cea215ea66593f9f282e59ccd9a70924dc2b38a8",
+      "geometryType": "Polygon",
+      "index": 146,
+      "iso3": "HUN",
+      "name": "Hungary",
+      "propertiesHash": "2f50ad33f0ec4fee576383bc8eb2d1858ce7a7442aeeda2f6a76efef122014ca"
+    },
+    {
+      "featureId": "honduras-70e28ada3e80",
+      "geometryHash": "70e28ada3e808ac9dbeb65cf08d9b701ae8ea34505819835ecb7f53fd48c2fbc",
+      "geometryType": "Polygon",
+      "index": 147,
+      "iso3": "HND",
+      "name": "Honduras",
+      "propertiesHash": "c2734f4a693982a34fa4fb6b686c9b487385434291feff0fdab05e1560abeb65"
+    },
+    {
+      "featureId": "haiti-71d19ac92df7",
+      "geometryHash": "71d19ac92df7f7cf6a1e52da935d60340660e6bc5eece147f8b3066fdf3efea5",
+      "geometryType": "MultiPolygon",
+      "index": 148,
+      "iso3": "HTI",
+      "name": "Haiti",
+      "propertiesHash": "13332bb6ebcb93e0427f0cd904d2285c210fea96da3a96ed083575f4a2840b13"
+    },
+    {
+      "featureId": "guyana-6d85c96afbe0",
+      "geometryHash": "6d85c96afbe02a1119e2515ce43507f8e9c5a85a4c4160105568f713b63cbacf",
+      "geometryType": "Polygon",
+      "index": 149,
+      "iso3": "GUY",
+      "name": "Guyana",
+      "propertiesHash": "4a91efafadae3717b9d7066089be7af8c4f14e2ac42b258acb568096f2c9a638"
+    },
+    {
+      "featureId": "guinea-bissau-b8c50a3fe2fe",
+      "geometryHash": "b8c50a3fe2fe5587f4314a20d65fef2bc7dbd27a109ec50107dc7c3760be9962",
+      "geometryType": "Polygon",
+      "index": 150,
+      "iso3": "GNB",
+      "name": "Guinea-Bissau",
+      "propertiesHash": "c10b566ca2c14df65a3ee491d4bbea31550c975e81e3c6515eb2b976ed687d1b"
+    },
+    {
+      "featureId": "guinea-56971d7a658a",
+      "geometryHash": "56971d7a658a99febb60cfa12fd1dcee3d26ebd6c95daf99cbf50260e100828b",
+      "geometryType": "Polygon",
+      "index": 151,
+      "iso3": "GIN",
+      "name": "Guinea",
+      "propertiesHash": "78a5108063c4b5228e66179dec5981b8316052a1fc9b2fc9241c0dc319a7b24c"
+    },
+    {
+      "featureId": "guatemala-1d1c0008d8e0",
+      "geometryHash": "1d1c0008d8e0a05807df77c614f7a4fd734f7fb5793fdc104e54b4c6861fe2ba",
+      "geometryType": "Polygon",
+      "index": 152,
+      "iso3": "GTM",
+      "name": "Guatemala",
+      "propertiesHash": "627d724b6adb22b9f93c4dcd57274939fd80c40a21c85b8414018d2fa43f4944"
+    },
+    {
+      "featureId": "grenada-f252206d3874",
+      "geometryHash": "f252206d38743f48e6d7c76502d3c400cfcb6bb48e2fdc926edccf4b7c21d514",
+      "geometryType": "Polygon",
+      "index": 153,
+      "iso3": "GRD",
+      "name": "Grenada",
+      "propertiesHash": "46984464f805cef0f95a2b038659ce25fea0563bf4ca6ad68791baaac8c40424"
+    },
+    {
+      "featureId": "greece-e6ec9739369d",
+      "geometryHash": "e6ec9739369db102dcd40be43aa23cf2679e705e0bc922d0db35fd96d6ff9973",
+      "geometryType": "MultiPolygon",
+      "index": 154,
+      "iso3": "GRC",
+      "name": "Greece",
+      "propertiesHash": "bc97eca59ea9febb6a04842a512a46ba4c3636acd3e23b9b9b2f838fe6e419f7"
+    },
+    {
+      "featureId": "ghana-5017e3432e1d",
+      "geometryHash": "5017e3432e1d1c7f86dcb8602cb900c49cd622a2f2d26b175b223412431ee743",
+      "geometryType": "Polygon",
+      "index": 155,
+      "iso3": "GHA",
+      "name": "Ghana",
+      "propertiesHash": "9b8e501d05a75049d1ca5057754ed475e8666e3bb3b1df97534c5a288706a7b5"
+    },
+    {
+      "featureId": "germany-026452381612",
+      "geometryHash": "026452381612028c8fbb95b990dca27f23d3df04e57f0c863db33de2a8837d6c",
+      "geometryType": "MultiPolygon",
+      "index": 156,
+      "iso3": "DEU",
+      "name": "Germany",
+      "propertiesHash": "d437966ab9c29ff5d98395a9413460b65c8aa363796c7eb392117d6f1b322357"
+    },
+    {
+      "featureId": "georgia-0f44d5aacf1a",
+      "geometryHash": "0f44d5aacf1ac4d8bc6bfe9a4eeb5c37a63aba1e9b9473688ac311497ceb5678",
+      "geometryType": "Polygon",
+      "index": 157,
+      "iso3": "GEO",
+      "name": "Georgia",
+      "propertiesHash": "6a802c43548c0ded4c0c019f509aa3426931cef8544b4480ca736616b62340ac"
+    },
+    {
+      "featureId": "gambia-c694ebb51d34",
+      "geometryHash": "c694ebb51d34e861dfbc0b9dbd6f81dea7a3be843f05c03872463eecf7d3a2bd",
+      "geometryType": "Polygon",
+      "index": 158,
+      "iso3": "GMB",
+      "name": "Gambia",
+      "propertiesHash": "e6bdf56dd2fcc6b36e1d1eec2e3323628ce5aa7ce7fa5225c679a62e8833e7ab"
+    },
+    {
+      "featureId": "gabon-8a902fe0838a",
+      "geometryHash": "8a902fe0838a263828422ce09c528419b1f3ffdedbf509fe3345ad4a1eeaba87",
+      "geometryType": "Polygon",
+      "index": 159,
+      "iso3": "GAB",
+      "name": "Gabon",
+      "propertiesHash": "8ef5a1c89e6e5e5d2efa7886bf526b246b2b6d4d6e4e2ae3dd4a03a0c7e409f7"
+    },
+    {
+      "featureId": "france-e0c01ecadf01",
+      "geometryHash": "e0c01ecadf013b3415ca4dfeab220d0ecf1a3bd72b093b8054ab072e4564f199",
+      "geometryType": "MultiPolygon",
+      "index": 160,
+      "iso3": "FRA",
+      "name": "France",
+      "propertiesHash": "0939e5265daf43c47d51fe0b8b64934a8c7b21f7440f56ddbefb7978aa9f6dad"
+    },
+    {
+      "featureId": "st-pierre-and-miquelon-1778cb58c288",
+      "geometryHash": "1778cb58c288bc952e7f25b371aadce982f031bf4dc660e2a3db57b4b559c8b3",
+      "geometryType": "Polygon",
+      "index": 161,
+      "iso3": "SPM",
+      "name": "St. Pierre and Miquelon",
+      "propertiesHash": "24dc7a378bafe6ae8b82a7e5308242d4c913790aa64b90252f89a5da18816514"
+    },
+    {
+      "featureId": "wallis-and-futuna-is-58cbb40916e0",
+      "geometryHash": "58cbb40916e02fc831f9ae770ee69c2cf3440b33fbece80748f9b369382a254d",
+      "geometryType": "Polygon",
+      "index": 162,
+      "iso3": "WLF",
+      "name": "Wallis and Futuna Is.",
+      "propertiesHash": "b34fe5dc1dcbe735e059202a31675d8cfcbec3e768428e1b6846cf57a1609ee1"
+    },
+    {
+      "featureId": "st-martin-90961ff38306",
+      "geometryHash": "90961ff38306dbecebc6c281b580514c3098c4fda217d7ae5038025682c6542d",
+      "geometryType": "Polygon",
+      "index": 163,
+      "iso3": "MAF",
+      "name": "St-Martin",
+      "propertiesHash": "769b1e45b217c8cf391bbadc3c4be3216a6607a60d3bbb4d8945e6350476b0f6"
+    },
+    {
+      "featureId": "st-barthe-lemy-348c27552f3f",
+      "geometryHash": "348c27552f3f6c2432015b44776d5539c44d16439fb29ce7ccdc6faae62fde3e",
+      "geometryType": "Polygon",
+      "index": 164,
+      "iso3": "BLM",
+      "name": "St-Barthélemy",
+      "propertiesHash": "4a0883fd594b8246355b464b288a7a7d591d2e982c6d685c06b1bdeaf6cbf981"
+    },
+    {
+      "featureId": "fr-polynesia-e84c0bb61522",
+      "geometryHash": "e84c0bb615221eef1269ec9983204d228a3e57fb5d9b587f19885725a3a7b913",
+      "geometryType": "MultiPolygon",
+      "index": 165,
+      "iso3": "PYF",
+      "name": "Fr. Polynesia",
+      "propertiesHash": "1231c973ef63dd05a8bcb713fc0396c6a7bcbcf540926c236ae635ce623abab0"
+    },
+    {
+      "featureId": "new-caledonia-7608ae27fe68",
+      "geometryHash": "7608ae27fe680f29159d189193705a889ddb3408f841c5198eb9c6f45a00eb83",
+      "geometryType": "MultiPolygon",
+      "index": 166,
+      "iso3": "NCL",
+      "name": "New Caledonia",
+      "propertiesHash": "6d06479e5fab5e6646dabcdc0470f5d33f9c887aa2a212d6696ad70338420358"
+    },
+    {
+      "featureId": "fr-s-antarctic-lands-dbfe3d3c19a6",
+      "geometryHash": "dbfe3d3c19a6597419784e60088aa3ee6836fe2b973e3e85e091643aef89e89f",
+      "geometryType": "MultiPolygon",
+      "index": 167,
+      "iso3": "ATF",
+      "name": "Fr. S. Antarctic Lands",
+      "propertiesHash": "15882a443b13c081ae8733b127f97e4c3b7cb13bfd09075f370b938967f833d6"
+    },
+    {
+      "featureId": "a-land-2e16abd0f60d",
+      "geometryHash": "2e16abd0f60d660b258fe6090403f3ab6fe7760d5770783baa5d943f99a2641d",
+      "geometryType": "Polygon",
+      "index": 168,
+      "iso3": "ALA",
+      "name": "Åland",
+      "propertiesHash": "6eb7d6666d0dfa29199d9d73829cf3fc441f2d75bf781b67657e04a39ff03629"
+    },
+    {
+      "featureId": "finland-91e137754ad8",
+      "geometryHash": "91e137754ad8e375ccfefac111ba53d031f62ebb33c3f8d225889dbbf4a4f142",
+      "geometryType": "MultiPolygon",
+      "index": 169,
+      "iso3": "FIN",
+      "name": "Finland",
+      "propertiesHash": "13fdea0ed429cd60e66109f0b71ab734e8bd73092b07fd018510c1d083c5d2ab"
+    },
+    {
+      "featureId": "fiji-d6d6580c698e",
+      "geometryHash": "d6d6580c698e79ade913746e609d9dee8198c6fac8389e0c9bd8e719d3768809",
+      "geometryType": "MultiPolygon",
+      "index": 170,
+      "iso3": "FJI",
+      "name": "Fiji",
+      "propertiesHash": "6e5ed80d2dbd1763c0a8e65298600978aaef401aa6723810fd4a46bb1389282e"
+    },
+    {
+      "featureId": "ethiopia-8a7e579522fd",
+      "geometryHash": "8a7e579522fd24425409398271406aefefb789c68a5623f95115ec0be7264adb",
+      "geometryType": "Polygon",
+      "index": 171,
+      "iso3": "ETH",
+      "name": "Ethiopia",
+      "propertiesHash": "ac0d34a8fbb23cc93578d7d6810ec3497204bcdafd06f77137f9a81e59aa9fc6"
+    },
+    {
+      "featureId": "estonia-2664af4e995f",
+      "geometryHash": "2664af4e995f1e321f5c28c1abc6a4dbb5359a45ac3aaf5dedc6ea4fdcb63bd7",
+      "geometryType": "MultiPolygon",
+      "index": 172,
+      "iso3": "EST",
+      "name": "Estonia",
+      "propertiesHash": "c59989c50cac301da2dc3597dfa4700228ed8870b49be1212abb4c6838f4ee98"
+    },
+    {
+      "featureId": "eritrea-d864403a9712",
+      "geometryHash": "d864403a97120eea52b3c22a8f5935677dd128352a0a3b5f2b0165dd1f70e7bd",
+      "geometryType": "MultiPolygon",
+      "index": 173,
+      "iso3": "ERI",
+      "name": "Eritrea",
+      "propertiesHash": "42a904100869f7f924a483234113488d55e62f6aaa3ec19604b3317c9087d684"
+    },
+    {
+      "featureId": "eq-guinea-ccc9a0ab265c",
+      "geometryHash": "ccc9a0ab265c19c84b585d8e9b94ecbb2b6ece1e55bd6bb0c2bd7d309efa670d",
+      "geometryType": "MultiPolygon",
+      "index": 174,
+      "iso3": "GNQ",
+      "name": "Eq. Guinea",
+      "propertiesHash": "0c680d326587d3f441b92c563ee892c3374b4be1ef32eb653200fe4240869bc4"
+    },
+    {
+      "featureId": "el-salvador-d942d1571883",
+      "geometryHash": "d942d15718831e66f2d08289463cf78bdbf45336c8825c531fcceb615a085dd4",
+      "geometryType": "Polygon",
+      "index": 175,
+      "iso3": "SLV",
+      "name": "El Salvador",
+      "propertiesHash": "98812d36792cc92390ad97567ee96cc919ccd9537bb27ead2f985e5cd3d3855b"
+    },
+    {
+      "featureId": "egypt-993e629238e8",
+      "geometryHash": "993e629238e81db6ad568cec5ab690dad7d8547e5d4bf9e12f374e2e134f5b72",
+      "geometryType": "Polygon",
+      "index": 176,
+      "iso3": "EGY",
+      "name": "Egypt",
+      "propertiesHash": "250dd3be4c8eef356cacfca75d410b8c81da57467137e7017714febb31bc3c3f"
+    },
+    {
+      "featureId": "ecuador-189e82c0bf4d",
+      "geometryHash": "189e82c0bf4da1e8790c3cde39ff2879122c7a4190f575fa758d2138ce271ecf",
+      "geometryType": "MultiPolygon",
+      "index": 177,
+      "iso3": "ECU",
+      "name": "Ecuador",
+      "propertiesHash": "1d0436c7ab6e6ca97199f48db98280a308ed7c1b70776371377fd3a88889d291"
+    },
+    {
+      "featureId": "dominican-rep-4188034637dd",
+      "geometryHash": "4188034637dd01da624ca9d15e031fa60281658ace9ce9c81d0736a539dda113",
+      "geometryType": "Polygon",
+      "index": 178,
+      "iso3": "DOM",
+      "name": "Dominican Rep.",
+      "propertiesHash": "e7f781e69a128e117407723d3c10aee0638f3fd48429de109151f7759cbdd825"
+    },
+    {
+      "featureId": "dominica-d571c0e04043",
+      "geometryHash": "d571c0e04043060c572713f0b92454e86e4597ad3da9838f69c7082f92d2e3f8",
+      "geometryType": "Polygon",
+      "index": 179,
+      "iso3": "DMA",
+      "name": "Dominica",
+      "propertiesHash": "534ff673de7abefa91bd4c4dce9a70c1c43aa9702a32d94aa556b15b08d9536c"
+    },
+    {
+      "featureId": "djibouti-4948f7d4f3c2",
+      "geometryHash": "4948f7d4f3c236f8829250343a7ae9880473a1c46029f1e67271e2fe910262ba",
+      "geometryType": "Polygon",
+      "index": 180,
+      "iso3": "DJI",
+      "name": "Djibouti",
+      "propertiesHash": "020824844d8fc18a8fab40c6456df7d8304b6f0e1320feb50c667441420909b6"
+    },
+    {
+      "featureId": "greenland-626c498bac8b",
+      "geometryHash": "626c498bac8bce36ebfecdb8fdfc09b34618ecb7db551a33c58d8e1923d34551",
+      "geometryType": "MultiPolygon",
+      "index": 181,
+      "iso3": "GRL",
+      "name": "Greenland",
+      "propertiesHash": "71bb48cf936502e04cd97db27c4ef96116201cd7c7dcbe12b7430c65bf5eb98c"
+    },
+    {
+      "featureId": "faeroe-is-3486ba8442d3",
+      "geometryHash": "3486ba8442d37780a039f077ea81548572a61395ea0a10ed621b93551419ed66",
+      "geometryType": "Polygon",
+      "index": 182,
+      "iso3": "FRO",
+      "name": "Faeroe Is.",
+      "propertiesHash": "e19f430ea0e40a429c27ec2b0b375cf93f3a5e8953bdee50d4f160231d28ad7a"
+    },
+    {
+      "featureId": "denmark-4553c8fa52bf",
+      "geometryHash": "4553c8fa52bfc81c0fde36f2e8df5f7356c3609904e449f3e62c9587a0c7f4d2",
+      "geometryType": "MultiPolygon",
+      "index": 183,
+      "iso3": "DNK",
+      "name": "Denmark",
+      "propertiesHash": "6d0cbd1ab4837e9b0ec279ecd581e04835a92356e7c30f32773ae8fa3b46c1e8"
+    },
+    {
+      "featureId": "czechia-ef993d47e2fc",
+      "geometryHash": "ef993d47e2fc705d525bf565524d6a1f717b4f8ea84f7c80d5cdf2b65b061d90",
+      "geometryType": "Polygon",
+      "index": 184,
+      "iso3": "CZE",
+      "name": "Czechia",
+      "propertiesHash": "9491dea15f70586cf5d751017c721a294a814b8736dca791b4b1a6d1496cc1c0"
+    },
+    {
+      "featureId": "n-cyprus-5dc5a3da6fe5",
+      "geometryHash": "5dc5a3da6fe57e5cd1eaf9395f842dfc64b5cf51454d57dc447ff2fe3bd46ad6",
+      "geometryType": "Polygon",
+      "index": 185,
+      "iso3": null,
+      "name": "N. Cyprus",
+      "propertiesHash": "f310ae8b6dd1466360b8200861cb87f612513853e5e7e18d0a7e1207fb66dfdb"
+    },
+    {
+      "featureId": "cyprus-d0ee3dab8e16",
+      "geometryHash": "d0ee3dab8e16b154e9bdc63131b5baaff89a5652327d9ed150f040948fe058f8",
+      "geometryType": "Polygon",
+      "index": 186,
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "propertiesHash": "63103bb3e1f5ea198b00cdc86cd006627250389944a21e546cea1d25b7e10f59"
+    },
+    {
+      "featureId": "cuba-f2ddb361f054",
+      "geometryHash": "f2ddb361f054c5b696063c0a17534cb0bd2db11d8827e93dfef3b8025b01c9f4",
+      "geometryType": "MultiPolygon",
+      "index": 187,
+      "iso3": "CUB",
+      "name": "Cuba",
+      "propertiesHash": "3eaf4a259d0c733823b6735789a4ad1390c87ad865eb25c9441e58407194429d"
+    },
+    {
+      "featureId": "croatia-215ea6bc71f0",
+      "geometryHash": "215ea6bc71f0aa5e352813cf268eda0f22cb773ae3221b716015b45573c73b20",
+      "geometryType": "MultiPolygon",
+      "index": 188,
+      "iso3": "HRV",
+      "name": "Croatia",
+      "propertiesHash": "91e6f311e4d49f4572fbd69994c763d9c4d1efaa0a5ff9c306517462a9a5f1e5"
+    },
+    {
+      "featureId": "co-te-d-ivoire-ff3dc01b2821",
+      "geometryHash": "ff3dc01b2821578da6d1e63f093cd6d461918613dd295b4cc403d9b6df4fbf21",
+      "geometryType": "Polygon",
+      "index": 189,
+      "iso3": "CIV",
+      "name": "Côte d'Ivoire",
+      "propertiesHash": "c3172ea2079be9d0ebd8c27203fdfe898ab8f400e8f2cf066d5b20e0e99e51b5"
+    },
+    {
+      "featureId": "costa-rica-f945a1a02a3d",
+      "geometryHash": "f945a1a02a3d4664cdf93274846e83433599ec61a6f1b7eace117a5a31968aac",
+      "geometryType": "Polygon",
+      "index": 190,
+      "iso3": "CRI",
+      "name": "Costa Rica",
+      "propertiesHash": "1d2b48b3c1b0ebd149562ffd0ad24dec9eb4f40d9ce66b8b2cca181c0d405538"
+    },
+    {
+      "featureId": "dem-rep-congo-5a0a614621ad",
+      "geometryHash": "5a0a614621ad9124734deb6bd6403332419dd1a20e0b847774d3d4fcbf87f795",
+      "geometryType": "Polygon",
+      "index": 191,
+      "iso3": "COD",
+      "name": "Dem. Rep. Congo",
+      "propertiesHash": "0a43139ca707137838c59a7f901e7abcfeb81fe37ea4b8ca396803a5758dda40"
+    },
+    {
+      "featureId": "congo-e30f1ae6f87d",
+      "geometryHash": "e30f1ae6f87d4a96f7656d823028144e8c3de090491626cb9c943c537c4744b3",
+      "geometryType": "Polygon",
+      "index": 192,
+      "iso3": "COG",
+      "name": "Congo",
+      "propertiesHash": "f3fac3a12adbc2697992479b13ea2985af35ecb559d29c498532824e3008b250"
+    },
+    {
+      "featureId": "comoros-4720d6fecbe8",
+      "geometryHash": "4720d6fecbe8da978da8f3bfbc6c47b99e1cf9d542b0a780beb16c6a1fcaa25d",
+      "geometryType": "MultiPolygon",
+      "index": 193,
+      "iso3": "COM",
+      "name": "Comoros",
+      "propertiesHash": "9837afacad7af89f67cca8bc71b57cb64f3886b7679cc48cc691ac9406818785"
+    },
+    {
+      "featureId": "colombia-9e5f03396d31",
+      "geometryHash": "9e5f03396d317761949ecfe5c45a08f4733a46db7b1888b88a167ebd9c39c02b",
+      "geometryType": "Polygon",
+      "index": 194,
+      "iso3": "COL",
+      "name": "Colombia",
+      "propertiesHash": "a6c08256fef5db1fb46d536fb7e8b2655a5b25ebd8c4be4447386c89634435f9"
+    },
+    {
+      "featureId": "china-3b9501fc1a67",
+      "geometryHash": "3b9501fc1a67e346077b4f5d786da32859bc16dcad03ae33528b8b4c6abea543",
+      "geometryType": "MultiPolygon",
+      "index": 195,
+      "iso3": "CHN",
+      "name": "China",
+      "propertiesHash": "d404dab39c44c30a2187057532ed49cd448bf53725a1989ddca872049471bb42"
+    },
+    {
+      "featureId": "macao-8e3fa17cba8d",
+      "geometryHash": "8e3fa17cba8da9e55fdd63f20ed907f477a764474e994ce39b529db959ba3f62",
+      "geometryType": "Polygon",
+      "index": 196,
+      "iso3": "MAC",
+      "name": "Macao",
+      "propertiesHash": "3d9e122b0b7ee6a9b3a0e9a28bd6ae3bc6233b906148097f690612342d122181"
+    },
+    {
+      "featureId": "chile-4b5a0f99ef2e",
+      "geometryHash": "4b5a0f99ef2e47f611bd4f920940886d0a548d3545fe43217369673ade26d579",
+      "geometryType": "MultiPolygon",
+      "index": 197,
+      "iso3": "CHL",
+      "name": "Chile",
+      "propertiesHash": "1dc3919ab3bc71000786758fcfb5fa126a716590cb7662aa5848e7e4f431812a"
+    },
+    {
+      "featureId": "chad-d658006218d3",
+      "geometryHash": "d658006218d30ef5652eaa188e7ed43e4f39d4e55e038fedb5d65329b0c113d8",
+      "geometryType": "Polygon",
+      "index": 198,
+      "iso3": "TCD",
+      "name": "Chad",
+      "propertiesHash": "46fd727d6622e820b6abdc171cb99628034b5d6751fced4b30d706d2db669f2d"
+    },
+    {
+      "featureId": "central-african-rep-d2187beb63e1",
+      "geometryHash": "d2187beb63e12ffb39638a60eec0cbac3ebbca8dd90bb2069bc4d8f649ecc407",
+      "geometryType": "Polygon",
+      "index": 199,
+      "iso3": "CAF",
+      "name": "Central African Rep.",
+      "propertiesHash": "b16ffa2a38af8addddbdc7eaac3fe3cfb8c0263d2f61d1beed9167fa9a200b68"
+    },
+    {
+      "featureId": "cabo-verde-10e684b9f099",
+      "geometryHash": "10e684b9f09962d46fdd7afd2fe6c9d534faa4f0ac41126b1ff411e0f2364cde",
+      "geometryType": "MultiPolygon",
+      "index": 200,
+      "iso3": "CPV",
+      "name": "Cabo Verde",
+      "propertiesHash": "e770c17f4d3b544a2f12b52297c063a41c53b4ce6cc9fc6a3dc9e00877661565"
+    },
+    {
+      "featureId": "canada-d13d5ed28a63",
+      "geometryHash": "d13d5ed28a63f071461fbf124736b051ce0203ed0f9053f2d471892a4797789f",
+      "geometryType": "MultiPolygon",
+      "index": 201,
+      "iso3": "CAN",
+      "name": "Canada",
+      "propertiesHash": "ebcbb7bf7704999c9efdfd94290a7991f84da96a2c81e523e1e511ebf431eb87"
+    },
+    {
+      "featureId": "cameroon-9688437df40c",
+      "geometryHash": "9688437df40c4a4ae88ae341e8644bbfbe1d72b0efa49e68a63383afc9d250ed",
+      "geometryType": "Polygon",
+      "index": 202,
+      "iso3": "CMR",
+      "name": "Cameroon",
+      "propertiesHash": "6f69d0a92cea1c897734b1a0208486d4fd107297a59bfac8f35d665b6d2677d0"
+    },
+    {
+      "featureId": "cambodia-1108445f325b",
+      "geometryHash": "1108445f325b946fb9ef9f73391285de6d874fb303eed6b3a36742e3b2685fe8",
+      "geometryType": "Polygon",
+      "index": 203,
+      "iso3": "KHM",
+      "name": "Cambodia",
+      "propertiesHash": "34ac2d6fe13ffbe33ef5d19a1f243527d9aeb777e832e816c721141878d44eec"
+    },
+    {
+      "featureId": "myanmar-7d739cfe27cb",
+      "geometryHash": "7d739cfe27cb356d32f93d0d67f452d78034dcb587dfe4875db3149662f3811c",
+      "geometryType": "MultiPolygon",
+      "index": 204,
+      "iso3": "MMR",
+      "name": "Myanmar",
+      "propertiesHash": "8c06b8879df11bb1d9afd1f1c797c1bc8ff28893ac8a3ef140c97c9e575f3492"
+    },
+    {
+      "featureId": "burundi-cba1d890e9ea",
+      "geometryHash": "cba1d890e9eaa984e5a28327e15503d9e97a35ffb6ff86424f63dd75c769c9b5",
+      "geometryType": "Polygon",
+      "index": 205,
+      "iso3": "BDI",
+      "name": "Burundi",
+      "propertiesHash": "4bbc3001c16d3a71210f9e2d7fc5c5b8f403a9710d8add899ba33a3bc9d48c60"
+    },
+    {
+      "featureId": "burkina-faso-0ffa63e3417d",
+      "geometryHash": "0ffa63e3417d703262c22da346ca8b9115adac669fbba67d5623fde0a6fe3b08",
+      "geometryType": "Polygon",
+      "index": 206,
+      "iso3": "BFA",
+      "name": "Burkina Faso",
+      "propertiesHash": "60b25cd3b578f83c75b39cd999066c9390588a0f4bcdf82f03e4071e4448d772"
+    },
+    {
+      "featureId": "bulgaria-877e791f14e6",
+      "geometryHash": "877e791f14e63d47e185ea58e811d2a1ee629c82b94a442b15e95b8474e809c6",
+      "geometryType": "Polygon",
+      "index": 207,
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "propertiesHash": "de710ef904d6ad4009dc6ca412972a677896b99cf09068ca7e225fb0e1846301"
+    },
+    {
+      "featureId": "brunei-a9c5c4678dfb",
+      "geometryHash": "a9c5c4678dfb26de2521565b04a1a008fd25a259c6bcb8ebcd5eef257242d291",
+      "geometryType": "MultiPolygon",
+      "index": 208,
+      "iso3": "BRN",
+      "name": "Brunei",
+      "propertiesHash": "2df2551d71d36b36e87efbb9cf2332ea2d94d0398d654ce8b1153221f6813c76"
+    },
+    {
+      "featureId": "brazil-8314ed0170e6",
+      "geometryHash": "8314ed0170e6f8154cc5d5587bbf0c807656e82d756deb78e24005e78aa8d42e",
+      "geometryType": "MultiPolygon",
+      "index": 209,
+      "iso3": "BRA",
+      "name": "Brazil",
+      "propertiesHash": "f73875d2736dac261d2d6406b6aa0a5d53bbbb52f3c90a4ce9bc94ed2722189d"
+    },
+    {
+      "featureId": "botswana-a0ffdfe52386",
+      "geometryHash": "a0ffdfe5238636de9cdd71dbd057082d961da12e6e6ddea850c7289f7e03a6a2",
+      "geometryType": "Polygon",
+      "index": 210,
+      "iso3": "BWA",
+      "name": "Botswana",
+      "propertiesHash": "4ec1f9649e4a4ce31e674fe123abc729a51d5cba9d03c6420dbd94f525be569d"
+    },
+    {
+      "featureId": "bosnia-and-herz-4a414bb59113",
+      "geometryHash": "4a414bb59113e50780a669cba1d0f3d2a7fadfd75ea59516fa1afa701d6d97ee",
+      "geometryType": "Polygon",
+      "index": 211,
+      "iso3": "BIH",
+      "name": "Bosnia and Herz.",
+      "propertiesHash": "d33b7aeebde73266268e0d12e3a19de55b6fc82f2b3f21aaf5b78cb35c0dc3ac"
+    },
+    {
+      "featureId": "bolivia-d479fbb6ecb7",
+      "geometryHash": "d479fbb6ecb7edebcadbeabfe97aee8183a6457e69b3f93d60040ad008e66cd2",
+      "geometryType": "Polygon",
+      "index": 212,
+      "iso3": "BOL",
+      "name": "Bolivia",
+      "propertiesHash": "3f3c69fb1ddf7c2af4c076c5ea5cdc9023a3dec4785fba19603d0c957d37b266"
+    },
+    {
+      "featureId": "bhutan-658a4632e009",
+      "geometryHash": "658a4632e009f1f8b0fa4fe252a4049de033aba0164b94e1928eed0cbee94b7b",
+      "geometryType": "Polygon",
+      "index": 213,
+      "iso3": "BTN",
+      "name": "Bhutan",
+      "propertiesHash": "d38491e3a10e08faf92647f133a89d829a5ed138753cee8229c75fd986298784"
+    },
+    {
+      "featureId": "benin-1fe0665f17da",
+      "geometryHash": "1fe0665f17da90c4a947fae462bffb6210df8df52967c095e17e16977cb7034c",
+      "geometryType": "Polygon",
+      "index": 214,
+      "iso3": "BEN",
+      "name": "Benin",
+      "propertiesHash": "bbbc9db035875d5086851cd148930a665910c8b14ce1fa24cebb70912cc7474c"
+    },
+    {
+      "featureId": "belize-ad72bca72fb0",
+      "geometryHash": "ad72bca72fb0d37d0b9a3ee1b066f4bdf753388b2eec284b540ca088c10c18d4",
+      "geometryType": "MultiPolygon",
+      "index": 215,
+      "iso3": "BLZ",
+      "name": "Belize",
+      "propertiesHash": "7a45661daa29efc9a3fa222e5dc7ed0c646632100c373fa722d047b77ecc28ba"
+    },
+    {
+      "featureId": "belgium-858f4992ea9f",
+      "geometryHash": "858f4992ea9f561df2d745596f012bc3540789f13102bf622931846c2bd807c8",
+      "geometryType": "Polygon",
+      "index": 216,
+      "iso3": "BEL",
+      "name": "Belgium",
+      "propertiesHash": "71c30e68e5938f7d3adea915b56b473e761ae83995c2d88bdd9f5a9769e5fa2e"
+    },
+    {
+      "featureId": "belarus-eee7ca5d4f7e",
+      "geometryHash": "eee7ca5d4f7e74bb273590e031f531919d35c11f0a0758c5753e9ad240ff5941",
+      "geometryType": "Polygon",
+      "index": 217,
+      "iso3": "BLR",
+      "name": "Belarus",
+      "propertiesHash": "86af2e6370c053b6e6c21e47ba0d1083790c1ee1d262eed35eb89dc5f3f76cdc"
+    },
+    {
+      "featureId": "barbados-93c045092f43",
+      "geometryHash": "93c045092f438109429c7037b1057561cd22fb436a4def798ea5384c372ea751",
+      "geometryType": "Polygon",
+      "index": 218,
+      "iso3": "BRB",
+      "name": "Barbados",
+      "propertiesHash": "f3161aaa97991bc2462858754eee9500003064d3e8f224672cd2ea705f0fb0e0"
+    },
+    {
+      "featureId": "bangladesh-c3cc7521ed2b",
+      "geometryHash": "c3cc7521ed2b6950a49fc005f3251848cc323dd73f3b9e8c4d4cebf7ba8c9237",
+      "geometryType": "MultiPolygon",
+      "index": 219,
+      "iso3": "BGD",
+      "name": "Bangladesh",
+      "propertiesHash": "2b0c8df627042671dc1e008a81430df92137a374a84fb129a8423fef4520cafd"
+    },
+    {
+      "featureId": "bahrain-ea4b47d5abb0",
+      "geometryHash": "ea4b47d5abb0ac731296ab93aa63a514c269f84fed46320165fe4cd351d7ddf0",
+      "geometryType": "Polygon",
+      "index": 220,
+      "iso3": "BHR",
+      "name": "Bahrain",
+      "propertiesHash": "43a6f348c041603517642e97f34ff993c30a8b0993dab97f14512f5b643a2a2a"
+    },
+    {
+      "featureId": "bahamas-f6cd7cc624d5",
+      "geometryHash": "f6cd7cc624d5f66e3ab318492f3d652eec26042b8bd5777382831b5ded02c49b",
+      "geometryType": "MultiPolygon",
+      "index": 221,
+      "iso3": "BHS",
+      "name": "Bahamas",
+      "propertiesHash": "82a8693ff11b7b29cb983da0faeb48f4331249d8c73cf1e40628978195ff6d0b"
+    },
+    {
+      "featureId": "azerbaijan-119e7525b8c7",
+      "geometryHash": "119e7525b8c705adc6c8122334105d768aee3745e84b865859b3437ad17284b3",
+      "geometryType": "MultiPolygon",
+      "index": 222,
+      "iso3": "AZE",
+      "name": "Azerbaijan",
+      "propertiesHash": "8f6e2c4c0c94712abc0f9c5e3b1a802a7de4069423441afe03a7f684b3336d95"
+    },
+    {
+      "featureId": "austria-9eaf2a3d0fb0",
+      "geometryHash": "9eaf2a3d0fb0d40e97a5a39225f04c5db4c1e0b63b34ba2ad0c3a9315561c9a8",
+      "geometryType": "Polygon",
+      "index": 223,
+      "iso3": "AUT",
+      "name": "Austria",
+      "propertiesHash": "b8b388b12e1bd714f955008e36271a5ed4e20870a19e9132507569f6bd0b4d96"
+    },
+    {
+      "featureId": "australia-7d1dd72266d5",
+      "geometryHash": "7d1dd72266d5a737db869fe19d1d8ea2fa7b3ce92f4a4b2fef2b7a05509fdfef",
+      "geometryType": "MultiPolygon",
+      "index": 224,
+      "iso3": "AUS",
+      "name": "Australia",
+      "propertiesHash": "d951ae1cb2867a8636342b61b3b3ced0d73a7f610e66e9554811eab4000ac692"
+    },
+    {
+      "featureId": "indian-ocean-ter-8db708453169",
+      "geometryHash": "8db70845316919ed22be610672d6706de2628cc14e869c94728636ed3df3a806",
+      "geometryType": "Polygon",
+      "index": 225,
+      "iso3": "AUS",
+      "name": "Indian Ocean Ter.",
+      "propertiesHash": "5c631fdd8613ddac99efc5184a7f5163753d1cad14ef588b58505f3b7a20ce82"
+    },
+    {
+      "featureId": "heard-i-and-mcdonald-is-739671e7b6cf",
+      "geometryHash": "739671e7b6cf1dd689a76e05c5f6df57983790f52560c540e20fb3b38ae58665",
+      "geometryType": "Polygon",
+      "index": 226,
+      "iso3": "HMD",
+      "name": "Heard I. and McDonald Is.",
+      "propertiesHash": "b061e6043fe96b47c4f0e0f38b1349d664d696ad94375bcba862fac154d7999c"
+    },
+    {
+      "featureId": "norfolk-island-8e18a2dc01b0",
+      "geometryHash": "8e18a2dc01b0a9904bb202bbaa4ee03d041c76d13f670abea8104e55be479135",
+      "geometryType": "Polygon",
+      "index": 227,
+      "iso3": "NFK",
+      "name": "Norfolk Island",
+      "propertiesHash": "1ab3fbdf6910c6c2f27cf041360cc1d61d610ff4aaa45b8ad62fcc2b7ef88d70"
+    },
+    {
+      "featureId": "ashmore-and-cartier-is-26c5bbd5abcd",
+      "geometryHash": "26c5bbd5abcd9585289134f9819e1294762f18197ac20ce52e76250903c731c3",
+      "geometryType": "Polygon",
+      "index": 228,
+      "iso3": "AUS",
+      "name": "Ashmore and Cartier Is.",
+      "propertiesHash": "850473c01cebe7c5db658f9bbb7c0b5d5b43bba5aae45d852c9413616d00a96d"
+    },
+    {
+      "featureId": "armenia-bf4fd0cf9b89",
+      "geometryHash": "bf4fd0cf9b890f4639e0d651205b969f77a7fea26ecd2b1ad7260418f9659ff8",
+      "geometryType": "Polygon",
+      "index": 229,
+      "iso3": "ARM",
+      "name": "Armenia",
+      "propertiesHash": "7732400b47222ae81a5dc5d8a0cf75b6799cd0406d37b3ab9f1ef24f85affefc"
+    },
+    {
+      "featureId": "argentina-ea42790d745d",
+      "geometryHash": "ea42790d745de5c0065dfbe80f8daf3576981c73037bfff45bd42d1eb8911001",
+      "geometryType": "MultiPolygon",
+      "index": 230,
+      "iso3": "ARG",
+      "name": "Argentina",
+      "propertiesHash": "42cabbc3dd0c3c50dc31396f1738304189ce2b98ee2affacc813f32d0602d90d"
+    },
+    {
+      "featureId": "antigua-and-barb-b5bccf5378fe",
+      "geometryHash": "b5bccf5378fe20c50a1fb581e9974442b42f757a8f0d27cc4272883e8e2b0320",
+      "geometryType": "Polygon",
+      "index": 231,
+      "iso3": "ATG",
+      "name": "Antigua and Barb.",
+      "propertiesHash": "32bde2abf67d54b4adb66169650e63989a93359bc56fc4e4f0faa0a34ba7d550"
+    },
+    {
+      "featureId": "angola-cd0bc8ad3986",
+      "geometryHash": "cd0bc8ad398698cc58ca448e90632dfcf31202641e045b1a0d95543e779b03a5",
+      "geometryType": "MultiPolygon",
+      "index": 232,
+      "iso3": "AGO",
+      "name": "Angola",
+      "propertiesHash": "153e856abf12f2a3cad48379d682359d94826ee39e9ad2858d62d94b07a5a38b"
+    },
+    {
+      "featureId": "andorra-adaf75479abd",
+      "geometryHash": "adaf75479abd7b5fd157f574e92547719fb60f2aa7cbbc0a39dd73a6d0384b4d",
+      "geometryType": "Polygon",
+      "index": 233,
+      "iso3": "AND",
+      "name": "Andorra",
+      "propertiesHash": "c12c3be2bd12443844de846fca3daeeaf9a3140c96167168dbc5d3c6e5ebc6cb"
+    },
+    {
+      "featureId": "algeria-596fba12f79b",
+      "geometryHash": "596fba12f79bb8f82a3e6bc671ff03f1bfe6336c22177eec8140710ea720d511",
+      "geometryType": "Polygon",
+      "index": 234,
+      "iso3": "DZA",
+      "name": "Algeria",
+      "propertiesHash": "e460cd8a13b376f49fc67ff38526451e6365fb548016ec711c2b4cf4931cb0ea"
+    },
+    {
+      "featureId": "albania-f4b0eac110ad",
+      "geometryHash": "f4b0eac110adbd774af625e9208dc6503ca24596201a7b468bdfbb82907ae499",
+      "geometryType": "Polygon",
+      "index": 235,
+      "iso3": "ALB",
+      "name": "Albania",
+      "propertiesHash": "960ec345ac05df8997506373c74b0e09e655c58e991252f7d38ad959c131a0c0"
+    },
+    {
+      "featureId": "afghanistan-7ce66acedd7f",
+      "geometryHash": "7ce66acedd7fd40a2f3cabc683afc8b3dd9195f0b8523dab2a9ff9513ea86178",
+      "geometryType": "Polygon",
+      "index": 236,
+      "iso3": "AFG",
+      "name": "Afghanistan",
+      "propertiesHash": "992a5aada1b74a3ab86074892016282238089682ae21f6f4ce5b5c704994ea0c"
+    },
+    {
+      "featureId": "siachen-glacier-671d136c6dd4",
+      "geometryHash": "671d136c6dd4eeb2c033f0cfbf68a85c89ae095f3dbff559172131ae7a1e43e7",
+      "geometryType": "Polygon",
+      "index": 237,
+      "iso3": null,
+      "name": "Siachen Glacier",
+      "propertiesHash": "bd4b8365bab5d0c23a636da3664b4ef14f37034059b0516d617a167f3c5eb9ce"
+    },
+    {
+      "featureId": "antarctica-8e1d5d94efd2",
+      "geometryHash": "8e1d5d94efd207494f5203eeec0db231e84901c60b132e5fc07309bdf18ba30c",
+      "geometryType": "MultiPolygon",
+      "index": 238,
+      "iso3": "ATA",
+      "name": "Antarctica",
+      "propertiesHash": "fd1ebd929965e13435ba8b4322b0f2b03ee06bb56155986f6531b82bb5a220e5"
+    },
+    {
+      "featureId": "sint-maarten-135647e06216",
+      "geometryHash": "135647e0621657543d34ac2eea80d0efc8a855317a517d1bf1d110fe7fb6cc5c",
+      "geometryType": "Polygon",
+      "index": 239,
+      "iso3": "SXM",
+      "name": "Sint Maarten",
+      "propertiesHash": "755925e064f26daa2f3c7b24dc1db7df34f17b5661b6a13958eec63f2a7e78e1"
+    },
+    {
+      "featureId": "tuvalu-acf4d992fd21",
+      "geometryHash": "acf4d992fd21e54ffd6088990eeb21cb6db5bce0c87b83a479d471e53853052b",
+      "geometryType": "Polygon",
+      "index": 240,
+      "iso3": "TUV",
+      "name": "Tuvalu",
+      "propertiesHash": "7da9e11637abea4af6b62fcdaf9d5f59d5dc8ff358054df9c119b219fc3bf403"
+    }
+  ],
+  "flows": [
+    {
+      "edgeCount": 21,
+      "edgesRef": null,
+      "hash": "a2e6e1b2382ea10bc578ba4d552a8097fd9fdf0263dc528901b74160c458a053",
+      "key": "aid"
+    },
+    {
+      "edgeCount": 13,
+      "edgesRef": null,
+      "hash": "5d93789a6f437bee47d01e46100a18829abb9753060782aaed2d85985377a62a",
+      "key": "arms"
+    },
+    {
+      "edgeCount": 28,
+      "edgesRef": null,
+      "hash": "046090471ee1834a286500627aeeeff375607c1ad01d71228f296dac0c455260",
+      "key": "braindrain"
+    },
+    {
+      "edgeCount": 18,
+      "edgesRef": null,
+      "hash": "e14ea1ab9867e826086bfd221c57a3920eb0c6517a07162848f80dec902bbf29",
+      "key": "cables"
+    },
+    {
+      "edgeCount": 10,
+      "edgesRef": null,
+      "hash": "c73d707b3aaf96033166d2d172db75f3c3f8b57641719e0d7c1b96d6928a52f9",
+      "key": "counterfeit"
+    },
+    {
+      "edgeCount": 9,
+      "edgesRef": null,
+      "hash": "abb494fec2f4b4f9b0b45e1499270ecaabc8a0d6cd15cede2932a09bdd4665c4",
+      "key": "currents"
+    },
+    {
+      "edgeCount": 94,
+      "edgesRef": null,
+      "hash": "b6078de601573ceb973f2decca3bb81939d46d252082d40e6f7e6c2b1fd1d456",
+      "key": "debt"
+    },
+    {
+      "edgeCount": 0,
+      "edgesRef": "debt",
+      "hash": "6c03000095e5e60c817955776839bfa44783aecea0dbb996541ec26d750049c4",
+      "key": "debtin"
+    },
+    {
+      "edgeCount": 0,
+      "edgesRef": "debt",
+      "hash": "80f1ea9929a9f34c6aba51bee14988ecf9867a1284a8aef02976422dccab68a1",
+      "key": "debtout"
+    },
+    {
+      "edgeCount": 27,
+      "edgesRef": null,
+      "hash": "15227a5d977db582a702c8e71d025cbad52b152886bd1280fed3e77ba78c5916",
+      "key": "drugs"
+    },
+    {
+      "edgeCount": 2,
+      "edgesRef": null,
+      "hash": "dad61fbd554963626992a12c9dfc1b4f5f999fbe185674740c2f21d2752ea0d2",
+      "key": "dust"
+    },
+    {
+      "edgeCount": 20,
+      "edgesRef": null,
+      "hash": "5e6af89722400baaee762e7527d0dbdf31f23bbef1d66c8263bd4c639127f4e6",
+      "key": "flights"
+    },
+    {
+      "edgeCount": 6,
+      "edgesRef": null,
+      "hash": "6c489a8f884d9f06412b16c2e807d832013563b6566d54bc7ec5c1fcdd28cf4d",
+      "key": "flyways"
+    },
+    {
+      "edgeCount": 24,
+      "edgesRef": null,
+      "hash": "e0069ab310c4f1a3cad237d55b5a30690fb0fabd73537fc3ab8372704a89a426",
+      "key": "food"
+    },
+    {
+      "edgeCount": 53,
+      "edgesRef": null,
+      "hash": "116310ef04a4d115d6cd95b3733e9b8d958f260bfe58dde4b20bf60500e53474",
+      "key": "migration"
+    },
+    {
+      "edgeCount": 25,
+      "edgesRef": null,
+      "hash": "f964b0ddd68f4a68ea7ce8b356c3ef314d20349800314d6b340c5305f31fb6b5",
+      "key": "minerals"
+    },
+    {
+      "edgeCount": 31,
+      "edgesRef": null,
+      "hash": "d4ffd6dcdbdc98914c570862b351fe8c97d55216e7070d60b4e1f5b10c4b8bec",
+      "key": "oil"
+    },
+    {
+      "edgeCount": 49,
+      "edgesRef": null,
+      "hash": "f0df788b6afd012a6b71ac325572f11d7aa606d261873c318e22566565302951",
+      "key": "refugees"
+    },
+    {
+      "edgeCount": 36,
+      "edgesRef": null,
+      "hash": "ec8fdea83e6f70deedfe9a42c5ee573cec5252b10d4e256bcfd4f23182a186b7",
+      "key": "remittances"
+    },
+    {
+      "edgeCount": 4,
+      "edgesRef": null,
+      "hash": "167dd501ed858294f076634177087de16fd35c63cacc3307e5ef9fd2e4349b60",
+      "key": "shipping"
+    },
+    {
+      "edgeCount": 2,
+      "edgesRef": null,
+      "hash": "735b71c1e2f07331335507266e20fa9c2030c5cd285e51002e9fdb062ad491a3",
+      "key": "silkroad"
+    },
+    {
+      "edgeCount": 20,
+      "edgesRef": null,
+      "hash": "77769262ca687dadd3d64b611ab0f67a6ef3170d9962ca5006ffa554b55b2140",
+      "key": "students"
+    },
+    {
+      "edgeCount": 27,
+      "edgesRef": null,
+      "hash": "dd132f08516a3b4031c8678c657337e06c27d1eee7a7d5fd25e41de64aeaade8",
+      "key": "trade"
+    },
+    {
+      "edgeCount": 76,
+      "edgesRef": null,
+      "hash": "b4e1833630946a4cbe4e86da86a572d63fbbd40bf38874ad9acaca80623289da",
+      "key": "trafficking"
+    },
+    {
+      "edgeCount": 4,
+      "edgesRef": null,
+      "hash": "c508624c957c50dc9fe8f02f6e64792b4d504b0277df96ad96b5aeea1788ff00",
+      "key": "voyages"
+    },
+    {
+      "edgeCount": 23,
+      "edgesRef": null,
+      "hash": "49e142ab50df99a8d6010d0613b27aff37e78d1453df01ed7bfa16b6675768fe",
+      "key": "wildlife"
+    },
+    {
+      "edgeCount": 21,
+      "edgesRef": null,
+      "hash": "ccb7bf0183e5b898c1dfe6896277a51e964ac0cd6923eb2fc53a76226caf048f",
+      "key": "wood"
+    }
+  ],
+  "hashes": {
+    "countryLabels": "5d0f724aaf16fd56ce554bfa9821be431832fe41548d80a0f37ff1443f8f6777",
+    "flowMagnitude": "7ccb53f7e305ba0dc03a2f214cbae9210256075e43e91e7f6949a16ed25c888a",
+    "flows": "df6465ece493143e5c1b8ff56b3fbdee6baad6f941f7e80d57c9e3469352afeb",
+    "mapData": "d3552a9b0156e52b3e9665dda2037900ebd4fe81775902adebe315525ed0ae39",
+    "meta": "5a9ec1703cce309e2f1dfa26d7bf13cfe796ab86e38e3039bd3878f5c28e1db1",
+    "migrationFrames": "74325f391a70e34ab733e868c81c020f9c04f7a4c793e7ff830e33b5a57494ff",
+    "migrationIndex": "c396f9a1bb1b74ca1443f10ea553de94f245c6294dfae733de637d931d17b75b",
+    "provenance": "4ec8dc86a02fcd56dfb5d510bb129a3ede1796749deffc84dda93f04931744b5"
+  },
+  "layers": [
+    {
+      "group": "Reference",
+      "hash": "4d072b8447037366c924480d619269aed4463c4c28d2d37513cf151c476a5726",
+      "key": "countries",
+      "label": "Countries",
+      "type": "reference"
+    },
+    {
+      "group": "People & culture",
+      "hash": "9333c144e6eb11ea366547db5145bf26e07bb0e68b828591b6015dbeb63f3ef5",
+      "key": "religion",
+      "label": "Religion (by branch)",
+      "type": "categorical"
+    },
+    {
+      "group": "People & culture",
+      "hash": "6eef2e187fff024aeb568da3d1fd03832fe8ea2cd87f7c81ebd18c244fe7c4ca",
+      "key": "language",
+      "label": "Language family",
+      "type": "categorical"
+    },
+    {
+      "group": "Politics & rights",
+      "hash": "3bfb90447b61ede65b16ef1cec2a84e00496074c640748369be28da016c17535",
+      "key": "govtype",
+      "label": "Government type",
+      "type": "categorical"
+    },
+    {
+      "group": "Politics & rights",
+      "hash": "fdf5b42d381e4acfa846b338816ab0a453f1c8c8ef858b855c80b713591f3e91",
+      "key": "regime",
+      "label": "Regime type",
+      "type": "categorical"
+    },
+    {
+      "group": "Politics & rights",
+      "hash": "1ba30fa27c96610f99192f50fe2f5d5c8e666a32e04f5e24928c1fd837d7a395",
+      "key": "lgbt",
+      "label": "LGBTQ+ legal status",
+      "type": "categorical"
+    },
+    {
+      "group": "Economy",
+      "hash": "0a194ccbe5a1edfd19a6c6d7252e0675070130b0048eb560ffd7e8bf2987e51e",
+      "key": "popdensity",
+      "label": "Population density",
+      "type": "numeric"
+    },
+    {
+      "group": "Economy",
+      "hash": "ccfc625998be1cbcd7bbd83166d83501fb7863417d52d5d272508eb8b7eb250c",
+      "key": "gdppc",
+      "label": "GDP per capita",
+      "type": "numeric"
+    },
+    {
+      "group": "Economy",
+      "hash": "bf0f5f343148205466c4847caa73627da1502e3aa50c8fcaace524fd5f4e3816",
+      "key": "internet",
+      "label": "Internet use",
+      "type": "numeric"
+    },
+    {
+      "group": "Economy",
+      "hash": "d9e0d66666caf2822b359e9604fc4a7a196500522d89292a44fc32690016644c",
+      "key": "hdi",
+      "label": "Human Development Index",
+      "type": "numeric"
+    },
+    {
+      "group": "Debt",
+      "hash": "0698de7c6f52852937badfd1ced11d7424cc191e0eea366bc71f2db7b820e5ef",
+      "key": "govdebt",
+      "label": "Govt debt (% GDP)",
+      "type": "numeric"
+    },
+    {
+      "group": "Debt",
+      "hash": "2922c8300450e6dc0b4001320e35d7fbf700fb715223b042080831aa4327788c",
+      "key": "flow_debtout",
+      "label": "Debt — money lent out",
+      "type": "flow"
+    },
+    {
+      "group": "Debt",
+      "hash": "bc60552e66668afc53bd648864549822f781ea2b9df5936bea4dab7240ff652e",
+      "key": "flow_debtin",
+      "label": "Debt — money owed",
+      "type": "flow"
+    },
+    {
+      "group": "Health",
+      "hash": "878a16834fc888aa45822cc399046ac3fd7f81bf8ee72fcba118ef5c01cbf5ad",
+      "key": "lifeexp",
+      "label": "Life expectancy",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "7cc356ea7aafdcce5e1db8fb42606ef442e32a1a0b84721328d0d6ea4c5f2c58",
+      "key": "under5mort",
+      "label": "Under-5 mortality",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "ea466801ca7be0ef5821852bead4466734f90b215be17ac6657bccbeab80b0ba",
+      "key": "matmort",
+      "label": "Maternal mortality",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "57ffec673e5af92151a1ef6a8142331f512c83d7a80f9f5b567556ab8d424e02",
+      "key": "physicians",
+      "label": "Physicians / 1,000",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "aafb10bdc966a5b60de59c09e1be145cc13ed871da1270a519bb9855ddf864fb",
+      "key": "healthspend",
+      "label": "Health spending (% GDP)",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "c63d7cabdcdfcbab301c68c068d6956b8e49cd06fbf849a1dc5684138572813a",
+      "key": "hiv",
+      "label": "HIV prevalence",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "4769d3f0cd6f9bf9f2391f48c523f2a925af6128810eaa5e48ed22d2fa649bc0",
+      "key": "water",
+      "label": "Safe drinking water",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "c4e58cf7016c61b98e69e23f81ff47cde5d98986bf6f8b7a06f24f1a0e0c6f0f",
+      "key": "sanitation",
+      "label": "Sanitation access",
+      "type": "numeric"
+    },
+    {
+      "group": "Health",
+      "hash": "21d34ea938aff9780aaae94f246413ce38ae22f4cdb8032fbde9093fd4b5410a",
+      "key": "flow_braindrain",
+      "label": "Medical brain drain",
+      "type": "flow"
+    },
+    {
+      "group": "Environment & natural systems",
+      "hash": "8bc3c999ab5746b977c22da26ef63ebcf6bdd1123f350b51a7f8d1eeca36f71a",
+      "key": "co2pc",
+      "label": "CO₂ per capita",
+      "type": "numeric"
+    },
+    {
+      "group": "Environment & natural systems",
+      "hash": "fde1931fa85d766d2cd9587f06e7027b72373fb8804e493419a7ba57a570f70b",
+      "key": "climate",
+      "label": "Climate (Köppen)",
+      "type": "categorical"
+    },
+    {
+      "group": "Environment & natural systems",
+      "hash": "713f1a75701f964b70485eae0bcca3f8efacb80eb599a33b7eecaa4b58803c00",
+      "key": "flow_currents",
+      "label": "Ocean currents",
+      "type": "flow"
+    },
+    {
+      "group": "Environment & natural systems",
+      "hash": "6dd9ca9cd95b26498cd0b8e78cf71b060e4cb1b605b2509b8634ef744caaaa02",
+      "key": "flow_flyways",
+      "label": "Bird migration flyways",
+      "type": "flow"
+    },
+    {
+      "group": "Environment & natural systems",
+      "hash": "b3c7aad5bb467f9fcb4e995beb328e3e4253cef66d032852b5eef0e6e6478b7d",
+      "key": "flow_dust",
+      "label": "Saharan dust",
+      "type": "flow"
+    },
+    {
+      "group": "Human movement",
+      "hash": "ae922c58f5ee7e80f02e5f89a2c4c4a461ffca5d91219b55dc9502f396f73857",
+      "key": "flow_migration",
+      "label": "Migration corridors",
+      "type": "flow"
+    },
+    {
+      "group": "Human movement",
+      "hash": "9305ccc14e58a4e5cf4545c667f137ff8479c2890601a4d43d5964db23924414",
+      "key": "flow_remit",
+      "label": "Remittance corridors",
+      "type": "flow"
+    },
+    {
+      "group": "Human movement",
+      "hash": "33b776e79575b0f769fd39430a13465eddd0d0c02091d6b15136f3050006fda7",
+      "key": "flow_refugees",
+      "label": "Refugee flows",
+      "type": "flow"
+    },
+    {
+      "group": "Human movement",
+      "hash": "e5a88774d22b32ff3ae9ff9be7ba43a99a8e2a1f924be88e911c29f159c82547",
+      "key": "flow_students",
+      "label": "International students",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "5c9c8c05efdc0258c80e70fd63f7da4473f5369c031b1807a25456eef46130f9",
+      "key": "flow_trade",
+      "label": "Trade flows",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "c74115d45b36ddfe041e460e3d260585e427e8d09dadd0aacdcfbb768df0fb08",
+      "key": "flow_cables",
+      "label": "Submarine cables",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "618526fa11c611d7dca71f72de6f6493fa5784230b9a68621f9b5ee61d24ec2a",
+      "key": "flow_oil",
+      "label": "Oil & gas",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "39732bd4901aa58ca8f2cdb1634f22eb33445ab5ffc999e4537f4deaf8b6cd11",
+      "key": "flow_food",
+      "label": "Food & grain",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "0447d8e0d6a3edfdc9df5ac261d6d94af9c1a3cebb021d5e6775cffe9ae63688",
+      "key": "flow_minerals",
+      "label": "Minerals & metals",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "9ab2bea079c5a1c6b80e668a9f169da6af23e44e12c81cc95aa68bd89d416ef1",
+      "key": "flow_wood",
+      "label": "Timber & wood",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "bfc43e0b2895a8acff1cd129074f597d5c2ea8c1e06364bfb4d03f55a9824098",
+      "key": "flow_flights",
+      "label": "Flight corridors",
+      "type": "flow"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "5782266dbb113840ebf0f338dad10131c8f844e091ae0a148393d64ff3b3c72c",
+      "key": "flow_shipping",
+      "label": "Shipping lanes",
+      "type": "flow"
+    },
+    {
+      "group": "Illicit flows",
+      "hash": "53eb0371b4581521368a2261b5c198b4e70d5f986363ee5c96d77aea20d70991",
+      "key": "flow_drugs",
+      "label": "Drug routes",
+      "type": "flow"
+    },
+    {
+      "group": "Illicit flows",
+      "hash": "9188c93c26c22d24d15d0cafb6c3c6c5a75335bbebed695b1a1b56f12fc6d1e4",
+      "key": "flow_arms",
+      "label": "Arms trafficking",
+      "type": "flow"
+    },
+    {
+      "group": "Illicit flows",
+      "hash": "f8ad554c73ac6ae0f732824dde8635d5b24a33907a8f2937a7ee89e7d1a5b836",
+      "key": "flow_trafficking",
+      "label": "Human trafficking",
+      "type": "flow"
+    },
+    {
+      "group": "Illicit flows",
+      "hash": "a6abc7cc556f46c3773bd11e8414e596b2b6cb3611001492216ffce55d89f303",
+      "key": "flow_wildlife",
+      "label": "Wildlife trafficking",
+      "type": "flow"
+    },
+    {
+      "group": "Illicit flows",
+      "hash": "ab3ebeb1b52c019e9a806f1f613f46994c85e6beb11d397bbbeff795149c808b",
+      "key": "flow_counterfeit",
+      "label": "Counterfeit goods",
+      "type": "flow"
+    },
+    {
+      "group": "History",
+      "hash": "e56b3859cb603931cb502646f559d450789fadab7247db9aeb9c5cff7ebe25b2",
+      "key": "flow_silkroad",
+      "label": "Silk Road",
+      "type": "flow"
+    },
+    {
+      "group": "History",
+      "hash": "c9ccae2aed70427b9820a56bc43a2d85221a822f25fcdb9f3aebcd61d3081adc",
+      "key": "flow_voyages",
+      "label": "Age of Exploration",
+      "type": "flow"
+    },
+    {
+      "group": "Basemap",
+      "hash": "10c695bf85124526267ff3201f913ff743b5f1e40c91153faf01f860158867b6",
+      "key": "satellite",
+      "label": "Satellite imagery",
+      "type": "raster"
+    },
+    {
+      "group": "Basemap",
+      "hash": "dcf709447a1d759ff58cd0704ea80dd8ce23360480b0dd806dcf6582a8705987",
+      "key": "topo",
+      "label": "Topographic",
+      "type": "raster"
+    },
+    {
+      "group": "Trade & resources",
+      "hash": "0dfca786d89c7878bc2d82ad55ccbe4516e3dc615cc4234cb6f085f65902fe9d",
+      "key": "flow_aid",
+      "label": "Foreign aid flows",
+      "type": "flow"
+    }
+  ],
+  "provenance": [
+    {
+      "hash": "ed840fcae61b4180f517676f6e69459b6da37d44ca29874ffda005eb7621ab29",
+      "key": "_borders"
+    },
+    {
+      "hash": "f3e9e21708c1f317641084e56913babef4c059e0bb07c5347b505b74ce4f5941",
+      "key": "aid"
+    },
+    {
+      "hash": "13be2c40240c0cc7a517718038b1cd055a390a557157d6e36248c3636501d46d",
+      "key": "arms"
+    },
+    {
+      "hash": "1e23c2199d1b58e272a571699230a2cdbfe02669ee193a270638cc3745ab0a54",
+      "key": "braindrain"
+    },
+    {
+      "hash": "3286a642397475bd7f471e8105c08d6777f0092c3f152802ed9b1b9c90958be1",
+      "key": "cables"
+    },
+    {
+      "hash": "790e35665b7a6ed1d06ed7a3e27e0c7dd57097d9e672abc98e8de32ec71cb039",
+      "key": "climate"
+    },
+    {
+      "hash": "c20e4127bf7596a9687a85d127940df6628c3f2fd9abdeb7ee306e6497988783",
+      "key": "co2pc"
+    },
+    {
+      "hash": "d7a9b158b8be47a7f7f8ede2eae1b855c2d568d3cf76950078d21a1365af08dc",
+      "key": "counterfeit"
+    },
+    {
+      "hash": "f20ec0c1f065029bd3a51935b36e489acb78cbc712207401969cc52dd7b24d17",
+      "key": "currents"
+    },
+    {
+      "hash": "220a84eb8e0c2030f66c3bfb9a43f065f6f5c3e90cb33dcb9d09e875d5fded7a",
+      "key": "debtin"
+    },
+    {
+      "hash": "6242fe551507e34d88f1582d22eb45996d999bb3bb82fae888a859c4d17c843d",
+      "key": "debtout"
+    },
+    {
+      "hash": "671eca56fb850c98f26643e80de772e758e25d2051b8dd50f2025b25ebbf284c",
+      "key": "drugs"
+    },
+    {
+      "hash": "df4fe5a28a8fa33a21e27a6104014324197aa4e046934a91f159bae668d5ffc1",
+      "key": "dust"
+    },
+    {
+      "hash": "7d5ea73c65962ed744677fedb56f82e9d5031708b9964ac9a41c52ace64f2660",
+      "key": "flights"
+    },
+    {
+      "hash": "82c7013b2f4f3415b3ec179e9a42ff906df6089412cb703042c752a66f03ccf5",
+      "key": "flyways"
+    },
+    {
+      "hash": "3668ed52fa0a06a158e71a5687327749c2828bc7b2364da3c0bede1cbd44fe42",
+      "key": "food"
+    },
+    {
+      "hash": "fcd1bd9b8c5f44ea555907a9a4bd4000cf109df0596b75937f4ab9f851200808",
+      "key": "gdppc"
+    },
+    {
+      "hash": "76efe9d408a90dc1eaf9655b1f8007bcacd5facabaee736e68c9d0957712efb5",
+      "key": "govdebt"
+    },
+    {
+      "hash": "3f232e989dab6f0c7ed6f05b6474a96d1a7b9e528524573dc8505bc442c08f7a",
+      "key": "govtype"
+    },
+    {
+      "hash": "4c04ba2fdeff49649840ee3b567e48165d34a5e90879de52b8973b00739ed685",
+      "key": "hdi"
+    },
+    {
+      "hash": "30fe6c91c14bd5b28b19cac33f5b653bfbd9c1bfd3293ae7812b6561f749bbdf",
+      "key": "healthspend"
+    },
+    {
+      "hash": "37bedcec9a3b81e29755f5fdbac9b413b243ea57f91dd9c12ff58dd793201699",
+      "key": "hiv"
+    },
+    {
+      "hash": "4851c0c6956e1147edffff1a7a05a27d3bdec8d8e4d9bda9a0ba1af827a96e0f",
+      "key": "internet"
+    },
+    {
+      "hash": "e6aa90e9996c990c8783513403b3a0a084266276ff94f7f9ae78b568e24fd613",
+      "key": "language"
+    },
+    {
+      "hash": "54c7f9e87f1f84f338ac0f200be5be67881e08d3a4dcdcbcad6e52095c6ad989",
+      "key": "lgbt"
+    },
+    {
+      "hash": "7a573fe2fac2f914846c0bfbd556bb741004609a2e09274ab86d8fc5e3123185",
+      "key": "lifeexp"
+    },
+    {
+      "hash": "1f8377992866d676d7b2ccd5d2aedd859c5265f235a7824c855e2d08c5d57aff",
+      "key": "matmort"
+    },
+    {
+      "hash": "6b56e679f0bc71579ccd5483f32b6ec7748f11c3bae342b43f002a503ccd7af0",
+      "key": "migration"
+    },
+    {
+      "hash": "82ced497de895917ad8535de8334419b899808015a61bcc4d49112306e1ed228",
+      "key": "minerals"
+    },
+    {
+      "hash": "598e6c80caff076a7d3a64df0839ed964e652845a605fc28716c6b6dc52e6673",
+      "key": "oil"
+    },
+    {
+      "hash": "db5c9800caa2bd1287bcb5b5d1da6d9fa4f7899195bb68588c8f517ddd549c76",
+      "key": "physicians"
+    },
+    {
+      "hash": "60cf8126440f233a65464278225dd1325605e1f6c9629c1768d151895203dceb",
+      "key": "popdensity"
+    },
+    {
+      "hash": "e6f192b4720f7ba95c0770f7f88831507a1f13440c19717dc04fc754d52a5167",
+      "key": "refugees"
+    },
+    {
+      "hash": "9268b3d4399f3e2048fd58e4996d057b3fd9dcfb36d17d2903e71429c1b5abbe",
+      "key": "regime"
+    },
+    {
+      "hash": "d2242b48a627520c56e25be20e939072d2e783901b2265f5eeafaf68580f435c",
+      "key": "religion"
+    },
+    {
+      "hash": "2e51076a099cf17204ff59250ce2ad3fbbee251029ef2bc30d3745c0122adb29",
+      "key": "remittances"
+    },
+    {
+      "hash": "fa01d962f8cd9a6c0080a6ce9a63377d6f948fb919436913a26611e027ace785",
+      "key": "sanitation"
+    },
+    {
+      "hash": "6744bf5a5afad738983b42fe23d4d9f16da0e37652a353ef005999ebf6306ebb",
+      "key": "shipping"
+    },
+    {
+      "hash": "0407ec6d3c615340b59a6af0c644e4afcd433ba512d409c7702150b0bb3923e0",
+      "key": "silkroad"
+    },
+    {
+      "hash": "33048a7fe03b22203931cc1d3c15ffac788b6988aedf6755cf3115882db40e3d",
+      "key": "students"
+    },
+    {
+      "hash": "3ddf6c8fa5c603dc59231e470d02fb0d6f50c85264fd9ef83ae9dad8d4e69e27",
+      "key": "trade"
+    },
+    {
+      "hash": "9b6d91c98817bcb01f5bda5b9461971f2c8a0f74f35bde91fcaf8a55066c8735",
+      "key": "trafficking"
+    },
+    {
+      "hash": "2a88dce424fbdedef09ba5c9181f313ef6ade52a2aaa8bd7bf45b32355f7f79b",
+      "key": "under5mort"
+    },
+    {
+      "hash": "f94efebf853214921dc7a0fc3d68218612deeb2a1419c7c02210eed11cd27c43",
+      "key": "voyages"
+    },
+    {
+      "hash": "e2655b478260cc377e91d6551dc8371658580c372761ca32f1a746facc5de175",
+      "key": "water"
+    },
+    {
+      "hash": "92937952ecc5f843e4afc415d1160b8dad5fac7f5ec6037caa1862df0201592a",
+      "key": "wildlife"
+    },
+    {
+      "hash": "8fa5f5212ec194ab3434f5c22d12546a45dbcb076881f53e994625933d251678",
+      "key": "wood"
+    }
+  ],
+  "schemaVersion": 1,
+  "sourceUrls": [
+    "http://english.customs.gov.cn",
+    "https://accedacris.ulpgc.es/bitstream/10553/50059/1/Canary_current_north.pdf",
+    "https://acp.copernicus.org/articles/21/8169/2021/",
+    "https://aidsinfo.unaids.org/",
+    "https://apps.who.int/nha/database/",
+    "https://assets.publishing.service.gov.uk/media/68cae5911eabc899da7084f2/Statistics_on_International_Development_final_UK_ODA_spend_2024.pdf",
+    "https://blog.telegeography.com/the-red-sea-a-key-subsea-cable-crossroads-under-siege",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/australia.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/canada.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/china.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/germany.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/india.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/russia.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/switzerland.geojson",
+    "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/united-states.geojson",
+    "https://cdn.jsdelivr.net/gh/superpikar/indonesia-geojson@master/indonesia-province-simple.json",
+    "https://censusindia.gov.in/census.website/",
+    "https://childmortality.org/",
+    "https://cites.org/",
+    "https://cloud.google.com/blog/products/infrastructure/googles-dunant-subsea-cable-is-now-ready-for-service",
+    "https://comtradeplus.un.org",
+    "https://comtradeplus.un.org/",
+    "https://data.unicef.org/resources/jmp-report-2025/",
+    "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2024/",
+    "https://data.worldbank.org/",
+    "https://data.worldbank.org/indicator/EN.POP.DNST",
+    "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+    "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+    "https://data.worldbank.org/indicator/SH.DYN.AIDS.ZS",
+    "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS",
+    "https://data.worldbank.org/indicator/SH.STA.MMRT",
+    "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",
+    "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+    "https://data360.worldbank.org/en/indicator/WB_KNOMAD_BRE",
+    "https://database.ilga.org/",
+    "https://databrowser.uis.unesco.org/browser/EDUCATION/UIS-EducationOPRI/int-stud",
+    "https://digitalcommons.uri.edu/gsofacpubs/1235/",
+    "https://docs.un.org/A/Res/68/262",
+    "https://doi.org/10.1002/2015GL063040",
+    "https://doi.org/10.1016/j.rse.2014.12.010",
+    "https://eaaflyway.net/the-flyway/flyway-site-network/",
+    "https://edgar.jrc.ec.europa.eu/",
+    "https://en.unesco.org/silkroad/",
+    "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo",
+    "https://en.wikipedia.org/wiki/International_recognition_of_Taiwan",
+    "https://en.wikipedia.org/wiki/International_recognition_of_the_State_of_Palestine",
+    "https://en.wikipedia.org/wiki/Legal_status_of_same-sex_marriage",
+    "https://exploration.marinersmuseum.org/subject/zheng-he/",
+    "https://fowid.de/",
+    "https://freedomhouse.org/report/freedom-world",
+    "https://globalcarbonbudget.org/",
+    "https://glottolog.org/",
+    "https://hdr.undp.org/data-center/human-development-index",
+    "https://history.yale.edu/sites/default/files/files/hansen-silk-road-trade.pdf",
+    "https://ilga.org/laws-on-us-report/",
+    "https://ilga.org/maps-sexual-orientation-laws/",
+    "https://journals.ametsoc.org/doi/abs/10.1175/JPO-D-14-0119.1",
+    "https://oceanservice.noaa.gov/education/tutorial_currents/",
+    "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf",
+    "https://openflights.org/data.php",
+    "https://os.copernicus.org/articles/11/455/2015/os-11-455-2015.pdf",
+    "https://ourworldindata.org/grapher/co-emissions-per-capita",
+    "https://pancanal.com/en/presents-financial-results-for-fy24-with-a-focus-on-sustainability-and-the-future/",
+    "https://podaac.jpl.nasa.gov/dataset/OSCAR_L4_OC_FINAL_V2.0",
+    "https://population.un.org/wpp/",
+    "https://portwatch.imf.org/",
+    "https://pubs.usgs.gov/publication/mcs2026",
+    "https://reports.eia-international.org/out-of-africa/",
+    "https://science.nasa.gov/earth/earth-observatory/",
+    "https://sreda.org/en/arena",
+    "https://submarine-cable-map-2025.telegeography.com/",
+    "https://svs.gsfc.nasa.gov/5572/",
+    "https://tradingeconomics.com/china/imports",
+    "https://unctad.org/publication/global-trade-update-may-2025-critical-minerals-copper",
+    "https://unctad.org/publication/review-maritime-transport-2025",
+    "https://unctad.org/system/files/official-document/osginf2024d2_en.pdf",
+    "https://unctad.org/system/files/official-document/rmt2024ch1_en.pdf",
+    "https://usafacts.org/answers/how-much-foreign-aid-does-the-us-provide/",
+    "https://wals.info/",
+    "https://washdata.org/",
+    "https://whc.unesco.org/en/list/1442/",
+    "https://wits.worldbank.org/",
+    "https://worldfactbookarchive.org/",
+    "https://www.abs.gov.au/statistics/people/people-and-communities/religious-affiliation-australia/latest-release",
+    "https://www.aiddata.org/china-official-finance",
+    "https://www.aiddata.org/data/aiddatas-global-chinese-development-finance-dataset-version-3-0",
+    "https://www.americanimmigrationcouncil.org/report/immigrant-healthcare-workers-countries-of-birth/",
+    "https://www.ams.usda.gov/market-news",
+    "https://www.aoml.noaa.gov/global-drifter-program/",
+    "https://www.aoml.noaa.gov/phod/docs/2010_DSRI_Meinen_etal_LongTermFC.pdf",
+    "https://www.banxico.org.mx/",
+    "https://www.bazg.admin.ch",
+    "https://www.bfs.admin.ch/bfs/en/home/statistics/population/languages-religions/religions.html",
+    "https://www.birdlife.org/globalflyways/",
+    "https://www.birdlife.org/migratory-birds/",
+    "https://www.bps.go.id/en",
+    "https://www.britannica.com/biography/Vasco-da-Gama",
+    "https://www.britannica.com/topic/Silk-Road-trade-route",
+    "https://www.cbp.gov/sites/default/files/2025-01/intellectualpropertyrightsseizurestatisticsfiscalyear2024_pbrb_approved_with_publication_number_508.pdf",
+    "https://www.census.gov/foreign-trade/balance/",
+    "https://www.cia.gov/the-world-factbook/",
+    "https://www.cia.gov/the-world-factbook/field/government-type/",
+    "https://www.cms.int/",
+    "https://www.cms.int/sites/default/files/document/inf_01_actionplan_en_0.pdf",
+    "https://www.ctdatacollaborative.org/page/global-synthetic-dataset",
+    "https://www.devex.com/news/money-matters-how-is-germany-spending-its-aid-112263",
+    "https://www.dfat.gov.au/geo/china/china-country-brief",
+    "https://www.education.gov.au/international-education-data-and-research",
+    "https://www.eia.gov/dnav/pet/pet_move_impcus_a2_nus_ep00_im0_mbblpd_a.htm",
+    "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+    "https://www.eiu.com/n/campaigns/democracy-index-2023/",
+    "https://www.eiu.com/n/campaigns/democracy-index-2025/",
+    "https://www.energyinst.org/statistical-review",
+    "https://www.energypolicy.columbia.edu/",
+    "https://www.env.go.jp/nature/eaafp/pdf/EAAFP_brochure_2023_EN.pdf",
+    "https://www.equaldex.com/",
+    "https://www.ethnologue.com/",
+    "https://www.euda.europa.eu/publications/european-drug-report/2025_en",
+    "https://www.euipo.europa.eu/en/publications/eu-enforcement-of-intellectual-property-rights-results-2024",
+    "https://www.eurocontrol.int/our-data",
+    "https://www.fao.org/faostat/en/#data/FO",
+    "https://www.fao.org/faostat/en/#data/TM",
+    "https://www.fas.usda.gov/data",
+    "https://www.fws.gov/partner/migratory-bird-program-administrative-flyways",
+    "https://www.gao.gov/assets/gao-21-322.pdf",
+    "https://www.gloh2o.org/koppen/",
+    "https://www.hesa.ac.uk/data-and-analysis/students",
+    "https://www.iea.org/data-and-statistics",
+    "https://www.iea.org/topics/critical-minerals",
+    "https://www.iie.org/research-initiatives/project-atlas/",
+    "https://www.imf.org/en/publications/fm",
+    "https://www.imf.org/en/publications/weo/weo-database/2026/april",
+    "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO/WEOWORLD",
+    "https://www.industry.gov.au/publications/resources-and-energy-quarterly-december-2025",
+    "https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/",
+    "https://www.jica.go.jp/english/about/disc/report/2024/__icsFiles/afieldfile/2025/07/17/2024-EN-data.pdf",
+    "https://www.knomad.org/data/remittances",
+    "https://www.migrationpolicy.org/programs/data-hub/charts/bilateral-remittance-flows",
+    "https://www.naturalearthdata.com/about/disputed-boundaries-policy/",
+    "https://www.nature.com/articles/sdata2018214",
+    "https://www.nisra.gov.uk/statistics/census",
+    "https://www.nmc.org.uk/about-us/reports-and-accounts/registration-statistics/",
+    "https://www.oag.com/busiest-routes-world-2025",
+    "https://www.oag.com/pressroom/hong-kong-taipei-worlds-busiest-international-airline-route-2024",
+    "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/mapping-global-trade-in-fakes-2025_5c812e3c/94d3b29f-en.pdf",
+    "https://www.oecd.org/en/data/datasets/oecd-balanced-trade-statistics.html",
+    "https://www.oecd.org/en/publications/international-migration-outlook-2025_ae26c893-en.html",
+    "https://www.oecd.org/en/publications/mapping-global-trade-in-fakes-2025_94d3b29f-en.html",
+    "https://www.oecd.org/en/topics/education.html",
+    "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion",
+    "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D12%3Achapter%3D41",
+    "https://www.pewresearch.org/religion/2023/08/30/measuring-religion-in-china/",
+    "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+    "https://www.pewresearch.org/religion/feature/religious-composition-by-country/",
+    "https://www.pewresearch.org/religion/religious-landscape-study/",
+    "https://www.rmg.co.uk/stories/topics/ferdinand-magellan",
+    "https://www.sanparks.org/",
+    "https://www.scotlandscensus.gov.uk/",
+    "https://www.senat.fr/rap/l24-144-34/l24-144-34_mono.html",
+    "https://www.sipri.org/databases/armstransfers",
+    "https://www.sipri.org/sites/default/files/2025-03/fs_2503_at_2024_0.pdf",
+    "https://www.slavevoyages.org/",
+    "https://www.slavevoyages.org/voyages/about",
+    "https://www.smallarmssurvey.org/",
+    "https://www.soest.hawaii.edu/oceanography/bo/Q01.pdf",
+    "https://www.submarinecablemap.com/",
+    "https://www.systemicpeace.org/polityproject.html",
+    "https://www.thearda.com/",
+    "https://www.un.org/development/desa/pd/content/international-migrant-stock",
+    "https://www.un.org/dppa/decolonization/en/nsgt/western-sahara",
+    "https://www.unesco.org/en/silk-roads/about-silk-roads",
+    "https://www.unhcr.org/global-trends",
+    "https://www.unhcr.org/refugee-statistics",
+    "https://www.unhcr.org/refugee-statistics/",
+    "https://www.unodc.org/documents/crop-monitoring/Afghanistan/Afghanistan_opium_survey_2023.pdf",
+    "https://www.unodc.org/documents/data-and-analysis/WDR_2025/WDR25_B1_Key_findings.pdf",
+    "https://www.unodc.org/documents/data-and-analysis/glotip/2024/GLOTIP2024_BOOK.pdf",
+    "https://www.unodc.org/documents/data-and-analysis/wildlife/2024/Wildlife2024_Final.pdf",
+    "https://www.unodc.org/unodc/en/data-and-analysis/glotip.html",
+    "https://www.unodc.org/unodc/en/data-and-analysis/wildlife.html",
+    "https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2025-maps.html",
+    "https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2025.html",
+    "https://www.unodc.org/unodc/en/firearms-protocol/firearms-study.html",
+    "https://www.usgs.gov/centers/national-minerals-information-center",
+    "https://www.v-dem.net/data/the-v-dem-dataset/",
+    "https://www.waddensea-worldheritage.org/insights-2023-east-atlantic-flyway-counts-highlight-global-efforts-protection-migratory-birds",
+    "https://www.who.int/data/gho",
+    "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)",
+    "https://www.who.int/publications/i/item/9789240069787",
+    "https://www.who.int/publications/i/item/9789240108462",
+    "https://www.worldbank.org/en/programs/debt-statistics",
+    "https://www.worldbank.org/en/programs/debt-statistics/idr/products",
+    "https://www.worldbank.org/en/programs/debt-statistics/ids",
+    "https://www12.statcan.gc.ca/census-recensement/index-eng.cfm",
+    "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+  ]
+}

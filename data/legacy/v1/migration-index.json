@@ -1,0 +1,2418 @@
+{
+  "1500": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (conquistadors, settlers; MEX as proxy for New Spain/Indies)",
+        "people": 30000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "PRT",
+        "kind": "settler",
+        "label": "Portugal → Brazil (early settlers)",
+        "people": 5000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "low",
+        "from": "STP",
+        "kind": "forced",
+        "label": "West Central Africa via São Tomé → early Atlantic (enslaved)",
+        "people": 20000,
+        "to": "BRA"
+      }
+    ],
+    "decade": 1500,
+    "era": "Early Iberian conquest & first Atlantic slaving",
+    "label": "1500s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Trans-Atlantic Slave Trade Database (Estimates)",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — European immigration to the Americas",
+        "url": "https://en.wikipedia.org/wiki/European_immigration_to_the_Americas"
+      }
+    ]
+  },
+  "1510": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (Indies; MEX proxy)",
+        "people": 35000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish Caribbean (enslaved; DOM proxy for Hispaniola)",
+        "people": 8000,
+        "to": "DOM"
+      }
+    ],
+    "decade": 1510,
+    "era": "Spanish Caribbean expansion",
+    "label": "1510s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1520": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → New Spain (settlers/soldiers)",
+        "people": 40000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish Caribbean (enslaved)",
+        "people": 15000,
+        "to": "DOM"
+      }
+    ],
+    "decade": 1520,
+    "era": "Conquest of Mexico; slave trade to Spanish America",
+    "label": "1520s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1530": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (Peru/New Spain)",
+        "people": 45000,
+        "to": "PER"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 20000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1530,
+    "era": "Conquest of Peru; Spanish American settlement",
+    "label": "1530s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1540": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 45000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 25000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1540,
+    "era": "Silver economy; slave trade to Spanish America",
+    "label": "1540s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1550": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 45000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 30000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "SEN",
+        "kind": "forced",
+        "label": "Senegambia → Spanish America (enslaved)",
+        "people": 10000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1550,
+    "era": "Growth of Spanish American slavery",
+    "label": "1550s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1560": {
+    "corridors": [
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 40000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 35000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "SEN",
+        "kind": "forced",
+        "label": "Senegambia → Spanish America (enslaved)",
+        "people": 12000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1560,
+    "era": "Rising Atlantic slave volumes",
+    "label": "1560s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1570": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, sugar)",
+        "people": 30000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 30000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "PRT",
+        "kind": "settler",
+        "label": "Portugal → Brazil (settlers)",
+        "people": 15000,
+        "to": "BRA"
+      }
+    ],
+    "decade": 1570,
+    "era": "Brazil sugar boom begins",
+    "label": "1570s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1580": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 40000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 35000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 40000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1580,
+    "era": "Iberian Union; expanding slave trade",
+    "label": "1580s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1590": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 50000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 40000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 35000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1590,
+    "era": "Brazil & Spanish America slaving peak (early)",
+    "label": "1590s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1600": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 70000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 55000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "low",
+        "from": "ESP",
+        "kind": "settler",
+        "label": "Spain → Spanish America (settlers)",
+        "people": 30000,
+        "to": "MEX"
+      }
+    ],
+    "decade": 1600,
+    "era": "Peak early-17th-c. slaving to Brazil & Spanish America",
+    "label": "1600s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1610": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved, asiento)",
+        "people": 60000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 60000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → Virginia (settlers)",
+        "people": 3000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1610,
+    "era": "Spanish America asiento slaving; first English Virginia",
+    "label": "1610s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1620": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 65000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Spanish America (enslaved)",
+        "people": 45000,
+        "to": "MEX"
+      },
+      {
+        "confidence": "medium",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → New England & Chesapeake (Puritan/Great Migration begins)",
+        "people": 15000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1620,
+    "era": "Brazil slaving; English/Dutch colonization begins",
+    "label": "1620s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      }
+    ]
+  },
+  "1630": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved; Dutch-held NE Brazil)",
+        "people": 55000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → New England (Puritan Great Migration)",
+        "people": 20000,
+        "to": "USA"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → Barbados/Caribbean (settlers & servants)",
+        "people": 10000,
+        "to": "BRB"
+      }
+    ],
+    "decade": 1630,
+    "era": "English Great Migration; Dutch Brazil slaving",
+    "label": "1630s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      }
+    ]
+  },
+  "1640": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 45000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "low",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Barbados (enslaved, new sugar plantations; BEN proxy)",
+        "people": 12000,
+        "to": "BRB"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "labor",
+        "label": "Britain/Ireland → Caribbean (indentured servants)",
+        "people": 15000,
+        "to": "BRB"
+      }
+    ],
+    "decade": 1640,
+    "era": "Caribbean sugar revolution begins",
+    "label": "1640s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1650": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 50000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British Caribbean (enslaved)",
+        "people": 30000,
+        "to": "BRB"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "labor",
+        "label": "Britain/Ireland → Caribbean (indentured & convict)",
+        "people": 12000,
+        "to": "BRB"
+      }
+    ],
+    "decade": 1650,
+    "era": "Caribbean sugar & enslaved imports rising",
+    "label": "1650s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1660": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 55000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British/French Caribbean (enslaved)",
+        "people": 40000,
+        "to": "BRB"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → North American colonies (settlers/servants)",
+        "people": 15000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1660,
+    "era": "English Royal African Company; expanding slaving",
+    "label": "1660s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1670": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British/French Caribbean (enslaved)",
+        "people": 50000,
+        "to": "BRB"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 55000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "low",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved; NGA proxy)",
+        "people": 20000,
+        "to": "BRB"
+      }
+    ],
+    "decade": 1670,
+    "era": "Sugar & slavery entrenched in Caribbean & Brazil",
+    "label": "1670s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1680": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British Caribbean (Jamaica/Barbados, enslaved)",
+        "people": 55000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 60000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "England → Pennsylvania/mid-Atlantic (Quaker & settler migration)",
+        "people": 23000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1680,
+    "era": "Rapid growth of the British slave trade",
+    "label": "1680s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1690": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, gold rush)",
+        "people": 70000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British Caribbean (enslaved)",
+        "people": 60000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "low",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 25000,
+        "to": "JAM"
+      }
+    ],
+    "decade": 1690,
+    "era": "Brazil gold rush begins; slaving expands",
+    "label": "1690s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1700": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, gold mining)",
+        "people": 90000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil/Bahia (enslaved)",
+        "people": 60000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast → British Caribbean (enslaved; GHA proxy)",
+        "people": 45000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "PRT",
+        "kind": "settler",
+        "label": "Portugal → Brazil (gold-rush migration)",
+        "people": 60000,
+        "to": "BRA"
+      }
+    ],
+    "decade": 1700,
+    "era": "18th-century slave-trade surge; Brazil gold",
+    "label": "1700s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1710": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 85000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil/Bahia (enslaved)",
+        "people": 70000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast → British Caribbean (enslaved)",
+        "people": 50000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "PRT",
+        "kind": "settler",
+        "label": "Portugal → Brazil (peak gold-rush migration)",
+        "people": 100000,
+        "to": "BRA"
+      }
+    ],
+    "decade": 1710,
+    "era": "Slave trade to Brazil & British/French Caribbean",
+    "label": "1710s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1720": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 90000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil (enslaved)",
+        "people": 65000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast/Bight of Benin → British & French Caribbean (enslaved)",
+        "people": 70000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 40000,
+        "to": "JAM"
+      }
+    ],
+    "decade": 1720,
+    "era": "Slave trade peak to Caribbean & Brazil",
+    "label": "1720s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1730": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 95000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → British/French Caribbean (enslaved)",
+        "people": 80000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 60000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "low",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain/Ulster/Germany → British North America (settlers/servants)",
+        "people": 40000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1730,
+    "era": "High-volume slave trade across the Atlantic",
+    "label": "1730s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1740": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 100000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 75000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast → British Caribbean (enslaved)",
+        "people": 60000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "low",
+        "from": "USA",
+        "kind": "forced",
+        "label": "Africa → mainland North America (enslaved, esp. Bight of Biafra → Chesapeake)",
+        "people": 30000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1740,
+    "era": "Slave trade to Caribbean & Brazil; British N. America growth",
+    "label": "1740s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1750": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 105000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 90000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast → British/French Caribbean (enslaved)",
+        "people": 65000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "low",
+        "from": "SEN",
+        "kind": "forced",
+        "label": "Senegambia/Sierra Leone → mainland North America (enslaved)",
+        "people": 35000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1750,
+    "era": "Peak British slave trade",
+    "label": "1750s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1760": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 110000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 100000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "GHA",
+        "kind": "forced",
+        "label": "Gold Coast → British & French Caribbean (enslaved)",
+        "people": 70000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → French Saint-Domingue (enslaved; DOM/HTI proxy)",
+        "people": 50000,
+        "to": "DOM"
+      }
+    ],
+    "decade": 1760,
+    "era": "Peak 18th-century Atlantic slaving",
+    "label": "1760s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1770": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 110000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 95000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → French Saint-Domingue (enslaved)",
+        "people": 70000,
+        "to": "HTI"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Saint-Domingue (enslaved)",
+        "people": 50000,
+        "to": "HTI"
+      }
+    ],
+    "decade": 1770,
+    "era": "Saint-Domingue sugar boom; high slaving volumes",
+    "label": "1770s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1780": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 130000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → French Saint-Domingue (enslaved)",
+        "people": 100000,
+        "to": "HTI"
+      },
+      {
+        "confidence": "high",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 110000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Saint-Domingue (enslaved)",
+        "people": 60000,
+        "to": "HTI"
+      }
+    ],
+    "decade": 1780,
+    "era": "Peak transatlantic slave trade",
+    "label": "1780s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Trans-Atlantic Slave Trade Database (Estimates)",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1790": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 130000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved)",
+        "people": 100000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil/Bahia (enslaved)",
+        "people": 70000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved, sugar expansion)",
+        "people": 40000,
+        "to": "CUB"
+      }
+    ],
+    "decade": 1790,
+    "era": "Haitian Revolution; slave trade shifts to Brazil/Cuba",
+    "label": "1790s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1800": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 150000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil/Bahia (enslaved)",
+        "people": 80000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "NGA",
+        "kind": "forced",
+        "label": "Bight of Biafra → British Caribbean (enslaved; ends 1807)",
+        "people": 70000,
+        "to": "JAM"
+      },
+      {
+        "confidence": "medium",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved)",
+        "people": 50000,
+        "to": "CUB"
+      }
+    ],
+    "decade": 1800,
+    "era": "Last legal years of British/US slave trade; Brazil/Cuba surge",
+    "label": "1800s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1810": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved)",
+        "people": 180000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "BEN",
+        "kind": "forced",
+        "label": "Bight of Benin → Brazil/Bahia (enslaved)",
+        "people": 90000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved)",
+        "people": 80000,
+        "to": "CUB"
+      }
+    ],
+    "decade": 1810,
+    "era": "Slave trade abolished by Britain/US; persists to Brazil & Cuba",
+    "label": "1810s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      }
+    ]
+  },
+  "1820": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, peak illegal trade)",
+        "people": 230000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "MOZ",
+        "kind": "forced",
+        "label": "Southeast Africa (Mozambique) → Brazil (enslaved)",
+        "people": 60000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved)",
+        "people": 90000,
+        "to": "CUB"
+      },
+      {
+        "confidence": "medium",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland/Britain → United States (early wave)",
+        "people": 50000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1820,
+    "era": "Last great slaving decades to Brazil & Cuba; European migration begins",
+    "label": "1820s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "US Census / DHS Yearbook — Immigration 1820–",
+        "url": "https://www.dhs.gov/immigration-statistics/yearbook"
+      }
+    ]
+  },
+  "1830": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, illegal)",
+        "people": 240000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved)",
+        "people": 120000,
+        "to": "CUB"
+      },
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States",
+        "people": 207000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 152000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India → Mauritius (indentured, system begins 1834)",
+        "people": 25000,
+        "to": "MUS"
+      }
+    ],
+    "decade": 1830,
+    "era": "Indenture begins; Brazil/Cuba slaving; rising European emigration",
+    "label": "1830s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — Indian indenture system",
+        "url": "https://en.wikipedia.org/wiki/Indian_indenture_system"
+      },
+      {
+        "label": "US Census / DHS Yearbook of Immigration Statistics",
+        "url": "https://www.dhs.gov/immigration-statistics/yearbook"
+      }
+    ]
+  },
+  "1840": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States (Great Famine)",
+        "people": 781000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 435000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → United States",
+        "people": 267000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Brazil (enslaved, final surge before 1850 ban)",
+        "people": 250000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India → Mauritius/Caribbean (indentured)",
+        "people": 100000,
+        "to": "MUS"
+      }
+    ],
+    "decade": 1840,
+    "era": "Irish Famine emigration; German '48ers; Indian indenture",
+    "label": "1840s",
+    "sources": [
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      },
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — Indian indenture system",
+        "url": "https://en.wikipedia.org/wiki/Indian_indenture_system"
+      }
+    ]
+  },
+  "1850": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States",
+        "people": 914000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 952000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → United States",
+        "people": 424000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved)",
+        "people": 130000,
+        "to": "CUB"
+      },
+      {
+        "confidence": "medium",
+        "from": "CHN",
+        "kind": "labor",
+        "label": "China → Cuba/Peru ('coolie' indenture)",
+        "people": 60000,
+        "to": "CUB"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India → Caribbean & Mauritius (indentured)",
+        "people": 90000,
+        "to": "GUY"
+      }
+    ],
+    "decade": 1850,
+    "era": "Peak famine-era European emigration; Cuba slaving; Chinese 'coolie' trade",
+    "label": "1850s",
+    "sources": [
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      },
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — Chinese emigration / Coolie",
+        "url": "https://en.wikipedia.org/wiki/Chinese_emigration"
+      }
+    ]
+  },
+  "1860": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 787000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States",
+        "people": 436000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → United States/Canada",
+        "people": 607000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AGO",
+        "kind": "forced",
+        "label": "West Central Africa → Cuba (enslaved, final years; trade ends ~1866)",
+        "people": 30000,
+        "to": "CUB"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India → Mauritius/Caribbean/Natal (indentured)",
+        "people": 120000,
+        "to": "MUS"
+      },
+      {
+        "confidence": "medium",
+        "from": "CHN",
+        "kind": "labor",
+        "label": "China → United States (railroad/gold-rush labor)",
+        "people": 65000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1860,
+    "era": "End of Atlantic slave trade; Civil War-era migration; Indian indenture",
+    "label": "1860s",
+    "sources": [
+      {
+        "label": "SlaveVoyages — Estimates",
+        "url": "https://www.slavevoyages.org/assessment/estimates"
+      },
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      },
+      {
+        "label": "Wikipedia — Indian indenture system",
+        "url": "https://en.wikipedia.org/wiki/Indian_indenture_system"
+      }
+    ]
+  },
+  "1870": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 718000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → United States",
+        "people": 548000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States",
+        "people": 437000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "CHN",
+        "kind": "labor",
+        "label": "China → United States (until 1882 exclusion)",
+        "people": 120000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India → Caribbean/Mauritius/Fiji (indentured)",
+        "people": 130000,
+        "to": "GUY"
+      }
+    ],
+    "decade": 1870,
+    "era": "Industrial-era mass migration; Asian indenture",
+    "label": "1870s",
+    "sources": [
+      {
+        "label": "EH.net — Immigration to the United States",
+        "url": "https://eh.net/encyclopedia/immigration-to-the-united-states/"
+      },
+      {
+        "label": "Wikipedia — Indian indenture system",
+        "url": "https://en.wikipedia.org/wiki/Indian_indenture_system"
+      }
+    ]
+  },
+  "1880": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States (peak German wave)",
+        "people": 1453000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → United States",
+        "people": 807000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "IRL",
+        "kind": "settler",
+        "label": "Ireland → United States",
+        "people": 655000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "SWE",
+        "kind": "settler",
+        "label": "Sweden/Scandinavia → United States",
+        "people": 391000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → United States (begins to rise)",
+        "people": 300000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → Argentina (mass emigration)",
+        "people": 400000,
+        "to": "ARG"
+      }
+    ],
+    "decade": 1880,
+    "era": "First mass wave peaks; 5.2M to US; new Southern/Eastern Europeans",
+    "label": "1880s",
+    "sources": [
+      {
+        "label": "EH.net — Immigration to the United States",
+        "url": "https://eh.net/encyclopedia/immigration-to-the-united-states/"
+      },
+      {
+        "label": "Library of Congress — Immigration to the US, 1851–1900",
+        "url": "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/rise-of-industrial-america-1876-1900/immigration-to-united-states-1851-1900/"
+      }
+    ]
+  },
+  "1890": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → United States",
+        "people": 650000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "RUS",
+        "kind": "diaspora",
+        "label": "Russian Empire (Jews, Poles) → United States (pogrom-driven)",
+        "people": 600000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "DEU",
+        "kind": "settler",
+        "label": "Germany → United States",
+        "people": 505000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AUT",
+        "kind": "settler",
+        "label": "Austria-Hungary → United States (Poles, Slovaks, etc.; AUT proxy)",
+        "people": 590000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy/Spain → Argentina",
+        "people": 400000,
+        "to": "ARG"
+      }
+    ],
+    "decade": 1890,
+    "era": "Shift to Southern & Eastern Europe; Jewish emigration from Russia",
+    "label": "1890s",
+    "sources": [
+      {
+        "label": "EH.net — Immigration to the United States",
+        "url": "https://eh.net/encyclopedia/immigration-to-the-united-states/"
+      },
+      {
+        "label": "Yannay Spitzer — Jewish Migration from Russian Empire 1881–1914",
+        "url": "https://yannayspitzer.net/2014/11/05/pogroms-networks-and-migration-the-jewish-migration-from-the-russian-empire-to-the-united-states-1881-1914/"
+      }
+    ]
+  },
+  "1900": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → United States (peak)",
+        "people": 2100000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AUT",
+        "kind": "settler",
+        "label": "Austria-Hungary → United States (Poles, Slovaks, Croats, etc.)",
+        "people": 2000000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "RUS",
+        "kind": "diaspora",
+        "label": "Russian Empire (Jews, Poles, Lithuanians) → United States",
+        "people": 1500000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy/Spain → Argentina & Brazil",
+        "people": 700000,
+        "to": "ARG"
+      },
+      {
+        "confidence": "medium",
+        "from": "JPN",
+        "kind": "labor",
+        "label": "Japan → United States/Hawaii (labor)",
+        "people": 130000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1900,
+    "era": "Peak of the great wave — 8.8M to US",
+    "label": "1900s",
+    "sources": [
+      {
+        "label": "EH.net — Immigration to the United States",
+        "url": "https://eh.net/encyclopedia/immigration-to-the-united-states/"
+      },
+      {
+        "label": "US Census — Historical immigration statistics",
+        "url": "https://www.census.gov/library/working-papers/1999/demo/POP-twps0029.html"
+      }
+    ]
+  },
+  "1910": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → United States",
+        "people": 1100000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "RUS",
+        "kind": "diaspora",
+        "label": "Russian Empire → United States (Jews, Poles)",
+        "people": 900000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "AUT",
+        "kind": "settler",
+        "label": "Austria-Hungary → United States",
+        "people": 1100000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (revolution-era, labor)",
+        "people": 250000,
+        "to": "USA"
+      },
+      {
+        "confidence": "low",
+        "from": "TUR",
+        "kind": "refugee",
+        "label": "Anatolia → Greece / Balkans population movements (WWI, Armenian & Greek)",
+        "people": 1200000,
+        "to": "GRC"
+      }
+    ],
+    "decade": 1910,
+    "era": "End of great wave; WWI displacement",
+    "label": "1910s",
+    "sources": [
+      {
+        "label": "US Census — Historical immigration statistics",
+        "url": "https://www.census.gov/library/working-papers/1999/demo/POP-twps0029.html"
+      },
+      {
+        "label": "Wikipedia — History of immigration to the United States",
+        "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States"
+      }
+    ]
+  },
+  "1920": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "TUR",
+        "kind": "refugee",
+        "label": "Anatolia ↔ Greece (1923 Greco-Turkish compulsory population exchange)",
+        "people": 1600000,
+        "to": "GRC"
+      },
+      {
+        "confidence": "high",
+        "from": "ITA",
+        "kind": "settler",
+        "label": "Italy → United States (curtailed by 1924 quotas)",
+        "people": 455000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (labor)",
+        "people": 500000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "JPN",
+        "kind": "labor",
+        "label": "Japan → Brazil (agricultural colonization)",
+        "people": 110000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "low",
+        "from": "POL",
+        "kind": "labor",
+        "label": "Poland → France (interwar labor migration)",
+        "people": 500000,
+        "to": "FRA"
+      }
+    ],
+    "decade": 1920,
+    "era": "US quota acts; Greco-Turkish population exchange; Japanese to Brazil",
+    "label": "1920s",
+    "sources": [
+      {
+        "label": "Wikipedia — Population exchange between Greece and Turkey",
+        "url": "https://en.wikipedia.org/wiki/Population_exchange_between_Greece_and_Turkey"
+      },
+      {
+        "label": "Wikipedia — Japanese immigration in Brazil",
+        "url": "https://en.wikipedia.org/wiki/Japanese_immigration_in_Brazil"
+      }
+    ]
+  },
+  "1930": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "JPN",
+        "kind": "labor",
+        "label": "Japan → Brazil (peak colonization, mid-1930s)",
+        "people": 70000,
+        "to": "BRA"
+      },
+      {
+        "confidence": "medium",
+        "from": "DEU",
+        "kind": "refugee",
+        "label": "Germany/Austria → United States (Jews fleeing Nazism)",
+        "people": 130000,
+        "to": "USA"
+      },
+      {
+        "confidence": "low",
+        "from": "DEU",
+        "kind": "refugee",
+        "label": "Germany/Central Europe → Britain/Palestine (Jewish refugees)",
+        "people": 70000,
+        "to": "GBR"
+      }
+    ],
+    "decade": 1930,
+    "era": "Depression-era low migration; pre-war Jewish refugees",
+    "label": "1930s",
+    "sources": [
+      {
+        "label": "Wikipedia — Japanese immigration in Brazil",
+        "url": "https://en.wikipedia.org/wiki/Japanese_immigration_in_Brazil"
+      },
+      {
+        "label": "USHMM — Refugees",
+        "url": "https://encyclopedia.ushmm.org/content/en/article/refugees"
+      }
+    ]
+  },
+  "1940": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "POL",
+        "kind": "refugee",
+        "label": "East-Central Europe → Germany (expulsion/flight of ethnic Germans, 1944–50)",
+        "people": 12000000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "high",
+        "from": "IND",
+        "kind": "refugee",
+        "label": "India → Pakistan (1947 Partition; Muslims west; ~7.2M)",
+        "people": 7000000,
+        "to": "PAK"
+      },
+      {
+        "confidence": "high",
+        "from": "PAK",
+        "kind": "refugee",
+        "label": "Pakistan → India (1947 Partition; Hindus/Sikhs east; ~7.2M)",
+        "people": 7000000,
+        "to": "IND"
+      },
+      {
+        "confidence": "medium",
+        "from": "POL",
+        "kind": "refugee",
+        "label": "Europe → US/Canada/Australia (post-WWII Displaced Persons resettlement)",
+        "people": 1000000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "PSE",
+        "kind": "refugee",
+        "label": "Palestine → Jordan/Lebanon/Gaza (1948 Nakba)",
+        "people": 700000,
+        "to": "JOR"
+      }
+    ],
+    "decade": 1940,
+    "era": "WWII displacement, the Holocaust, expulsion of Germans & Partition",
+    "label": "1940s",
+    "sources": [
+      {
+        "label": "Wikipedia — Flight and expulsion of Germans (1944–1950)",
+        "url": "https://en.wikipedia.org/wiki/Flight_and_expulsion_of_Germans_(1944%E2%80%931950)"
+      },
+      {
+        "label": "Wikipedia — Partition of India",
+        "url": "https://en.wikipedia.org/wiki/Partition_of_India"
+      },
+      {
+        "label": "National WWII Museum — The Last Million (Displaced Persons)",
+        "url": "https://www.nationalww2museum.org/war/articles/last-million-eastern-european-displaced-persons-postwar-germany"
+      }
+    ]
+  },
+  "1950": {
+    "corridors": [
+      {
+        "confidence": "medium",
+        "from": "PAK",
+        "kind": "refugee",
+        "label": "East Pakistan → India (continued Bengal Partition migration)",
+        "people": 3000000,
+        "to": "IND"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "labor",
+        "label": "Italy → West Germany/Switzerland (guest workers)",
+        "people": 800000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (Bracero program)",
+        "people": 450000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "PRI",
+        "kind": "labor",
+        "label": "Puerto Rico → US mainland (Great Migration)",
+        "people": 470000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "GBR",
+        "kind": "settler",
+        "label": "Britain → Australia (£10 'Ten Pound Pom' assisted migration)",
+        "people": 700000,
+        "to": "AUS"
+      }
+    ],
+    "decade": 1950,
+    "era": "Post-war reconstruction; guest workers & decolonization begin",
+    "label": "1950s",
+    "sources": [
+      {
+        "label": "IOM — World Migration Report",
+        "url": "https://worldmigrationreport.iom.int/"
+      },
+      {
+        "label": "Wikipedia — Assisted Passage Migration Scheme",
+        "url": "https://en.wikipedia.org/wiki/Assisted_Passage_Migration_Scheme"
+      }
+    ]
+  },
+  "1960": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "DZA",
+        "kind": "refugee",
+        "label": "Algeria → France (pieds-noirs & harkis, 1962 independence)",
+        "people": 900000,
+        "to": "FRA"
+      },
+      {
+        "confidence": "high",
+        "from": "TUR",
+        "kind": "labor",
+        "label": "Turkey → West Germany (Gastarbeiter)",
+        "people": 700000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States",
+        "people": 450000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "ITA",
+        "kind": "labor",
+        "label": "Italy/Spain/Yugoslavia → West Germany (guest workers)",
+        "people": 600000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "medium",
+        "from": "PAK",
+        "kind": "labor",
+        "label": "South Asia/Caribbean → Britain (Commonwealth migration)",
+        "people": 400000,
+        "to": "GBR"
+      }
+    ],
+    "decade": 1960,
+    "era": "Guest-worker boom; decolonization returns",
+    "label": "1960s",
+    "sources": [
+      {
+        "label": "Wikipedia — Pieds-noirs",
+        "url": "https://en.wikipedia.org/wiki/Pieds-noirs"
+      },
+      {
+        "label": "IOM — World Migration Report",
+        "url": "https://worldmigrationreport.iom.int/"
+      }
+    ]
+  },
+  "1970": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "PAK",
+        "kind": "refugee",
+        "label": "East Pakistan → India (1971 Bangladesh Liberation War; ~10M, mostly returned)",
+        "people": 10000000,
+        "to": "IND"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States",
+        "people": 1400000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India/Pakistan → Gulf states (post-1973 oil boom)",
+        "people": 800000,
+        "to": "SAU"
+      },
+      {
+        "confidence": "medium",
+        "from": "VNM",
+        "kind": "refugee",
+        "label": "Vietnam/Indochina → US & elsewhere (boat people begin 1975)",
+        "people": 500000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "TUR",
+        "kind": "labor",
+        "label": "Turkey → West Germany (family reunification)",
+        "people": 500000,
+        "to": "DEU"
+      }
+    ],
+    "decade": 1970,
+    "era": "Oil-boom Gulf labor; Bangladesh war; Indochina refugees begin",
+    "label": "1970s",
+    "sources": [
+      {
+        "label": "UNHCR — Indochina refugee crisis",
+        "url": "https://en.wikipedia.org/wiki/Indochina_refugee_crisis"
+      },
+      {
+        "label": "IOM — World Migration Report",
+        "url": "https://worldmigrationreport.iom.int/"
+      }
+    ]
+  },
+  "1980": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "AFG",
+        "kind": "refugee",
+        "label": "Afghanistan → Pakistan (Soviet war)",
+        "people": 3500000,
+        "to": "PAK"
+      },
+      {
+        "confidence": "high",
+        "from": "AFG",
+        "kind": "refugee",
+        "label": "Afghanistan → Iran (Soviet war)",
+        "people": 2500000,
+        "to": "IRN"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States",
+        "people": 2300000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "South Asia → Gulf states (labor)",
+        "people": 1500000,
+        "to": "SAU"
+      },
+      {
+        "confidence": "medium",
+        "from": "VNM",
+        "kind": "refugee",
+        "label": "Vietnam → US/Australia/Canada (boat people)",
+        "people": 450000,
+        "to": "USA"
+      }
+    ],
+    "decade": 1980,
+    "era": "Afghan exodus; Gulf labor; Vietnamese boat people peak",
+    "label": "1980s",
+    "sources": [
+      {
+        "label": "UNHCR — Afghan refugees in Pakistan during the 1980s",
+        "url": "https://www.unhcr.org/sites/default/files/legacy-pdf/4868daad2.pdf"
+      },
+      {
+        "label": "Wikipedia — Vietnamese boat people",
+        "url": "https://en.wikipedia.org/wiki/Vietnamese_boat_people"
+      }
+    ]
+  },
+  "1990": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (foreign-born rose 4.3M→9.2M over decade)",
+        "people": 4900000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "RUS",
+        "kind": "diaspora",
+        "label": "Former USSR → Germany/Israel (ethnic Germans & Jews)",
+        "people": 2500000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "high",
+        "from": "BIH",
+        "kind": "refugee",
+        "label": "Former Yugoslavia → Western Europe (Bosnian war)",
+        "people": 1200000,
+        "to": "DEU"
+      },
+      {
+        "confidence": "high",
+        "from": "RWA",
+        "kind": "refugee",
+        "label": "Rwanda → DR Congo/Tanzania (1994 genocide aftermath)",
+        "people": 2000000,
+        "to": "COD"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "South Asia → Gulf states (labor)",
+        "people": 2500000,
+        "to": "SAU"
+      }
+    ],
+    "decade": 1990,
+    "era": "Post-Soviet migration; Balkan & Rwandan refugees; Mexico→US surge",
+    "label": "1990s",
+    "sources": [
+      {
+        "label": "Migration Policy Institute — Mexican-born population over time",
+        "url": "https://www.migrationpolicy.org/programs/data-hub/charts/mexican-born-population-over-time"
+      },
+      {
+        "label": "UN DESA — International Migrant Stock",
+        "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock"
+      }
+    ]
+  },
+  "2000": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (peaks ~mid-decade, falls after 2008)",
+        "people": 3000000,
+        "to": "USA"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India/Bangladesh/Pakistan → Gulf states (construction boom)",
+        "people": 4000000,
+        "to": "ARE"
+      },
+      {
+        "confidence": "high",
+        "from": "POL",
+        "kind": "labor",
+        "label": "Poland/Eastern Europe → UK/Ireland (2004 EU enlargement)",
+        "people": 1500000,
+        "to": "GBR"
+      },
+      {
+        "confidence": "medium",
+        "from": "CHN",
+        "kind": "diaspora",
+        "label": "China → United States (skilled & student migration)",
+        "people": 700000,
+        "to": "USA"
+      },
+      {
+        "confidence": "low",
+        "from": "ZWE",
+        "kind": "labor",
+        "label": "Zimbabwe → South Africa (economic collapse)",
+        "people": 1500000,
+        "to": "ZAF"
+      }
+    ],
+    "decade": 2000,
+    "era": "Globalized labor migration; Mexico→US peaks then falls",
+    "label": "2000s",
+    "sources": [
+      {
+        "label": "UN DESA — International Migrant Stock 2020",
+        "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock"
+      },
+      {
+        "label": "IOM — World Migration Report 2020",
+        "url": "https://worldmigrationreport.iom.int/wmr-2020-interactive/"
+      }
+    ]
+  },
+  "2010": {
+    "corridors": [
+      {
+        "confidence": "high",
+        "from": "SYR",
+        "kind": "refugee",
+        "label": "Syria → Turkey/Lebanon/Jordan/Europe (civil war; >5.5M refugees)",
+        "people": 5500000,
+        "to": "TUR"
+      },
+      {
+        "confidence": "high",
+        "from": "VEN",
+        "kind": "refugee",
+        "label": "Venezuela → Colombia/Peru/region (economic collapse)",
+        "people": 4500000,
+        "to": "COL"
+      },
+      {
+        "confidence": "medium",
+        "from": "IND",
+        "kind": "labor",
+        "label": "India/Bangladesh/Nepal → Gulf states (labor)",
+        "people": 5000000,
+        "to": "ARE"
+      },
+      {
+        "confidence": "medium",
+        "from": "MEX",
+        "kind": "labor",
+        "label": "Mexico → United States (net flow near zero; Central America rises)",
+        "people": 800000,
+        "to": "USA"
+      },
+      {
+        "confidence": "high",
+        "from": "MMR",
+        "kind": "refugee",
+        "label": "Myanmar → Bangladesh (Rohingya, 2017)",
+        "people": 900000,
+        "to": "BGD"
+      }
+    ],
+    "decade": 2010,
+    "era": "Syrian & Venezuelan displacement; continued Gulf & Mexico→US",
+    "label": "2010s",
+    "sources": [
+      {
+        "label": "UNHCR — Syria Regional Refugee Response",
+        "url": "https://data.unhcr.org/en/situations/syria"
+      },
+      {
+        "label": "R4V — Refugees and Migrants from Venezuela",
+        "url": "https://www.r4v.info/en/refugeeandmigrants"
+      },
+      {
+        "label": "UN DESA — International Migrant Stock 2020",
+        "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock"
+      }
+    ]
+  }
+}

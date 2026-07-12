@@ -1,0 +1,2210 @@
+{
+  "arms": {
+    "corridors": [
+      {
+        "from": "USA",
+        "note": "Saudi Arabia = largest single US customer, 12% of US exports, 2020-24. USA supplied 74% of Saudi imports. Legal major-weapons flows are well measured by SIPRI; illicit small arms are not covered.",
+        "to": "SAU",
+        "value": 12
+      },
+      {
+        "from": "RUS",
+        "note": "India = Russia's #1 customer, 38% of Russian exports, 2020-24. Russian total exports fell 64% vs 2015-19.",
+        "to": "IND",
+        "value": 38
+      },
+      {
+        "from": "RUS",
+        "note": "China = Russia's #2 customer, 17% of Russian exports, 2020-24.",
+        "to": "CHN",
+        "value": 17
+      },
+      {
+        "from": "CHN",
+        "note": "Pakistan dominates Chinese exports (63%), 2020-24; China supplied 81% of Pakistani imports.",
+        "to": "PAK",
+        "value": 63
+      },
+      {
+        "from": "FRA",
+        "note": "India = France's largest customer, 28% of French exports, 2020-24 (Rafale deliveries). France overtook Russia as #2 global exporter.",
+        "to": "IND",
+        "value": 28
+      },
+      {
+        "from": "FRA",
+        "note": "Qatar = France's #2 customer, ~9.7% of French exports, 2020-24 (Rafale).",
+        "to": "QAT",
+        "value": 10
+      },
+      {
+        "from": "USA",
+        "note": "Ukraine became the world's #1 arms importer 2020-24 (+9,627% vs 2015-19); US a major supplier. Representative share.",
+        "to": "UKR",
+        "value": 9
+      },
+      {
+        "from": "USA",
+        "note": "Japan a major US recipient in Indo-Pacific. US = 43% of all global arms exports 2020-24. Representative share.",
+        "to": "JPN",
+        "value": 6
+      },
+      {
+        "from": "DEU",
+        "note": "Egypt among Germany's top recipients; Germany = 5th-largest exporter (7.6% of global exports), 2020-24. Representative share.",
+        "to": "EGY",
+        "value": 7
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "SIPRI Arms Transfers Database; Trends in International Arms Transfers, 2024 (Fact Sheet)",
+      "org": "SIPRI",
+      "url": "https://www.sipri.org/databases/armstransfers",
+      "year": "2025"
+    },
+    "unit": "share of exporter's total arms exports, % (SIPRI TIV)"
+  },
+  "braindrain": {
+    "corridors": [
+      {
+        "from": "PHL",
+        "note": "Nurses; Filipino-trained nurses are the largest foreign-trained nurse group in the US (~33% of foreign-born RNs). Cumulative since 1960. Estimate.",
+        "to": "USA",
+        "value": 150000
+      },
+      {
+        "from": "PHL",
+        "note": "Nurses; estimated stock of Filipino nurses in Saudi Arabia (largest overseas destination outside US). Industry estimate.",
+        "to": "SAU",
+        "value": 130000
+      },
+      {
+        "from": "PHL",
+        "note": "Nurses; Philippines is #2 origin of UK-registered nurses/midwives. Estimate.",
+        "to": "GBR",
+        "value": 40000
+      },
+      {
+        "from": "IND",
+        "note": "Doctors; India is #1 origin of foreign-trained doctors in the UK (~23%), 2021. Estimate.",
+        "to": "GBR",
+        "value": 17250
+      },
+      {
+        "from": "IND",
+        "note": "Doctors; India is #1 origin of foreign-trained doctors in the US (~8%), 2021. Estimate.",
+        "to": "USA",
+        "value": 16800
+      },
+      {
+        "from": "PAK",
+        "note": "Doctors; Pakistan is the 2nd-largest foreign source of US doctors. Estimate.",
+        "to": "USA",
+        "value": 15000
+      },
+      {
+        "from": "PAK",
+        "note": "Doctors; Pakistan is the 2nd most common non-UK doctor nationality (~3.3%). Estimate.",
+        "to": "GBR",
+        "value": 8026
+      },
+      {
+        "from": "IND",
+        "note": "Doctors (~10% of foreign-trained doctors in Australia), 2021. Estimate.",
+        "to": "AUS",
+        "value": 6000
+      },
+      {
+        "from": "NGA",
+        "note": "Nurses/midwives newly registered (latest year); Nigeria 3rd-largest origin of UK-registered nurses. Annual flow, not full stock. Estimate.",
+        "to": "GBR",
+        "value": 4722
+      },
+      {
+        "from": "ZWE",
+        "note": "Zimbabwe-trained nurses on the UK Nursing and Midwifery Council register, as of 30 Sep 2025.",
+        "to": "GBR",
+        "value": 4794
+      },
+      {
+        "from": "ZAF",
+        "note": "South Africa-trained nurses on the UK Nursing and Midwifery Council register, as of 30 Sep 2025.",
+        "to": "GBR",
+        "value": 2903
+      },
+      {
+        "from": "DZA",
+        "note": "Algeria-trained physicians practicing in France, 2023 (OECD Health Workforce Migration Database).",
+        "to": "FRA",
+        "value": 6320
+      },
+      {
+        "from": "MAR",
+        "note": "Morocco-trained physicians practicing in France, 2023 (OECD Health Workforce Migration Database).",
+        "to": "FRA",
+        "value": 1286
+      },
+      {
+        "from": "ROU",
+        "note": "Romania-trained physicians practicing in Germany, 2021 (OECD Health Workforce Migration Database; Germany does not report nurse-by-origin data to OECD).",
+        "to": "DEU",
+        "value": 3914
+      },
+      {
+        "from": "MEX",
+        "note": "Mexico-trained physicians licensed in the US, 2020 (FSMB Census of Licensed Physicians). Measures medical-school location, not birth.",
+        "to": "USA",
+        "value": 10036
+      },
+      {
+        "from": "NGA",
+        "note": "Nigeria-born physicians and surgeons in the US, 2021, rounded (Migration Policy Institute analysis of US Census ACS). Measures birth country, not training.",
+        "to": "USA",
+        "value": 5000
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "International Migration Outlook 2025 (Health Workforce Migration); Health at a Glance 2023",
+      "org": "OECD",
+      "url": "https://www.oecd.org/en/publications/international-migration-outlook-2025_ae26c893-en.html",
+      "year": "2025"
+    },
+    "unit": "foreign-trained health workers (stock)"
+  },
+  "cables": {
+    "corridors": [
+      {
+        "from": "USA",
+        "note": "Grace Hopper (2022); New York - Bude UK / Bilbao; 16 fiber pairs.",
+        "to": "GBR",
+        "value": 352
+      },
+      {
+        "from": "USA",
+        "note": "Amitie (2023); Lynn MA - Le Porge, France; 16 fiber pairs.",
+        "to": "FRA",
+        "value": 320
+      },
+      {
+        "from": "SGP",
+        "note": "Echo (2023/24); Singapore - Eureka, California.",
+        "to": "USA",
+        "value": 260
+      },
+      {
+        "from": "SGP",
+        "note": "Bifrost (2025); Singapore - Grover Beach, California via Indonesia/Guam.",
+        "to": "USA",
+        "value": 260
+      },
+      {
+        "from": "USA",
+        "note": "MAREA (2018); Virginia Beach - Bilbao, Spain.",
+        "to": "ESP",
+        "value": 210
+      },
+      {
+        "from": "SGP",
+        "note": "PEACE Cable; Singapore - Kenya - France; ~24 Tbps/fiber pair.",
+        "to": "KEN",
+        "value": 192
+      },
+      {
+        "from": "ZAF",
+        "note": "2Africa (2023-25); 33-country ring Africa/Asia/Europe; representative trans-segment endpoints (Mtunzini - Bude).",
+        "to": "GBR",
+        "value": 180
+      },
+      {
+        "from": "SGP",
+        "note": "SEA-ME-WE 6 (2025); Singapore - Marseille; 10 fiber pairs.",
+        "to": "FRA",
+        "value": 132
+      },
+      {
+        "from": "JPN",
+        "note": "JUPITER (2020); Japan/Philippines - Los Angeles; >60 Tbps.",
+        "to": "USA",
+        "value": 60
+      },
+      {
+        "from": "USA",
+        "note": "BRUSA cable, 8 fiber pairs, ready for service 2018; Virginia Beach to Fortaleza/Rio de Janeiro (Telxius).",
+        "to": "BRA",
+        "value": 160
+      },
+      {
+        "from": "USA",
+        "note": "JUPITER cable, 5 fiber pairs, ready for service 2021; Hermosa Beach to Maruyama/Shima (NTT/FCC filing).",
+        "to": "JPN",
+        "value": 60
+      },
+      {
+        "from": "GBR",
+        "note": "2Africa (Pearls extension), 16 fiber-pair system; Bude, Cornwall to Mumbai landing completed 2024 (2Africa consortium).",
+        "to": "IND",
+        "value": 180
+      },
+      {
+        "from": "FRA",
+        "note": "SEA-ME-WE 6, 10 fiber pairs; Marseille landing April 2024 to Tuas, Singapore (Orange Newsroom). PEACE Cable serves the same city pair at a higher stated capacity.",
+        "to": "SGP",
+        "value": 126
+      },
+      {
+        "from": "EGY",
+        "note": "Europe India Gateway (EIG), 3 fiber pairs, upgraded capacity; Zafarana, Egypt to Mumbai, India (Capacity Media).",
+        "to": "IND",
+        "value": 28
+      },
+      {
+        "from": "JPN",
+        "note": "SJC2 cable, 8 fiber pairs, went live July 2025; 11 landing stations including Japan and Singapore (NEC).",
+        "to": "SGP",
+        "value": 126
+      },
+      {
+        "from": "SGP",
+        "note": "SEA-ME-WE 6, Tuas, Singapore to Chennai/Mumbai, India; consortium-updated capacity as of Nov 2025.",
+        "to": "IND",
+        "value": 132
+      },
+      {
+        "from": "KOR",
+        "note": "New Cross Pacific (NCP), 7 fiber pairs, ready for service 2018; Busan to Pacific City, Oregon.",
+        "to": "USA",
+        "value": 70
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "Submarine Cable Map (cross-referenced with SubmarineNetworks.com)",
+      "org": "TeleGeography",
+      "url": "https://www.submarinecablemap.com/",
+      "year": "2026"
+    },
+    "unit": "Tbps design capacity"
+  },
+  "counterfeit": {
+    "corridors": [
+      {
+        "from": "CHN",
+        "note": "China ~42% of 2024 EU counterfeit seizures, top provenance economy. 2023 border comparison: >56% by volume, >65% by value.",
+        "to": "EU",
+        "value": 42
+      },
+      {
+        "from": "TUR",
+        "note": "Türkiye ~18% of 2024 EU seizures, #2 provenance economy. Heavily transit-flavored -- 2023 Turkish customs seizures were 21% import / 19% transit / 26% warehouse procedures.",
+        "to": "EU",
+        "value": 18
+      },
+      {
+        "from": "HKG",
+        "note": "Hong Kong ~9% of 2023 EU border detentions by volume (>17% by value -- top category is labels/tags/stickers feeding in-EU assembly of fakes). 2023 vintage; demoted below UAE in the 2024 report.",
+        "to": "EU",
+        "value": 9
+      },
+      {
+        "from": "ARE",
+        "note": "UAE ~5% of 2024 EU seizures -- first time in the top three provenance economies, concentrated in body-care products. Possible supply-chain shift signal.",
+        "to": "EU",
+        "value": 5
+      },
+      {
+        "from": "CHN",
+        "note": "China + Hong Kong together ~90% of the total QUANTITY of US IPR seizures, FY2024 (27.9M items, $5.02B MSRP). Per-economy split is not published in the summary report -- CBP's full FY2024 PDF has it broken out if an exact number is needed.",
+        "to": "USA",
+        "value": null
+      },
+      {
+        "from": "HKG",
+        "note": "Same combined ~90% figure as China -> USA. Hong Kong's share is largely transshipped Chinese production, not separately manufactured goods.",
+        "to": "USA",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "Hong Kong identified as a primary global transit hub for Chinese-origin counterfeits -- container loads in, onward movement by post/courier and other modes. No volume figure published for this specific leg.",
+        "to": "HKG",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "UAE identified as a primary global transit hub, built on free-trade-zone infrastructure. No volume figure published for this specific leg.",
+        "to": "ARE",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "Singapore identified as a primary global transit hub. No volume figure published for this specific leg.",
+        "to": "SGP",
+        "value": null
+      },
+      {
+        "from": "ROU",
+        "note": "OECD/EUIPO 2025 flags counterfeiters increasingly using the Danube -- Black Sea entry through Romania, Hungary, Austria, to Germany -- to move goods toward EU markets. No origin-country pair or volume published for this route; the line drawn approximates the river's course, not a reported flow path.",
+        "to": "DEU",
+        "value": null
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "Mapping Global Trade in Fakes 2025",
+      "org": "OECD/EUIPO",
+      "url": "https://www.oecd.org/en/publications/mapping-global-trade-in-fakes-2025_94d3b29f-en.html",
+      "year": "2025"
+    },
+    "unit": "% share of seizures (see note per corridor -- bases vary)"
+  },
+  "drugs": {
+    "corridors": [
+      {
+        "from": "COL",
+        "note": "Andean cocaine -> North America; order-of-magnitude flow estimate. Most transits Central America/Mexico. UNODC does not publish a single authoritative corridor tonnage.",
+        "to": "USA",
+        "value": 225
+      },
+      {
+        "from": "COL",
+        "note": "Andean cocaine -> Western/Central Europe (incl. via West Africa). Entry shifting to North Sea ports (Antwerp/Rotterdam/Hamburg). Order-of-magnitude estimate.",
+        "to": "ESP",
+        "value": 300
+      },
+      {
+        "from": "PER",
+        "note": "Peru/Bolivia share of cocaine flow toward North America; estimate.",
+        "to": "USA",
+        "value": 60
+      },
+      {
+        "from": "AFG",
+        "note": "Heroin+opium entering Iran annually (southern entry to Balkan route). Note: Afghan opium cultivation fell >95% after the 2022 Taliban ban, so this flow is contracting. Estimate.",
+        "to": "IRN",
+        "value": 155
+      },
+      {
+        "from": "AFG",
+        "note": "Opiates onward via Turkey, the redistribution hub for the Balkan route into the EU. Estimate; declining post-ban.",
+        "to": "TUR",
+        "value": 90
+      },
+      {
+        "from": "AFG",
+        "note": "Northern route via Central Asia to Russia. Estimate; lower volume than Balkan route.",
+        "to": "RUS",
+        "value": 40
+      },
+      {
+        "from": "MMR",
+        "note": "Golden Triangle methamphetamine; Thailand is main transit/destination. Record 236 t meth seized across East/SE Asia in 2024 (85% in SE Asia); true flow exceeds seizures. Estimate.",
+        "to": "THA",
+        "value": 120
+      },
+      {
+        "from": "MMR",
+        "note": "Golden Triangle meth to the high-value Australia/NZ market. Estimate.",
+        "to": "AUS",
+        "value": 25
+      },
+      {
+        "from": "MEX",
+        "note": "Mexican methamphetamine -> USA; production estimated ~292-437 t/yr (InsightCrime). No official production figures published. Estimate.",
+        "to": "USA",
+        "value": 365
+      },
+      {
+        "from": "ECU",
+        "note": "Cocaine via Antwerp; 14.6t seized 2024 traced to Posorja, Ecuador loading port (port seizures tripled 2021-24). Belgian customs data via OCCRP/InsightCrime reporting, corroborated by Belga News Agency Jan 2025.",
+        "to": "BEL",
+        "value": 14.6
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "World Drug Report 2025 (incl. Global Report on Cocaine 2023 & regional synthetic-drug reports)",
+      "org": "UNODC",
+      "url": "https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2025.html",
+      "year": "2025"
+    },
+    "unit": "tonnes per year (est.)"
+  },
+  "flights": {
+    "corridors": [
+      {
+        "from": "HKG",
+        "note": "Hong Kong (HKG)-Taipei (TPE); world's #1 international route 2024, +48% vs 2023.",
+        "to": "TWN",
+        "value": 6800000
+      },
+      {
+        "from": "EGY",
+        "note": "Cairo (CAI)-Jeddah (JED); #2.",
+        "to": "SAU",
+        "value": 5500000
+      },
+      {
+        "from": "KOR",
+        "note": "Seoul Incheon (ICN)-Tokyo Narita (NRT); #3.",
+        "to": "JPN",
+        "value": 5400000
+      },
+      {
+        "from": "MYS",
+        "note": "Kuala Lumpur (KUL)-Singapore (SIN); #4.",
+        "to": "SGP",
+        "value": 5400000
+      },
+      {
+        "from": "ARE",
+        "note": "Dubai (DXB)-Riyadh (RUH); #6; busiest DXB international route in the top 10.",
+        "to": "SAU",
+        "value": 4310000
+      },
+      {
+        "from": "THA",
+        "note": "Bangkok (BKK)-Hong Kong (HKG); #7.",
+        "to": "HKG",
+        "value": 4200000
+      },
+      {
+        "from": "IDN",
+        "note": "Jakarta (CGK)-Singapore (SIN); #8.",
+        "to": "SGP",
+        "value": 4070000
+      },
+      {
+        "from": "THA",
+        "note": "Bangkok (BKK)-Singapore (SIN); #9.",
+        "to": "SGP",
+        "value": 4030000
+      },
+      {
+        "from": "USA",
+        "note": "New York JFK-London Heathrow (LHR); #10; busiest transatlantic/long-haul route.",
+        "to": "GBR",
+        "value": 4010000
+      },
+      {
+        "from": "ARE",
+        "note": "~19M passengers, 2023, ~30% of India's total international air traffic (Observer Research Foundation, citing DGCA data). Passenger count, not scheduled-seat capacity.",
+        "to": "IND",
+        "value": 19000000
+      },
+      {
+        "from": "GBR",
+        "note": "UK-Spain was Europe's largest single-country aviation capacity market, 2024/25 season, up 8.2% YoY (OAG).",
+        "to": "ESP",
+        "value": 13900000
+      },
+      {
+        "from": "THA",
+        "note": "Thailand-China seat capacity, 2024, declining to ~7.6M in 2025 (OAG).",
+        "to": "CHN",
+        "value": 8000000
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "OAG Busiest Routes 2024 (scheduled seats; closest measured proxy for passengers)",
+      "org": "OAG",
+      "url": "https://www.oag.com/busiest-routes-world-2024",
+      "year": "2024"
+    },
+    "unit": "scheduled seats per year"
+  },
+  "food": {
+    "corridors": [
+      {
+        "from": "BRA",
+        "note": "Soybeans, 2023 cal. yr; record, 73% of Brazil's total soybean exports (USDA AMS).",
+        "to": "CHN",
+        "value": 74500000
+      },
+      {
+        "from": "USA",
+        "note": "Soybeans, 2023; China = 54% of US soybean export value (USDA FAS).",
+        "to": "CHN",
+        "value": 27000000
+      },
+      {
+        "from": "USA",
+        "note": "Corn, MY2023/24; record for US corn to a single country (USDA FAS).",
+        "to": "MEX",
+        "value": 23400000
+      },
+      {
+        "from": "RUS",
+        "note": "Wheat, MY2023/24; Egypt #1 buyer of Russian wheat (Rusagrotrans).",
+        "to": "EGY",
+        "value": 8600000
+      },
+      {
+        "from": "RUS",
+        "note": "Wheat, MY2023/24.",
+        "to": "TUR",
+        "value": 7000000
+      },
+      {
+        "from": "UKR",
+        "note": "Corn (3.87 Mt) + wheat (1.72 Mt) to Egypt, MY2023/24 (Ukrainian grain association).",
+        "to": "EGY",
+        "value": 5590000
+      },
+      {
+        "from": "AUS",
+        "note": "Wheat, Oct'23-Sep'24; China = top buyer at ~19% of Australia's ~22.5 Mt total wheat exports (ABARES).",
+        "to": "CHN",
+        "value": 4500000
+      },
+      {
+        "from": "ARG",
+        "note": "Soybean meal; Argentina exported 16.2 Mt total in 2023 (drought-reduced), main buyers India, China, Netherlands.",
+        "to": "IND",
+        "value": 5000000
+      },
+      {
+        "from": "ARG",
+        "note": "Soybeans, tonnes; Argentina's top single soybean export market by volume, 2023 (UN Comtrade).",
+        "to": "CHN",
+        "value": 1736410
+      },
+      {
+        "from": "USA",
+        "note": "Soybeans, tonnes; Japan sourced roughly three-quarters of its soybean imports from the US, 2023 (UN Comtrade).",
+        "to": "JPN",
+        "value": 2280240
+      },
+      {
+        "from": "UKR",
+        "note": "Corn, tonnes; China's largest single source of Ukrainian corn before Brazil's 2024 displacement (UN Comtrade).",
+        "to": "CHN",
+        "value": 5440220
+      },
+      {
+        "from": "CAN",
+        "note": "Wheat, tonnes; Canada's top wheat export corridor by volume, 2023 (UN Comtrade).",
+        "to": "USA",
+        "value": 2060990
+      },
+      {
+        "from": "IND",
+        "note": "Rice, tonnes, 2023 (UN Comtrade); spans both sides of India's mid-2023 non-basmati white rice export ban, so not a steady-state baseline.",
+        "to": "BGD",
+        "value": 215124
+      },
+      {
+        "from": "UKR",
+        "note": "Wheat, tonnes; Indonesia was the 3rd-largest buyer of Ukrainian wheat by volume, 2023 (UN Comtrade).",
+        "to": "IDN",
+        "value": 665294
+      },
+      {
+        "from": "CAN",
+        "note": "Wheat, tonnes; Canada's largest single wheat export market in Asia, 2023 (UN Comtrade).",
+        "to": "JPN",
+        "value": 1991320
+      },
+      {
+        "from": "USA",
+        "note": "Corn, tonnes; South Korea's leading source of imported corn under the KORUS trade agreement, 2023 (UN Comtrade).",
+        "to": "KOR",
+        "value": 909953
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "USDA agricultural export data; Brazil/Russia/Ukraine grain-association reports",
+      "org": "USDA FAS/AMS + national grain associations",
+      "url": "https://www.fas.usda.gov/data",
+      "year": "2023"
+    },
+    "unit": "tonnes per year"
+  },
+  "minerals": {
+    "corridors": [
+      {
+        "from": "AUS",
+        "note": "Iron ore & concentrates, 2025 (US$67.0B). Over 80% of Australia's iron ore exports go to China. Sources: UN Comtrade (value); China GACC/Argus (volumes). || 94% of Australian spodumene concentrate ships to China; H1 2025 alone: 1.86 of 1.98 Mt total exports went to China. Australia mines ~36% of world lithium (largest producer); China holds ~60% of global refining capacity. Source: Australian Bureau of Statistics via Argus Media (Aug 2025).",
+        "to": "CHN",
+        "value": 67000000000
+      },
+      {
+        "from": "BRA",
+        "note": "Brazil is the #2 seaborne iron ore supplier after Australia, China the dominant buyer; ~427 Mt/yr is Brazil's total global supply forecast for 2027, not a China-specific figure -- no firm bilateral $/tonnage in this brief. Source: East Asia Forum (Mar 2026).",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "GIN",
+        "note": "Simandou -- the largest untapped high-grade iron ore deposit on Earth -- shipped first ore Dec 2025, reaching China Jan 2026. Projected 40-50 Mt/yr by end-2027, up to 120 Mt/yr at capacity. PROJECTED, not yet at scale. Source: Reuters via CNBC Africa (Jan 2026); East Asia Forum (Mar 2026). || ~149 Mt bauxite, 2025 -- 74% of Guinea's record 182.8 Mt exports, feeding ~45 Mt of Chinese aluminium smelting capacity. Guinea overtook Australia as the world's #1 bauxite exporter in 2023 -- arguably the single most concentrated large-commodity dependency in this layer. Source: Reuters (Jan 2026) citing Guinea mines ministry data + China GACC.",
+        "to": "CHN",
+        "value": 149000000
+      },
+      {
+        "from": "CHL",
+        "note": "9.64 Mt copper ore & concentrate, 2025 (+4.4%). Chile is China's #1 copper concentrate supplier; Chile+Peru supplied 67% of China's record 30.4 Mt of 2025 copper raw-material imports. Source: China GACC via SunSirs 2025 market review. || ~49,000 t LCE mined 2024 from Atacama brine (SQM, Albemarle); Chile is world #2-3 producer, ships refined carbonate (not ore) primarily to China, also South Korea and Japan. Source: Investing News Network / USGS-derived production figure.",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "PER",
+        "note": "7.42 Mt copper ore & concentrate, 2025 (+6.1%), China's #2 supplier. Source: China GACC via SunSirs 2025 market review.",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "MNG",
+        "note": "One of the few large overland (trucked/rail) mineral corridors on the map -- Oyu Tolgoi mine to NW China smelters. +12% y/y in 2025; Mongolia was ~4.4% of China's copper concentrate import value in 2024. Source: SMM analysis of GACC data (2025).",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "IDN",
+        "note": "US$7.86B nickel products (NPI/ferronickel/matte/MHP), 2025. Since Indonesia's 2020 raw-ore export ban this corridor carries processed nickel, not ore -- Indonesia supplies ~60% of world mined nickel, ~45% of primary processing, most still feeding Chinese battery/stainless chains. Source: UN Comtrade (value); ORF/USITC (structure & shares).",
+        "to": "CHN",
+        "value": 7860000000
+      },
+      {
+        "from": "PHL",
+        "note": "China's main raw nickel-ore supplier since Indonesia's export ban took full effect in 2023. Source: ROVJOK nickel-flows analysis of BGS/Comtrade data.",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "COD",
+        "note": "Cobalt hydroxide trucked from Katanga (Kolwezi) to Durban for onward shipping -- leg 1 of a two-leg route; DRC supplies >70% of world cobalt. Source: Fastmarkets.",
+        "to": "ZAF",
+        "value": null
+      },
+      {
+        "from": "ZAF",
+        "note": "Leg 2 of the DRC->China cobalt route via Durban; China refines ~80% of global cobalt, importing 188,056 t of cobalt intermediates in 2024 (+64.6%). DRC banned exports Feb-Oct 2025 then imposed quotas (96,600 t/yr for 2026-27); prices ran from ~$21k/t (early 2025) to >$56k/t (mid-2026). Source: Fastmarkets; GACC via Fastmarkets; mining-technology.com/ecofinagency (quotas).",
+        "to": "CHN",
+        "value": 96600
+      },
+      {
+        "from": "CHN",
+        "note": "Part of China's 58,000 t of rare-earth magnet exports in 2024 (94% of world's sintered permanent magnets) -- the layer's one major OUTBOUND flow; everything else here flows into China. China refines >99% of heavy rare earths, leads refining for 19 of 20 strategic minerals. April 2025 export controls on 7 heavy REEs; monthly magnet exports crashed to 1,239 t (May 2025), rebounding to 5,952 t by Dec 2025. Historically Japan (~36%) and the US (~33%) were top destinations by volume. Source: IEA critical-minerals commentary; S&P Global/Silverado Policy Accelerator (GACC monthly data); CSIS ChinaPower.",
+        "to": "JPN",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "Part of China's 58,000 t of rare-earth magnet exports in 2024 (94% of world's sintered permanent magnets) -- the layer's one major OUTBOUND flow; everything else here flows into China. China refines >99% of heavy rare earths, leads refining for 19 of 20 strategic minerals. April 2025 export controls on 7 heavy REEs; monthly magnet exports crashed to 1,239 t (May 2025), rebounding to 5,952 t by Dec 2025. Historically Japan (~36%) and the US (~33%) were top destinations by volume. Source: IEA critical-minerals commentary; S&P Global/Silverado Policy Accelerator (GACC monthly data); CSIS ChinaPower.",
+        "to": "USA",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "Part of China's 58,000 t of rare-earth magnet exports in 2024 (94% of world's sintered permanent magnets) -- the layer's one major OUTBOUND flow; everything else here flows into China. China refines >99% of heavy rare earths, leads refining for 19 of 20 strategic minerals. April 2025 export controls on 7 heavy REEs; monthly magnet exports crashed to 1,239 t (May 2025), rebounding to 5,952 t by Dec 2025. Historically Japan (~36%) and the US (~33%) were top destinations by volume. Source: IEA critical-minerals commentary; S&P Global/Silverado Policy Accelerator (GACC monthly data); CSIS ChinaPower. || 4.18 Mt finished steel, Jan-Oct 2025. China exported a record 111.1 Mt of steel in 2024 (+23.1% y/y); 2025 tracking ~115-117 Mt. Semi-finished (slab/billet) exports jumped 2.6x in 2025 as buyers route around anti-dumping duties on finished product. Source: China GACC via GMK Center (Dec 2025 analysis).",
+        "to": "NLD",
+        "value": 4179999
+      },
+      {
+        "from": "CHN",
+        "note": "Part of China's 58,000 t of rare-earth magnet exports in 2024 (94% of world's sintered permanent magnets) -- the layer's one major OUTBOUND flow; everything else here flows into China. China refines >99% of heavy rare earths, leads refining for 19 of 20 strategic minerals. April 2025 export controls on 7 heavy REEs; monthly magnet exports crashed to 1,239 t (May 2025), rebounding to 5,952 t by Dec 2025. Historically Japan (~36%) and the US (~33%) were top destinations by volume. Source: IEA critical-minerals commentary; S&P Global/Silverado Policy Accelerator (GACC monthly data); CSIS ChinaPower.",
+        "to": "KOR",
+        "value": null
+      },
+      {
+        "from": "CHN",
+        "note": "27.95 Mt finished steel, Jan-Oct 2025. China exported a record 111.1 Mt of steel in 2024 (+23.1% y/y); 2025 tracking ~115-117 Mt. Semi-finished (slab/billet) exports jumped 2.6x in 2025 as buyers route around anti-dumping duties on finished product. Source: China GACC via GMK Center (Dec 2025 analysis).",
+        "to": "VNM",
+        "value": 27950000
+      },
+      {
+        "from": "CHN",
+        "note": "13.78 Mt finished steel, Jan-Oct 2025. China exported a record 111.1 Mt of steel in 2024 (+23.1% y/y); 2025 tracking ~115-117 Mt. Semi-finished (slab/billet) exports jumped 2.6x in 2025 as buyers route around anti-dumping duties on finished product. Source: China GACC via GMK Center (Dec 2025 analysis).",
+        "to": "NGA",
+        "value": 13780000
+      },
+      {
+        "from": "CHN",
+        "note": "11.01 Mt finished steel, Jan-Oct 2025. China exported a record 111.1 Mt of steel in 2024 (+23.1% y/y); 2025 tracking ~115-117 Mt. Semi-finished (slab/billet) exports jumped 2.6x in 2025 as buyers route around anti-dumping duties on finished product. Source: China GACC via GMK Center (Dec 2025 analysis).",
+        "to": "ARE",
+        "value": 11010000
+      },
+      {
+        "from": "CHE",
+        "note": "476 t / CHF 39B refined gold shipped in H1 2025 alone. Switzerland refines an estimated one-third (some estimates 50-70%) of newly mined gold worldwide -- raw doré and vault bars flow in from everywhere, LBMA-grade refined bars flow out. Gold was 27% of Swiss goods-trade value in 2024, its single most-traded product. Source: Swiss Federal Customs Administration via swissinfo.ch; SNB economic note 2025.",
+        "to": "USA",
+        "value": null
+      },
+      {
+        "from": "CHE",
+        "note": "57.6 t refined gold in March 2026 alone (monthly figure, not annualized here). London is the largest OTC gold trading hub; bars are recast in Switzerland between London's 400oz and New York's 1kg formats. Source: Swiss Federal Customs Administration; Kitco/Swiss customs monthly data.",
+        "to": "GBR",
+        "value": null
+      },
+      {
+        "from": "CHE",
+        "note": "Listed as a refined-gold export destination in Swiss customs reporting for 2023 (2,372 t imported / 1,564 t exported by Switzerland overall that year); this brief doesn't give a China-specific tonnage or value -- worth pulling Swiss customs bilateral detail directly if an exact figure is wanted.",
+        "to": "CHN",
+        "value": null
+      },
+      {
+        "from": "CHE",
+        "note": "Listed as a refined-gold export destination in Swiss customs reporting for 2023 (2,372 t imported / 1,564 t exported by Switzerland overall that year); this brief doesn't give an India-specific tonnage or value -- worth pulling Swiss customs bilateral detail directly if an exact figure is wanted.",
+        "to": "IND",
+        "value": null
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "Minerals & metals flows v1 research brief",
+      "org": "UN Comtrade / China GACC / USGS / Australia DISR / IEA / Swiss Federal Customs",
+      "url": "https://comtradeplus.un.org",
+      "year": "2025-2026"
+    },
+    "unit": "US$ or tonnes (mixed, see per-corridor note)"
+  },
+  "oil": {
+    "corridors": [
+      {
+        "from": "CAN",
+        "note": "Crude, barrels/day; US imports from Canada 2024 avg (record post-TMX expansion). Measured.",
+        "to": "USA",
+        "value": 4100000
+      },
+      {
+        "from": "RUS",
+        "note": "Crude+condensate, barrels/day; China was largest single recipient 2024 (EIA). Measured/tanker-tracked.",
+        "to": "CHN",
+        "value": 2200000
+      },
+      {
+        "from": "RUS",
+        "note": "Crude+condensate, barrels/day to India 2024; up from ~0.05 Mb/d in 2020 (EIA).",
+        "to": "IND",
+        "value": 1700000
+      },
+      {
+        "from": "SAU",
+        "note": "Saudi crude, barrels/day to China 2024 (CGEP/Kpler-Vortexa estimates).",
+        "to": "CHN",
+        "value": 1600000
+      },
+      {
+        "from": "IRQ",
+        "note": "Iraqi crude, barrels/day to China 2024 (SOMO data).",
+        "to": "CHN",
+        "value": 1190000
+      },
+      {
+        "from": "IRQ",
+        "note": "Iraqi crude, barrels/day to India 2024.",
+        "to": "IND",
+        "value": 980000
+      },
+      {
+        "from": "QAT",
+        "note": "LNG in million tonnes/year; Qatar total LNG exports 77.2 Mt in 2024, ~11 Mtpa to South Korea (via Strait of Hormuz). Measured.",
+        "to": "KOR",
+        "value": 11
+      },
+      {
+        "from": "AUS",
+        "note": "LNG in million tonnes/year; China became Australia's largest LNG market 2024 (~33-35% share). Measured.",
+        "to": "CHN",
+        "value": 23
+      },
+      {
+        "from": "AUS",
+        "note": "LNG in million tonnes/year; Australian LNG to Japan 2024. Measured.",
+        "to": "JPN",
+        "value": 22.2
+      },
+      {
+        "from": "USA",
+        "note": "LNG in million tonnes/year; representative of US LNG to Europe (Europe took 53% of US LNG, ~6.3 bcf/d, in 2024; NLD/FRA/UK = 46% of that). Measured.",
+        "to": "NLD",
+        "value": 22
+      },
+      {
+        "from": "SAU",
+        "note": "Crude, barrels/day; Saudi Arabia was India's 3rd-largest crude supplier, 13.0% of India's imports, 2024 (tanker-tracking analysis).",
+        "to": "IND",
+        "value": 640000
+      },
+      {
+        "from": "ARE",
+        "note": "Crude, tonnes/year (not barrels/day like most entries here); UAE was China's 6th-largest crude supplier by volume, 2024 (China customs data).",
+        "to": "CHN",
+        "value": 35500000
+      },
+      {
+        "from": "AGO",
+        "note": "Crude, barrels/year (not barrels/day); Angola supplied 5.1% of China's crude imports by volume, 2024 (China customs data).",
+        "to": "CHN",
+        "value": 205000000
+      },
+      {
+        "from": "RUS",
+        "note": "Crude, tonnes/year; Turkiye's Russian crude purchases rose ~1.5x YoY, 2024, as the SOCAR/STAR refinery switched fully to Russian crude (CREA).",
+        "to": "TUR",
+        "value": 16700000
+      },
+      {
+        "from": "KWT",
+        "note": "Crude, barrels/year (not barrels/day); Kuwait supplied 7.1% of China's crude imports by volume, 2024, down 1% from 2023 (China customs data).",
+        "to": "CHN",
+        "value": 290000000
+      },
+      {
+        "from": "IRN",
+        "note": "Crude, barrels/day; independent tanker-tracking estimate (Kpler/Vortexa-style analysis). China does not officially report Iranian crude imports, typically routed/relabeled via Malaysia to evade US sanctions -- no customs-confirmed figure exists from either side.",
+        "to": "CHN",
+        "value": 1400000
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "EIA Today in Energy; oil & LNG trade flows 2024",
+      "org": "EIA / IEA / Kpler",
+      "url": "https://www.eia.gov/todayinenergy/",
+      "year": "2024"
+    },
+    "unit": "crude in barrels/day; LNG in million tonnes/year (stated per corridor)"
+  },
+  "refugees": {
+    "corridors": [
+      {
+        "from": "VEN",
+        "note": "1,097 refugees + 2,810,778 other people in need of international protection, end-2025.",
+        "to": "COL",
+        "value": 2811875
+      },
+      {
+        "from": "SYR",
+        "note": "2,347,756 refugees, end-2025.",
+        "to": "TUR",
+        "value": 2347756
+      },
+      {
+        "from": "AFG",
+        "note": "758,339 refugees + 879,500 other people in need of international protection, end-2025.",
+        "to": "IRN",
+        "value": 1637839
+      },
+      {
+        "from": "SDN",
+        "note": "1,330,950 refugees, end-2025.",
+        "to": "TCD",
+        "value": 1330950
+      },
+      {
+        "from": "AFG",
+        "note": "1,158,538 refugees + 140,558 other people in need of international protection, end-2025.",
+        "to": "PAK",
+        "value": 1299096
+      },
+      {
+        "from": "MMR",
+        "note": "1,178,003 refugees, end-2025.",
+        "to": "BGD",
+        "value": 1178003
+      },
+      {
+        "from": "UKR",
+        "note": "1,173,192 refugees, end-2025.",
+        "to": "DEU",
+        "value": 1173192
+      },
+      {
+        "from": "VEN",
+        "note": "4,963 refugees + 1,098,014 other people in need of international protection, end-2025.",
+        "to": "PER",
+        "value": 1102977
+      },
+      {
+        "from": "SSD",
+        "note": "1,033,579 refugees, end-2025.",
+        "to": "UGA",
+        "value": 1033579
+      },
+      {
+        "from": "UKR",
+        "note": "972,287 refugees, end-2025.",
+        "to": "POL",
+        "value": 972287
+      },
+      {
+        "from": "VEN",
+        "note": "149,501 refugees + 549,534 other people in need of international protection, end-2025.",
+        "to": "BRA",
+        "value": 699035
+      },
+      {
+        "from": "SYR",
+        "note": "668,647 refugees, end-2025.",
+        "to": "DEU",
+        "value": 668647
+      },
+      {
+        "from": "VEN",
+        "note": "121 refugees + 662,504 other people in need of international protection, end-2025.",
+        "to": "CHL",
+        "value": 662625
+      },
+      {
+        "from": "COD",
+        "note": "644,537 refugees, end-2025.",
+        "to": "UGA",
+        "value": 644537
+      },
+      {
+        "from": "SSD",
+        "note": "634,954 refugees, end-2025.",
+        "to": "SDN",
+        "value": 634954
+      },
+      {
+        "from": "SDN",
+        "note": "571,066 refugees, end-2025.",
+        "to": "SSD",
+        "value": 571066
+      },
+      {
+        "from": "SDN",
+        "note": "551,727 refugees, end-2025.",
+        "to": "LBY",
+        "value": 551727
+      },
+      {
+        "from": "SYR",
+        "note": "532,357 refugees, end-2025.",
+        "to": "LBN",
+        "value": 532357
+      },
+      {
+        "from": "VEN",
+        "note": "2,908 refugees + 432,888 other people in need of international protection, end-2025.",
+        "to": "ECU",
+        "value": 435796
+      },
+      {
+        "from": "SSD",
+        "note": "422,871 refugees, end-2025.",
+        "to": "ETH",
+        "value": 422871
+      },
+      {
+        "from": "SYR",
+        "note": "420,835 refugees, end-2025.",
+        "to": "JOR",
+        "value": 420835
+      },
+      {
+        "from": "UKR",
+        "note": "392,955 refugees, end-2025.",
+        "to": "CZE",
+        "value": 392955
+      },
+      {
+        "from": "SOM",
+        "note": "319,471 refugees, end-2025.",
+        "to": "KEN",
+        "value": 319471
+      },
+      {
+        "from": "SOM",
+        "note": "317,879 refugees, end-2025.",
+        "to": "ETH",
+        "value": 317879
+      },
+      {
+        "from": "SYR",
+        "note": "308,226 refugees, end-2025.",
+        "to": "IRQ",
+        "value": 308226
+      },
+      {
+        "from": "MLI",
+        "note": "300,192 refugees, end-2025.",
+        "to": "MRT",
+        "value": 300192
+      },
+      {
+        "from": "AFG",
+        "note": "288,286 refugees, end-2025.",
+        "to": "DEU",
+        "value": 288286
+      },
+      {
+        "from": "CAF",
+        "note": "277,873 refugees, end-2025.",
+        "to": "CMR",
+        "value": 277873
+      },
+      {
+        "from": "UKR",
+        "note": "270,489 refugees, end-2025.",
+        "to": "GBR",
+        "value": 270489
+      },
+      {
+        "from": "NGA",
+        "note": "258,359 refugees, end-2025.",
+        "to": "NER",
+        "value": 258359
+      },
+      {
+        "from": "UKR",
+        "note": "251,276 refugees, end-2025.",
+        "to": "ESP",
+        "value": 251276
+      },
+      {
+        "from": "SSD",
+        "note": "202,772 refugees, end-2025.",
+        "to": "KEN",
+        "value": 202772
+      },
+      {
+        "from": "CAF",
+        "note": "201,324 refugees, end-2025.",
+        "to": "COD",
+        "value": 201324
+      },
+      {
+        "from": "BFA",
+        "note": "200,771 refugees, end-2025.",
+        "to": "MLI",
+        "value": 200771
+      },
+      {
+        "from": "UKR",
+        "note": "199,461 refugees, end-2025.",
+        "to": "ROU",
+        "value": 199461
+      },
+      {
+        "from": "RWA",
+        "note": "198,125 refugees, end-2025.",
+        "to": "COD",
+        "value": 198125
+      },
+      {
+        "from": "VEN",
+        "note": "348 refugees + 174,216 other people in need of international protection, end-2025.",
+        "to": "ARG",
+        "value": 174564
+      },
+      {
+        "from": "ESH",
+        "note": "173,600 refugees, end-2025.",
+        "to": "DZA",
+        "value": 173600
+      },
+      {
+        "from": "UKR",
+        "note": "172,945 refugees, end-2025.",
+        "to": "CAN",
+        "value": 172945
+      },
+      {
+        "from": "VEN",
+        "note": "169,051 refugees, end-2025.",
+        "to": "ESP",
+        "value": 169051
+      },
+      {
+        "from": "ERI",
+        "note": "162,126 refugees, end-2025.",
+        "to": "ETH",
+        "value": 162126
+      },
+      {
+        "from": "UKR",
+        "note": "148,852 refugees, end-2025.",
+        "to": "MDA",
+        "value": 148852
+      },
+      {
+        "from": "MMR",
+        "note": "140,238 refugees, end-2025.",
+        "to": "MYS",
+        "value": 140238
+      },
+      {
+        "from": "CAF",
+        "note": "140,062 refugees, end-2025.",
+        "to": "TCD",
+        "value": 140062
+      },
+      {
+        "from": "UKR",
+        "note": "138,849 refugees, end-2025.",
+        "to": "SVK",
+        "value": 138849
+      },
+      {
+        "from": "UKR",
+        "note": "131,899 refugees, end-2025.",
+        "to": "NLD",
+        "value": 131899
+      },
+      {
+        "from": "BDI",
+        "note": "131,156 refugees, end-2025.",
+        "to": "TZA",
+        "value": 131156
+      },
+      {
+        "from": "IRQ",
+        "note": "128,544 refugees, end-2025.",
+        "to": "DEU",
+        "value": 128544
+      },
+      {
+        "from": "NGA",
+        "note": "127,090 refugees, end-2025.",
+        "to": "CMR",
+        "value": 127090
+      },
+      {
+        "from": "MLI",
+        "note": "126,060 refugees, end-2025.",
+        "to": "NER",
+        "value": 126060
+      },
+      {
+        "from": "UKR",
+        "note": "118,319 refugees, end-2025.",
+        "to": "IRL",
+        "value": 118319
+      },
+      {
+        "from": "SYR",
+        "note": "117,364 refugees, end-2025.",
+        "to": "EGY",
+        "value": 117364
+      },
+      {
+        "from": "AZE",
+        "note": "115,346 refugees, end-2025.",
+        "to": "ARM",
+        "value": 115346
+      },
+      {
+        "from": "COD",
+        "note": "109,885 refugees, end-2025.",
+        "to": "BDI",
+        "value": 109885
+      },
+      {
+        "from": "ERI",
+        "note": "108,235 refugees, end-2025.",
+        "to": "SDN",
+        "value": 108235
+      },
+      {
+        "from": "CMR",
+        "note": "107,701 refugees, end-2025.",
+        "to": "NGA",
+        "value": 107701
+      },
+      {
+        "from": "HTI",
+        "note": "105,410 refugees, end-2025.",
+        "to": "BRA",
+        "value": 105410
+      },
+      {
+        "from": "AFG",
+        "note": "104,443 refugees, end-2025.",
+        "to": "FRA",
+        "value": 104443
+      },
+      {
+        "from": "SYR",
+        "note": "100,322 refugees, end-2025.",
+        "to": "AUT",
+        "value": 100322
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "Global Trends 2025; Refugee Data Finder API",
+      "org": "UNHCR",
+      "url": "https://www.unhcr.org/global-trends",
+      "year": "2025"
+    },
+    "unit": "people (stock, end-2025)"
+  },
+  "remittances": {
+    "corridors": [
+      {
+        "from": "USA",
+        "note": "Mexico received $63.3B total in 2023 (Banxico); ~96% from US. Largest single corridor in the world. Estimate.",
+        "to": "MEX",
+        "value": 60500000000
+      },
+      {
+        "from": "USA",
+        "note": "India inflows $118.7B in 2023-24 (RBI); US share 27.7%. Estimate.",
+        "to": "IND",
+        "value": 32900000000
+      },
+      {
+        "from": "ARE",
+        "note": "UAE share of India inflows 19.2% (RBI 2023-24). Estimate.",
+        "to": "IND",
+        "value": 22800000000
+      },
+      {
+        "from": "USA",
+        "note": "Guatemala total $19.8B in 2023; ~92% from US. Estimate.",
+        "to": "GTM",
+        "value": 18300000000
+      },
+      {
+        "from": "USA",
+        "note": "US is China's largest remittance source; KNOMAD bilateral matrix (~2021). Estimate.",
+        "to": "CHN",
+        "value": 16000000000
+      },
+      {
+        "from": "USA",
+        "note": "Filipinos in US sent ~$13.7B in 2023 (BSP); US ~40% of PHL inflows. Estimate.",
+        "to": "PHL",
+        "value": 13700000000
+      },
+      {
+        "from": "USA",
+        "note": "Vietnam total ~$16B in 2023; US largest source. Estimate.",
+        "to": "VNM",
+        "value": 8000000000
+      },
+      {
+        "from": "SAU",
+        "note": "Saudi share of India inflows 6.7% (RBI 2023-24). Estimate.",
+        "to": "IND",
+        "value": 8000000000
+      },
+      {
+        "from": "HKG",
+        "note": "Hong Kong SAR -> mainland China; KNOMAD bilateral matrix (~2021). Estimate.",
+        "to": "CHN",
+        "value": 5500000000
+      },
+      {
+        "from": "ARE",
+        "note": "UAE was Pakistan's 2nd-largest remittance source, 18.7% of total inflows, FY2024 (State Bank of Pakistan).",
+        "to": "PAK",
+        "value": 5500000000
+      },
+      {
+        "from": "SAU",
+        "note": "Saudi Arabia was Pakistan's largest remittance source, 25% of total inflows, FY2024 (State Bank of Pakistan).",
+        "to": "PAK",
+        "value": 7400000000
+      },
+      {
+        "from": "RUS",
+        "note": "Russia supplied 77% of Uzbekistan's record $14.8B in remittances, 2024, up 29% YoY (Central Bank of Uzbekistan).",
+        "to": "UZB",
+        "value": 11500000000
+      },
+      {
+        "from": "GBR",
+        "note": "UK accounted for 10.8% of India's $118.7B in remittance inflows, 2023-24 (RBI Remittances Survey). Advanced economies overtook Gulf nations as India's top remittance source that year.",
+        "to": "IND",
+        "value": 12820000000
+      },
+      {
+        "from": "USA",
+        "note": "Derived: ~80% of the Dominican Republic's $10,756M in 2024 remittances came from the US (Central Bank of the Dominican Republic).",
+        "to": "DOM",
+        "value": 8600000000
+      },
+      {
+        "from": "USA",
+        "note": "Derived: 53% of Colombia's record $11.848B in 2024 remittances came from the US (Colombian central bank / BBVA Research).",
+        "to": "COL",
+        "value": 6280000000
+      },
+      {
+        "from": "USA",
+        "note": "Derived: ~90% of El Salvador's $8.182B in 2023 remittances came from the US -- its dominant single source (Banco Central de Reserva).",
+        "to": "SLV",
+        "value": 7360000000
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "Bilateral Remittance Matrix; RBI Remittances Survey 2023-24; Banxico; BSP",
+      "org": "World Bank / KNOMAD + national central banks",
+      "url": "https://www.knomad.org/data/remittances",
+      "year": "2024"
+    },
+    "unit": "US$ per year"
+  },
+  "shipping": {
+    "corridors": [
+      {
+        "from": "SGP",
+        "note": "Strait of Malacca; oil barrels/day, 2023; largest oil chokepoint (EIA). Estimate.",
+        "to": "CHN",
+        "value": 23700000
+      },
+      {
+        "from": "SAU",
+        "note": "Strait of Hormuz; oil barrels/day, 2023; ~1/4 of seaborne oil (EIA). Estimate.",
+        "to": "CHN",
+        "value": 20900000
+      },
+      {
+        "from": "SAU",
+        "note": "Bab el-Mandeb Strait; oil barrels/day, full-year 2023 pre-Houthi disruption; fell to ~4.0 Mb/d in 2024 (EIA). Estimate.",
+        "to": "EGY",
+        "value": 8700000
+      },
+      {
+        "from": "RUS",
+        "note": "Turkish Straits (Bosporus/Dardanelles); oil barrels/day, ~3% of global seaborne oil, 2023 (EIA). Estimate.",
+        "to": "TUR",
+        "value": 3400000
+      },
+      {
+        "from": "EGY",
+        "note": "Suez Canal; cargo TONNES/yr, ~avg 2020-23, >20,000 vessels/yr (SCA). Representative pair; ~12-15% of global trade pre-Red Sea diversions. Estimate.",
+        "to": "SGP",
+        "value": 1600000000
+      },
+      {
+        "from": "USA",
+        "note": "Panama Canal; cargo TONNES/yr, ~avg 2020-23, >10,000 vessels/yr (PCA). Representative pair. Estimate.",
+        "to": "CHN",
+        "value": 600000000
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "EIA World Oil Transit Chokepoints; canal-authority statistics; UNCTAD Review of Maritime Transport",
+      "org": "EIA / Suez Canal Authority / Panama Canal Authority / UNCTAD",
+      "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints",
+      "year": "2023"
+    },
+    "unit": "oil in barrels/day; cargo in tonnes/year (stated per corridor)"
+  },
+  "students": {
+    "corridors": [
+      {
+        "from": "IND",
+        "note": "Indian study-permit holders in Canada, end-2023 (~41% of all permit holders). Stock basis (IRCC).",
+        "to": "CAN",
+        "value": 427000
+      },
+      {
+        "from": "IND",
+        "note": "2023/24; India overtook China as #1 origin for US, first time since 2009 (Open Doors).",
+        "to": "USA",
+        "value": 331602
+      },
+      {
+        "from": "CHN",
+        "note": "2023/24; 2nd-largest origin, down ~4% YoY (Open Doors).",
+        "to": "USA",
+        "value": 277398
+      },
+      {
+        "from": "IND",
+        "note": "2022/23 total enrolment; India overtook China as UK's top origin (HESA).",
+        "to": "GBR",
+        "value": 173190
+      },
+      {
+        "from": "CHN",
+        "note": "Chinese enrolments in Australia, 2023 (Dept. of Education).",
+        "to": "AUS",
+        "value": 166000
+      },
+      {
+        "from": "CHN",
+        "note": "2022/23 total enrolment, UK (HESA).",
+        "to": "GBR",
+        "value": 154260
+      },
+      {
+        "from": "IND",
+        "note": "Indian enrolments in Australia, 2023 (Dept. of Education).",
+        "to": "AUS",
+        "value": 126000
+      },
+      {
+        "from": "KOR",
+        "note": "2023/24, South Korea (Open Doors).",
+        "to": "USA",
+        "value": 43149
+      },
+      {
+        "from": "VNM",
+        "note": "2023/24, Vietnam (Open Doors).",
+        "to": "USA",
+        "value": 22066
+      },
+      {
+        "from": "NGA",
+        "note": "2023/24, Nigeria (Open Doors).",
+        "to": "USA",
+        "value": 20029
+      },
+      {
+        "from": "CHN",
+        "note": "China-citizenship study permit holders with valid permits in Canada, end of 2023 (IRCC).",
+        "to": "CAN",
+        "value": 102150
+      },
+      {
+        "from": "NGA",
+        "note": "Nigerian-domicile student enrolments at UK HE providers, 2023/24, down 36% vs 2022/23 due to dependent-visa restrictions (HESA).",
+        "to": "GBR",
+        "value": 57505
+      },
+      {
+        "from": "SAU",
+        "note": "Saudi Arabian students enrolled in the US, 2023/24 academic year (IIE Open Doors).",
+        "to": "USA",
+        "value": 14828
+      },
+      {
+        "from": "FRA",
+        "note": "France-citizenship study permit holders with valid permits in Canada, end of 2023 (IRCC).",
+        "to": "CAN",
+        "value": 26980
+      },
+      {
+        "from": "MAR",
+        "note": "Moroccan students in French higher education, 2024/25, down 3% YoY; Morocco remains the top single origin country for foreign students in France (Campus France).",
+        "to": "FRA",
+        "value": 42015
+      },
+      {
+        "from": "PAK",
+        "note": "Pakistani-domicile student enrolments at UK HE providers, 2023/24; Pakistan was the UK's fastest-growing origin market that year, +38% (HESA).",
+        "to": "GBR",
+        "value": 45720
+      },
+      {
+        "from": "BRA",
+        "note": "Brazilian students enrolled in the US, 2023/24 academic year (IIE Open Doors).",
+        "to": "USA",
+        "value": 16877
+      },
+      {
+        "from": "CHN",
+        "note": "Chinese nationals enrolled in Japan as of 1 May 2024, up 6.9% YoY (JASSO/MEXT Annual International Student Survey).",
+        "to": "JPN",
+        "value": 123485
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "IIE Open Doors 2024; HESA UK 2022/23; IRCC study permits; Australia international student data",
+      "org": "IIE / HESA / IRCC / Australia Dept. of Education",
+      "url": "https://opendoorsdata.org/data/international-students/all-places-of-origin/",
+      "year": "2024"
+    },
+    "unit": "students per year"
+  },
+  "trade": {
+    "corridors": [
+      {
+        "from": "USA",
+        "note": "Two-way goods trade 2023; Mexico = #1 US partner (USTR/Census).",
+        "to": "MEX",
+        "value": 799000000000
+      },
+      {
+        "from": "USA",
+        "note": "Two-way goods 2023, Census basis (exports $353B + imports $421B).",
+        "to": "CAN",
+        "value": 774000000000
+      },
+      {
+        "from": "CHN",
+        "note": "Two-way goods 2023, US Census basis (US exports $148B + imports $427B).",
+        "to": "USA",
+        "value": 575000000000
+      },
+      {
+        "from": "CHN",
+        "note": "Two-way goods trade 2023 (national/OEC data).",
+        "to": "JPN",
+        "value": 284000000000
+      },
+      {
+        "from": "CHN",
+        "note": "Two-way 2023 EUR253.1B (Destatis) at ~1.08 USD/EUR; China = Germany's top partner.",
+        "to": "DEU",
+        "value": 273000000000
+      },
+      {
+        "from": "CHN",
+        "note": "Two-way goods 2023.",
+        "to": "KOR",
+        "value": 268000000000
+      },
+      {
+        "from": "USA",
+        "note": "Two-way goods 2023, US Census basis.",
+        "to": "DEU",
+        "value": 236000000000
+      },
+      {
+        "from": "CHN",
+        "note": "China exports to Netherlands (EU gateway port of Rotterdam); UN Comtrade/OEC. One direction.",
+        "to": "NLD",
+        "value": 120000000000
+      },
+      {
+        "from": "MEX",
+        "note": "Largest single bilateral goods trading relationship in North America; Mexico was the top source of US imports for a 2nd straight year, 2024 (US Census Bureau).",
+        "to": "USA",
+        "value": 839000000000
+      },
+      {
+        "from": "CAN",
+        "note": "US goods+services trade with Canada, 2024; Canada was the top destination for US exports (USTR). Not goods-only like most entries here.",
+        "to": "USA",
+        "value": 909100000000
+      },
+      {
+        "from": "DEU",
+        "note": "US goods trade with Germany, 2024: $76B exports, $160B imports (US Census Bureau).",
+        "to": "USA",
+        "value": 236000000000
+      },
+      {
+        "from": "JPN",
+        "note": "US goods trade with Japan, 2024, up 2.3%: $80B exports, $148B imports (US Census Bureau).",
+        "to": "USA",
+        "value": 228000000000
+      },
+      {
+        "from": "USA",
+        "note": "US goods exports to China only, 2024 (one direction; US Census Bureau) -- far smaller than the two-way total given the US trade deficit with China.",
+        "to": "CHN",
+        "value": 143500000000
+      },
+      {
+        "from": "KOR",
+        "note": "China remained South Korea's top trading partner for a 21st consecutive year, 2024 (Korean MOFA/customs data). Korean- and Chinese-reported totals differ slightly, a common mirror-statistics gap.",
+        "to": "CHN",
+        "value": 328080000000
+      },
+      {
+        "from": "RUS",
+        "note": "Russia-China trade hit a record for a 3rd straight year, though growth slowed amid Western sanctions on bank settlements, 2024 (China customs data).",
+        "to": "CHN",
+        "value": 244800000000
+      },
+      {
+        "from": "DEU",
+        "note": "Germany's exports to France only, 2024 (one direction; UN Comtrade); France is a top-5 German export destination.",
+        "to": "FRA",
+        "value": 120510000000
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "US Foreign Trade in Goods; Destatis foreign trade; UN Comtrade",
+      "org": "US Census Bureau / USTR / Destatis / UN Comtrade",
+      "url": "https://www.census.gov/foreign-trade/balance/",
+      "year": "2023"
+    },
+    "unit": "US$ per year (goods, two-way unless noted)"
+  },
+  "trafficking": {
+    "corridors": [
+      {
+        "from": "MEX",
+        "note": "forced labour dominant (5269 forced labour / 904 sexual exploitation / 0 other, of 6877 total).",
+        "to": "USA",
+        "value": 6877
+      },
+      {
+        "from": "UKR",
+        "note": "forced labour dominant (3336 forced labour / 416 sexual exploitation / 18 other, of 4071 total).",
+        "to": "RUS",
+        "value": 4071
+      },
+      {
+        "from": "NGA",
+        "note": "forced labour dominant (896 forced labour / 529 sexual exploitation / 265 other, of 2492 total).",
+        "to": "LBY",
+        "value": 2492
+      },
+      {
+        "from": "NGA",
+        "note": "sexual exploitation dominant (50 forced labour / 693 sexual exploitation / 10 other, of 1229 total).",
+        "to": "MLI",
+        "value": 1229
+      },
+      {
+        "from": "PHL",
+        "note": "forced labour dominant (534 forced labour / 184 sexual exploitation / 0 other, of 1226 total).",
+        "to": "USA",
+        "value": 1226
+      },
+      {
+        "from": "BLR",
+        "note": "forced labour dominant (791 forced labour / 282 sexual exploitation / 7 other, of 1159 total).",
+        "to": "RUS",
+        "value": 1159
+      },
+      {
+        "from": "VNM",
+        "note": "other exploitation dominant (99 forced labour / 162 sexual exploitation / 526 other, of 1134 total).",
+        "to": "CHN",
+        "value": 1134
+      },
+      {
+        "from": "UKR",
+        "note": "forced labour dominant (676 forced labour / 239 sexual exploitation / 0 other, of 1112 total).",
+        "to": "POL",
+        "value": 1112
+      },
+      {
+        "from": "CHN",
+        "note": "sexual exploitation dominant (242 forced labour / 822 sexual exploitation / 0 other, of 1027 total).",
+        "to": "USA",
+        "value": 1027
+      },
+      {
+        "from": "MMR",
+        "note": "forced labour dominant (670 forced labour / 4 sexual exploitation / 1 other, of 928 total).",
+        "to": "BGD",
+        "value": 928
+      },
+      {
+        "from": "MMR",
+        "note": "forced labour dominant (674 forced labour / 0 sexual exploitation / 11 other, of 898 total).",
+        "to": "IDN",
+        "value": 898
+      },
+      {
+        "from": "GTM",
+        "note": "forced labour dominant (508 forced labour / 175 sexual exploitation / 0 other, of 819 total).",
+        "to": "USA",
+        "value": 819
+      },
+      {
+        "from": "BDI",
+        "note": "forced labour dominant (402 forced labour / 10 sexual exploitation / 237 other, of 749 total).",
+        "to": "SAU",
+        "value": 749
+      },
+      {
+        "from": "KGZ",
+        "note": "forced labour dominant (518 forced labour / 23 sexual exploitation / 0 other, of 642 total).",
+        "to": "RUS",
+        "value": 642
+      },
+      {
+        "from": "MDA",
+        "note": "forced labour dominant (15 forced labour / 6 sexual exploitation / 0 other, of 642 total).",
+        "to": "UKR",
+        "value": 642
+      },
+      {
+        "from": "HND",
+        "note": "forced labour dominant (355 forced labour / 206 sexual exploitation / 0 other, of 641 total).",
+        "to": "USA",
+        "value": 641
+      },
+      {
+        "from": "SOM",
+        "note": "other exploitation dominant (6 forced labour / 1 sexual exploitation / 414 other, of 608 total).",
+        "to": "LBY",
+        "value": 608
+      },
+      {
+        "from": "IDN",
+        "note": "forced labour dominant (356 forced labour / 41 sexual exploitation / 17 other, of 586 total).",
+        "to": "MYS",
+        "value": 586
+      },
+      {
+        "from": "SLE",
+        "note": "forced labour dominant (445 forced labour / 4 sexual exploitation / 1 other, of 560 total).",
+        "to": "LBN",
+        "value": 560
+      },
+      {
+        "from": "VNM",
+        "note": "forced labour dominant (168 forced labour / 79 sexual exploitation / 0 other, of 393 total).",
+        "to": "USA",
+        "value": 393
+      },
+      {
+        "from": "KHM",
+        "note": "other exploitation dominant (24 forced labour / 18 sexual exploitation / 197 other, of 390 total).",
+        "to": "CHN",
+        "value": 390
+      },
+      {
+        "from": "UKR",
+        "note": "sexual exploitation dominant (156 forced labour / 296 sexual exploitation / 3 other, of 384 total).",
+        "to": "TUR",
+        "value": 384
+      },
+      {
+        "from": "KHM",
+        "note": "forced labour dominant (190 forced labour / 2 sexual exploitation / 3 other, of 343 total).",
+        "to": "IDN",
+        "value": 343
+      },
+      {
+        "from": "COL",
+        "note": "sexual exploitation dominant (65 forced labour / 153 sexual exploitation / 0 other, of 340 total).",
+        "to": "USA",
+        "value": 340
+      },
+      {
+        "from": "SDN",
+        "note": "other exploitation dominant (32 forced labour / 0 sexual exploitation / 120 other, of 340 total).",
+        "to": "LBY",
+        "value": 340
+      },
+      {
+        "from": "UZB",
+        "note": "forced labour dominant (187 forced labour / 23 sexual exploitation / 0 other, of 335 total).",
+        "to": "KAZ",
+        "value": 335
+      },
+      {
+        "from": "KHM",
+        "note": "forced labour dominant (15 forced labour / 12 sexual exploitation / 2 other, of 329 total).",
+        "to": "THA",
+        "value": 329
+      },
+      {
+        "from": "KHM",
+        "note": "forced labour dominant (144 forced labour / 5 sexual exploitation / 7 other, of 326 total).",
+        "to": "MYS",
+        "value": 326
+      },
+      {
+        "from": "IDN",
+        "note": "forced labour dominant (203 forced labour / 4 sexual exploitation / 0 other, of 322 total).",
+        "to": "ARE",
+        "value": 322
+      },
+      {
+        "from": "IND",
+        "note": "forced labour dominant (202 forced labour / 35 sexual exploitation / 0 other, of 304 total).",
+        "to": "USA",
+        "value": 304
+      },
+      {
+        "from": "SLV",
+        "note": "forced labour dominant (119 forced labour / 98 sexual exploitation / 0 other, of 299 total).",
+        "to": "USA",
+        "value": 299
+      },
+      {
+        "from": "BGD",
+        "note": "other exploitation dominant (28 forced labour / 0 sexual exploitation / 115 other, of 284 total).",
+        "to": "LBY",
+        "value": 284
+      },
+      {
+        "from": "KGZ",
+        "note": "forced labour dominant (213 forced labour / 13 sexual exploitation / 0 other, of 273 total).",
+        "to": "KAZ",
+        "value": 273
+      },
+      {
+        "from": "KEN",
+        "note": "forced labour dominant (183 forced labour / 1 sexual exploitation / 2 other, of 264 total).",
+        "to": "LBN",
+        "value": 264
+      },
+      {
+        "from": "MDA",
+        "note": "sexual exploitation dominant (68 forced labour / 120 sexual exploitation / 11 other, of 260 total).",
+        "to": "TUR",
+        "value": 260
+      },
+      {
+        "from": "CIV",
+        "note": "forced labour dominant (39 forced labour / 0 sexual exploitation / 9 other, of 259 total).",
+        "to": "TUN",
+        "value": 259
+      },
+      {
+        "from": "PHL",
+        "note": "other exploitation dominant (55 forced labour / 29 sexual exploitation / 72 other, of 250 total).",
+        "to": "MYS",
+        "value": 250
+      },
+      {
+        "from": "MDA",
+        "note": "sexual exploitation dominant (27 forced labour / 153 sexual exploitation / 0 other, of 246 total).",
+        "to": "SRB",
+        "value": 246
+      },
+      {
+        "from": "JAM",
+        "note": "forced labour dominant (170 forced labour / 15 sexual exploitation / 0 other, of 239 total).",
+        "to": "USA",
+        "value": 239
+      },
+      {
+        "from": "PHL",
+        "note": "forced labour dominant (137 forced labour / 2 sexual exploitation / 44 other, of 234 total).",
+        "to": "KWT",
+        "value": 234
+      },
+      {
+        "from": "ETH",
+        "note": "forced labour dominant (169 forced labour / 0 sexual exploitation / 0 other, of 230 total).",
+        "to": "LBN",
+        "value": 230
+      },
+      {
+        "from": "ETH",
+        "note": "other exploitation dominant (20 forced labour / 8 sexual exploitation / 74 other, of 230 total).",
+        "to": "LBY",
+        "value": 230
+      },
+      {
+        "from": "VNM",
+        "note": "sexual exploitation dominant (68 forced labour / 97 sexual exploitation / 4 other, of 219 total).",
+        "to": "MMR",
+        "value": 219
+      },
+      {
+        "from": "NGA",
+        "note": "forced labour dominant (47 forced labour / 32 sexual exploitation / 0 other, of 214 total).",
+        "to": "USA",
+        "value": 214
+      },
+      {
+        "from": "THA",
+        "note": "sexual exploitation dominant (32 forced labour / 68 sexual exploitation / 0 other, of 187 total).",
+        "to": "USA",
+        "value": 187
+      },
+      {
+        "from": "MDA",
+        "note": "sexual exploitation dominant (27 forced labour / 32 sexual exploitation / 8 other, of 183 total).",
+        "to": "RUS",
+        "value": 183
+      },
+      {
+        "from": "IDN",
+        "note": "forced labour dominant (104 forced labour / 4 sexual exploitation / 4 other, of 178 total).",
+        "to": "SAU",
+        "value": 178
+      },
+      {
+        "from": "RUS",
+        "note": "sexual exploitation dominant (26 forced labour / 104 sexual exploitation / 0 other, of 177 total).",
+        "to": "USA",
+        "value": 177
+      },
+      {
+        "from": "PHL",
+        "note": "other exploitation dominant (29 forced labour / 31 sexual exploitation / 80 other, of 176 total).",
+        "to": "JPN",
+        "value": 176
+      },
+      {
+        "from": "VNM",
+        "note": "forced labour dominant (64 forced labour / 43 sexual exploitation / 7 other, of 173 total).",
+        "to": "KHM",
+        "value": 173
+      },
+      {
+        "from": "UKR",
+        "note": "sexual exploitation dominant (0 forced labour / 74 sexual exploitation / 0 other, of 163 total).",
+        "to": "USA",
+        "value": 163
+      },
+      {
+        "from": "BDI",
+        "note": "forced labour dominant (70 forced labour / 3 sexual exploitation / 38 other, of 149 total).",
+        "to": "OMN",
+        "value": 149
+      },
+      {
+        "from": "UZB",
+        "note": "forced labour dominant (80 forced labour / 0 sexual exploitation / 1 other, of 149 total).",
+        "to": "RUS",
+        "value": 149
+      },
+      {
+        "from": "KOR",
+        "note": "sexual exploitation dominant (51 forced labour / 74 sexual exploitation / 0 other, of 145 total).",
+        "to": "USA",
+        "value": 145
+      },
+      {
+        "from": "NGA",
+        "note": "forced labour dominant (72 forced labour / 0 sexual exploitation / 4 other, of 143 total).",
+        "to": "LBN",
+        "value": 143
+      },
+      {
+        "from": "UKR",
+        "note": "sexual exploitation dominant (50 forced labour / 57 sexual exploitation / 1 other, of 140 total).",
+        "to": "ITA",
+        "value": 140
+      },
+      {
+        "from": "UKR",
+        "note": "forced labour dominant (59 forced labour / 56 sexual exploitation / 0 other, of 137 total).",
+        "to": "CZE",
+        "value": 137
+      },
+      {
+        "from": "IDN",
+        "note": "forced labour dominant (29 forced labour / 14 sexual exploitation / 0 other, of 136 total).",
+        "to": "USA",
+        "value": 136
+      },
+      {
+        "from": "UKR",
+        "note": "forced labour dominant (15 forced labour / 6 sexual exploitation / 1 other, of 136 total).",
+        "to": "MDA",
+        "value": 136
+      },
+      {
+        "from": "BRA",
+        "note": "sexual exploitation dominant (32 forced labour / 66 sexual exploitation / 0 other, of 135 total).",
+        "to": "USA",
+        "value": 135
+      },
+      {
+        "from": "TKM",
+        "note": "forced labour dominant (82 forced labour / 4 sexual exploitation / 0 other, of 129 total).",
+        "to": "TUR",
+        "value": 129
+      },
+      {
+        "from": "ROU",
+        "note": "sexual exploitation dominant (7 forced labour / 97 sexual exploitation / 1 other, of 127 total).",
+        "to": "BIH",
+        "value": 127
+      },
+      {
+        "from": "ROU",
+        "note": "sexual exploitation dominant (5 forced labour / 81 sexual exploitation / 0 other, of 127 total).",
+        "to": "MKD",
+        "value": 127
+      },
+      {
+        "from": "KGZ",
+        "note": "sexual exploitation dominant (19 forced labour / 60 sexual exploitation / 2 other, of 123 total).",
+        "to": "TUR",
+        "value": 123
+      },
+      {
+        "from": "ROU",
+        "note": "sexual exploitation dominant (32 forced labour / 88 sexual exploitation / 0 other, of 123 total).",
+        "to": "ITA",
+        "value": 123
+      },
+      {
+        "from": "ROU",
+        "note": "sexual exploitation dominant (0 forced labour / 89 sexual exploitation / 4 other, of 119 total).",
+        "to": "SRB",
+        "value": 119
+      },
+      {
+        "from": "ROU",
+        "note": "sexual exploitation dominant (13 forced labour / 52 sexual exploitation / 0 other, of 116 total).",
+        "to": "USA",
+        "value": 116
+      },
+      {
+        "from": "BLR",
+        "note": "sexual exploitation dominant (28 forced labour / 70 sexual exploitation / 0 other, of 113 total).",
+        "to": "POL",
+        "value": 113
+      },
+      {
+        "from": "UKR",
+        "note": "sexual exploitation dominant (1 forced labour / 80 sexual exploitation / 2 other, of 113 total).",
+        "to": "ARE",
+        "value": 113
+      },
+      {
+        "from": "PHL",
+        "note": "forced labour dominant (27 forced labour / 2 sexual exploitation / 27 other, of 112 total).",
+        "to": "SAU",
+        "value": 112
+      },
+      {
+        "from": "BGD",
+        "note": "forced labour dominant (65 forced labour / 2 sexual exploitation / 0 other, of 111 total).",
+        "to": "MYS",
+        "value": 111
+      },
+      {
+        "from": "NGA",
+        "note": "forced labour dominant (30 forced labour / 1 sexual exploitation / 0 other, of 110 total).",
+        "to": "NER",
+        "value": 110
+      },
+      {
+        "from": "VNM",
+        "note": "sexual exploitation dominant (0 forced labour / 61 sexual exploitation / 5 other, of 108 total).",
+        "to": "MYS",
+        "value": 108
+      },
+      {
+        "from": "IDN",
+        "note": "forced labour dominant (42 forced labour / 8 sexual exploitation / 0 other, of 107 total).",
+        "to": "CHN",
+        "value": 107
+      },
+      {
+        "from": "BLR",
+        "note": "sexual exploitation dominant (6 forced labour / 66 sexual exploitation / 5 other, of 107 total).",
+        "to": "TUR",
+        "value": 107
+      },
+      {
+        "from": "BLR",
+        "note": "sexual exploitation dominant (26 forced labour / 65 sexual exploitation / 0 other, of 100 total).",
+        "to": "ARE",
+        "value": 100
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "Counter Trafficking Data Collaborative, Global Synthetic Dataset v2026",
+      "org": "CTDC",
+      "url": "https://www.ctdatacollaborative.org/page/global-synthetic-dataset",
+      "year": "2026"
+    },
+    "unit": "documented victim case records (2002-2024)"
+  },
+  "wildlife": {
+    "corridors": [
+      {
+        "from": "MDG",
+        "note": "SEIZURE-based proxy, reflects interdiction not true trade. Rosewood/precious timber (~18% of seizure value, largest category).",
+        "to": "CHN",
+        "value": 90
+      },
+      {
+        "from": "ZAF",
+        "note": "Seizure-based proxy. Rhino horn (~14% of value; rhinos = 29% of most-affected species).",
+        "to": "VNM",
+        "value": 75
+      },
+      {
+        "from": "NGA",
+        "note": "Seizure-based proxy. Pangolin scales (~14% of value; ~200k poached/yr).",
+        "to": "CHN",
+        "value": 70
+      },
+      {
+        "from": "MYS",
+        "note": "Seizure-based proxy. SE Asian pangolin / transit hub.",
+        "to": "VNM",
+        "value": 55
+      },
+      {
+        "from": "KEN",
+        "note": "Seizure-based proxy. Elephant ivory East Africa -> Asia (~7% of seizure value).",
+        "to": "CHN",
+        "value": 50
+      },
+      {
+        "from": "MOZ",
+        "note": "Seizure-based proxy. Rhino horn / ivory from Southern Africa.",
+        "to": "VNM",
+        "value": 45
+      },
+      {
+        "from": "COD",
+        "note": "Seizure-based proxy. Central African ivory/pangolin -> SE Asia.",
+        "to": "VNM",
+        "value": 40
+      },
+      {
+        "from": "IDN",
+        "note": "Seizure-based proxy. Seahorses, reptiles, timber.",
+        "to": "CHN",
+        "value": 30
+      }
+    ],
+    "dataKind": "estimated",
+    "source": {
+      "datasetTitle": "World Wildlife Crime Report 2024 (CITES/seizure data 2015-2021)",
+      "org": "UNODC",
+      "url": "https://www.unodc.org/cofrb/uploads/documents/ECOS/World_Wildlife_Crime_Report_2024.pdf",
+      "year": "2024"
+    },
+    "unit": "relative weight (seizures, 1-100)"
+  },
+  "wood": {
+    "corridors": [
+      {
+        "from": "CAN",
+        "note": "Softwood lumber, m3/yr 2023; Canada supplies up to ~30% of US softwood-lumber consumption (CRS).",
+        "to": "USA",
+        "value": 28100000
+      },
+      {
+        "from": "RUS",
+        "note": "Softwood lumber + roundwood, m3/yr 2023; China ~80%+ of Russia's wood-product trade.",
+        "to": "CHN",
+        "value": 13500000
+      },
+      {
+        "from": "NZL",
+        "note": "Radiata pine logs, m3/yr (2022 ref; 2023 lower amid China's -14% log-import decline). NZ ~2/3 of China's softwood log imports.",
+        "to": "CHN",
+        "value": 14800000
+      },
+      {
+        "from": "BRA",
+        "note": "Wood pulp in TONNES/yr 2023; ~49% of Brazil's 18 Mt total pulp (~$3.8B); all-time high.",
+        "to": "CHN",
+        "value": 8800000
+      },
+      {
+        "from": "SWE",
+        "note": "Sawn softwood, m3/yr; ~2/3 of Sweden's ~13.8 Mm3 sawnwood exports go intra-EU (Germany a top destination).",
+        "to": "DEU",
+        "value": 9200000
+      },
+      {
+        "from": "USA",
+        "note": "Logs (softwood+hardwood), m3/yr 2023 (~$2.23B); China is top US log market. Value-derived volume estimate.",
+        "to": "CHN",
+        "value": 4500000
+      },
+      {
+        "from": "PNG",
+        "note": "Papua New Guinea was China's top hardwood log supplier by volume, 2023 (China customs data via Global Wood Markets Info).",
+        "to": "CHN",
+        "value": 2270000
+      },
+      {
+        "from": "RUS",
+        "note": "Finland's last full year of Russian roundwood imports before the 2022 ban (Natural Resources Institute Finland / Luke); fell to zero by late 2022.",
+        "to": "FIN",
+        "value": 9300000
+      }
+    ],
+    "dataKind": "measured",
+    "source": {
+      "datasetTitle": "FAOSTAT Forestry production & trade; Comtrade; CRS; Canada Open Data",
+      "org": "FAO FAOSTAT Forestry / UN Comtrade + industry trackers",
+      "url": "https://www.fao.org/faostat/en/#data/FO",
+      "year": "2023"
+    },
+    "unit": "cubic metres per year (m3/yr); tonnes for pulp (noted)"
+  }
+}

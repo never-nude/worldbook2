@@ -1,0 +1,1287 @@
+{
+  "_borders": {
+    "crimea_ukraine": {
+      "note": "Russia annexed Crimea in March 2014 after a referendum the UN declared invalid; UN General Assembly Resolution 68/262 (27 March 2014) affirmed Ukraine's internationally recognized borders, and non-recognition of the annexation remains the prevailing position.",
+      "policy": "Render Crimea as internationally recognized Ukrainian territory under Russian de facto occupation, noting the occupation as metadata rather than a sovereignty transfer.",
+      "source": "https://docs.un.org/A/Res/68/262"
+    },
+    "default_policy": {
+      "note": "Renders the de facto controlled boundary by default and carries de jure claim lines and point-of-view variants as separate metadata layers, consistent with Natural Earth's disputed-boundaries convention and the UN member-state list (193 members + 2 observer states).",
+      "policy": "Internationally recognized borders by default; disputed control shown as metadata where available, not silently resolved.",
+      "source": "https://www.naturalearthdata.com/about/disputed-boundaries-policy/"
+    },
+    "description": "How the map renders sovereign borders and handles disputed sovereignty.",
+    "israel_palestine": {
+      "note": "Palestine has been a UN non-member observer state since November 2012 (rights expanded by Resolution ES-10/23 in May 2024); as of September 2025 it is recognized by about 157 of 193 UN members, including a 2025 wave of recognitions led by France, Canada, and the UK.",
+      "policy": "Show Israel as a recognized sovereign state and the State of Palestine (West Bank including East Jerusalem, and Gaza) as a partially recognized UN non-member observer state, with borders, settlements, and East Jerusalem's status carried as disputed metadata.",
+      "source": "https://en.wikipedia.org/wiki/International_recognition_of_the_State_of_Palestine"
+    },
+    "kosovo": {
+      "note": "As of late 2025 roughly 110 of 193 UN members recognize Kosovo (Belgrade cites a lower figure after withdrawals); Kosovo is not a UN member, and 5 EU states plus Serbia withhold recognition. It has no official ISO 3166-1 code and uses the placeholder XK.",
+      "policy": "Treat Kosovo as a partially recognized de facto state (independence declared 2008), explicitly flagging that recognition is contested and Serbia does not recognize it.",
+      "source": "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+    },
+    "label": "Borders & territory provenance",
+    "taiwan": {
+      "note": "The PRC holds the China seat at the UN (GA Resolution 2758, 1971) and Taiwan is not a UN member; ISO 3166 lists it as 'Taiwan, Province of China' (TW). As of 2025 the ROC retains formal diplomatic relations with about 12 states.",
+      "policy": "Show Taiwan (Republic of China) as a de facto self-governing entity with its own ISO 3166-1 code (TW), flagging the PRC's claim and Taiwan's lack of a UN seat as metadata.",
+      "source": "https://en.wikipedia.org/wiki/International_recognition_of_Taiwan"
+    },
+    "western_sahara": {
+      "note": "A UN Non-Self-Governing Territory since 1963 with self-determination still pending; MINURSO's mandate was renewed on 31 October 2025, and a US-sponsored Security Council resolution that month endorsed Morocco's autonomy plan as a basis for negotiations, while Polisario (backed by Algeria) continues to demand a referendum.",
+      "policy": "Mark Western Sahara as a UN-listed Non-Self-Governing Territory with no internationally recognized sovereign, showing Moroccan de facto control and SADR/Polisario control as disputed metadata rather than settled sovereignty.",
+      "source": "https://www.un.org/dppa/decolonization/en/nsgt/western-sahara"
+    }
+  },
+  "aid": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Data Book 2023 and 2024 (Geographical Distribution of Operations)",
+        "org": "JICA",
+        "url": "https://www.jica.go.jp/english/about/disc/report/2024/__icsFiles/afieldfile/2025/07/17/2024-EN-data.pdf"
+      },
+      {
+        "datasetTitle": "Statistics on International Development: Final UK ODA Spend 2024",
+        "org": "UK FCDO",
+        "url": "https://assets.publishing.service.gov.uk/media/68cae5911eabc899da7084f2/Statistics_on_International_Development_final_UK_ODA_spend_2024.pdf"
+      },
+      {
+        "datasetTitle": "PLF 2025 budget review, citing DG Tresor / OECD bilateral ODA data (2022)",
+        "org": "French Senate Finance Committee",
+        "url": "https://www.senat.fr/rap/l24-144-34/l24-144-34_mono.html"
+      },
+      {
+        "datasetTitle": "Money Matters: How is Germany spending its aid? (2024 data)",
+        "org": "Devex",
+        "url": "https://www.devex.com/news/money-matters-how-is-germany-spending-its-aid-112263"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the estimated annual bilateral aid amount from donor to recipient.",
+    "confidence": "medium",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Foreign aid flows",
+    "limitations": "Donors use different definitions and instruments (grants vs. loan commitments vs. total assistance), so figures are not on a single harmonized basis - see each corridor's tooltip for its specific source and definition. Deliberately excludes corridors where aid is overwhelmingly military/security in nature (US to Ukraine and US to Israel are both majority security-classified) since including them at full value alongside development-focused corridors would misrepresent the comparison. This is a sample of major corridors from five donors, not an exhaustive bilateral matrix.",
+    "methodology": "Each corridor uses the donor's own official aid reporting for the most recent available year (2022-2024, varies by donor). US figures combine each country's total obligation with its officially-stated economic-assistance share; Japan figures are JICA ODA-loan and investment-finance commitments (a specific instrument, not total bilateral ODA); UK and France figures are each government's bilateral ODA disbursements, converted to USD at that year's average exchange rate.",
+    "metric": "Bilateral foreign aid / official development assistance from major donor governments to recipient countries.",
+    "primarySource": {
+      "datasetTitle": "US Foreign Aid by Country (ForeignAssistance.gov data)",
+      "org": "USAFacts / USAID",
+      "url": "https://usafacts.org/answers/how-much-foreign-aid-does-the-us-provide/",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "USD millions/year (donor definitions vary - see limitations)",
+    "updateFrequency": "annual"
+  },
+  "arms": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Annual Report 2024 / small arms trade updates",
+        "org": "Small Arms Survey",
+        "url": "https://www.smallarmssurvey.org/"
+      },
+      {
+        "datasetTitle": "Global Study on Firearms Trafficking",
+        "org": "UNODC",
+        "url": "https://www.unodc.org/unodc/en/firearms-protocol/firearms-study.html"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume or value of arms transferred along supplier–recipient corridors.",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "bad",
+    "label": "Arms trafficking",
+    "limitations": "SIPRI covers legal major-arms transfers only (real flow pairs), while illicit small-arms corridors are estimated and partial because diversion is by definition under-reported.",
+    "methodology": "SIPRI tracks deliveries of major conventional arms by supplier/recipient as trend-indicator values; Small Arms Survey models authorized small-arms trade and overlays illicit-diversion research.",
+    "metric": "Transfers of conventional arms and small arms between supplier and recipient countries, including illicit diversion.",
+    "primarySource": {
+      "datasetTitle": "Arms Transfers Database / Trends in International Arms Transfers 2025",
+      "org": "SIPRI",
+      "url": "https://www.sipri.org/databases/armstransfers",
+      "year": "2025 (updated March 2026)"
+    },
+    "provenance": "synthesized",
+    "unit": "category / transfer value (TIV)",
+    "updateFrequency": "annual"
+  },
+  "braindrain": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Health Workforce Support and Safeguards List 2023 / Global Code of Practice on International Recruitment",
+        "org": "World Health Organization",
+        "url": "https://www.who.int/publications/i/item/9789240069787"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume of health professionals trained in an origin country and working abroad.",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "context",
+    "label": "Medical brain drain",
+    "limitations": "Coverage is destination = OECD only (South-South flows missing), measures stock of professionals present rather than recruitment flow, and corridors drawn between centroids are indicative.",
+    "methodology": "Counts foreign-trained doctors and nurses in OECD destination countries by country of training, from national registers and censuses.",
+    "metric": "Origin-to-destination movement of foreign-trained doctors and nurses working in destination (mainly OECD) countries.",
+    "primarySource": {
+      "datasetTitle": "International Migration Outlook 2025 — International migration of health professionals to OECD countries",
+      "org": "OECD",
+      "url": "https://www.oecd.org/en/publications/international-migration-outlook-2025_ae26c893-en.html",
+      "year": "2021–2023"
+    },
+    "provenance": "secondary",
+    "unit": "category / count of health professionals",
+    "updateFrequency": "periodic"
+  },
+  "cables": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Submarine Cable Map 2025 (print edition)",
+        "org": "TeleGeography",
+        "url": "https://submarine-cable-map-2025.telegeography.com/"
+      }
+    ],
+    "colorMeaning": "Lines depict individual submarine cable systems (color distinguishes systems, not magnitude).",
+    "confidence": "high",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Submarine cables",
+    "limitations": "Routes are schematic/stylized representations, not exact geodetic cable paths, and the free dataset lacks precise geocoded geometry.",
+    "methodology": "Cable systems, landing stations, ownership, length, and service dates compiled from operator filings and industry research.",
+    "metric": "Routes of submarine communications cable systems and their landing points.",
+    "primarySource": {
+      "datasetTitle": "Submarine Cable Map",
+      "org": "TeleGeography",
+      "url": "https://www.submarinecablemap.com/",
+      "year": "2025"
+    },
+    "provenance": "primary",
+    "unit": "category / cable system",
+    "updateFrequency": "rolling (interactive); annual (print)"
+  },
+  "climate": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Present and future Koppen-Geiger climate classification maps at 1-km resolution (2018)",
+        "org": "Beck et al., Nature Scientific Data",
+        "url": "https://www.nature.com/articles/sdata2018214"
+      }
+    ],
+    "colorMeaning": "Color encodes the Koppen-Geiger climate zone (e.g. tropical, arid, temperate, continental, polar).",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "neutral",
+    "label": "Koppen climate",
+    "limitations": "A rule-based discretization of continuous climate, so class boundaries are artificial and confidence is lower in data-sparse regions.",
+    "methodology": "Koppen-Geiger classes assigned at ~1 km resolution from topographically-corrected, observation-based temperature and precipitation climatologies.",
+    "metric": "Koppen-Geiger climate classification of each location based on temperature and precipitation regimes.",
+    "primarySource": {
+      "datasetTitle": "High-resolution (1 km) Koppen-Geiger maps, Version 2 (2023)",
+      "org": "Beck et al. (GloH2O), Nature Scientific Data",
+      "url": "https://www.gloh2o.org/koppen/",
+      "year": "2023 (1991–2020 climatology)"
+    },
+    "provenance": "primary",
+    "unit": "category",
+    "updateFrequency": "static/historical (versioned releases: 2018, 2023)"
+  },
+  "co2pc": {
+    "additionalSources": [
+      {
+        "datasetTitle": "CO₂ emissions per capita",
+        "org": "Our World in Data",
+        "url": "https://ourworldindata.org/grapher/co-emissions-per-capita"
+      },
+      {
+        "datasetTitle": "EDGAR — Emissions Database for Global Atmospheric Research",
+        "org": "EC Joint Research Centre",
+        "url": "https://edgar.jrc.ec.europa.eu/"
+      }
+    ],
+    "colorMeaning": "Color encodes per-capita CO2 emissions, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "bad",
+    "label": "CO2 per capita",
+    "limitations": "Production-based figures exclude trade-embodied (consumption) emissions and land-use change, understating the footprint of high-import economies.",
+    "methodology": "Territorial fossil-fuel and industry CO2 emissions estimated from energy and cement statistics, divided by population.",
+    "metric": "Territorial (production-based) fossil-fuel and industry CO2 emissions divided by population, tonnes per person per year.",
+    "primarySource": {
+      "datasetTitle": "Global Carbon Budget 2025",
+      "org": "Global Carbon Project",
+      "url": "https://globalcarbonbudget.org/",
+      "year": "2025 (data through 2024)"
+    },
+    "provenance": "secondary",
+    "unit": "tonnes CO2 per capita",
+    "updateFrequency": "annual"
+  },
+  "counterfeit": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Global Trade in Fakes 2025 (PDF)",
+        "org": "OECD",
+        "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/mapping-global-trade-in-fakes-2025_5c812e3c/94d3b29f-en.pdf"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes estimated provenance/transit volume of counterfeit goods.",
+    "confidence": "low",
+    "dataKind": "modeled",
+    "higherIs": "bad",
+    "label": "Counterfeit goods",
+    "limitations": "Based on seizures (biased toward well-enforced borders) with a multi-year lag, and provenance often shows transit hubs rather than true origin.",
+    "methodology": "Provenance/transit corridors estimated from global customs seizure data (GTRIC index) combined with bilateral trade statistics.",
+    "metric": "Estimated provenance and transit corridors of counterfeit and IP-infringing goods in world trade.",
+    "primarySource": {
+      "datasetTitle": "Mapping Global Trade in Fakes 2025",
+      "org": "OECD & EUIPO",
+      "url": "https://www.oecd.org/en/publications/mapping-global-trade-in-fakes-2025_94d3b29f-en.html",
+      "year": "2025 (reference year 2021)"
+    },
+    "provenance": "synthesized",
+    "unit": "category / estimated value share",
+    "updateFrequency": "periodic (roughly every three years)"
+  },
+  "currents": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Global Drifter Program surface current climatology",
+        "org": "NOAA AOML",
+        "url": "https://www.aoml.noaa.gov/global-drifter-program/"
+      }
+    ],
+    "colorMeaning": "Lines/arrows encode current direction; color or weight may encode speed.",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "neutral",
+    "label": "Ocean currents",
+    "limitations": "OSCAR is a 0.25° model-derived product that smooths fine-scale and coastal features and represents only the surface mixed layer, not deep or instantaneous flow.",
+    "methodology": "OSCAR diagnoses near-surface currents from satellite sea-surface height, vector winds, and SST via a geostrophic/Ekman model; drifters measure currents directly.",
+    "metric": "Direction and speed of near-surface ocean currents.",
+    "primarySource": {
+      "datasetTitle": "OSCAR Surface Currents 0.25° Version 2.0",
+      "org": "NASA JPL PO.DAAC",
+      "url": "https://podaac.jpl.nasa.gov/dataset/OSCAR_L4_OC_FINAL_V2.0",
+      "year": "ongoing (v2.0 since 2022)"
+    },
+    "provenance": "primary",
+    "unit": "category / m per s",
+    "updateFrequency": "daily (rolling)"
+  },
+  "debtin": {
+    "additionalSources": [
+      {
+        "datasetTitle": "International Debt Report 2025 products",
+        "org": "World Bank",
+        "url": "https://www.worldbank.org/en/programs/debt-statistics/idr/products"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the amount each debtor country owes to creditor countries.",
+    "confidence": "medium",
+    "dataKind": "measured",
+    "higherIs": "context",
+    "label": "Bilateral debt (debtor side)",
+    "limitations": "Coverage is debtor-reported and limited to LMIC borrowers; high-income borrowers are excluded and some creditor attribution is incomplete.",
+    "methodology": "Compiles the external debt obligations of low- and middle-income borrowers reported via the Debtor Reporting System, broken out by creditor.",
+    "metric": "Money owed: external debt that each low- and middle-income borrower owes to bilateral creditors.",
+    "primarySource": {
+      "datasetTitle": "International Debt Statistics (IDS) / International Debt Report 2025",
+      "org": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/debt-statistics",
+      "year": "end-2024"
+    },
+    "provenance": "primary",
+    "unit": "category / USD value",
+    "updateFrequency": "annual (database refreshed quarterly)"
+  },
+  "debtout": {
+    "additionalSources": [
+      {
+        "datasetTitle": "International Debt Report 2025 products",
+        "org": "World Bank",
+        "url": "https://www.worldbank.org/en/programs/debt-statistics/idr/products"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the amount lent out from each creditor country to debtor countries.",
+    "confidence": "medium",
+    "dataKind": "measured",
+    "higherIs": "context",
+    "label": "Bilateral debt (creditor side)",
+    "limitations": "Debtor-reported and limited to LMIC borrowers, so the creditor side is partial — lending among high-income countries and some non-Paris-Club/Chinese lending is inconsistently attributed.",
+    "methodology": "Compiles external debt stocks and flows of low- and middle-income countries via the Debtor Reporting System, broken out by creditor type and increasingly by creditor country.",
+    "metric": "Money lent out: external debt owed to each creditor country by low- and middle-income borrowers.",
+    "primarySource": {
+      "datasetTitle": "International Debt Statistics (IDS) / International Debt Report 2025",
+      "org": "World Bank",
+      "url": "https://www.worldbank.org/en/programs/debt-statistics",
+      "year": "end-2024"
+    },
+    "provenance": "primary",
+    "unit": "category / USD value",
+    "updateFrequency": "annual (database refreshed quarterly)"
+  },
+  "drugs": {
+    "additionalSources": [
+      {
+        "datasetTitle": "World Drug Report 2025 maps",
+        "org": "UNODC",
+        "url": "https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2025-maps.html"
+      }
+    ],
+    "colorMeaning": "Path color encodes drug type or trafficking corridor; weight is indicative of relative flow.",
+    "confidence": "low",
+    "dataKind": "curated",
+    "higherIs": "bad",
+    "label": "Drug routes",
+    "limitations": "UNODC states routes are broadly indicative only; corridors are country-pair inferences drawn between centroids, not tracked geodata, and secondary routes may be missing.",
+    "methodology": "Routes are inferred from seizure data and Member States' reported countries of departure, transit, and destination, aggregated into broadly indicative corridors.",
+    "metric": "Indicative international trafficking corridors for illicit drugs.",
+    "primarySource": {
+      "datasetTitle": "World Drug Report 2025",
+      "org": "UN Office on Drugs and Crime",
+      "url": "https://www.unodc.org/unodc/en/data-and-analysis/world-drug-report-2025.html",
+      "year": "2025"
+    },
+    "provenance": "synthesized",
+    "unit": "category / indicative corridor",
+    "updateFrequency": "annual"
+  },
+  "dust": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Earth Observatory dust imagery / Worldview",
+        "org": "NASA Earth Observatory",
+        "url": "https://science.nasa.gov/earth/earth-observatory/"
+      }
+    ],
+    "colorMeaning": "Path/shading encodes the direction and intensity of dust plume transport.",
+    "confidence": "medium",
+    "dataKind": "modeled",
+    "higherIs": "neutral",
+    "label": "Saharan dust",
+    "limitations": "No single 'dust route' dataset exists; this layer is synthesized from model and multi-sensor imagery, and plume paths are episodic and seasonal rather than fixed corridors.",
+    "methodology": "Dust transport modeled by the GEOS aerosol system assimilating MODIS AOD and other satellite data, with CALIPSO lidar providing vertical structure.",
+    "metric": "Seasonal/episodic atmospheric transport of Saharan mineral dust.",
+    "primarySource": {
+      "datasetTitle": "GEOS-FP aerosol product (dust AOT) with MODIS AOD and CALIPSO profiles",
+      "org": "NASA (Goddard / Earth Observatory)",
+      "url": "https://svs.gsfc.nasa.gov/5572/",
+      "year": "ongoing (near-real-time)"
+    },
+    "provenance": "synthesized",
+    "unit": "category / aerosol optical depth",
+    "updateFrequency": "daily (near-real-time); episodic phenomenon"
+  },
+  "flights": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Our Data / Aviation Data Repository",
+        "org": "Eurocontrol",
+        "url": "https://www.eurocontrol.int/our-data"
+      }
+    ],
+    "colorMeaning": "Lines depict airport-pair routes; weight may encode relative traffic.",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Flight corridors",
+    "limitations": "OpenFlights route data is frozen at June 2014 and is of historical value only; lines are great-circle approximations, not actual flown tracks (OAG/ICAO are paywalled).",
+    "methodology": "OpenFlights routes are straight-line airport-pair connections crowdsourced from a third-party feed; Eurocontrol derives flows from filed flight plans and radar tracks.",
+    "metric": "Scheduled air routes between airport pairs / air traffic corridors.",
+    "primarySource": {
+      "datasetTitle": "Airport, Airline and Route Database",
+      "org": "OpenFlights",
+      "url": "https://openflights.org/data.php",
+      "year": "routes frozen 2014; infrastructure updated 2025"
+    },
+    "provenance": "secondary",
+    "unit": "category / route",
+    "updateFrequency": "static (OpenFlights routes); monthly (Eurocontrol)"
+  },
+  "flyways": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Flyway Site Network",
+        "org": "East Asian-Australasian Flyway Partnership",
+        "url": "https://eaaflyway.net/the-flyway/flyway-site-network/"
+      },
+      {
+        "datasetTitle": "CMS flyway framework",
+        "org": "Convention on Migratory Species (CMS)",
+        "url": "https://www.cms.int/"
+      }
+    ],
+    "colorMeaning": "Color distinguishes the major flyway zones (color encodes category, not magnitude).",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Bird migration flyways",
+    "limitations": "Flyways are conceptual broad corridors and conservation constructs, not precise per-species paths; boundaries are smoothed and schematic.",
+    "methodology": "Flyway boundaries are expert-delineated generalized zones synthesizing ringing/recovery, tracking, and species-distribution data.",
+    "metric": "Generalized broad corridors used by migratory bird populations.",
+    "primarySource": {
+      "datasetTitle": "Global Flyways / DataZone migratory-bird profiles",
+      "org": "BirdLife International",
+      "url": "https://www.birdlife.org/globalflyways/",
+      "year": "2025"
+    },
+    "provenance": "synthesized",
+    "unit": "category / flyway zone",
+    "updateFrequency": "periodic"
+  },
+  "food": {
+    "additionalSources": [
+      {
+        "datasetTitle": "UN Comtrade Database",
+        "org": "UN Statistics Division",
+        "url": "https://comtradeplus.un.org/"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume of food/grain traded along each corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Food & grain trade",
+    "limitations": "A one-to-two-year reporting lag and mirror-statistics discrepancies (reporter vs. partner figures often disagree).",
+    "methodology": "Bilateral (reporter↔partner) import/export quantities and values by commodity, harmonized largely from UN Comtrade and national submissions.",
+    "metric": "Bilateral import/export quantities and values of food and agricultural commodities.",
+    "primarySource": {
+      "datasetTitle": "FAOSTAT — Detailed trade matrix (crops and livestock products)",
+      "org": "FAO",
+      "url": "https://www.fao.org/faostat/en/#data/TM",
+      "year": "2025 update (through ~2023/2024)"
+    },
+    "provenance": "primary",
+    "unit": "category / quantity or value",
+    "updateFrequency": "annual"
+  },
+  "gdppc": {
+    "additionalSources": [
+      {
+        "datasetTitle": "World Economic Outlook Database (April 2026)",
+        "org": "International Monetary Fund",
+        "url": "https://www.imf.org/en/publications/weo/weo-database/2026/april"
+      }
+    ],
+    "colorMeaning": "Color encodes GDP per capita, from lower to higher income.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "GDP per capita",
+    "limitations": "PPP conversion factors depend on periodic ICP price surveys and are extrapolated between benchmark years, carrying meaningful estimation uncertainty.",
+    "methodology": "GDP divided by mid-year population, converted at purchasing-power-parity factors from the International Comparison Program to equalize price levels.",
+    "metric": "Gross domestic product divided by mid-year population, in purchasing-power-parity international dollars.",
+    "primarySource": {
+      "datasetTitle": "World Development Indicators — GDP per capita, PPP (NY.GDP.PCAP.PP.CD)",
+      "org": "World Bank",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "international $ (PPP) per person",
+    "updateFrequency": "annual (database refreshed quarterly)"
+  },
+  "govdebt": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Fiscal Monitor (April 2026)",
+        "org": "International Monetary Fund",
+        "url": "https://www.imf.org/en/publications/fm"
+      }
+    ],
+    "colorMeaning": "Color encodes the gross government debt-to-GDP ratio, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "context",
+    "label": "Government debt (% of GDP)",
+    "limitations": "General-government coverage and gross-vs-net treatment differ across countries, and out-year figures are projections subject to large revision.",
+    "methodology": "Total gross debt liabilities of the general government sector as a share of GDP, compiled from country authorities and harmonized to a common framework.",
+    "metric": "General government gross debt as a share of GDP.",
+    "primarySource": {
+      "datasetTitle": "World Economic Outlook Database — General government gross debt, % of GDP (GGXWDG_NGDP)",
+      "org": "International Monetary Fund",
+      "url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO/WEOWORLD",
+      "year": "2025 (WEO April 2026)"
+    },
+    "provenance": "primary",
+    "unit": "percent of GDP",
+    "updateFrequency": "biannual (April and October)"
+  },
+  "govtype": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Archived World Factbook snapshots",
+        "org": "World Factbook Archive",
+        "url": "https://worldfactbookarchive.org/"
+      }
+    ],
+    "colorMeaning": "Color encodes the structural government-type category assigned to each country.",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Government type",
+    "limitations": "Now frozen and unmaintained as of Feb 2026; labels are descriptive and non-standardized rather than a coded academic typology.",
+    "methodology": "Editorial classification by CIA analysts assigning each entity a descriptive label for its system of government.",
+    "metric": "Descriptive classification of each country's system of government (e.g. federal presidential republic, parliamentary constitutional monarchy).",
+    "primarySource": {
+      "datasetTitle": "The World Factbook — Government type field",
+      "org": "U.S. Central Intelligence Agency",
+      "url": "https://www.cia.gov/the-world-factbook/field/government-type/",
+      "year": "2026 (last state ~Jan 2026)"
+    },
+    "provenance": "primary",
+    "unit": "category",
+    "updateFrequency": "static/historical (CIA discontinued the Factbook on 4 Feb 2026)"
+  },
+  "hdi": {
+    "additionalSources": [],
+    "colorMeaning": "Color encodes HDI from lower to higher human development.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "Human Development Index",
+    "limitations": "A national average that masks within-country inequality; the income dimension is capped, and a few countries lack a reported value (shown as no data).",
+    "methodology": "Geometric mean of normalized indices for the three HDI dimensions (a long and healthy life, knowledge, and a decent standard of living).",
+    "metric": "A composite of life expectancy at birth, education (mean and expected years of schooling), and gross national income per capita.",
+    "primarySource": {
+      "datasetTitle": "Human Development Report 2023/24 — Human Development Index (2022 values)",
+      "org": "UNDP",
+      "url": "https://hdr.undp.org/data-center/human-development-index",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "0-1 index (higher = more developed)",
+    "updateFrequency": "annual"
+  },
+  "healthspend": {
+    "additionalSources": [
+      {
+        "datasetTitle": "WDI — Current health expenditure (% of GDP) (SH.XPD.CHEX.GD.ZS)",
+        "org": "World Bank",
+        "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS"
+      }
+    ],
+    "colorMeaning": "Color encodes total health spending as a share of GDP, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "context",
+    "label": "Health spending (% GDP)",
+    "limitations": "Cross-country comparability is limited by differing accounting practices, and donor flows are hard to capture in low-income countries.",
+    "methodology": "Sums all current health spending as a share of GDP under the System of Health Accounts (SHA 2011) framework.",
+    "metric": "Current health expenditure (public, private, and external) as a share of GDP.",
+    "primarySource": {
+      "datasetTitle": "Global Health Expenditure Database — Current health expenditure as % of GDP",
+      "org": "World Health Organization",
+      "url": "https://apps.who.int/nha/database/",
+      "year": "2023"
+    },
+    "provenance": "primary",
+    "unit": "percent of GDP",
+    "updateFrequency": "annual"
+  },
+  "hiv": {
+    "additionalSources": [
+      {
+        "datasetTitle": "WDI — Prevalence of HIV, ages 15-49 (SH.DYN.AIDS.ZS)",
+        "org": "World Bank",
+        "url": "https://data.worldbank.org/indicator/SH.DYN.AIDS.ZS"
+      }
+    ],
+    "colorMeaning": "Color encodes adult HIV prevalence, from low to high.",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "bad",
+    "label": "HIV prevalence",
+    "limitations": "Estimates carry wide uncertainty bounds, especially in concentrated epidemics where surveillance among key populations is incomplete.",
+    "methodology": "Share of adults aged 15–49 living with HIV, modeled with the Spectrum/EPP tools using surveillance, survey, and programme data.",
+    "metric": "Share of the population aged 15–49 living with HIV.",
+    "primarySource": {
+      "datasetTitle": "UNAIDS 2025 epidemiological estimates / AIDSinfo",
+      "org": "UNAIDS",
+      "url": "https://aidsinfo.unaids.org/",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "percent of adults aged 15–49",
+    "updateFrequency": "annual"
+  },
+  "internet": {
+    "additionalSources": [
+      {
+        "datasetTitle": "WDI — Individuals using the Internet (IT.NET.USER.ZS)",
+        "org": "World Bank",
+        "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS"
+      }
+    ],
+    "colorMeaning": "Color encodes the percentage of the population online, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "Internet use",
+    "limitations": "Definitions of 'Internet use' and survey recency vary by country, so many developing-country figures are ITU estimates rather than directly measured.",
+    "methodology": "Compiled from national household surveys and administrative data reported to ITU, with modelling to fill gaps and produce comparable global figures.",
+    "metric": "Share of individuals using the Internet as a percentage of population.",
+    "primarySource": {
+      "datasetTitle": "Measuring Digital Development: Facts and Figures 2025",
+      "org": "International Telecommunication Union",
+      "url": "https://www.itu.int/itu-d/reports/statistics/facts-figures-2025/",
+      "year": "2025 estimates"
+    },
+    "provenance": "primary",
+    "unit": "percent of population",
+    "updateFrequency": "annual"
+  },
+  "language": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Ethnologue: Languages of the World, 28th edition",
+        "org": "SIL International",
+        "url": "https://www.ethnologue.com/"
+      },
+      {
+        "datasetTitle": "World Atlas of Language Structures (WALS)",
+        "org": "Max Planck Institute / Zenodo",
+        "url": "https://wals.info/"
+      }
+    ],
+    "colorMeaning": "Color encodes the language family of the country's dominant or official language.",
+    "confidence": "high",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Language family",
+    "limitations": "Language-vs-dialect splitting decisions are contested among linguists, and a single 'dominant language per country' obscures multilingual states.",
+    "methodology": "Glottolog provides a rigorously curated genealogical classification of the world's languages keyed to Glottocodes; dominant language per country is assigned editorially.",
+    "metric": "Dominant language and its genealogical language family for each country.",
+    "primarySource": {
+      "datasetTitle": "Glottolog 5.3",
+      "org": "Max Planck Institute for Evolutionary Anthropology",
+      "url": "https://glottolog.org/",
+      "year": "2025"
+    },
+    "provenance": "primary",
+    "unit": "category",
+    "updateFrequency": "periodic"
+  },
+  "lgbt": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Criminalisation maps / sexual orientation laws maps",
+        "org": "ILGA World",
+        "url": "https://database.ilga.org/"
+      }
+    ],
+    "colorMeaning": "Color encodes the level of legal protection vs. criminalization for LGBTQ+ people.",
+    "confidence": "high",
+    "dataKind": "curated",
+    "higherIs": "good",
+    "label": "LGBTQ+ legal status",
+    "limitations": "Captures laws on the books rather than enforcement or lived reality, and snapshots lag real-time legal change between editions.",
+    "methodology": "Surveys laws across 193 UN member states in multiple legal categories (criminalization, anti-discrimination, recognition, marriage, gender recognition).",
+    "metric": "Legal status of LGBTQ+ people, from criminalization of same-sex acts through anti-discrimination protections and marriage equality.",
+    "primarySource": {
+      "datasetTitle": "Laws on Us: A Global Overview of Legal Progress and Backtracking on SOGIESC",
+      "org": "ILGA World",
+      "url": "https://ilga.org/laws-on-us-report/",
+      "year": "2024 (1st edition)"
+    },
+    "provenance": "primary",
+    "unit": "category",
+    "updateFrequency": "periodic (report); maps updated as laws change"
+  },
+  "lifeexp": {
+    "additionalSources": [
+      {
+        "datasetTitle": "World Population Prospects 2024",
+        "org": "UN DESA Population Division",
+        "url": "https://population.un.org/wpp/"
+      },
+      {
+        "datasetTitle": "Global Health Observatory — Life expectancy",
+        "org": "World Health Organization",
+        "url": "https://www.who.int/data/gho"
+      }
+    ],
+    "colorMeaning": "Color encodes life expectancy at birth, from lower to higher.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "Life expectancy",
+    "limitations": "Assumes today's mortality stays fixed, so it does not predict any actual person's lifespan, and figures lag real time by about two years.",
+    "methodology": "Period (synthetic-cohort) life expectancy compiled from UN World Population Prospects and national statistical offices.",
+    "metric": "Number of years a newborn would live if current mortality patterns held constant throughout life.",
+    "primarySource": {
+      "datasetTitle": "World Development Indicators — Life expectancy at birth, total (SP.DYN.LE00.IN)",
+      "org": "World Bank",
+      "url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+      "year": "2023"
+    },
+    "provenance": "secondary",
+    "unit": "years",
+    "updateFrequency": "annual"
+  },
+  "matmort": {
+    "additionalSources": [
+      {
+        "datasetTitle": "WDI — Maternal mortality ratio (SH.STA.MMRT)",
+        "org": "World Bank",
+        "url": "https://data.worldbank.org/indicator/SH.STA.MMRT"
+      }
+    ],
+    "colorMeaning": "Color encodes the maternal mortality ratio, from low to high.",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "bad",
+    "label": "Maternal mortality",
+    "limitations": "Maternal deaths are frequently misclassified or underreported, so most country figures are modeled with broad uncertainty ranges.",
+    "methodology": "Maternal deaths per 100,000 live births estimated with a Bayesian model combining vital registration, surveys, and censuses.",
+    "metric": "Maternal deaths per 100,000 live births.",
+    "primarySource": {
+      "datasetTitle": "Trends in Maternal Mortality 2000 to 2023",
+      "org": "UN Maternal Mortality Estimation Inter-Agency Group (WHO, UNICEF, UNFPA, World Bank, UN DESA)",
+      "url": "https://www.who.int/publications/i/item/9789240108462",
+      "year": "2023"
+    },
+    "provenance": "primary",
+    "unit": "deaths per 100,000 live births",
+    "updateFrequency": "periodic (roughly every 2–3 years)"
+  },
+  "migration": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Refugee Data Finder (displacement classification)",
+        "org": "UNHCR",
+        "url": "https://www.unhcr.org/refugee-statistics/",
+        "year": "2024"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the size of the migrant stock along each origin–destination corridor.",
+    "confidence": "medium",
+    "dataKind": "estimated",
+    "higherIs": "neutral",
+    "label": "Migration corridors",
+    "limitations": "A stock snapshot of where migrants live, not a flow, so drawing origin–destination as a moving path is an interpolation; the World Bank bilateral matrix ends at 2000.",
+    "methodology": "Estimates foreign-born persons residing in each country by origin and destination, built mainly from population censuses and registers.",
+    "metric": "Origin-to-destination stock of international migrants (foreign-born persons residing in each country).",
+    "primarySource": {
+      "datasetTitle": "International Migrant Stock 2024",
+      "org": "UN DESA Population Division",
+      "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "category / count of migrants",
+    "updateFrequency": "periodic"
+  },
+  "minerals": {
+    "additionalSources": [
+      {
+        "datasetTitle": "UN Comtrade Database",
+        "org": "UN Statistics Division",
+        "url": "https://comtradeplus.un.org/"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume of minerals/metals traded or sourced along each corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Minerals & metals trade",
+    "limitations": "US-centric — gives global production and US import sources, not full bilateral world flow matrices; country-to-country flows require UN Comtrade.",
+    "methodology": "Reports per-commodity world production and reserves plus US net import reliance and major source countries.",
+    "metric": "World production, reserves, and trade/source flows of mineral commodities and metals.",
+    "primarySource": {
+      "datasetTitle": "Mineral Commodity Summaries 2026",
+      "org": "U.S. Geological Survey",
+      "url": "https://pubs.usgs.gov/publication/mcs2026",
+      "year": "2026 (data for 2025)"
+    },
+    "provenance": "primary",
+    "unit": "category / quantity or value",
+    "updateFrequency": "annual"
+  },
+  "oil": {
+    "additionalSources": [
+      {
+        "datasetTitle": "UN Comtrade Database",
+        "org": "UN Statistics Division",
+        "url": "https://comtradeplus.un.org/"
+      },
+      {
+        "datasetTitle": "Oil/Gas market data",
+        "org": "International Energy Agency",
+        "url": "https://www.iea.org/data-and-statistics"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume of oil/gas traded along each corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Oil & gas trade",
+    "limitations": "Trade-movement tables are inter-regional aggregates, not country-to-country pipeline/tanker geometry; granular bilateral flows require UN Comtrade or IEA.",
+    "methodology": "Compiles national/industry production, consumption, and inter-regional trade-movement matrices (origin region → destination region).",
+    "metric": "Inter-regional and bilateral trade movements of crude oil, refined products, and natural gas.",
+    "primarySource": {
+      "datasetTitle": "Statistical Review of World Energy 2025 (74th edition)",
+      "org": "Energy Institute",
+      "url": "https://www.energyinst.org/statistical-review",
+      "year": "2025 (data for 2024)"
+    },
+    "provenance": "primary",
+    "unit": "category / volume or value",
+    "updateFrequency": "annual"
+  },
+  "physicians": {
+    "additionalSources": [
+      {
+        "datasetTitle": "WDI — Physicians per 1,000 people (SH.MED.PHYS.ZS)",
+        "org": "World Bank",
+        "url": "https://data.worldbank.org/indicator/SH.MED.PHYS.ZS"
+      }
+    ],
+    "colorMeaning": "Color encodes physician density, from low to high.",
+    "confidence": "medium",
+    "dataKind": "measured",
+    "higherIs": "good",
+    "label": "Physicians per 1,000",
+    "limitations": "Country data years differ widely (latest-available is used), and figures count registered/licensed doctors rather than those actively practicing.",
+    "methodology": "Counts generalist and specialist medical practitioners per population, reported by national authorities via the NHWA platform.",
+    "metric": "Number of generalist and specialist medical doctors per 1,000 population.",
+    "primarySource": {
+      "datasetTitle": "Global Health Workforce Statistics / National Health Workforce Accounts — Medical doctors",
+      "org": "World Health Organization",
+      "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/medical-doctors-(per-10-000-population)",
+      "year": "latest available, mostly 2021–2023"
+    },
+    "provenance": "secondary",
+    "unit": "physicians per 1,000 people",
+    "updateFrequency": "as countries report (not all annually)"
+  },
+  "popdensity": {
+    "additionalSources": [
+      {
+        "datasetTitle": "World Population Prospects 2024",
+        "org": "UN DESA Population Division",
+        "url": "https://population.un.org/wpp/"
+      }
+    ],
+    "colorMeaning": "Color encodes population density, from sparse to dense.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "neutral",
+    "label": "Population density",
+    "limitations": "A national average that masks enormous internal variation (deserts vs. cities) and is sensitive to how land area is defined.",
+    "methodology": "Mid-year total population (UN WPP) divided by land area in square kilometers (FAO), excluding inland water bodies.",
+    "metric": "Mid-year population divided by land area, people per square kilometer.",
+    "primarySource": {
+      "datasetTitle": "World Development Indicators — Population density (EN.POP.DNST)",
+      "org": "World Bank",
+      "url": "https://data.worldbank.org/indicator/EN.POP.DNST",
+      "year": "2023"
+    },
+    "provenance": "secondary",
+    "unit": "people per sq km",
+    "updateFrequency": "annual"
+  },
+  "refugees": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Global Trends report",
+        "org": "UNHCR",
+        "url": "https://www.unhcr.org/global-trends"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the size of the refugee population along each origin–asylum corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "context",
+    "label": "Refugee flows",
+    "limitations": "Reflects registered/recognized populations residing in host countries (an origin–asylum pairing), not real-time crossing flows; unregistered populations are undercounted.",
+    "methodology": "Compiles refugee, asylum-seeker, IDP, and stateless populations by origin and asylum country from government and UNHCR registration/reporting.",
+    "metric": "Refugee and asylum-seeker populations by country of origin and country of asylum.",
+    "primarySource": {
+      "datasetTitle": "Refugee Data Finder (Population Statistics Database)",
+      "org": "UNHCR",
+      "url": "https://www.unhcr.org/refugee-statistics",
+      "year": "end-2024"
+    },
+    "provenance": "primary",
+    "unit": "category / count of persons",
+    "updateFrequency": "annual (mid-year + year-end)"
+  },
+  "regime": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Democracy Index 2025",
+        "org": "Economist Intelligence Unit",
+        "url": "https://www.eiu.com/n/campaigns/democracy-index-2025/"
+      },
+      {
+        "datasetTitle": "Freedom in the World 2026",
+        "org": "Freedom House",
+        "url": "https://freedomhouse.org/report/freedom-world"
+      },
+      {
+        "datasetTitle": "Polity5 (discontinued, ends 2018)",
+        "org": "Center for Systemic Peace",
+        "url": "https://www.systemicpeace.org/polityproject.html"
+      }
+    ],
+    "colorMeaning": "Color encodes regime category, typically from more democratic to more autocratic.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "context",
+    "label": "Regime type",
+    "limitations": "Relies on subjective expert judgments aggregated via measurement models, introducing rater uncertainty; Polity5 is frozen at 2018 and should not be treated as current.",
+    "methodology": "V-Dem aggregates thousands of expert codings across hundreds of indicators into democracy indices and a Regimes-of-the-World typology.",
+    "metric": "Classification of each country along the democracy–autocracy spectrum (e.g. liberal democracy, electoral democracy, electoral autocracy, closed autocracy).",
+    "primarySource": {
+      "datasetTitle": "V-Dem Dataset v16 / Democracy Report 2026",
+      "org": "V-Dem Institute, University of Gothenburg",
+      "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
+      "year": "2026 (scores through 2025)"
+    },
+    "provenance": "primary",
+    "unit": "category / index score",
+    "updateFrequency": "annual"
+  },
+  "religion": {
+    "additionalSources": [
+      {
+        "datasetTitle": "World Religion Database",
+        "org": "Association of Religion Data Archives (ARDA) / World Religion Database",
+        "url": "https://www.thearda.com/"
+      }
+    ],
+    "colorMeaning": "Color encodes the dominant or plurality religious group in each country.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "neutral",
+    "label": "Religion by branch",
+    "limitations": "Resolves only seven broad categories, not denominational branches (e.g. Sunni/Shia, Catholic/Protestant), and self-identification quality varies widely by country.",
+    "methodology": "Religious composition estimated for seven broad categories from more than 2,700 sources including national censuses, demographic surveys, and population registers.",
+    "metric": "Share of each country's population identifying with major religious groups (Christian, Muslim, Hindu, Buddhist, Jewish, other, unaffiliated).",
+    "primarySource": {
+      "datasetTitle": "How the Global Religious Landscape Changed from 2010 to 2020",
+      "org": "Pew Research Center",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+      "year": "2025 (reference year 2020)"
+    },
+    "provenance": "primary",
+    "unit": "category / percent of population",
+    "updateFrequency": "periodic (roughly once per decade)"
+  },
+  "remittances": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Remittances data",
+        "org": "KNOMAD",
+        "url": "https://www.knomad.org/data/remittances"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the estimated value of remittances along each corridor.",
+    "confidence": "medium",
+    "dataKind": "modeled",
+    "higherIs": "good",
+    "label": "Remittance corridors",
+    "limitations": "The bilateral corridor cells are modeled, not measured — only country-level totals are real, and informal/unrecorded transfers are excluded.",
+    "methodology": "Allocates each country's measured total remittance inflows across source countries in proportion to migrant stocks and per-capita incomes of host vs. origin.",
+    "metric": "Estimated bilateral remittance transfers from host countries to origin countries.",
+    "primarySource": {
+      "datasetTitle": "Bilateral Remittance Matrix",
+      "org": "World Bank / KNOMAD",
+      "url": "https://data360.worldbank.org/en/indicator/WB_KNOMAD_BRE",
+      "year": "2024"
+    },
+    "provenance": "synthesized",
+    "unit": "category / USD value",
+    "updateFrequency": "annual"
+  },
+  "sanitation": {
+    "additionalSources": [
+      {
+        "datasetTitle": "JMP report 2025",
+        "org": "UNICEF Data",
+        "url": "https://data.unicef.org/resources/jmp-report-2025/"
+      }
+    ],
+    "colorMeaning": "Color encodes access to safely managed sanitation, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "Sanitation access",
+    "limitations": "Data on the final disposal or treatment of excreta are sparse in many countries, so safely managed estimates are modeled and often unavailable nationally.",
+    "methodology": "Share of population using an improved, non-shared facility where excreta are safely disposed in situ or transported and treated offsite.",
+    "metric": "Share of population using safely managed sanitation services (improved, non-shared facility with safe disposal or treatment of excreta).",
+    "primarySource": {
+      "datasetTitle": "Progress on Household Drinking Water, Sanitation and Hygiene 2000–2024",
+      "org": "WHO/UNICEF Joint Monitoring Programme",
+      "url": "https://washdata.org/",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "percent of population",
+    "updateFrequency": "periodic (roughly every two years)"
+  },
+  "shipping": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Review of Maritime Transport 2025",
+        "org": "UNCTAD",
+        "url": "https://unctad.org/publication/review-maritime-transport-2025"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes maritime traffic density or transit volume.",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "neutral",
+    "label": "Shipping lanes",
+    "limitations": "AIS is subject to jamming, spoofing, and vessels going dark, and downloadable density layers are derived estimates, not raw tracks (MarineTraffic is commercial).",
+    "methodology": "PortWatch estimates trade flows from satellite AIS signals on ~90,000 ships processed with big-data/ML models; UNCTAD aggregates national seaborne-trade statistics.",
+    "metric": "Maritime traffic density along major shipping lanes and through chokepoints.",
+    "primarySource": {
+      "datasetTitle": "PortWatch (Ports & Chokepoints datasets)",
+      "org": "IMF",
+      "url": "https://portwatch.imf.org/",
+      "year": "ongoing (AIS daily since 2019)"
+    },
+    "provenance": "primary",
+    "unit": "category / transit volume",
+    "updateFrequency": "daily/weekly (PortWatch); annual (UNCTAD)"
+  },
+  "silkroad": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Silk Roads corridor inscriptions (Chang'an-Tianshan 2014; Zarafshan-Karakum 2023)",
+        "org": "UNESCO World Heritage Centre",
+        "url": "https://whc.unesco.org/en/list/1442/"
+      }
+    ],
+    "colorMeaning": "Lines depict reconstructed historical trade routes (color distinguishes branches, not magnitude).",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Silk Road",
+    "limitations": "Interpretive historical corridors that are approximate, contested, and stylized; UNESCO's authoritative route geometry (Interactive Atlas) is still in development.",
+    "methodology": "Routes are scholarly reconstructions of historical exchange networks compiled by UNESCO and partner historians.",
+    "metric": "Reconstructed historical routes of the Silk Road exchange networks.",
+    "primarySource": {
+      "datasetTitle": "Silk Roads Programme — Interactive Map / Online Platform",
+      "org": "UNESCO",
+      "url": "https://en.unesco.org/silkroad/",
+      "year": "ongoing/curated"
+    },
+    "provenance": "synthesized",
+    "unit": "category / historical route",
+    "updateFrequency": "static/historical"
+  },
+  "students": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Project Atlas (2024 release)",
+        "org": "Institute of International Education",
+        "url": "https://www.iie.org/research-initiatives/project-atlas/"
+      },
+      {
+        "datasetTitle": "International Migration Outlook / Education at a Glance",
+        "org": "OECD",
+        "url": "https://www.oecd.org/en/topics/education.html"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the number of mobile students along each origin–destination corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "International students",
+    "limitations": "Origin detail is incomplete (often only by region for inbound), and definitions of 'mobile' vary by country, so some corridors are partial.",
+    "methodology": "Counts tertiary students enrolled outside their country of origin, by destination and origin region/country, reported by national authorities.",
+    "metric": "Tertiary students enrolled outside their country of origin, by origin and destination.",
+    "primarySource": {
+      "datasetTitle": "Inbound/Outbound Internationally Mobile Students",
+      "org": "UNESCO Institute for Statistics",
+      "url": "https://databrowser.uis.unesco.org/browser/EDUCATION/UIS-EducationOPRI/int-stud",
+      "year": "2022"
+    },
+    "provenance": "primary",
+    "unit": "category / count of students",
+    "updateFrequency": "annual"
+  },
+  "trade": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Balanced International Merchandise Trade Statistics (BIMTS)",
+        "org": "OECD / WTO",
+        "url": "https://www.oecd.org/en/data/datasets/oecd-balanced-trade-statistics.html"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the value of merchandise trade along each bilateral corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Trade flows",
+    "limitations": "Reporting lags and gaps leave some recent partners incomplete, and importer- vs. exporter-reported figures for the same corridor often differ (mirror asymmetry).",
+    "methodology": "Compiles official bilateral import/export merchandise statistics reported by national statistical authorities, by partner and commodity.",
+    "metric": "Bilateral merchandise trade (imports/exports) between countries.",
+    "primarySource": {
+      "datasetTitle": "UN Comtrade Database",
+      "org": "UN Statistics Division",
+      "url": "https://comtradeplus.un.org/",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "category / USD value",
+    "updateFrequency": "continuous/rolling (annual + monthly)"
+  },
+  "trafficking": {
+    "additionalSources": [
+      {
+        "datasetTitle": "GLOTIP 2024 report (PDF)",
+        "org": "UNODC",
+        "url": "https://www.unodc.org/documents/data-and-analysis/glotip/2024/GLOTIP2024_BOOK.pdf"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the origin–destination flow of detected trafficking victims.",
+    "confidence": "low",
+    "dataKind": "curated",
+    "higherIs": "bad",
+    "label": "Human trafficking",
+    "limitations": "Reflects only detected victims and is heavily shaped by national detection capacity, so flows show where victims are found, not true scale or all routes.",
+    "methodology": "Cross-border flows derived from detected-victim citizenship vs. country of detection, aggregated into origin–destination region pairs.",
+    "metric": "Cross-border origin-to-destination flows of detected trafficking victims.",
+    "primarySource": {
+      "datasetTitle": "Global Report on Trafficking in Persons 2024",
+      "org": "UN Office on Drugs and Crime",
+      "url": "https://www.unodc.org/unodc/en/data-and-analysis/glotip.html",
+      "year": "2024"
+    },
+    "provenance": "synthesized",
+    "unit": "category / indicative flow",
+    "updateFrequency": "periodic (roughly biennial)"
+  },
+  "under5mort": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Levels and Trends in Child Mortality",
+        "org": "UNICEF Data",
+        "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2024/"
+      }
+    ],
+    "colorMeaning": "Color encodes the under-5 mortality rate, from low to high.",
+    "confidence": "high",
+    "dataKind": "modeled",
+    "higherIs": "bad",
+    "label": "Under-5 mortality",
+    "limitations": "For countries lacking strong vital registration, estimates rely on modeled survey data with wide uncertainty intervals.",
+    "methodology": "Estimated via a Bayesian B-spline model fitting surveys, censuses, and vital registration data.",
+    "metric": "Probability per 1,000 live births that a child dies before reaching age five.",
+    "primarySource": {
+      "datasetTitle": "Levels & Trends in Child Mortality: Report 2024",
+      "org": "UN Inter-agency Group for Child Mortality Estimation (UNICEF, WHO, World Bank, UN DESA)",
+      "url": "https://childmortality.org/",
+      "year": "2023 (Report 2024)"
+    },
+    "provenance": "primary",
+    "unit": "deaths per 1,000 live births",
+    "updateFrequency": "annual"
+  },
+  "voyages": {
+    "additionalSources": [
+      {
+        "datasetTitle": "Intra-American Slave Trade Database",
+        "org": "SlaveVoyages",
+        "url": "https://www.slavevoyages.org/voyages/about"
+      }
+    ],
+    "colorMeaning": "Lines depict reconstructed historical voyage routes (color distinguishes era/trade, not magnitude).",
+    "confidence": "medium",
+    "dataKind": "curated",
+    "higherIs": "neutral",
+    "label": "Age of Exploration",
+    "limitations": "Routes are point-to-point reconstructions from incomplete records (not actual sailed tracks); Age-of-Exploration explorer routes have no canonical open dataset and must be curated separately.",
+    "methodology": "Each voyage is reconstructed from archival shipping and customs records, with routes inferred from documented embarkation and disembarkation points.",
+    "metric": "Reconstructed maritime routes of Age-of-Exploration and transatlantic slave-trade voyages.",
+    "primarySource": {
+      "datasetTitle": "Trans-Atlantic Slave Trade Database",
+      "org": "SlaveVoyages (Rice University / Hutchins Center, Harvard)",
+      "url": "https://www.slavevoyages.org/",
+      "year": "1514–1866 (periodically updated)"
+    },
+    "provenance": "synthesized",
+    "unit": "category / historical voyage",
+    "updateFrequency": "periodic (as archival evidence surfaces)"
+  },
+  "water": {
+    "additionalSources": [
+      {
+        "datasetTitle": "JMP report 2025",
+        "org": "UNICEF Data",
+        "url": "https://data.unicef.org/resources/jmp-report-2025/"
+      }
+    ],
+    "colorMeaning": "Color encodes access to safely managed drinking water, from low to high.",
+    "confidence": "high",
+    "dataKind": "estimated",
+    "higherIs": "good",
+    "label": "Safe drinking water",
+    "limitations": "Many countries lack water-quality and accessibility data, so the 'safely managed' tier must be estimated and is unavailable for a substantial share of the population.",
+    "methodology": "Share of population using an improved water source on premises, available when needed and free of contamination, modeled from surveys, censuses, and administrative data.",
+    "metric": "Share of population using safely managed drinking water services (improved source, on premises, available when needed, free of contamination).",
+    "primarySource": {
+      "datasetTitle": "Progress on Household Drinking Water, Sanitation and Hygiene 2000–2024",
+      "org": "WHO/UNICEF Joint Monitoring Programme",
+      "url": "https://washdata.org/",
+      "year": "2024"
+    },
+    "provenance": "primary",
+    "unit": "percent of population",
+    "updateFrequency": "periodic (roughly every two years)"
+  },
+  "wildlife": {
+    "additionalSources": [
+      {
+        "datasetTitle": "CITES Illegal Trade Database",
+        "org": "CITES Secretariat",
+        "url": "https://cites.org/"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes indicative wildlife trafficking corridors between source and destination regions.",
+    "confidence": "low",
+    "dataKind": "curated",
+    "higherIs": "bad",
+    "label": "Wildlife trafficking",
+    "limitations": "Seizure-based, so it maps interdiction points and reporting effort; successful (un-seized) flows and non-reporting countries are invisible.",
+    "methodology": "Trafficking patterns built from national annual illegal-trade (seizure) reports submitted by CITES Parties.",
+    "metric": "Indicative trafficking corridors for illegally traded wildlife and wildlife products.",
+    "primarySource": {
+      "datasetTitle": "World Wildlife Crime Report 2024",
+      "org": "UN Office on Drugs and Crime (for the CITES Secretariat)",
+      "url": "https://www.unodc.org/unodc/en/data-and-analysis/wildlife.html",
+      "year": "2024 (seizure data 2015–2021)"
+    },
+    "provenance": "synthesized",
+    "unit": "category / indicative corridor",
+    "updateFrequency": "periodic (roughly every four years)"
+  },
+  "wood": {
+    "additionalSources": [
+      {
+        "datasetTitle": "UN Comtrade Database",
+        "org": "UN Statistics Division",
+        "url": "https://comtradeplus.un.org/"
+      }
+    ],
+    "colorMeaning": "Path color/weight encodes the volume of timber/wood traded along each corridor.",
+    "confidence": "high",
+    "dataKind": "measured",
+    "higherIs": "neutral",
+    "label": "Timber & wood trade",
+    "limitations": "Headline domain is production plus aggregate trade by country, not full bilateral matrices, and excludes illegal/unrecorded logging; partner-level flows need the trade matrix or Comtrade.",
+    "methodology": "Annual production and trade quantities/values for wood and paper products, collected via the joint FAO/ITTO/Eurostat/UNECE questionnaire.",
+    "metric": "Production and trade quantities/values of wood and paper products (roundwood, sawnwood, panels, pulp, paper).",
+    "primarySource": {
+      "datasetTitle": "FAOSTAT — Forestry Production and Trade",
+      "org": "FAO",
+      "url": "https://www.fao.org/faostat/en/#data/FO",
+      "year": "2025 update (through 2024)"
+    },
+    "provenance": "primary",
+    "unit": "category / quantity or value",
+    "updateFrequency": "annual"
+  }
+}

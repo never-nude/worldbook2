@@ -229,18 +229,6 @@
   #legend .lg-src:hover{color:#dce8f4;text-decoration:underline}
   #hint.wbfade{opacity:0 !important;pointer-events:none}
 
-/* visitor IP-location marker */
-/* one-shot radar ping at the visitor's IP location: a blue core dot flashes on, and
-   three ring children (added in _wbApplyGeo) radiate outward and fade, staggered like
-   a sonar ping. Every animation runs `1 forwards` - it never repeats; the marker
-   element itself is faded and removed by the timeouts in _wbApplyGeo. */
-.wb-geo-marker{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px 4px rgba(110,168,254,.9);cursor:pointer;position:relative;animation:wbGeoFlash 2.6s ease-out 1 forwards}
-.wb-geo-ring{position:absolute;left:50%;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2.5px solid rgba(110,168,254,.9);box-shadow:0 0 8px rgba(110,168,254,.5),inset 0 0 8px rgba(110,168,254,.35);opacity:0;pointer-events:none;animation:wbGeoPing 2s cubic-bezier(.2,.65,.35,1) 1 forwards}
-@keyframes wbGeoPing{0%{transform:scale(.35);opacity:.95;border-width:3px}60%{opacity:.4}100%{transform:scale(3.6);opacity:0;border-width:1px}}
-@keyframes wbGeoFlash{0%{box-shadow:0 0 12px 4px rgba(110,168,254,.9)}15%{box-shadow:0 0 34px 15px rgba(110,168,254,1),0 0 60px 26px rgba(110,168,254,.5)}100%{box-shadow:0 0 10px 3px rgba(110,168,254,.7)}}
-.wb-geo-pop-h{font-weight:600;font-size:13px;color:var(--ink);margin-bottom:2px}
-.wb-geo-pop-d{font-size:12px;color:var(--ink);opacity:.85;margin-bottom:6px}
-.wb-geo-pop-s{font-size:10.5px;color:var(--muted);line-height:1.4}
 </style>
 <noscript><div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:#070b14;color:#cbd5e5;font:16px/1.5 system-ui,-apple-system,sans-serif;text-align:center;padding:24px;z-index:99999">Worldbook needs JavaScript to draw the interactive globe. Please enable it and reload.</div></noscript>
 </head>
@@ -1109,11 +1097,9 @@ map.addLayer(countryLabels3D);
   let _revealed=false;
 /* WB_SMOOTH_REVEAL_V1 */
   const _reveal=()=>{ if(_revealed) return; _revealed=true;
-    try{ if(_wbGeo){ map.jumpTo({center:[_wbGeo.lng,_wbGeo.lat], zoom:1.6, bearing:0, pitch:0}); _wbGeoCentered=true; } }catch(e){}   // open already centered on the visitor's IP location (the ping epicenter), no fly-in
     document.getElementById("loading").style.display="none";
     startSpin();
     try{ _wbDropoutBootT=Date.now(); }catch(e){}   // boot window starts at reveal, not script eval
-    try{ _wbGeoRevealReady=true; setTimeout(_wbApplyGeo, 600); }catch(e){}   // geo ping fires just after reveal
     // Boot re-cut: the initial load requests every visible tile at once, which is the
     // heaviest churn window for the maplibre geojson worker race the dropout watchdog
     // guards against - and a tile broken during boot reports "loaded", so the phase-2
@@ -1222,55 +1208,6 @@ map.moveLayer("country-labels");   // fix: MapLibre resolves cross-layer symbol 
   }
 }
 if(map.isStyleLoaded()) _atlasBoot(); else map.on("load", _atlasBoot);
-var _wbGeo=null, _wbGeoMapReady=false, _wbGeoApplied=false, _wbGeoRevealReady=false, _wbGeoCentered=false;
-function _wbApplyGeo(){
-  // _wbGeoRevealReady gates the ping until the loading overlay is gone - map "load" and
-  // the IP lookup both resolve while the boot screen still covers the map, and a ping
-  // that radiates behind the overlay is a ping nobody sees.
-  if(!_wbGeo || !_wbGeoMapReady || !_wbGeoRevealReady || _wbGeoApplied) return;
-  _wbGeoApplied=true;
-  try{
-    var el=document.createElement("div");
-    el.className="wb-geo-marker";
-    for(var _ri=0;_ri<3;_ri++){ var _ring=document.createElement("div"); _ring.className="wb-geo-ring";
-      _ring.style.animationDelay=(_ri*0.35)+"s"; el.appendChild(_ring); }
-    var _wbMarker=new maplibregl.Marker({element:el})
-      .setLngLat([_wbGeo.lng,_wbGeo.lat])
-      .setPopup(new maplibregl.Popup({closeButton:false,offset:10}).setHTML(
-        '<div class="wb-geo-pop-h">You are approximately here'+(_wbGeo.flag?(" "+_wbGeo.flag):"")+'</div>'
-        +'<div class="wb-geo-pop-d">'+(_wbGeo.place||"Unknown location")+'</div>'
-        +'<div class="wb-geo-pop-s">Located from your IP address - city/region accuracy, not exact. VPNs and proxies will show their own location instead of yours.</div>'
-      ))
-      .addTo(map);
-    if(!_wbGeoCentered && lastInteract===0 && !subOn){ map.jumpTo({center:[_wbGeo.lng,_wbGeo.lat], zoom:1.6, bearing:0, pitch:0}); }   // snap only if the IP lookup resolved late AND the user hasn't touched the map or drilled in - a late lookup must never teleport someone mid-exploration (2026-07-06 hardening, P1-6); the ping marker still drops either way
-    if(window.console) console.info("[worldbook geo] centered on", _wbGeo.place||(_wbGeo.lat+","+_wbGeo.lng));
-    // one ping, then gone: the last ring launches at +0.7s and radiates for 2s, so hold
-    // until ~2.9s, fade the core dot, then actually remove the marker entirely.
-    setTimeout(function(){ el.style.transition="opacity .6s ease"; el.style.opacity="0"; }, 3000);
-    setTimeout(function(){ try{ _wbMarker.remove(); }catch(e){} }, 3700);
-  }catch(e){ if(window.console) console.warn("[worldbook geo] marker/fly-to failed", e); }
-}
-function _wbGeoFromIpwhois(){
-  return fetch("https://ipwho.is/").then(function(r){ return r.json(); }).then(function(d){
-    var lat=Number(d&&d.latitude), lng=Number(d&&d.longitude);
-    if(!d || d.success===false || !isFinite(lat) || !isFinite(lng)) throw new Error("ipwho.is: no usable result");
-    return {lat:lat, lng:lng, place:[d.city,d.region,d.country].filter(Boolean).join(", "), flag:(d.flag&&d.flag.emoji)||""};
-  });
-}
-function _wbGeoFromGeojs(){
-  return fetch("https://get.geojs.io/v1/ip/geo.json").then(function(r){ return r.json(); }).then(function(d){
-    var lat=Number(d&&d.latitude), lng=Number(d&&d.longitude);
-    if(!d || !isFinite(lat) || !isFinite(lng)) throw new Error("geojs.io: no usable result");
-    return {lat:lat, lng:lng, place:[d.city,d.region,d.country].filter(Boolean).join(", "), flag:""};
-  });
-}
-_wbGeoFromIpwhois().catch(function(e){
-  if(window.console) console.warn("[worldbook geo] primary lookup failed, trying fallback", e);
-  return _wbGeoFromGeojs();
-}).then(function(g){
-  _wbGeo=g; _wbApplyGeo();
-}).catch(function(e){ if(window.console) console.warn("[worldbook geo] all lookups failed - no marker this visit", e); });
-map.on("load", function(){ _wbGeoMapReady=true; _wbApplyGeo(); });
 { let _w=0; const _wi=setInterval(function(){ if(_atlasBooted||_w++>40){ clearInterval(_wi); return; } if(map.isStyleLoaded()) _atlasBoot(); }, 250); }
 
 /* ---- idle auto-rotation ---- */

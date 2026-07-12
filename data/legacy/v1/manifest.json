@@ -1,0 +1,29 @@
+{
+  "assets": {
+    "country-labels.json": {
+      "sha256": "5d0f724aaf16fd56ce554bfa9821be431832fe41548d80a0f37ff1443f8f6777"
+    },
+    "flow-magnitude.json": {
+      "sha256": "7ccb53f7e305ba0dc03a2f214cbae9210256075e43e91e7f6949a16ed25c888a"
+    },
+    "flows.json": {
+      "sha256": "df6465ece493143e5c1b8ff56b3fbdee6baad6f941f7e80d57c9e3469352afeb"
+    },
+    "meta.json": {
+      "sha256": "5a9ec1703cce309e2f1dfa26d7bf13cfe796ab86e38e3039bd3878f5c28e1db1"
+    },
+    "migration-index.json": {
+      "sha256": "c396f9a1bb1b74ca1443f10ea553de94f245c6294dfae733de637d931d17b75b"
+    },
+    "migration-keyframes.json": {
+      "sha256": "74325f391a70e34ab733e868c81c020f9c04f7a4c793e7ff830e33b5a57494ff"
+    },
+    "provenance.json": {
+      "sha256": "4ec8dc86a02fcd56dfb5d510bb129a3ede1796749deffc84dda93f04931744b5"
+    },
+    "world.geojson": {
+      "sha256": "d3552a9b0156e52b3e9665dda2037900ebd4fe81775902adebe315525ed0ae39"
+    }
+  },
+  "schemaVersion": 1
+}

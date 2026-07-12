@@ -1,0 +1,19 @@
+{
+  "name": "worldbook",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Worldbook data and architecture migration tooling.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "legacy:inventory": "node scripts/create-legacy-inventory.mjs --accept",
+    "legacy:export": "node scripts/export-legacy-data.mjs",
+    "verify:legacy-baseline": "node scripts/verify-legacy-baseline.mjs",
+    "verify:legacy-source": "node --input-type=commonjs < source_audit.js",
+    "verify:data": "npm run verify:legacy-baseline && npm run legacy:export -- --check",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run verify:legacy-source && npm run verify:data && npm test"
+  }
+}

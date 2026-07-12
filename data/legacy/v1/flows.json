@@ -1,0 +1,5255 @@
+{
+  "aid": {
+    "color": "#b48ee8",
+    "desc": "Government-to-government foreign aid: official development assistance and comparable economic assistance from major donor governments to recipient countries. Arrow points to the receiving country.",
+    "dotColor": "#f1e6ff",
+    "edges": [
+      {
+        "amt": "$1.39B/yr (FY2024, ~76% of $1.82B total) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "JOR",
+        "w": 1391
+      },
+      {
+        "amt": "$1.40B/yr (FY2024, ~99% of total) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "COD",
+        "w": 1402
+      },
+      {
+        "amt": "$1.33B/yr (FY2024, all economic assistance) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "ETH",
+        "w": 1330
+      },
+      {
+        "amt": "$914M/yr (FY2024, ~93% of total) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "KEN",
+        "w": 914
+      },
+      {
+        "amt": "$755M/yr (FY2024, all economic assistance) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "AFG",
+        "w": 755
+      },
+      {
+        "amt": "$546M/yr (FY2024, ~93% of total) - USAID/State, via USAFacts",
+        "from": "USA",
+        "to": "COL",
+        "w": 546
+      },
+      {
+        "amt": "$1.0B (2024, ~4.2% of Germany's total ODA, its largest recipient) - via Devex",
+        "from": "DEU",
+        "to": "UKR",
+        "w": 1000
+      },
+      {
+        "amt": "$788M (2024, Germany's 2nd-largest recipient) - via Devex",
+        "from": "DEU",
+        "to": "IND",
+        "w": 788
+      },
+      {
+        "amt": "$5.89B (JFY2023, ODA loans + investment finance) - JICA Data Book 2024",
+        "from": "JPN",
+        "to": "IND",
+        "w": 5892
+      },
+      {
+        "amt": "$2.36B (JFY2023, ODA loans + investment finance) - JICA Data Book 2024",
+        "from": "JPN",
+        "to": "BGD",
+        "w": 2360
+      },
+      {
+        "amt": "$2.14B (JFY2022, ODA loans + investment finance) - JICA Data Book 2023",
+        "from": "JPN",
+        "to": "IDN",
+        "w": 2137
+      },
+      {
+        "amt": "$2.12B (JFY2023, ODA loans + investment finance) - JICA Data Book 2024",
+        "from": "JPN",
+        "to": "PHL",
+        "w": 2117
+      },
+      {
+        "amt": "$727M (JFY2023, ODA loans + investment finance) - JICA Data Book 2024",
+        "from": "JPN",
+        "to": "VNM",
+        "w": 727
+      },
+      {
+        "amt": "approx. $346M/yr (2024, top UK ODA recipient) - FCDO, converted from GBP",
+        "from": "GBR",
+        "to": "UKR",
+        "w": 346
+      },
+      {
+        "amt": "approx. $246M/yr (2024, +67% vs 2023) - FCDO, converted from GBP",
+        "from": "GBR",
+        "to": "AFG",
+        "w": 246
+      },
+      {
+        "amt": "approx. $233M/yr (2024) - FCDO, converted from GBP",
+        "from": "GBR",
+        "to": "ETH",
+        "w": 233
+      },
+      {
+        "amt": "approx. $202M/yr (2024, up from GBP63.4M in 2022) - FCDO, converted from GBP",
+        "from": "GBR",
+        "to": "SYR",
+        "w": 202
+      },
+      {
+        "amt": "approx. $469M (2022, France's #1 recipient) - Senate Finance Cmte, converted from EUR447M",
+        "from": "FRA",
+        "to": "CIV",
+        "w": 469
+      },
+      {
+        "amt": "approx. $416M (2022, France's #2 recipient) - Senate Finance Cmte, converted from EUR396.6M",
+        "from": "FRA",
+        "to": "MAR",
+        "w": 416
+      },
+      {
+        "amt": "approx. $260M (2022, France's #3 recipient) - Senate Finance Cmte, converted from EUR248M",
+        "from": "FRA",
+        "to": "CMR",
+        "w": 260
+      },
+      {
+        "amt": "approx. $252M (2022, civilian ODA only, separate from military aid) - Senate Finance Cmte, converted from EUR240.4M",
+        "from": "FRA",
+        "to": "UKR",
+        "w": 252
+      }
+    ],
+    "group": "Trade & resources",
+    "label": "Foreign aid flows",
+    "legend": "Each arc is a bilateral aid corridor; thickness approximates the annual amount from donor to recipient.",
+    "note": "Selected major corridors from five donor governments (USA, Germany, Japan, UK, France), each using that donor's own official reporting for the most recent available year - see tooltip for each corridor's exact source and definition. Excludes corridors where aid is overwhelmingly military/security in nature (e.g. US to Ukraine and US to Israel).",
+    "sources": [
+      {
+        "label": "USAFacts - US Foreign Aid by Country (USAID/State ForeignAssistance.gov data)",
+        "url": "https://usafacts.org/answers/how-much-foreign-aid-does-the-us-provide/",
+        "year": 2024
+      },
+      {
+        "label": "JICA - Data Book 2023 / 2024",
+        "url": "https://www.jica.go.jp/english/about/disc/report/2024/__icsFiles/afieldfile/2025/07/17/2024-EN-data.pdf",
+        "year": 2024
+      },
+      {
+        "label": "UK FCDO - Statistics on International Development: Final UK ODA Spend 2024",
+        "url": "https://assets.publishing.service.gov.uk/media/68cae5911eabc899da7084f2/Statistics_on_International_Development_final_UK_ODA_spend_2024.pdf",
+        "year": 2024
+      },
+      {
+        "label": "French Senate Finance Committee - PLF 2025 budget review (DG Tresor / OECD data)",
+        "url": "https://www.senat.fr/rap/l24-144-34/l24-144-34_mono.html",
+        "year": 2022
+      },
+      {
+        "label": "Devex - Money Matters: How is Germany spending its aid?",
+        "url": "https://www.devex.com/news/money-matters-how-is-germany-spending-its-aid-112263",
+        "year": 2024
+      }
+    ],
+    "unit": "US$ millions/yr (bilateral development assistance, selected corridors)"
+  },
+  "arms": {
+    "color": "#d4b13a",
+    "desc": "Documented illicit small-arms and weapons trafficking corridors.",
+    "dotColor": "#fff0b8",
+    "edges": [
+      {
+        "amt": "~200,000 firearms/yr · Mexican-govt estimate · 2021",
+        "from": "USA",
+        "to": "MEX",
+        "w": 3.6
+      },
+      {
+        "from": "USA",
+        "to": "CAN",
+        "w": 1.4
+      },
+      {
+        "from": "USA",
+        "to": "BRA",
+        "w": 1.3
+      },
+      {
+        "from": "DEU",
+        "to": "LBY",
+        "w": 1.3
+      },
+      {
+        "from": "LBY",
+        "to": "MLI",
+        "w": 1.8
+      },
+      {
+        "from": "LBY",
+        "to": "TCD",
+        "w": 1.5
+      },
+      {
+        "from": "UKR",
+        "to": "ROU",
+        "w": 1.4
+      },
+      {
+        "from": "SRB",
+        "to": "DEU",
+        "w": 1.5
+      },
+      {
+        "from": "BIH",
+        "to": "FRA",
+        "w": 1.4
+      },
+      {
+        "from": "TUR",
+        "to": "SYR",
+        "w": 1.6
+      },
+      {
+        "from": "IRN",
+        "to": "YEM",
+        "w": 1.7
+      },
+      {
+        "from": "THA",
+        "to": "MMR",
+        "w": 1.3
+      },
+      {
+        "from": "PAK",
+        "to": "AFG",
+        "w": 1.5
+      }
+    ],
+    "group": "Illicit flows",
+    "label": "Arms trafficking",
+    "legend": "Each arc is a documented illicit arms-flow corridor; thickness ≈ relative prominence.",
+    "note": "Direction-indicative corridors — arcs show documented flow directions, not measured volumes; illicit arms flows are diffuse and no comparable per-corridor counts exist, so every arc except USA→MEX stays qualitative. Scale anchors: ~1 billion firearms worldwide (Small Arms Survey 2017); ~70% of Mexico-recovered, traced guns are US-sourced and Canada is the #2 foreign recovery country for US-sourced crime guns (GAO/ATF); ~$7.2B of US equipment was left in Afghanistan in 2021, and the dominant Afghan flow now runs outward to the region. State-to-state major-weapon transfers are measured in SIPRI's TIV — a volume index, NOT dollars and NOT gun counts (global context: USA = 43% of all arms exports, 2024) — which is never mixed with the firearms figures here; most drawn arcs are illicit small arms, invisible to SIPRI.",
+    "sources": [
+      {
+        "label": "SIPRI — Trends in International Arms Transfers 2024",
+        "url": "https://www.sipri.org/sites/default/files/2025-03/fs_2503_at_2024_0.pdf"
+      },
+      {
+        "label": "US GAO-21-322 — firearms trafficking to Mexico",
+        "url": "https://www.gao.gov/assets/gao-21-322.pdf"
+      },
+      {
+        "label": "Small Arms Survey — global firearms holdings",
+        "url": "https://www.smallarmssurvey.org/"
+      }
+    ],
+    "unit": "major illicit small-arms & weapons flows"
+  },
+  "braindrain": {
+    "color": "#5fd0c0",
+    "desc": "Emigration of doctors and nurses from their training country to wealthier destinations — a major strain on health systems in origin countries.",
+    "dotColor": "#d6fff5",
+    "edges": [
+      {
+        "amt": "171,200 Filipino-born nurses in US · 2024",
+        "from": "PHL",
+        "to": "USA",
+        "w": 6
+      },
+      {
+        "amt": "62,800 Indian-born physicians in US · 2024",
+        "from": "IND",
+        "to": "USA",
+        "w": 5
+      },
+      {
+        "amt": "62,413 nurses · NMC register · 2024",
+        "from": "IND",
+        "to": "GBR",
+        "w": 4
+      },
+      {
+        "from": "EGY",
+        "to": "SAU",
+        "w": 4
+      },
+      {
+        "from": "PHL",
+        "to": "SAU",
+        "w": 3
+      },
+      {
+        "from": "IND",
+        "to": "ARE",
+        "w": 3
+      },
+      {
+        "amt": "13,656 nurses · NMC register · 2024",
+        "from": "NGA",
+        "to": "GBR",
+        "w": 3
+      },
+      {
+        "from": "NGA",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "amt": "49,092 nurses · NMC register · 2024",
+        "from": "PHL",
+        "to": "GBR",
+        "w": 2
+      },
+      {
+        "from": "PAK",
+        "to": "GBR",
+        "w": 2
+      },
+      {
+        "amt": "4,794 nurses · NMC register · 2024",
+        "from": "ZWE",
+        "to": "GBR",
+        "w": 2
+      },
+      {
+        "from": "ZAF",
+        "to": "GBR",
+        "w": 2
+      },
+      {
+        "from": "SDN",
+        "to": "SAU",
+        "w": 2
+      },
+      {
+        "from": "MEX",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "from": "DZA",
+        "to": "FRA",
+        "w": 2
+      },
+      {
+        "from": "MAR",
+        "to": "FRA",
+        "w": 2
+      },
+      {
+        "amt": "4,285 Romanian doctors in Germany · 2024",
+        "from": "ROU",
+        "to": "DEU",
+        "w": 2
+      },
+      {
+        "from": "IND",
+        "to": "AUS",
+        "w": 2
+      },
+      {
+        "from": "PHL",
+        "to": "CAN",
+        "w": 2
+      },
+      {
+        "amt": "7,979 nurses · NMC register · 2024",
+        "from": "GHA",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "KEN",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "LKA",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "ZMB",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "MWI",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "amt": "11,400 doctors · Mais Médicos peak · 2015",
+        "from": "CUB",
+        "to": "BRA",
+        "w": 1
+      },
+      {
+        "from": "POL",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "GHA",
+        "to": "USA",
+        "w": 1
+      },
+      {
+        "from": "IRN",
+        "to": "USA",
+        "w": 1
+      }
+    ],
+    "group": "Health",
+    "label": "Medical brain drain",
+    "legend": "Each arc is a major health-worker migration corridor; dots flow from the origin (training) country toward the destination.",
+    "note": "Labeled corridors carry measured stocks — UK nurse counts from the NMC register (Mar 2024), US counts by country of birth (ACS); unlabeled corridors are relative weights (OECD-DIOC 2010 rates), not head-counts.",
+    "sources": [
+      {
+        "label": "UK NMC — nursing & midwifery register data",
+        "url": "https://www.nmc.org.uk/about-us/reports-and-accounts/registration-statistics/"
+      },
+      {
+        "label": "American Immigration Council — immigrant healthcare workers",
+        "url": "https://www.americanimmigrationcouncil.org/report/immigrant-healthcare-workers-countries-of-birth/"
+      },
+      {
+        "label": "WHO — Health Workforce Support & Safeguards List 2023",
+        "url": "https://www.who.int/publications/i/item/9789240069787"
+      }
+    ],
+    "unit": "relative scale (foreign-trained doctors & nurses)"
+  },
+  "cables": {
+    "color": "#56c5d0",
+    "desc": "Backbone submarine fibre-optic cables — the physical internet between continents.",
+    "edges": [
+      {
+        "from": "USA",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "amt": "250 Tbps · Dunant design capacity · 2021",
+        "from": "USA",
+        "to": "FRA",
+        "w": 1
+      },
+      {
+        "amt": "200 Tbps · MAREA design capacity · 2018",
+        "from": "USA",
+        "to": "ESP",
+        "w": 1
+      },
+      {
+        "from": "USA",
+        "to": "BRA",
+        "w": 1
+      },
+      {
+        "from": "USA",
+        "to": "JPN",
+        "w": 1
+      },
+      {
+        "from": "GBR",
+        "to": "IND",
+        "w": 1
+      },
+      {
+        "from": "FRA",
+        "to": "SGP",
+        "w": 1
+      },
+      {
+        "amt": "90% of Europe–Asia capacity · Red Sea crossing · 2023",
+        "from": "EGY",
+        "to": "IND",
+        "w": 1
+      },
+      {
+        "from": "ESP",
+        "to": "ARG",
+        "w": 1
+      },
+      {
+        "from": "JPN",
+        "to": "SGP",
+        "w": 1
+      },
+      {
+        "from": "AUS",
+        "to": "USA",
+        "w": 1
+      },
+      {
+        "amt": "up to 180 Tbps · 2Africa · 2025",
+        "from": "ZAF",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "from": "SGP",
+        "to": "IND",
+        "w": 1
+      },
+      {
+        "from": "KOR",
+        "to": "USA",
+        "w": 1
+      },
+      {
+        "from": "PRT",
+        "to": "BRA",
+        "w": 1
+      },
+      {
+        "from": "ITA",
+        "to": "EGY",
+        "w": 1
+      },
+      {
+        "from": "ARE",
+        "to": "IND",
+        "w": 1
+      },
+      {
+        "from": "NGA",
+        "to": "PRT",
+        "w": 1
+      }
+    ],
+    "group": "Connections",
+    "label": "Submarine cables",
+    "legend": "Each arc is a major intercontinental submarine cable route carrying internet traffic.",
+    "note": "Routes are illustrative corridors from TeleGeography's cable map; capacity figures where shown are the design capacity of a single named flagship cable (Dunant, MAREA, 2Africa), not whole-corridor totals. Submarine cables carry >99% of intercontinental data traffic, and ~90% of Europe–Asia capacity funnels through Egypt's Red Sea crossing (~14–16 systems land there). Trans-Pacific corridors are weight-only — no per-cable figures compiled yet.",
+    "sources": [
+      {
+        "label": "TeleGeography — Submarine Cable Map",
+        "url": "https://www.submarinecablemap.com/"
+      },
+      {
+        "label": "TeleGeography — Submarine cable FAQs",
+        "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      },
+      {
+        "label": "TeleGeography — Red Sea subsea crossroads",
+        "url": "https://blog.telegeography.com/the-red-sea-a-key-subsea-cable-crossroads-under-siege"
+      },
+      {
+        "label": "Google Cloud — Dunant subsea cable (250 Tbps)",
+        "url": "https://cloud.google.com/blog/products/infrastructure/googles-dunant-subsea-cable-is-now-ready-for-service"
+      }
+    ],
+    "unit": "major intercontinental fibre-optic routes"
+  },
+  "counterfeit": {
+    "color": "#d9a441",
+    "desc": "Where seized counterfeit and pirated goods are documented coming from, plus known transit hubs and routes toward major consumer markets.",
+    "dotColor": "#f5e6b0",
+    "edges": [
+      {
+        "from": "CHN",
+        "to": "EU",
+        "w": 42
+      },
+      {
+        "from": "TUR",
+        "to": "EU",
+        "w": 18
+      },
+      {
+        "from": "HKG",
+        "to": "EU",
+        "w": 9
+      },
+      {
+        "from": "ARE",
+        "to": "EU",
+        "w": 5
+      },
+      {
+        "amt": "$4.15B · seized MSRP (CBP) · FY2024",
+        "c": "#8a95a8",
+        "from": "CHN",
+        "to": "USA",
+        "w": 6
+      },
+      {
+        "amt": "$872M · seized MSRP (CBP) · FY2024",
+        "c": "#8a95a8",
+        "from": "HKG",
+        "to": "USA",
+        "w": 6
+      },
+      {
+        "c": "#8a95a8",
+        "from": "CHN",
+        "to": "HKG",
+        "w": 3
+      },
+      {
+        "c": "#8a95a8",
+        "from": "CHN",
+        "to": "ARE",
+        "w": 3
+      },
+      {
+        "c": "#8a95a8",
+        "from": "CHN",
+        "to": "SGP",
+        "w": 3
+      },
+      {
+        "c": "#8a95a8",
+        "from": "ROU",
+        "path": [
+          [
+            29.7,
+            45.15
+          ],
+          [
+            19.04,
+            47.5
+          ],
+          [
+            16.37,
+            48.21
+          ],
+          [
+            12.1,
+            49.02
+          ]
+        ],
+        "to": "DEU",
+        "w": 3
+      }
+    ],
+    "group": "Illicit flows",
+    "label": "Counterfeit goods trade",
+    "legend": "Arcs sized by % share of seizures where a real figure exists (China/Türkiye/UAE/Hong Kong → EU). Muted grey arcs are corridors or transit hubs backed only by a combined/group figure or no published split at all — hover for exactly what's known.",
+    "note": "Global counterfeit trade is estimated at $467B, 2.3% of world trade (OECD/EUIPO 2025 report, 2021 data) — built from customs seizure data, an enforcement proxy rather than a direct measure, so results are biased by which countries enforce hardest and inspect what. Provenance is the last shipping/customs point recorded, not necessarily where goods were made — Hong Kong's figures are largely transshipped Chinese production. Data vintages differ by corridor since each comes from a different report: EU seizures 2024, US CBP FY2024, transit-hub routes ~2017. Two sectors have especially concentrated, differently-dated origin data not shown as arcs here: pharmaceuticals (India ~53%, China ~30% of seized value, 2014-16) and perfume/cosmetics (China ~78%, 2017-19).",
+    "sources": [
+      {
+        "label": "OECD/EUIPO — Mapping Global Trade in Fakes 2025",
+        "url": "https://www.oecd.org/en/publications/mapping-global-trade-in-fakes-2025_94d3b29f-en.html"
+      },
+      {
+        "label": "EUIPO — EU IPR enforcement results 2024",
+        "url": "https://www.euipo.europa.eu/en/publications/eu-enforcement-of-intellectual-property-rights-results-2024"
+      },
+      {
+        "label": "U.S. CBP — IPR Seizure Statistics FY2024",
+        "url": "https://www.cbp.gov/sites/default/files/2025-01/intellectualpropertyrightsseizurestatisticsfiscalyear2024_pbrb_approved_with_publication_number_508.pdf"
+      }
+    ],
+    "unit": "% share of seizures or US$ seized (MSRP) where published; muted grey = no published % split"
+  },
+  "currents": {
+    "color": "#e0683f",
+    "desc": "The great ocean surface currents that move heat around the planet — warm currents (red) carry tropical heat poleward; cold currents (blue) return.",
+    "dotColor": "#ffd9c4",
+    "edges": [
+      {
+        "amt": "warm · ~32 Sv (150 Sv downstream)",
+        "c": "#e0683f",
+        "nm": "Gulf Stream",
+        "path": [
+          [
+            -80,
+            25
+          ],
+          [
+            -75,
+            32
+          ],
+          [
+            -68,
+            39
+          ],
+          [
+            -58,
+            43
+          ],
+          [
+            -40,
+            48
+          ],
+          [
+            -22,
+            53
+          ],
+          [
+            -8,
+            57
+          ],
+          [
+            2,
+            60
+          ]
+        ],
+        "w": 2.4
+      },
+      {
+        "amt": "warm · ~25 Sv",
+        "c": "#e0683f",
+        "nm": "Kuroshio Current",
+        "path": [
+          [
+            122,
+            20
+          ],
+          [
+            128,
+            27
+          ],
+          [
+            138,
+            34
+          ],
+          [
+            150,
+            39
+          ],
+          [
+            162,
+            41
+          ],
+          [
+            175,
+            40
+          ]
+        ],
+        "w": 2.2
+      },
+      {
+        "amt": "warm · ~14 Sv",
+        "c": "#e0683f",
+        "nm": "Brazil Current",
+        "path": [
+          [
+            -38,
+            -10
+          ],
+          [
+            -44,
+            -20
+          ],
+          [
+            -50,
+            -30
+          ],
+          [
+            -56,
+            -38
+          ],
+          [
+            -58,
+            -44
+          ]
+        ],
+        "w": 1.7
+      },
+      {
+        "amt": "warm · ~77 Sv",
+        "c": "#e0683f",
+        "nm": "Agulhas Current",
+        "path": [
+          [
+            35,
+            -24
+          ],
+          [
+            30,
+            -32
+          ],
+          [
+            24,
+            -36
+          ],
+          [
+            18,
+            -37
+          ],
+          [
+            12,
+            -36
+          ]
+        ],
+        "w": 3
+      },
+      {
+        "amt": "cold · ~5 Sv",
+        "c": "#4f93d6",
+        "nm": "California Current",
+        "path": [
+          [
+            -125,
+            46
+          ],
+          [
+            -123,
+            39
+          ],
+          [
+            -119,
+            31
+          ],
+          [
+            -113,
+            23
+          ],
+          [
+            -108,
+            18
+          ]
+        ],
+        "w": 1.4
+      },
+      {
+        "amt": "cold · ~1.4 Sv (undercurrent)",
+        "c": "#4f93d6",
+        "nm": "Humboldt Current",
+        "path": [
+          [
+            -73,
+            -44
+          ],
+          [
+            -72,
+            -33
+          ],
+          [
+            -75,
+            -22
+          ],
+          [
+            -80,
+            -10
+          ],
+          [
+            -82,
+            -2
+          ],
+          [
+            -83,
+            4
+          ]
+        ],
+        "w": 1.9
+      },
+      {
+        "amt": "cold · ~4.7 Sv",
+        "c": "#4f93d6",
+        "nm": "Canary Current",
+        "path": [
+          [
+            -14,
+            32
+          ],
+          [
+            -18,
+            24
+          ],
+          [
+            -21,
+            16
+          ],
+          [
+            -22,
+            10
+          ],
+          [
+            -21,
+            4
+          ]
+        ],
+        "w": 1.4
+      },
+      {
+        "amt": "cold · ~4 Sv",
+        "c": "#4f93d6",
+        "nm": "Labrador Current",
+        "path": [
+          [
+            -52,
+            48
+          ],
+          [
+            -50,
+            44
+          ],
+          [
+            -66,
+            41
+          ],
+          [
+            -72,
+            40
+          ]
+        ],
+        "w": 1
+      },
+      {
+        "amt": "~134–173 Sv · largest on Earth",
+        "c": "#7fb0d6",
+        "nm": "Antarctic Circumpolar Current",
+        "path": [
+          [
+            -60,
+            -57
+          ],
+          [
+            -20,
+            -55
+          ],
+          [
+            20,
+            -56
+          ],
+          [
+            70,
+            -58
+          ],
+          [
+            120,
+            -60
+          ],
+          [
+            170,
+            -62
+          ],
+          [
+            -150,
+            -61
+          ],
+          [
+            -100,
+            -59
+          ],
+          [
+            -65,
+            -58
+          ]
+        ],
+        "w": 4
+      }
+    ],
+    "geo": true,
+    "group": "Natural systems",
+    "label": "Ocean currents",
+    "legend": "Flowing lines trace major ocean currents. Red = warm current, blue = cold. Dots show the direction of flow.",
+    "note": "Schematic paths, not exact streamlines. Transports in Sverdrups (Sv) at the cited measurement section — western-boundary currents (Gulf Stream, Kuroshio, Agulhas) grow far larger downstream.",
+    "sources": [
+      {
+        "label": "NOAA — Ocean currents (paths)",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_currents/"
+      },
+      {
+        "label": "Meinen, Baringer & Garcia 2010 — Florida Current transport (Deep-Sea Res. I)",
+        "url": "https://www.aoml.noaa.gov/phod/docs/2010_DSRI_Meinen_etal_LongTermFC.pdf"
+      },
+      {
+        "label": "Donohue et al. 2016 — Total ACC transport at Drake Passage (GRL)",
+        "url": "https://digitalcommons.uri.edu/gsofacpubs/1235/"
+      },
+      {
+        "label": "Beal et al. 2015 — Agulhas Current transport (J. Phys. Oceanogr.)",
+        "url": "https://journals.ametsoc.org/doi/abs/10.1175/JPO-D-14-0119.1"
+      },
+      {
+        "label": "Qiu 2001 — Kuroshio (Encyclopedia of Ocean Sciences)",
+        "url": "https://www.soest.hawaii.edu/oceanography/bo/Q01.pdf"
+      },
+      {
+        "label": "Hernández-Guerra et al. 2005 — Canary Current (JGR Oceans)",
+        "url": "https://accedacris.ulpgc.es/bitstream/10553/50059/1/Canary_current_north.pdf"
+      },
+      {
+        "label": "Czeschel et al. 2015 — Peru-Chile Undercurrent (Ocean Science)",
+        "url": "https://os.copernicus.org/articles/11/455/2015/os-11-455-2015.pdf"
+      }
+    ],
+    "unit": "major surface currents (warm / cold)"
+  },
+  "debt": {
+    "cats": [
+      {
+        "color": "#5bd6c0",
+        "label": "Creditor (lender)"
+      },
+      {
+        "color": "#e0603a",
+        "label": "Debtor (borrower)"
+      }
+    ],
+    "color": "#5bd6c0",
+    "desc": "Government-to-government lending: who owes whom. The teal end of each line is the creditor; the orange end is the debtor. Dots travel creditor → debtor.",
+    "dotColor": "#e0603a",
+    "edges": [
+      {
+        "amt": "$22.6B · PPG stock (IDS) · 2023",
+        "from": "CHN",
+        "to": "PAK",
+        "w": 30
+      },
+      {
+        "amt": "$17.9B · PPG stock (IDS) · 2023",
+        "from": "CHN",
+        "to": "AGO",
+        "w": 18
+      },
+      {
+        "amt": "~$18B · PBOC currency swap · 2023",
+        "from": "CHN",
+        "to": "ARG",
+        "w": 18
+      },
+      {
+        "from": "CHN",
+        "to": "LAO",
+        "w": 12
+      },
+      {
+        "from": "CHN",
+        "to": "VEN",
+        "w": 10
+      },
+      {
+        "from": "CHN",
+        "to": "EGY",
+        "w": 8
+      },
+      {
+        "from": "CHN",
+        "to": "KEN",
+        "w": 8
+      },
+      {
+        "from": "CHN",
+        "to": "IDN",
+        "w": 8
+      },
+      {
+        "from": "CHN",
+        "to": "TKM",
+        "w": 8
+      },
+      {
+        "from": "CHN",
+        "to": "ETH",
+        "w": 7
+      },
+      {
+        "from": "CHN",
+        "to": "LKA",
+        "w": 7
+      },
+      {
+        "from": "CHN",
+        "to": "ZMB",
+        "w": 6
+      },
+      {
+        "from": "CHN",
+        "to": "BGD",
+        "w": 6
+      },
+      {
+        "from": "CHN",
+        "to": "NGA",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "ECU",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "CMR",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "BRA",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "ZAF",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "KAZ",
+        "w": 5
+      },
+      {
+        "from": "CHN",
+        "to": "KHM",
+        "w": 4
+      },
+      {
+        "from": "CHN",
+        "to": "MMR",
+        "w": 4
+      },
+      {
+        "from": "CHN",
+        "to": "MYS",
+        "w": 4
+      },
+      {
+        "from": "CHN",
+        "to": "UZB",
+        "w": 4
+      },
+      {
+        "from": "CHN",
+        "to": "SDN",
+        "w": 3
+      },
+      {
+        "from": "CHN",
+        "to": "GHA",
+        "w": 3
+      },
+      {
+        "from": "CHN",
+        "to": "COG",
+        "w": 3
+      },
+      {
+        "from": "CHN",
+        "to": "COD",
+        "w": 3
+      },
+      {
+        "from": "CHN",
+        "to": "SRB",
+        "w": 3
+      },
+      {
+        "from": "CHN",
+        "to": "MNG",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "TZA",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "UGA",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "ZWE",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "MOZ",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "SEN",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "PNG",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "PER",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "BLR",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "GIN",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "to": "DJI",
+        "w": 1.5
+      },
+      {
+        "from": "CHN",
+        "to": "KGZ",
+        "w": 1.8
+      },
+      {
+        "from": "CHN",
+        "to": "TJK",
+        "w": 1.2
+      },
+      {
+        "from": "CHN",
+        "to": "MDV",
+        "w": 1.4
+      },
+      {
+        "from": "CHN",
+        "to": "BOL",
+        "w": 1.5
+      },
+      {
+        "from": "JPN",
+        "to": "IDN",
+        "w": 5
+      },
+      {
+        "from": "JPN",
+        "to": "IND",
+        "w": 6
+      },
+      {
+        "from": "JPN",
+        "to": "VNM",
+        "w": 6
+      },
+      {
+        "from": "JPN",
+        "to": "PHL",
+        "w": 4
+      },
+      {
+        "from": "JPN",
+        "to": "BGD",
+        "w": 4
+      },
+      {
+        "from": "JPN",
+        "to": "MMR",
+        "w": 3
+      },
+      {
+        "from": "JPN",
+        "to": "IRQ",
+        "w": 3
+      },
+      {
+        "from": "JPN",
+        "to": "KEN",
+        "w": 2
+      },
+      {
+        "from": "JPN",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "from": "JPN",
+        "to": "BRA",
+        "w": 2
+      },
+      {
+        "from": "FRA",
+        "to": "MAR",
+        "w": 3
+      },
+      {
+        "from": "FRA",
+        "to": "CIV",
+        "w": 3
+      },
+      {
+        "from": "FRA",
+        "to": "SEN",
+        "w": 2
+      },
+      {
+        "from": "FRA",
+        "to": "CMR",
+        "w": 2
+      },
+      {
+        "from": "FRA",
+        "to": "TUN",
+        "w": 2
+      },
+      {
+        "from": "DEU",
+        "to": "TUR",
+        "w": 3
+      },
+      {
+        "from": "DEU",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "from": "DEU",
+        "to": "IND",
+        "w": 2
+      },
+      {
+        "from": "USA",
+        "to": "UKR",
+        "w": 20
+      },
+      {
+        "from": "USA",
+        "to": "EGY",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "PAK",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "JOR",
+        "w": 2
+      },
+      {
+        "from": "USA",
+        "to": "IRQ",
+        "w": 2
+      },
+      {
+        "from": "GBR",
+        "to": "PAK",
+        "w": 2
+      },
+      {
+        "from": "GBR",
+        "to": "NGA",
+        "w": 1
+      },
+      {
+        "from": "GBR",
+        "to": "KEN",
+        "w": 1
+      },
+      {
+        "from": "SAU",
+        "to": "PAK",
+        "w": 5
+      },
+      {
+        "from": "SAU",
+        "to": "EGY",
+        "w": 5
+      },
+      {
+        "from": "SAU",
+        "to": "YEM",
+        "w": 3
+      },
+      {
+        "from": "SAU",
+        "to": "SDN",
+        "w": 2
+      },
+      {
+        "from": "SAU",
+        "to": "BHR",
+        "w": 5
+      },
+      {
+        "from": "ARE",
+        "to": "EGY",
+        "w": 5
+      },
+      {
+        "from": "ARE",
+        "to": "PAK",
+        "w": 3
+      },
+      {
+        "from": "ARE",
+        "to": "ETH",
+        "w": 1
+      },
+      {
+        "from": "ARE",
+        "to": "SDN",
+        "w": 1
+      },
+      {
+        "from": "QAT",
+        "to": "EGY",
+        "w": 3
+      },
+      {
+        "from": "QAT",
+        "to": "TUR",
+        "w": 3
+      },
+      {
+        "from": "KWT",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "from": "KWT",
+        "to": "PAK",
+        "w": 2
+      },
+      {
+        "from": "IND",
+        "to": "LKA",
+        "w": 4
+      },
+      {
+        "from": "IND",
+        "to": "BGD",
+        "w": 2
+      },
+      {
+        "from": "IND",
+        "to": "NPL",
+        "w": 1
+      },
+      {
+        "from": "IND",
+        "to": "MMR",
+        "w": 1
+      },
+      {
+        "from": "IND",
+        "to": "MUS",
+        "w": 1
+      },
+      {
+        "from": "RUS",
+        "to": "BGD",
+        "w": 11
+      },
+      {
+        "from": "RUS",
+        "to": "EGY",
+        "w": 25
+      },
+      {
+        "from": "RUS",
+        "to": "BLR",
+        "w": 8
+      },
+      {
+        "from": "RUS",
+        "to": "VEN",
+        "w": 3
+      },
+      {
+        "from": "RUS",
+        "to": "IND",
+        "w": 2
+      },
+      {
+        "from": "KOR",
+        "to": "VNM",
+        "w": 2
+      },
+      {
+        "from": "KOR",
+        "to": "IDN",
+        "w": 1
+      }
+    ],
+    "fromColor": "#5bd6c0",
+    "group": "Connections",
+    "label": "Bilateral debt (creditor → debtor)",
+    "legend": "Each line is a major bilateral lending relationship. Teal end = creditor (lender); orange end = debtor (borrower). Dots move from creditor toward debtor.",
+    "note": "Approximate bilateral debt-stock figures on two different bases: World Bank International Debt Statistics (public and publicly guaranteed debt, debtor-reported) and AidData (broader, including SOEs and swap lines — systematically larger, since roughly 70% of Chinese lending is non-sovereign). China → Argentina is mostly a PBOC central-bank currency swap, not project loans. Bilateral (government-to-government) debt is only part of total external debt — much is owed to bondholders and multilaterals (IMF/World Bank).",
+    "sources": [
+      {
+        "label": "World Bank — International Debt Statistics",
+        "url": "https://www.worldbank.org/en/programs/debt-statistics/ids"
+      },
+      {
+        "label": "AidData — Global Chinese Development Finance v3.0",
+        "url": "https://www.aiddata.org/data/aiddatas-global-chinese-development-finance-dataset-version-3-0"
+      }
+    ],
+    "toColor": "#e0603a",
+    "twoTone": true,
+    "unit": "US$ billions of bilateral debt stock (approx)"
+  },
+  "debtin": {
+    "baseColorProp": "color_debtorDebt",
+    "color": "#e0603a",
+    "desc": "Follow the money IN — each arc is debt a government owes; dots travel from lender toward borrower. Countries are shaded orange by how much they owe.",
+    "dir": "in",
+    "dotColor": "#ffd9c4",
+    "edgesRef": "debt",
+    "group": "Debt",
+    "label": "Debt — money owed",
+    "legend": "Orange arcs = money owed, arriving at borrowers (dots move lender to borrower). Country shade = total owed (pale = little owed, deep red = heavily indebted; grey = no data). Click a country to isolate just where ITS debt comes from.",
+    "note": "Same bilateral-debt data as 'money lent out', from the borrower's side. Approximate — World Bank IDS / AidData.",
+    "sources": [
+      {
+        "label": "World Bank — International Debt Statistics",
+        "url": "https://www.worldbank.org/en/programs/debt-statistics/ids"
+      },
+      {
+        "label": "AidData — Chinese overseas development finance",
+        "url": "https://www.aiddata.org/china-official-finance"
+      }
+    ],
+    "unit": "US$ billions of bilateral debt owed"
+  },
+  "debtout": {
+    "baseColorProp": "color_creditorDebt",
+    "color": "#5bd6c0",
+    "desc": "Follow the money OUT — each arc is a loan a government has made; dots travel from lender toward borrower. Countries are shaded teal by how much they lend.",
+    "dir": "out",
+    "dotColor": "#d6fff5",
+    "edgesRef": "debt",
+    "group": "Debt",
+    "label": "Debt — money lent out",
+    "legend": "Teal arcs = money flowing OUT from lenders (dots move lender to borrower). Country shade = total lent (brighter = bigger lender). Click a country to isolate just the money IT lends out.",
+    "note": "Same bilateral-debt data as 'money owed', from the lender's side. Approximate — World Bank IDS / AidData; Chinese lending dominates.",
+    "sources": [
+      {
+        "label": "World Bank — International Debt Statistics",
+        "url": "https://www.worldbank.org/en/programs/debt-statistics/ids"
+      },
+      {
+        "label": "AidData — Chinese overseas development finance",
+        "url": "https://www.aiddata.org/china-official-finance"
+      }
+    ],
+    "unit": "US$ billions of bilateral lending"
+  },
+  "drugs": {
+    "cats": [
+      {
+        "color": "#6ea8fe",
+        "label": "Cocaine"
+      },
+      {
+        "color": "#d4793a",
+        "label": "Heroin / opiates"
+      },
+      {
+        "color": "#9b7fe0",
+        "label": "Synthetics (meth, fentanyl precursors)"
+      },
+      {
+        "color": "#2a9d6f",
+        "label": "Cannabis / resin"
+      }
+    ],
+    "color": "#c95f6e",
+    "desc": "Principal international drug-trafficking corridors, color-coded by substance.",
+    "dotColor": "#ffd2d8",
+    "edges": [
+      {
+        "c": "#6ea8fe",
+        "from": "COL",
+        "to": "USA",
+        "w": 3.4
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "COL",
+        "to": "MEX",
+        "w": 3
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "MEX",
+        "to": "USA",
+        "w": 3.6
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "PER",
+        "to": "BRA",
+        "w": 2
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "COL",
+        "to": "ESP",
+        "w": 2.4
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "BRA",
+        "to": "PRT",
+        "w": 2
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "COL",
+        "to": "NGA",
+        "w": 1.4
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "NGA",
+        "to": "GBR",
+        "w": 1.3
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "BRA",
+        "to": "NLD",
+        "w": 1.8
+      },
+      {
+        "c": "#6ea8fe",
+        "from": "ECU",
+        "to": "BEL",
+        "w": 1.6
+      },
+      {
+        "c": "#d4793a",
+        "from": "AFG",
+        "to": "IRN",
+        "w": 3.2
+      },
+      {
+        "c": "#d4793a",
+        "from": "IRN",
+        "to": "TUR",
+        "w": 2.8
+      },
+      {
+        "c": "#d4793a",
+        "from": "TUR",
+        "to": "BGR",
+        "w": 2.4
+      },
+      {
+        "c": "#d4793a",
+        "from": "BGR",
+        "to": "DEU",
+        "w": 2
+      },
+      {
+        "c": "#d4793a",
+        "from": "AFG",
+        "to": "PAK",
+        "w": 2.6
+      },
+      {
+        "c": "#d4793a",
+        "from": "MMR",
+        "to": "CHN",
+        "w": 1.8
+      },
+      {
+        "c": "#d4793a",
+        "from": "MMR",
+        "to": "THA",
+        "w": 1.6
+      },
+      {
+        "c": "#d4793a",
+        "from": "AFG",
+        "to": "TJK",
+        "w": 1.7
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "CHN",
+        "to": "MEX",
+        "w": 2.6
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "MEX",
+        "to": "USA",
+        "w": 3
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "IND",
+        "to": "MEX",
+        "w": 1.6
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "MMR",
+        "to": "AUS",
+        "w": 1.8
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "NLD",
+        "to": "DEU",
+        "w": 1.5
+      },
+      {
+        "c": "#9b7fe0",
+        "from": "BEL",
+        "to": "GBR",
+        "w": 1.4
+      },
+      {
+        "c": "#2a9d6f",
+        "from": "MAR",
+        "to": "ESP",
+        "w": 2.6
+      },
+      {
+        "c": "#2a9d6f",
+        "from": "ESP",
+        "to": "FRA",
+        "w": 1.6
+      },
+      {
+        "c": "#2a9d6f",
+        "from": "AFG",
+        "to": "PAK",
+        "w": 1.2
+      }
+    ],
+    "group": "Illicit flows",
+    "label": "Drug routes",
+    "legend": "Each arc is a documented international trafficking corridor. Color = substance; thickness ≈ relative corridor prominence.",
+    "note": "Afghan opium production collapsed −95% to 333 t in 2023 after the Taliban ban; global cocaine production stands at 3,708 t. Routes are directional — UNODC publishes no bilateral corridor tonnages, so widths are indicative, not measured.",
+    "sources": [
+      {
+        "label": "UNODC — World Drug Report 2025",
+        "url": "https://www.unodc.org/documents/data-and-analysis/WDR_2025/WDR25_B1_Key_findings.pdf"
+      },
+      {
+        "label": "EUDA — European Drug Report 2025",
+        "url": "https://www.euda.europa.eu/publications/european-drug-report/2025_en"
+      },
+      {
+        "label": "UNODC — Afghanistan Opium Survey 2023",
+        "url": "https://www.unodc.org/documents/crop-monitoring/Afghanistan/Afghanistan_opium_survey_2023.pdf"
+      }
+    ],
+    "unit": "major trafficking corridors by substance"
+  },
+  "dust": {
+    "color": "#d4a857",
+    "desc": "Each year the wind lifts hundreds of millions of tonnes of Saharan dust across the Atlantic — fertilising the Amazon and feeding Caribbean skies.",
+    "dotColor": "#f6e6b8",
+    "edges": [
+      {
+        "amt": "28 Tg/yr · +22,000 t phosphorus · Dec–May",
+        "nm": "Sahara → Amazon",
+        "path": [
+          [
+            2,
+            18
+          ],
+          [
+            -18,
+            16
+          ],
+          [
+            -38,
+            13
+          ],
+          [
+            -55,
+            9
+          ],
+          [
+            -64,
+            4
+          ],
+          [
+            -62,
+            -3
+          ]
+        ],
+        "w": 2.5
+      },
+      {
+        "amt": "43 Tg/yr crosses the Atlantic · Jun–Aug",
+        "nm": "Sahara → Caribbean",
+        "path": [
+          [
+            -8,
+            23
+          ],
+          [
+            -32,
+            21
+          ],
+          [
+            -56,
+            18
+          ],
+          [
+            -72,
+            16
+          ],
+          [
+            -80,
+            17
+          ]
+        ],
+        "w": 2
+      }
+    ],
+    "geo": true,
+    "group": "Natural systems",
+    "label": "Saharan dust",
+    "legend": "Dust plumes carried west on the trade winds from the Sahara toward the Amazon and Caribbean.",
+    "note": "Schematic plume paths; tonnages are the peer-reviewed CALIPSO satellite lidar record (Yu et al. 2015, 2007–2013), not the older MODIS 240-Tg or NASA '40 million tons' popular figures. The winter–spring plume feeds the Amazon; the summer plume peaks in the Caribbean (Jun–Aug).",
+    "sources": [
+      {
+        "label": "Yu et al. 2015 — Trans-Atlantic dust transport (Remote Sensing of Environment)",
+        "url": "https://doi.org/10.1016/j.rse.2014.12.010"
+      },
+      {
+        "label": "Yu et al. 2015 — Fertilizing role of African dust in the Amazon (GRL)",
+        "url": "https://doi.org/10.1002/2015GL063040"
+      },
+      {
+        "label": "Kok et al. 2021 — Global dust cycle (Atmos. Chem. Phys.)",
+        "url": "https://acp.copernicus.org/articles/21/8169/2021/"
+      }
+    ],
+    "unit": "trans-Atlantic dust transport"
+  },
+  "flights": {
+    "color": "#6ed0e0",
+    "desc": "Some of the world's busiest international passenger air corridors — the great-circle paths jets actually fly.",
+    "dotColor": "#e3fbff",
+    "edges": [
+      {
+        "amt": "6.78M seats/yr · 2024",
+        "from": "HKG",
+        "to": "TWN",
+        "w": 3
+      },
+      {
+        "amt": "5.41M seats/yr · ICN–NRT · 2024",
+        "from": "KOR",
+        "to": "JPN",
+        "w": 3
+      },
+      {
+        "from": "ARE",
+        "to": "IND",
+        "w": 3
+      },
+      {
+        "amt": "4.01M seats/yr · LHR–JFK · 2024",
+        "from": "GBR",
+        "to": "USA",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "MEX",
+        "w": 2.5
+      },
+      {
+        "from": "GBR",
+        "to": "ESP",
+        "w": 2.5
+      },
+      {
+        "from": "ARE",
+        "to": "GBR",
+        "w": 2.5
+      },
+      {
+        "from": "USA",
+        "to": "CAN",
+        "w": 2.5
+      },
+      {
+        "from": "JPN",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "from": "KOR",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "from": "THA",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "from": "USA",
+        "to": "JPN",
+        "w": 2.5
+      },
+      {
+        "from": "AUS",
+        "to": "NZL",
+        "w": 2
+      },
+      {
+        "from": "QAT",
+        "to": "IND",
+        "w": 2
+      },
+      {
+        "amt": "5.47M seats/yr · Cairo–Jeddah · 2024",
+        "from": "SAU",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "from": "FRA",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "from": "DEU",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "from": "BRA",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "from": "SGP",
+        "to": "AUS",
+        "w": 2
+      },
+      {
+        "from": "IND",
+        "to": "GBR",
+        "w": 2
+      }
+    ],
+    "group": "Infrastructure & travel",
+    "label": "Flight corridors",
+    "legend": "Each arc is a heavily-trafficked international flight corridor.",
+    "note": "Busiest international corridors ranked by OAG scheduled seats/yr — seat capacity, not passengers boarded. Labeled arcs carry 2024 OAG seat counts; the rest are real corridors whose exact figures sit behind OAG's paid data.",
+    "sources": [
+      {
+        "label": "OAG — Busiest international routes 2024/2025",
+        "url": "https://www.oag.com/busiest-routes-world-2025"
+      },
+      {
+        "label": "OAG — Hong Kong–Taipei world's busiest international route 2024",
+        "url": "https://www.oag.com/pressroom/hong-kong-taipei-worlds-busiest-international-airline-route-2024"
+      }
+    ],
+    "unit": "busiest international air corridors"
+  },
+  "flyways": {
+    "color": "#74c98a",
+    "desc": "The great aerial highways billions of migratory birds follow between northern breeding grounds and southern wintering grounds each year.",
+    "dotColor": "#dff7e4",
+    "edges": [
+      {
+        "amt": "up to 12M birds/yr · Wadden Sea",
+        "nm": "East Atlantic Flyway",
+        "path": [
+          [
+            18,
+            74
+          ],
+          [
+            10,
+            64
+          ],
+          [
+            2,
+            52
+          ],
+          [
+            -4,
+            41
+          ],
+          [
+            -11,
+            29
+          ],
+          [
+            -16,
+            16
+          ],
+          [
+            -15,
+            6
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "1.5M+ soaring birds twice/yr",
+        "nm": "Mediterranean/Black Sea Flyway",
+        "path": [
+          [
+            55,
+            70
+          ],
+          [
+            40,
+            58
+          ],
+          [
+            30,
+            46
+          ],
+          [
+            26,
+            34
+          ],
+          [
+            29,
+            21
+          ],
+          [
+            31,
+            9
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "50M+ waterbirds · 210+ species",
+        "nm": "East Asian-Australasian Flyway",
+        "path": [
+          [
+            150,
+            72
+          ],
+          [
+            142,
+            55
+          ],
+          [
+            126,
+            38
+          ],
+          [
+            114,
+            22
+          ],
+          [
+            120,
+            4
+          ],
+          [
+            132,
+            -12
+          ],
+          [
+            146,
+            -32
+          ]
+        ],
+        "w": 2.5
+      },
+      {
+        "amt": "~40% of N. America’s waterfowl",
+        "nm": "Atlantic/Mississippi Flyway",
+        "path": [
+          [
+            -95,
+            72
+          ],
+          [
+            -86,
+            55
+          ],
+          [
+            -80,
+            38
+          ],
+          [
+            -78,
+            22
+          ],
+          [
+            -70,
+            7
+          ],
+          [
+            -60,
+            -12
+          ],
+          [
+            -58,
+            -32
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "~1B birds/yr",
+        "nm": "Pacific/Central Flyway",
+        "path": [
+          [
+            -150,
+            68
+          ],
+          [
+            -132,
+            54
+          ],
+          [
+            -122,
+            40
+          ],
+          [
+            -110,
+            22
+          ],
+          [
+            -90,
+            4
+          ],
+          [
+            -76,
+            -16
+          ],
+          [
+            -72,
+            -38
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "182 waterbird species · 279 populations",
+        "nm": "Central Asian Flyway",
+        "path": [
+          [
+            78,
+            70
+          ],
+          [
+            74,
+            55
+          ],
+          [
+            72,
+            38
+          ],
+          [
+            76,
+            22
+          ],
+          [
+            80,
+            10
+          ]
+        ],
+        "w": 1.6
+      }
+    ],
+    "geo": true,
+    "group": "Natural systems",
+    "label": "Bird migration flyways",
+    "legend": "Each ribbon is a major flyway; dots show the southbound direction of autumn migration.",
+    "note": "The world's principal flyways; counts mix one-time censuses (stock) and birds/yr using a key site (flow), labelled per ribbon. Atlantic/Mississippi and Med/Black Sea totals are not established. Schematic.",
+    "sources": [
+      {
+        "label": "EAAFP — East Asian–Australasian Flyway brochure 2023",
+        "url": "https://www.env.go.jp/nature/eaafp/pdf/EAAFP_brochure_2023_EN.pdf"
+      },
+      {
+        "label": "Wadden Sea Flyway Initiative — East Atlantic Flyway census 2023",
+        "url": "https://www.waddensea-worldheritage.org/insights-2023-east-atlantic-flyway-counts-highlight-global-efforts-protection-migratory-birds"
+      },
+      {
+        "label": "CMS — Central Asian Flyway Action Plan",
+        "url": "https://www.cms.int/sites/default/files/document/inf_01_actionplan_en_0.pdf"
+      },
+      {
+        "label": "BirdLife International — Migratory birds",
+        "url": "https://www.birdlife.org/migratory-birds/"
+      },
+      {
+        "label": "USFWS — Administrative flyways",
+        "url": "https://www.fws.gov/partner/migratory-bird-program-administrative-flyways"
+      }
+    ],
+    "unit": "major global flyways"
+  },
+  "food": {
+    "color": "#e6cf4a",
+    "desc": "The world's breadbasket flows - wheat, maize, soy and rice from the great exporters to import-dependent regions.",
+    "dotColor": "#fbf3c0",
+    "edges": [
+      {
+        "amt": "24.8M t · corn · 2024",
+        "from": "USA",
+        "to": "MEX",
+        "w": 3
+      },
+      {
+        "amt": "26.8M t · soybeans · 2024",
+        "from": "USA",
+        "to": "CHN",
+        "w": 3.5
+      },
+      {
+        "from": "USA",
+        "to": "JPN",
+        "w": 2
+      },
+      {
+        "amt": "72.6M t · soybeans · 2024",
+        "from": "BRA",
+        "to": "CHN",
+        "w": 4
+      },
+      {
+        "amt": "~7M t · soy",
+        "from": "ARG",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "amt": "8.3M t · wheat · 2024",
+        "from": "RUS",
+        "to": "EGY",
+        "w": 3
+      },
+      {
+        "amt": "~7M t · wheat · 2024",
+        "from": "RUS",
+        "to": "TUR",
+        "w": 2
+      },
+      {
+        "amt": "2.1M t · wheat · 2024",
+        "from": "UKR",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "amt": "4.6M t · corn",
+        "from": "UKR",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "from": "UKR",
+        "to": "IDN",
+        "w": 1.5
+      },
+      {
+        "from": "CAN",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "amt": "1.7M t · canola · 2024",
+        "from": "CAN",
+        "to": "JPN",
+        "w": 1.5
+      },
+      {
+        "amt": "~4M t · wheat",
+        "from": "AUS",
+        "to": "IDN",
+        "w": 2
+      },
+      {
+        "from": "AUS",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "~1.2M t · wheat",
+        "from": "FRA",
+        "to": "DZA",
+        "w": 1.5
+      },
+      {
+        "from": "USA",
+        "to": "KOR",
+        "w": 1.5
+      },
+      {
+        "from": "IND",
+        "to": "BGD",
+        "w": 2
+      },
+      {
+        "from": "THA",
+        "to": "NGA",
+        "w": 1.5
+      },
+      {
+        "amt": "3.6M t · rice · 2024",
+        "from": "VNM",
+        "to": "PHL",
+        "w": 1.5
+      },
+      {
+        "from": "USA",
+        "to": "EGY",
+        "w": 1.5
+      },
+      {
+        "amt": "1.3M t · wheat",
+        "from": "RUS",
+        "to": "IRN",
+        "w": 1.5
+      },
+      {
+        "from": "FRA",
+        "to": "EGY",
+        "w": 1.5
+      },
+      {
+        "amt": "2.7M t · corn (Jan-Oct) · 2024",
+        "from": "BRA",
+        "to": "IRN",
+        "w": 1.5
+      },
+      {
+        "from": "USA",
+        "to": "COL",
+        "w": 1.5
+      }
+    ],
+    "group": "Resources",
+    "label": "Food & grain",
+    "legend": "Each arc is a major food/grain export route; dots flow from exporter toward importer.",
+    "note": "Largest bilateral cereal & oilseed corridors, tonnes/yr, latest marketing year (USDA / FAO); marketing years differ by commodity. Russia has published no customs data since March 2022, so Russian splits are analyst port line-up estimates. US→China soybeans collapsed to near zero for ~6 months in 2025 on tariffs — 26.8 Mt is the last normal year. Corridors without a figure are relative weights only.",
+    "sources": [
+      {
+        "label": "USDA FAS — GAIN reports, GATS, PSD",
+        "url": "https://www.fas.usda.gov/data"
+      },
+      {
+        "label": "USDA AMS — Brazil soybean exports",
+        "url": "https://www.ams.usda.gov/market-news"
+      },
+      {
+        "label": "FAOSTAT — detailed trade matrix",
+        "url": "https://www.fao.org/faostat/en/#data/TM"
+      }
+    ],
+    "unit": "tonnes/yr (major cereal & oilseed corridors)"
+  },
+  "migration": {
+    "color": "#6ea8fe",
+    "desc": "Largest country-to-country migration corridors — number of people born in the origin country now living in the destination.",
+    "dotColor": "#cfe2ff",
+    "edges": [
+      {
+        "from": "MEX",
+        "rk": 1,
+        "to": "USA",
+        "v20": 11177052,
+        "v24": 11279561,
+        "w": 11.28
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "AFG",
+        "rk": 2,
+        "to": "IRN",
+        "v20": 2710601,
+        "v24": 3752317,
+        "w": 3.75
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "SYR",
+        "rk": 3,
+        "to": "TUR",
+        "v20": 3830526,
+        "v24": 3563983,
+        "w": 3.56
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Mixed, incl. displacement (UNHCR)",
+        "from": "RUS",
+        "rk": 4,
+        "to": "UKR",
+        "v20": 3330586,
+        "v24": 3375095,
+        "w": 3.38
+      },
+      {
+        "from": "IND",
+        "rk": 5,
+        "to": "ARE",
+        "v20": 2861045,
+        "v24": 3248545,
+        "w": 3.25
+      },
+      {
+        "from": "IND",
+        "rk": 6,
+        "to": "USA",
+        "v20": 2741155,
+        "v24": 3165238,
+        "w": 3.17
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Displacement, incl. others in need of protection (UNHCR)",
+        "from": "VEN",
+        "rk": 7,
+        "to": "COL",
+        "v20": 1796066,
+        "v24": 2904873,
+        "w": 2.9
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "UKR",
+        "rk": 8,
+        "to": "RUS",
+        "v20": 1800051,
+        "v24": 2872612,
+        "w": 2.87
+      },
+      {
+        "from": "CHN",
+        "rk": 9,
+        "to": "HKG",
+        "v20": 2408447,
+        "v24": 2490414,
+        "w": 2.49
+      },
+      {
+        "from": "CHN",
+        "rk": 10,
+        "to": "USA",
+        "v20": 2255170,
+        "v24": 2488775,
+        "w": 2.49
+      },
+      {
+        "c": "#d4793a",
+        "dn": "UNRWA-registered refugees",
+        "from": "PSE",
+        "rk": 11,
+        "to": "JOR",
+        "v20": 2289806,
+        "v24": 2379525,
+        "w": 2.38
+      },
+      {
+        "from": "BGD",
+        "rk": 12,
+        "to": "SAU",
+        "v20": 2120004,
+        "v24": 2362680,
+        "w": 2.36
+      },
+      {
+        "from": "BGD",
+        "rk": 13,
+        "to": "IND",
+        "v20": 2429312,
+        "v24": 2293959,
+        "w": 2.29
+      },
+      {
+        "from": "PHL",
+        "rk": 14,
+        "to": "USA",
+        "v20": 2159185,
+        "v24": 2263697,
+        "w": 2.26
+      },
+      {
+        "from": "YEM",
+        "rk": 15,
+        "to": "SAU",
+        "v20": 1809639,
+        "v24": 1999619,
+        "w": 2
+      },
+      {
+        "from": "IND",
+        "rk": 16,
+        "to": "SAU",
+        "v20": 1888090,
+        "v24": 1953496,
+        "w": 1.95
+      },
+      {
+        "from": "PAK",
+        "rk": 17,
+        "to": "SAU",
+        "v20": 1818172,
+        "v24": 1937044,
+        "w": 1.94
+      },
+      {
+        "from": "PRI",
+        "rk": 18,
+        "to": "USA",
+        "v20": 1864991,
+        "v24": 1924799,
+        "w": 1.92
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "AFG",
+        "rk": 19,
+        "to": "PAK",
+        "v20": 1598223,
+        "v24": 1923453,
+        "w": 1.92
+      },
+      {
+        "from": "POL",
+        "rk": 20,
+        "to": "DEU",
+        "v20": 1797038,
+        "v24": 1883559,
+        "w": 1.88
+      },
+      {
+        "from": "BFA",
+        "rk": 21,
+        "to": "CIV",
+        "v20": 1715826,
+        "v24": 1820882,
+        "w": 1.82
+      },
+      {
+        "from": "IDN",
+        "rk": 22,
+        "to": "MYS",
+        "v20": 1693459,
+        "v24": 1761502,
+        "w": 1.76
+      },
+      {
+        "from": "MMR",
+        "rk": 23,
+        "to": "THA",
+        "v20": 1576317,
+        "v24": 1708695,
+        "w": 1.71
+      },
+      {
+        "from": "IND",
+        "rk": 24,
+        "to": "PAK",
+        "v20": 1597134,
+        "v24": 1597134,
+        "w": 1.6
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Displacement, incl. others in need of protection (UNHCR)",
+        "from": "VEN",
+        "rk": 25,
+        "to": "PER",
+        "v20": 1016263,
+        "v24": 1596667,
+        "w": 1.6
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "SYR",
+        "rk": 26,
+        "to": "JOR",
+        "v20": 1440562,
+        "v24": 1593643,
+        "w": 1.59
+      },
+      {
+        "from": "SLV",
+        "rk": 27,
+        "to": "USA",
+        "v20": 1463484,
+        "v24": 1569946,
+        "w": 1.57
+      },
+      {
+        "from": "MYS",
+        "rk": 28,
+        "to": "SGP",
+        "v20": 1384577,
+        "v24": 1553249,
+        "w": 1.55
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "SSD",
+        "rk": 29,
+        "to": "SDN",
+        "v20": 867593,
+        "v24": 1507976,
+        "w": 1.51
+      },
+      {
+        "from": "TUR",
+        "rk": 30,
+        "to": "DEU",
+        "v20": 1326045,
+        "v24": 1504743,
+        "w": 1.5
+      },
+      {
+        "from": "EGY",
+        "rk": 31,
+        "to": "SAU",
+        "v20": 1475593,
+        "v24": 1498313,
+        "w": 1.5
+      },
+      {
+        "from": "DOM",
+        "rk": 32,
+        "to": "USA",
+        "v20": 1289305,
+        "v24": 1483418,
+        "w": 1.48
+      },
+      {
+        "from": "VNM",
+        "rk": 33,
+        "to": "USA",
+        "v20": 1396246,
+        "v24": 1434631,
+        "w": 1.43
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "UKR",
+        "rk": 34,
+        "to": "DEU",
+        "v20": 269725,
+        "v24": 1416521,
+        "w": 1.42
+      },
+      {
+        "from": "DZA",
+        "rk": 35,
+        "to": "FRA",
+        "v20": 1407480,
+        "v24": 1405235,
+        "w": 1.41
+      },
+      {
+        "from": "CUB",
+        "rk": 36,
+        "to": "USA",
+        "v20": 1346576,
+        "v24": 1394750,
+        "w": 1.39
+      },
+      {
+        "from": "KAZ",
+        "rk": 37,
+        "to": "RUS",
+        "v20": 1635008,
+        "v24": 1321004,
+        "w": 1.32
+      },
+      {
+        "from": "GTM",
+        "rk": 38,
+        "to": "USA",
+        "v20": 1144667,
+        "v24": 1298936,
+        "w": 1.3
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Rohingya displacement (UNHCR)",
+        "from": "MMR",
+        "rk": 39,
+        "to": "BGD",
+        "v20": 907426,
+        "v24": 1246705,
+        "w": 1.25
+      },
+      {
+        "from": "IND",
+        "rk": 40,
+        "to": "KWT",
+        "v20": 1122750,
+        "v24": 1231094,
+        "w": 1.23
+      },
+      {
+        "from": "DEU",
+        "rk": 41,
+        "to": "USA",
+        "v20": 1147641,
+        "v24": 1137577,
+        "w": 1.14
+      },
+      {
+        "from": "RUS",
+        "rk": 42,
+        "to": "DEU",
+        "v20": 1038231,
+        "v24": 1137448,
+        "w": 1.14
+      },
+      {
+        "from": "GBR",
+        "rk": 43,
+        "to": "AUS",
+        "v20": 1171185,
+        "v24": 1107102,
+        "w": 1.11
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "UKR",
+        "rk": 44,
+        "to": "POL",
+        "v20": 180211,
+        "v24": 1102774,
+        "w": 1.1
+      },
+      {
+        "from": "MAR",
+        "rk": 45,
+        "to": "ESP",
+        "v20": 914262,
+        "v24": 1088408,
+        "w": 1.09
+      },
+      {
+        "from": "KOR",
+        "rk": 46,
+        "to": "USA",
+        "v20": 1091276,
+        "v24": 1083174,
+        "w": 1.08
+      },
+      {
+        "from": "ZWE",
+        "rk": 47,
+        "to": "ZAF",
+        "v20": 966487,
+        "v24": 1072620,
+        "w": 1.07
+      },
+      {
+        "c": "#d4793a",
+        "dn": "Majority displaced (UNHCR)",
+        "from": "SDN",
+        "rk": 48,
+        "to": "TCD",
+        "v20": 372594,
+        "v24": 1071034,
+        "w": 1.07
+      },
+      {
+        "from": "MAR",
+        "rk": 49,
+        "to": "FRA",
+        "v20": 1027490,
+        "v24": 1066129,
+        "w": 1.07
+      },
+      {
+        "from": "IND",
+        "rk": 50,
+        "to": "GBR",
+        "v20": 946151,
+        "v24": 1044779,
+        "w": 1.04
+      },
+      {
+        "from": "BGD",
+        "rk": 51,
+        "to": "ARE",
+        "v20": 902689,
+        "v24": 1024949,
+        "w": 1.02
+      },
+      {
+        "from": "IND",
+        "rk": 52,
+        "to": "CAN",
+        "v20": 866951,
+        "v24": 1015630,
+        "w": 1.02
+      },
+      {
+        "from": "COL",
+        "rk": 53,
+        "to": "USA",
+        "v20": 867302,
+        "v24": 1008875,
+        "w": 1.01
+      }
+    ],
+    "group": "Connections",
+    "label": "Migration corridors",
+    "legend": "Each arc is a migration corridor with 1 million+ people (foreign-born stock, mid-2024). Thickness = millions of people and scales with zoom. Orange = majority displaced.",
+    "note": "All corridors with at least 1 million people, per UN DESA International Migrant Stock 2024 (POP/DB/MIG/Stock/Rev.2024). Stock = accumulated foreign-born population, not annual movement. Corridors that are majority refugees or people in refugee-like situations (per UNHCR) are shown in orange. Census timing and undercounting mean all figures are estimates.",
+    "sources": [
+      {
+        "label": "UN DESA — International Migrant Stock 2024 (POP/DB/MIG/Stock/Rev.2024)",
+        "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock"
+      },
+      {
+        "label": "UNHCR — Refugee Data Finder (displacement classification)",
+        "url": "https://www.unhcr.org/refugee-statistics/"
+      }
+    ],
+    "unit": "millions of people (foreign-born stock)"
+  },
+  "minerals": {
+    "color": "#8fa3bf",
+    "desc": "The raw materials of industry: iron ore, copper, bauxite, nickel, cobalt and lithium flowing mostly toward China's smelters and battery plants, plus the finished steel, refined gold and rare-earth magnets flowing back out.",
+    "dotColor": "#e3ebf4",
+    "edges": [
+      {
+        "amt": "$79.6B · iron ore · 2024",
+        "from": "AUS",
+        "to": "CHN",
+        "w": 10
+      },
+      {
+        "amt": "$28.7B · iron ore · 2024",
+        "from": "BRA",
+        "nm": "Iron ore",
+        "to": "CHN",
+        "w": 6
+      },
+      {
+        "c": "#e07a3a",
+        "from": "GIN",
+        "nm": "Iron ore (Simandou, new)",
+        "to": "CHN",
+        "w": 3
+      },
+      {
+        "amt": "$5.6B · refined copper only · 2024",
+        "from": "CHL",
+        "nm": "Copper concentrate",
+        "to": "CHN",
+        "w": 8
+      },
+      {
+        "amt": "$1.1B · refined copper only",
+        "from": "PER",
+        "nm": "Copper concentrate",
+        "to": "CHN",
+        "w": 7
+      },
+      {
+        "from": "MNG",
+        "nm": "Copper concentrate (overland)",
+        "to": "CHN",
+        "w": 3
+      },
+      {
+        "amt": "110.2 Mt · bauxite · 2024",
+        "from": "GIN",
+        "nm": "Bauxite",
+        "to": "CHN",
+        "w": 10
+      },
+      {
+        "amt": "8.67 Mt · ferronickel/NPI · 2024",
+        "from": "IDN",
+        "nm": "Nickel (processed)",
+        "to": "CHN",
+        "w": 7
+      },
+      {
+        "from": "PHL",
+        "nm": "Nickel ore",
+        "to": "CHN",
+        "w": 4
+      },
+      {
+        "c": "#8a95a8",
+        "from": "COD",
+        "nm": "Cobalt hydroxide (leg 1: land)",
+        "to": "ZAF",
+        "w": 5
+      },
+      {
+        "c": "#8a95a8",
+        "from": "ZAF",
+        "nm": "Cobalt hydroxide (leg 2: sea)",
+        "to": "CHN",
+        "w": 5
+      },
+      {
+        "from": "AUS",
+        "nm": "Lithium (spodumene)",
+        "to": "CHN",
+        "w": 6
+      },
+      {
+        "from": "CHL",
+        "nm": "Lithium (carbonate)",
+        "to": "CHN",
+        "w": 3
+      },
+      {
+        "c": "#c45fae",
+        "from": "CHN",
+        "nm": "Rare earths & magnets",
+        "to": "JPN",
+        "w": 2
+      },
+      {
+        "c": "#c45fae",
+        "from": "CHN",
+        "nm": "Rare earths & magnets",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "c": "#c45fae",
+        "from": "CHN",
+        "nm": "Rare earths & magnets",
+        "to": "NLD",
+        "w": 2
+      },
+      {
+        "c": "#c45fae",
+        "from": "CHN",
+        "nm": "Rare earths & magnets",
+        "to": "KOR",
+        "w": 2
+      },
+      {
+        "from": "CHN",
+        "nm": "Finished steel",
+        "to": "VNM",
+        "w": 9.32
+      },
+      {
+        "from": "CHN",
+        "nm": "Finished steel",
+        "to": "NGA",
+        "w": 4.59
+      },
+      {
+        "from": "CHN",
+        "nm": "Finished steel",
+        "to": "ARE",
+        "w": 3.67
+      },
+      {
+        "from": "CHN",
+        "nm": "Finished steel",
+        "to": "NLD",
+        "w": 1.39
+      },
+      {
+        "c": "#e8c250",
+        "from": "CHE",
+        "nm": "Gold (refined)",
+        "to": "USA",
+        "w": 5
+      },
+      {
+        "c": "#e8c250",
+        "from": "CHE",
+        "nm": "Gold (refined)",
+        "to": "GBR",
+        "w": 4
+      },
+      {
+        "c": "#e8c250",
+        "from": "CHE",
+        "nm": "Gold (refined)",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "c": "#e8c250",
+        "from": "CHE",
+        "nm": "Gold (refined)",
+        "to": "IND",
+        "w": 2
+      }
+    ],
+    "group": "Resources",
+    "label": "Minerals & metals",
+    "legend": "Each arc is a real, sourced mineral/metal corridor (2024–26, mixed vintages — see tooltip per arc). Orange = a brand-new corridor (Guinea's Simandou iron ore, first shipped Dec 2025). Grey = a transit leg with no independent volume figure (DRC cobalt via South Africa). Pink = China's rare-earth exports, sized for visibility rather than true tonnage since the real story there is leverage, not bulk. Gold = Switzerland's refined-gold hub exports.",
+    "note": "Real, dated corridors from UN Comtrade, China's General Administration of Customs (via named market-data services: GACC/SunSirs, GACC/GMK Center, GACC/Fastmarkets, GACC/SMM), USGS, Australia's DISR Resources & Energy Quarterly, IEA Critical Minerals, and Swiss Federal Customs. A few figures are explicitly forecasts or partial-year: Guinea's Simandou volumes are 2027 targets for a corridor that only opened in Dec 2025; Brazil's 427 Mt is a 2027 global-supply forecast, not a China-specific figure; the UK gold figure is a single month (March 2026), not annualized. China's rare-earth magnet exports are shown at deliberately modest arc weight despite outsized strategic importance (58,000 t in 2024, ~94% of world sintered permanent magnets, and the subject of escalating 2025–26 export controls) — the story there is leverage, not physical volume. Two corridors (Switzerland→China, Switzerland→India) are real destinations per Swiss customs but this brief doesn't give a bilateral figure for either.",
+    "sources": [
+      {
+        "label": "UN Comtrade",
+        "url": "https://comtradeplus.un.org"
+      },
+      {
+        "label": "China General Administration of Customs (GACC)",
+        "url": "http://english.customs.gov.cn"
+      },
+      {
+        "label": "USGS — Mineral Commodity Summaries",
+        "url": "https://www.usgs.gov/centers/national-minerals-information-center"
+      },
+      {
+        "label": "Australia DISR — Resources & Energy Quarterly",
+        "url": "https://www.industry.gov.au/publications/resources-and-energy-quarterly-december-2025"
+      },
+      {
+        "label": "IEA — Critical Minerals",
+        "url": "https://www.iea.org/topics/critical-minerals"
+      },
+      {
+        "label": "UNCTAD — Global Trade Update (copper, May 2025)",
+        "url": "https://unctad.org/publication/global-trade-update-may-2025-critical-minerals-copper"
+      },
+      {
+        "label": "Swiss Federal Customs Administration",
+        "url": "https://www.bazg.admin.ch"
+      }
+    ],
+    "unit": "mixed (US$ and tonnes per corridor — see tooltip; commodity trade isn’t one consistent unit)"
+  },
+  "oil": {
+    "color": "#c2862e",
+    "desc": "Where the world's oil and gas move: from the big exporters (Gulf, Russia, the Americas, West Africa) to the big consumers (China, India, Europe, Japan).",
+    "dotColor": "#f0d6a0",
+    "edges": [
+      {
+        "amt": "~1.57 Mb/d · crude · 2024",
+        "from": "SAU",
+        "to": "CHN",
+        "w": 4
+      },
+      {
+        "amt": "~0.65 Mb/d · crude",
+        "from": "SAU",
+        "to": "IND",
+        "w": 3
+      },
+      {
+        "from": "SAU",
+        "to": "JPN",
+        "w": 3
+      },
+      {
+        "amt": "0.94 Mb/d · crude",
+        "from": "SAU",
+        "to": "KOR",
+        "w": 2.5
+      },
+      {
+        "amt": "~2.37 Mb/d · crude · 2025",
+        "from": "RUS",
+        "to": "CHN",
+        "w": 4
+      },
+      {
+        "amt": "~1.75 Mb/d · crude · 2025",
+        "from": "RUS",
+        "to": "IND",
+        "w": 3.5
+      },
+      {
+        "from": "RUS",
+        "to": "TUR",
+        "w": 2
+      },
+      {
+        "amt": "~1.19 Mb/d · crude · 2024",
+        "from": "IRQ",
+        "to": "CHN",
+        "w": 3
+      },
+      {
+        "amt": "950 kb/d · crude",
+        "from": "IRQ",
+        "to": "IND",
+        "w": 2.5
+      },
+      {
+        "amt": "35.5 Mt/yr · crude",
+        "from": "ARE",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "from": "ARE",
+        "to": "JPN",
+        "w": 2
+      },
+      {
+        "amt": "13.8 Mt/yr · crude",
+        "from": "KWT",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "from": "IRN",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "amt": "790 kb/d · crude · 2024",
+        "from": "USA",
+        "to": "NLD",
+        "w": 2
+      },
+      {
+        "amt": "474 kb/d · crude",
+        "from": "USA",
+        "to": "KOR",
+        "w": 2
+      },
+      {
+        "amt": "222 kb/d · crude",
+        "from": "USA",
+        "to": "IND",
+        "w": 1.5
+      },
+      {
+        "amt": "~4.06 Mb/d · crude · 2024",
+        "from": "CAN",
+        "to": "USA",
+        "w": 4
+      },
+      {
+        "amt": "464 kb/d · crude · 2024",
+        "from": "MEX",
+        "to": "USA",
+        "w": 2
+      },
+      {
+        "from": "VEN",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "123 kb/d · crude",
+        "from": "NGA",
+        "to": "IND",
+        "w": 2
+      },
+      {
+        "amt": "6.2 Mt/yr",
+        "from": "NGA",
+        "to": "ESP",
+        "w": 1.5
+      },
+      {
+        "from": "AGO",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "amt": "13 Mt/yr · crude",
+        "from": "NOR",
+        "to": "GBR",
+        "w": 1.5
+      },
+      {
+        "from": "NOR",
+        "to": "DEU",
+        "w": 1.5
+      },
+      {
+        "amt": "8.3 Mt/yr · crude",
+        "from": "KAZ",
+        "to": "ITA",
+        "w": 1.5
+      },
+      {
+        "amt": "11.9 Mt/yr · crude",
+        "from": "LBY",
+        "to": "ITA",
+        "w": 1.5
+      },
+      {
+        "amt": "3.75 Mt/yr",
+        "from": "DZA",
+        "to": "ESP",
+        "w": 1.5
+      },
+      {
+        "amt": "2.87 Mt · LNG · 2024",
+        "from": "QAT",
+        "to": "JPN",
+        "w": 2
+      },
+      {
+        "amt": "8.88 Mt · LNG · 2024",
+        "from": "QAT",
+        "to": "KOR",
+        "w": 1.5
+      },
+      {
+        "amt": "25.14 Mt · LNG · 2024",
+        "from": "AUS",
+        "to": "JPN",
+        "w": 2
+      },
+      {
+        "amt": "26.18 Mt · LNG · 2024",
+        "from": "AUS",
+        "to": "CHN",
+        "w": 2
+      }
+    ],
+    "group": "Resources",
+    "label": "Oil & gas",
+    "legend": "Each arc is a major oil/gas export route; dots flow from exporter toward importer.",
+    "note": "Major crude-oil and LNG corridors, latest year (2024-25), from importer customs / EIA / national ministries. Crude in Mb/d or kb/d, LNG in Mt - not one scale, so arc widths stay indicative. Sanctioned Iran/Venezuela flows to China show ~0 in official customs (tanker-tracker estimates only), so no figure is shown. Routes thread strategic chokepoints - Hormuz, Malacca, Suez.",
+    "sources": [
+      {
+        "label": "US EIA - crude imports/exports by country",
+        "url": "https://www.eia.gov/dnav/pet/pet_move_impcus_a2_nus_ep00_im0_mbblpd_a.htm"
+      },
+      {
+        "label": "China GACC customs (via Reuters/Columbia CGEP)",
+        "url": "https://www.energypolicy.columbia.edu/"
+      },
+      {
+        "label": "India DGCI&S; Japan METI; Korea KNOC; UK DUKES; Spain CORES",
+        "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+      },
+      {
+        "label": "UN Comtrade - LNG (HS 271111)",
+        "url": "https://wits.worldbank.org/"
+      }
+    ],
+    "unit": "major crude oil & LNG trade routes"
+  },
+  "refugees": {
+    "color": "#e0792f",
+    "desc": "Where the world's refugees have fled — forced displacement from conflict and crisis to neighbouring host countries.",
+    "dotColor": "#ffd9b8",
+    "edges": [
+      {
+        "from": "SYR",
+        "to": "TUR",
+        "w": 3.5
+      },
+      {
+        "from": "SYR",
+        "to": "LBN",
+        "w": 2
+      },
+      {
+        "from": "SYR",
+        "to": "JOR",
+        "w": 2
+      },
+      {
+        "from": "AFG",
+        "to": "IRN",
+        "w": 3
+      },
+      {
+        "from": "AFG",
+        "to": "PAK",
+        "w": 3
+      },
+      {
+        "from": "UKR",
+        "to": "POL",
+        "w": 3
+      },
+      {
+        "from": "UKR",
+        "to": "DEU",
+        "w": 2.5
+      },
+      {
+        "amt": "2.8M hosted · end-2025",
+        "from": "VEN",
+        "to": "COL",
+        "w": 3
+      },
+      {
+        "from": "VEN",
+        "to": "PER",
+        "w": 2
+      },
+      {
+        "from": "SSD",
+        "to": "UGA",
+        "w": 2.5
+      },
+      {
+        "from": "SSD",
+        "to": "SDN",
+        "w": 2
+      },
+      {
+        "from": "MMR",
+        "to": "BGD",
+        "w": 2.5
+      },
+      {
+        "from": "SOM",
+        "to": "KEN",
+        "w": 2
+      },
+      {
+        "from": "SOM",
+        "to": "ETH",
+        "w": 2
+      },
+      {
+        "from": "COD",
+        "to": "UGA",
+        "w": 2
+      },
+      {
+        "from": "SDN",
+        "to": "TCD",
+        "w": 2
+      },
+      {
+        "from": "SDN",
+        "to": "EGY",
+        "w": 2
+      },
+      {
+        "from": "BDI",
+        "to": "TZA",
+        "w": 1.5
+      },
+      {
+        "from": "CAF",
+        "to": "CMR",
+        "w": 1.5
+      },
+      {
+        "from": "ERI",
+        "to": "ETH",
+        "w": 1.5
+      },
+      {
+        "from": "SYR",
+        "to": "DEU",
+        "w": 0.7
+      },
+      {
+        "from": "SYR",
+        "to": "IRQ",
+        "w": 0.3
+      },
+      {
+        "from": "AFG",
+        "to": "TUR",
+        "w": 0.3
+      },
+      {
+        "from": "UKR",
+        "to": "CZE",
+        "w": 0.35
+      },
+      {
+        "from": "SDN",
+        "to": "SSD",
+        "w": 0.8
+      },
+      {
+        "from": "SDN",
+        "to": "ETH",
+        "w": 0.5
+      },
+      {
+        "from": "SDN",
+        "to": "LBY",
+        "w": 0.2
+      },
+      {
+        "from": "SSD",
+        "to": "ETH",
+        "w": 0.4
+      },
+      {
+        "from": "SSD",
+        "to": "KEN",
+        "w": 0.15
+      },
+      {
+        "from": "COD",
+        "to": "RWA",
+        "w": 0.2
+      },
+      {
+        "from": "COD",
+        "to": "TZA",
+        "w": 0.15
+      },
+      {
+        "from": "COD",
+        "to": "ZMB",
+        "w": 0.1
+      },
+      {
+        "from": "COD",
+        "to": "BDI",
+        "w": 0.1
+      },
+      {
+        "from": "SOM",
+        "to": "YEM",
+        "w": 0.25
+      },
+      {
+        "from": "MMR",
+        "to": "THA",
+        "w": 0.2
+      },
+      {
+        "from": "MMR",
+        "to": "MYS",
+        "w": 0.1
+      },
+      {
+        "from": "CAF",
+        "to": "TCD",
+        "w": 0.15
+      },
+      {
+        "from": "CAF",
+        "to": "COD",
+        "w": 0.2
+      },
+      {
+        "from": "VEN",
+        "to": "BRA",
+        "w": 0.6
+      },
+      {
+        "from": "VEN",
+        "to": "ECU",
+        "w": 0.45
+      },
+      {
+        "from": "VEN",
+        "to": "CHL",
+        "w": 0.45
+      },
+      {
+        "from": "NIC",
+        "to": "CRI",
+        "w": 0.25
+      },
+      {
+        "from": "MLI",
+        "to": "MRT",
+        "w": 0.2
+      },
+      {
+        "from": "MLI",
+        "to": "NER",
+        "w": 0.15
+      },
+      {
+        "from": "BFA",
+        "to": "CIV",
+        "w": 0.15
+      },
+      {
+        "from": "NGA",
+        "to": "NER",
+        "w": 0.3
+      },
+      {
+        "from": "NGA",
+        "to": "CMR",
+        "w": 0.15
+      },
+      {
+        "from": "ESH",
+        "to": "DZA",
+        "w": 0.17
+      },
+      {
+        "from": "ERI",
+        "to": "SDN",
+        "w": 0.1
+      }
+    ],
+    "group": "Human movement",
+    "label": "Refugee flows",
+    "legend": "Each arc is a major refugee corridor; dots flow from origin toward the host country.",
+    "note": "Major corridors from UNHCR Global Trends; rankings and magnitudes are end-2024 vintage. By end-2025 Venezuela (6.5M) leads, ahead of Ukraine (5.2M) and Syria (4.9M) — the Venezuela figure includes 'others in need of international protection', not only Convention refugees. Most refugees are hosted in neighbouring countries; figures are relative.",
+    "sources": [
+      {
+        "label": "UNHCR — Global Trends / Refugee Data Finder (end-2025)",
+        "url": "https://www.unhcr.org/refugee-statistics"
+      }
+    ],
+    "unit": "major forced-displacement corridors"
+  },
+  "remittances": {
+    "color": "#7ee0b8",
+    "desc": "Money sent home by migrant workers — largest country-to-country remittance corridors. Arrow points to the receiving country.",
+    "dotColor": "#d6fff0",
+    "edges": [
+      {
+        "amt": "$62.5B · 96.6% of Mexico’s total · 2024",
+        "from": "USA",
+        "to": "MEX",
+        "w": 65
+      },
+      {
+        "from": "USA",
+        "to": "IND",
+        "w": 32
+      },
+      {
+        "from": "ARE",
+        "to": "IND",
+        "w": 18
+      },
+      {
+        "from": "USA",
+        "to": "GTM",
+        "w": 18
+      },
+      {
+        "from": "USA",
+        "to": "CHN",
+        "w": 18
+      },
+      {
+        "from": "USA",
+        "to": "PHL",
+        "w": 14
+      },
+      {
+        "from": "SAU",
+        "to": "IND",
+        "w": 12
+      },
+      {
+        "from": "ARE",
+        "to": "PAK",
+        "w": 10
+      },
+      {
+        "from": "USA",
+        "to": "VNM",
+        "w": 10
+      },
+      {
+        "from": "USA",
+        "to": "DOM",
+        "w": 9
+      },
+      {
+        "from": "USA",
+        "to": "COL",
+        "w": 9
+      },
+      {
+        "from": "RUS",
+        "to": "UZB",
+        "w": 8
+      },
+      {
+        "from": "SAU",
+        "to": "EGY",
+        "w": 8
+      },
+      {
+        "from": "USA",
+        "to": "SLV",
+        "w": 8
+      },
+      {
+        "from": "USA",
+        "to": "HND",
+        "w": 8
+      },
+      {
+        "from": "SAU",
+        "to": "PAK",
+        "w": 7
+      },
+      {
+        "from": "USA",
+        "to": "NGA",
+        "w": 6
+      },
+      {
+        "from": "GBR",
+        "to": "IND",
+        "w": 5
+      },
+      {
+        "from": "MYS",
+        "to": "IDN",
+        "w": 5
+      },
+      {
+        "from": "FRA",
+        "to": "MAR",
+        "w": 5
+      },
+      {
+        "from": "KWT",
+        "to": "IND",
+        "w": 5
+      },
+      {
+        "from": "ARE",
+        "to": "EGY",
+        "w": 5
+      },
+      {
+        "from": "RUS",
+        "to": "TJK",
+        "w": 5
+      },
+      {
+        "from": "USA",
+        "to": "HTI",
+        "w": 4
+      },
+      {
+        "from": "USA",
+        "to": "ECU",
+        "w": 4
+      },
+      {
+        "from": "CAN",
+        "to": "IND",
+        "w": 4
+      },
+      {
+        "from": "GBR",
+        "to": "NGA",
+        "w": 4
+      },
+      {
+        "from": "QAT",
+        "to": "IND",
+        "w": 4
+      },
+      {
+        "from": "DEU",
+        "to": "TUR",
+        "w": 3
+      },
+      {
+        "from": "ITA",
+        "to": "ROU",
+        "w": 3
+      },
+      {
+        "from": "ESP",
+        "to": "MAR",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "JAM",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "PER",
+        "w": 3
+      },
+      {
+        "from": "ARE",
+        "to": "PHL",
+        "w": 3
+      },
+      {
+        "from": "RUS",
+        "to": "KGZ",
+        "w": 3
+      },
+      {
+        "from": "USA",
+        "to": "BRA",
+        "w": 3
+      }
+    ],
+    "group": "Connections",
+    "label": "Remittance corridors",
+    "legend": "Each arc is a major remittance corridor; thickness ≈ annual US$ sent. Arrow / dots point to the receiving country.",
+    "note": "Top corridors from the World Bank–KNOMAD Bilateral Remittance Matrix, which is modeled (migrant stocks × incomes) rather than measured, is 2021 vintage, and is no longer updated (the KNOMAD portal went offline in 2024). USA→Mexico is the exception: $62.5B is measured by Banco de México for 2024 (96.6% of Mexico’s $64.7B total). USA→India is drawn at this map’s legacy weight (~$32B), but the 2021 matrix puts the US share nearer $6B and attributes most of India’s $129B inflow to the Gulf — treat that corridor’s size as unresolved. Figures are approximate and rounded; many smaller corridors are omitted.",
+    "sources": [
+      {
+        "label": "World Bank–KNOMAD Bilateral Remittance Matrix (via MPI)",
+        "url": "https://www.migrationpolicy.org/programs/data-hub/charts/bilateral-remittance-flows"
+      },
+      {
+        "label": "Banco de México — remittances",
+        "url": "https://www.banxico.org.mx/"
+      }
+    ],
+    "unit": "US$ billions / yr (approx, World Bank bilateral matrix)"
+  },
+  "shipping": {
+    "color": "#3fb6a8",
+    "desc": "The arteries of seaborne trade — and the chokepoints they squeeze through: Malacca, Suez, Panama, Hormuz, Gibraltar, the Cape.",
+    "dotColor": "#d6fff8",
+    "edges": [
+      {
+        "amt": "Suez ≈10% of world sea trade · 22% of containers",
+        "nm": "Asia–Europe via Malacca + Suez",
+        "path": [
+          [
+            122,
+            31
+          ],
+          [
+            114,
+            5
+          ],
+          [
+            101,
+            3
+          ],
+          [
+            80,
+            6
+          ],
+          [
+            57,
+            12
+          ],
+          [
+            44,
+            13
+          ],
+          [
+            33,
+            28
+          ],
+          [
+            32,
+            31
+          ],
+          [
+            18,
+            34
+          ],
+          [
+            6,
+            37
+          ],
+          [
+            -5,
+            36
+          ],
+          [
+            -2,
+            44
+          ],
+          [
+            4,
+            52
+          ]
+        ],
+        "w": 3
+      },
+      {
+        "amt": "Shanghai 50M TEU · world’s busiest port",
+        "nm": "Trans-Pacific → US West Coast",
+        "path": [
+          [
+            122,
+            31
+          ],
+          [
+            140,
+            34
+          ],
+          [
+            165,
+            40
+          ],
+          [
+            -170,
+            42
+          ],
+          [
+            -140,
+            40
+          ],
+          [
+            -122,
+            35
+          ],
+          [
+            -118,
+            34
+          ]
+        ],
+        "w": 2.5
+      },
+      {
+        "amt": "~3% of world sea trade · 9,944 transits FY24",
+        "nm": "Trans-Pacific → Panama Canal",
+        "path": [
+          [
+            121,
+            31
+          ],
+          [
+            155,
+            18
+          ],
+          [
+            -175,
+            8
+          ],
+          [
+            -120,
+            7
+          ],
+          [
+            -90,
+            8
+          ],
+          [
+            -80,
+            9
+          ],
+          [
+            -79,
+            9.2
+          ],
+          [
+            -75,
+            15
+          ],
+          [
+            -74,
+            20
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "20.9 Mb/d · ~20% of world oil · 2025",
+        "nm": "Persian Gulf oil via Hormuz",
+        "path": [
+          [
+            72,
+            18
+          ],
+          [
+            63,
+            22
+          ],
+          [
+            57,
+            25
+          ],
+          [
+            56,
+            26.5
+          ],
+          [
+            57,
+            25.5
+          ],
+          [
+            60,
+            22
+          ],
+          [
+            68,
+            15
+          ],
+          [
+            78,
+            8
+          ]
+        ],
+        "w": 2
+      }
+    ],
+    "geo": true,
+    "group": "Infrastructure & travel",
+    "label": "Shipping lanes",
+    "legend": "Each lane is a primary container-shipping route; the tight bends are the world's strategic chokepoints.",
+    "note": "Schematic lanes tagged with each chokepoint's sourced figure. UNCTAD shares are % of world seaborne trade by volume (Malacca alone carries 23.7%), while the Hormuz figure is oil in Mb/d — different denominators. Post-2023 crises reshaped traffic: Red Sea diversions cut Suez container tonnage 82% (Feb 2024) and sent ships around the Cape (+12 days), and the drought-hit Panama Canal moved 423 Mt in FY2024, down 21% from FY2023 (511 Mt).",
+    "sources": [
+      {
+        "label": "UNCTAD — Review of Maritime Transport 2024",
+        "url": "https://unctad.org/system/files/official-document/rmt2024ch1_en.pdf"
+      },
+      {
+        "label": "EIA — World Oil Transit Chokepoints (through 1H2025)",
+        "url": "https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints"
+      },
+      {
+        "label": "Panama Canal Authority — FY2024 results",
+        "url": "https://pancanal.com/en/presents-financial-results-for-fy24-with-a-focus-on-sustainability-and-the-future/"
+      },
+      {
+        "label": "UNCTAD — Red Sea rapid assessment (Feb 2024)",
+        "url": "https://unctad.org/system/files/official-document/osginf2024d2_en.pdf"
+      }
+    ],
+    "unit": "major maritime trade lanes & chokepoints"
+  },
+  "silkroad": {
+    "color": "#d9a441",
+    "desc": "The network of routes that carried silk, spices, ideas, religions and plagues between China, Central Asia, Persia, the Arab world and Europe.",
+    "dotColor": "#f4e2b0",
+    "edges": [
+      {
+        "amt": "~6,400 km · silk west, gold east · from 138 BCE",
+        "c": "#d9a441",
+        "nm": "Silk Road (overland)",
+        "path": [
+          [
+            109,
+            34
+          ],
+          [
+            100,
+            38
+          ],
+          [
+            88,
+            43
+          ],
+          [
+            75,
+            40
+          ],
+          [
+            64,
+            39
+          ],
+          [
+            52,
+            35
+          ],
+          [
+            44,
+            33
+          ],
+          [
+            36,
+            34
+          ],
+          [
+            29,
+            41
+          ]
+        ],
+        "w": 2.5
+      },
+      {
+        "amt": "Pliny: Rome drained ~100M sesterces/yr (contested)",
+        "c": "#c9893a",
+        "nm": "Maritime spice route",
+        "path": [
+          [
+            113,
+            23
+          ],
+          [
+            108,
+            9
+          ],
+          [
+            98,
+            6
+          ],
+          [
+            80,
+            7
+          ],
+          [
+            72,
+            18
+          ],
+          [
+            58,
+            23
+          ],
+          [
+            50,
+            15
+          ],
+          [
+            43,
+            13
+          ],
+          [
+            35,
+            22
+          ]
+        ],
+        "w": 2
+      }
+    ],
+    "geo": true,
+    "group": "Historic routes",
+    "label": "Silk Road",
+    "legend": "Gold = the overland caravan routes; amber = the maritime spice route. Dots run west, as the silk did.",
+    "note": "Composite of the principal overland and maritime Silk Road corridors. Routes shifted over centuries; no reliable aggregate trade volume exists, so only datable facts (route length, dates, Pliny's contested sesterces) are cited.",
+    "sources": [
+      {
+        "label": "Britannica — Silk Road trade route",
+        "url": "https://www.britannica.com/topic/Silk-Road-trade-route"
+      },
+      {
+        "label": "UNESCO — About the Silk Roads",
+        "url": "https://www.unesco.org/en/silk-roads/about-silk-roads"
+      },
+      {
+        "label": "Pliny, Natural History Bk XII (Perseus/Tufts)",
+        "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D12%3Achapter%3D41"
+      },
+      {
+        "label": "Valerie Hansen (Yale) — The Silk Road trade",
+        "url": "https://history.yale.edu/sites/default/files/files/hansen-silk-road-trade.pdf"
+      }
+    ],
+    "unit": "overland + maritime trade routes (c. 130 BCE - 1450 CE)"
+  },
+  "students": {
+    "color": "#6ea8fe",
+    "desc": "Where students cross borders to study — the flows of tertiary students from home countries to the big education destinations.",
+    "dotColor": "#dcebff",
+    "edges": [
+      {
+        "amt": "277,398 students · 2024",
+        "from": "CHN",
+        "to": "USA",
+        "w": 3.5
+      },
+      {
+        "amt": "331,602 students · 2024",
+        "from": "IND",
+        "to": "USA",
+        "w": 3
+      },
+      {
+        "amt": "149,885 students · 2024",
+        "from": "CHN",
+        "to": "GBR",
+        "w": 2.5
+      },
+      {
+        "amt": "166,310 students · 2024",
+        "from": "IND",
+        "to": "GBR",
+        "w": 2
+      },
+      {
+        "amt": "189,055 students · 2024",
+        "from": "CHN",
+        "to": "AUS",
+        "w": 2.5
+      },
+      {
+        "amt": "138,316 students · 2024",
+        "from": "IND",
+        "to": "AUS",
+        "w": 2.5
+      },
+      {
+        "amt": "101,640 study-permit holders",
+        "from": "CHN",
+        "to": "CAN",
+        "w": 2
+      },
+      {
+        "amt": "426,195 study-permit holders · 2023",
+        "from": "IND",
+        "to": "CAN",
+        "w": 2.5
+      },
+      {
+        "amt": "22,066 students",
+        "from": "VNM",
+        "to": "USA",
+        "w": 1.5
+      },
+      {
+        "amt": "43,149 students",
+        "from": "KOR",
+        "to": "USA",
+        "w": 1.5
+      },
+      {
+        "amt": "123,485 students · 2024",
+        "from": "CHN",
+        "to": "JPN",
+        "w": 1.5
+      },
+      {
+        "amt": "57,505 students · 2024",
+        "from": "NGA",
+        "to": "GBR",
+        "w": 1.5
+      },
+      {
+        "amt": "20,029 students",
+        "from": "NGA",
+        "to": "USA",
+        "w": 1.5
+      },
+      {
+        "amt": "14,828 students",
+        "from": "SAU",
+        "to": "USA",
+        "w": 1.5
+      },
+      {
+        "amt": "26,825 study-permit holders",
+        "from": "FRA",
+        "to": "CAN",
+        "w": 1.5
+      },
+      {
+        "amt": "65,521 students · 2024",
+        "from": "NPL",
+        "to": "AUS",
+        "w": 1.5
+      },
+      {
+        "amt": "45,162 students",
+        "from": "MAR",
+        "to": "FRA",
+        "w": 1.5
+      },
+      {
+        "amt": "7,105 students",
+        "from": "DEU",
+        "to": "GBR",
+        "w": 1.2
+      },
+      {
+        "amt": "45,720 students · 2024",
+        "from": "PAK",
+        "to": "GBR",
+        "w": 1.5
+      },
+      {
+        "amt": "16,877 students",
+        "from": "BRA",
+        "to": "USA",
+        "w": 1.2
+      }
+    ],
+    "group": "Human movement",
+    "label": "International students",
+    "legend": "Each arc is a major international-student corridor; dots flow from origin toward the host country.",
+    "note": "Enrollment stocks from each destination's own authority (IIE Open Doors, HESA, Australian Dept of Education, IRCC, JASSO, Campus France). Instruments differ — Canada counts study-permit holders — and 2024–25 policy caps cut Canada and UK inflows sharply.",
+    "sources": [
+      {
+        "label": "IIE Open Doors 2024 (US)",
+        "url": "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf"
+      },
+      {
+        "label": "HESA (UK) 2023/24",
+        "url": "https://www.hesa.ac.uk/data-and-analysis/students"
+      },
+      {
+        "label": "Australian Dept of Education; IRCC (Canada); JASSO (Japan); Campus France",
+        "url": "https://www.education.gov.au/international-education-data-and-research"
+      }
+    ],
+    "unit": "international students enrolled (stock, latest year)"
+  },
+  "trade": {
+    "color": "#f2c14e",
+    "desc": "Largest bilateral goods-trade relationships by annual value — the spine of the global economy.",
+    "edges": [
+      {
+        "amt": "$438.7B · goods · 2024",
+        "from": "CHN",
+        "to": "USA",
+        "w": 5
+      },
+      {
+        "amt": "$411.8B · goods · 2024",
+        "from": "CAN",
+        "to": "USA",
+        "w": 4.3
+      },
+      {
+        "amt": "$503.1B · goods · 2024",
+        "from": "MEX",
+        "to": "USA",
+        "w": 4.5
+      },
+      {
+        "amt": "$107.1B · goods · 2024",
+        "from": "CHN",
+        "to": "DEU",
+        "w": 1.6
+      },
+      {
+        "amt": "$152.0B · goods · 2024",
+        "from": "CHN",
+        "to": "JPN",
+        "w": 1.7
+      },
+      {
+        "amt": "$166.3B · goods · 2025",
+        "from": "DEU",
+        "to": "USA",
+        "w": 1.6
+      },
+      {
+        "amt": "$131.7B · goods · 2025",
+        "from": "JPN",
+        "to": "USA",
+        "w": 1.5
+      },
+      {
+        "amt": "$146.2B · goods · 2024",
+        "from": "CHN",
+        "to": "KOR",
+        "w": 1.5
+      },
+      {
+        "amt": "$120.5B · goods · 2024",
+        "from": "DEU",
+        "to": "FRA",
+        "w": 1.2
+      },
+      {
+        "amt": "$161.9B · goods · 2024",
+        "from": "CHN",
+        "to": "VNM",
+        "w": 1.4
+      },
+      {
+        "amt": "$143.2B · goods · 2024",
+        "from": "USA",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "$94.8B · goods · 2024",
+        "from": "DEU",
+        "to": "CHN",
+        "w": 1.1
+      },
+      {
+        "amt": "$181.5B · goods · 2024",
+        "from": "KOR",
+        "to": "CHN",
+        "w": 1.4
+      },
+      {
+        "amt": "$129.9B · goods · 2024",
+        "from": "RUS",
+        "to": "CHN",
+        "w": 1.3
+      },
+      {
+        "amt": "$78.9B · goods · 2024",
+        "from": "CHN",
+        "to": "GBR",
+        "w": 1
+      },
+      {
+        "amt": "$163.7B · goods · 2025",
+        "from": "NLD",
+        "to": "DEU",
+        "w": 1.1
+      },
+      {
+        "amt": "$120.5B · goods · 2024",
+        "from": "CHN",
+        "to": "IND",
+        "w": 1.2
+      },
+      {
+        "amt": "$57.5B · goods · 2024",
+        "from": "SAU",
+        "to": "CHN",
+        "w": 0.9
+      },
+      {
+        "amt": "$140.8B · goods · 2024",
+        "from": "AUS",
+        "to": "CHN",
+        "w": 1.3
+      },
+      {
+        "amt": "$116.1B · goods · 2024",
+        "from": "BRA",
+        "to": "CHN",
+        "w": 1.1
+      },
+      {
+        "amt": "$70.8B · goods · 2024",
+        "from": "CHN",
+        "to": "AUS",
+        "w": 0.8
+      },
+      {
+        "amt": "$84.7B · goods · 2024",
+        "from": "DEU",
+        "to": "GBR",
+        "w": 0.9
+      },
+      {
+        "amt": "$85.3B · goods · 2024",
+        "from": "FRA",
+        "to": "DEU",
+        "w": 1
+      },
+      {
+        "amt": "$81.6B · goods · 2025",
+        "from": "ITA",
+        "to": "DEU",
+        "w": 0.9
+      },
+      {
+        "amt": "$72.1B · goods · 2024",
+        "from": "CHN",
+        "to": "BRA",
+        "w": 0.7
+      },
+      {
+        "amt": "$350.6B · goods · 2024",
+        "from": "USA",
+        "to": "CAN",
+        "w": 3
+      },
+      {
+        "amt": "$334.5B · goods · 2024",
+        "from": "USA",
+        "to": "MEX",
+        "w": 3.2
+      }
+    ],
+    "group": "Connections",
+    "label": "Trade flows (top exports)",
+    "legend": "Each arc is a major bilateral trade relationship; thickness ≈ annual goods value.",
+    "note": "US-corridor figures are US Census (2024, firm); other corridors are UN Comtrade via Trading Economics, with China-partner values on a China-reported “mirror” basis (mirror vs exporter-reported figures can differ 5–15%). DEU→USA, JPN→USA, ITA→DEU and NLD→DEU show 2025 (their latest full year), and NLD→DEU is inflated by the Rotterdam re-export effect. Some significant economies — Venezuela, Syria, Iraq, North Korea, Somalia — don't self-report to Comtrade at all and are only visible via partner mirrors, which is why they're absent from a ‘top bilateral flows’ view.",
+    "sources": [
+      {
+        "label": "US Census Bureau — Foreign Trade country balances",
+        "url": "https://www.census.gov/foreign-trade/balance/"
+      },
+      {
+        "label": "UN Comtrade (via Trading Economics)",
+        "url": "https://tradingeconomics.com/china/imports"
+      },
+      {
+        "label": "Australian DFAT — China country brief",
+        "url": "https://www.dfat.gov.au/geo/china/china-country-brief"
+      }
+    ],
+    "unit": "US$ hundreds of billions (annual goods, top bilateral flows)"
+  },
+  "trafficking": {
+    "color": "#c45fae",
+    "desc": "Cross-border human-trafficking corridors — victims documented moving from origin countries to destinations for forced labour, sexual exploitation, or other exploitation. Only transregional corridors are drawn; most trafficking is in fact domestic.",
+    "dotColor": "#f0c4e6",
+    "edges": [
+      {
+        "from": "MEX",
+        "to": "USA",
+        "w": 82.928
+      },
+      {
+        "from": "UKR",
+        "to": "RUS",
+        "w": 63.804
+      },
+      {
+        "from": "NGA",
+        "to": "LBY",
+        "w": 49.92
+      },
+      {
+        "c": "#d43f5f",
+        "from": "NGA",
+        "to": "MLI",
+        "w": 35.057
+      },
+      {
+        "from": "PHL",
+        "to": "USA",
+        "w": 35.014
+      },
+      {
+        "from": "BLR",
+        "to": "RUS",
+        "w": 34.044
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "VNM",
+        "to": "CHN",
+        "w": 33.675
+      },
+      {
+        "from": "UKR",
+        "to": "POL",
+        "w": 33.347
+      },
+      {
+        "c": "#d43f5f",
+        "from": "CHN",
+        "to": "USA",
+        "w": 32.047
+      },
+      {
+        "from": "MMR",
+        "to": "BGD",
+        "w": 30.463
+      },
+      {
+        "from": "MMR",
+        "to": "IDN",
+        "w": 29.967
+      },
+      {
+        "from": "GTM",
+        "to": "USA",
+        "w": 28.618
+      },
+      {
+        "from": "BDI",
+        "to": "SAU",
+        "w": 27.368
+      },
+      {
+        "from": "KGZ",
+        "to": "RUS",
+        "w": 25.338
+      },
+      {
+        "from": "MDA",
+        "to": "UKR",
+        "w": 25.338
+      },
+      {
+        "from": "HND",
+        "to": "USA",
+        "w": 25.318
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "SOM",
+        "to": "LBY",
+        "w": 24.658
+      },
+      {
+        "from": "IDN",
+        "to": "MYS",
+        "w": 24.207
+      },
+      {
+        "from": "SLE",
+        "to": "LBN",
+        "w": 23.664
+      },
+      {
+        "from": "VNM",
+        "to": "USA",
+        "w": 19.824
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "KHM",
+        "to": "CHN",
+        "w": 19.748
+      },
+      {
+        "c": "#d43f5f",
+        "from": "UKR",
+        "to": "TUR",
+        "w": 19.596
+      },
+      {
+        "from": "KHM",
+        "to": "IDN",
+        "w": 18.52
+      },
+      {
+        "c": "#d43f5f",
+        "from": "COL",
+        "to": "USA",
+        "w": 18.439
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "SDN",
+        "to": "LBY",
+        "w": 18.439
+      },
+      {
+        "from": "UZB",
+        "to": "KAZ",
+        "w": 18.303
+      },
+      {
+        "from": "KHM",
+        "to": "THA",
+        "w": 18.138
+      },
+      {
+        "from": "KHM",
+        "to": "MYS",
+        "w": 18.055
+      },
+      {
+        "from": "IDN",
+        "to": "ARE",
+        "w": 17.944
+      },
+      {
+        "from": "IND",
+        "to": "USA",
+        "w": 17.436
+      },
+      {
+        "from": "SLV",
+        "to": "USA",
+        "w": 17.292
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "BGD",
+        "to": "LBY",
+        "w": 16.852
+      },
+      {
+        "from": "KGZ",
+        "to": "KAZ",
+        "w": 16.523
+      },
+      {
+        "from": "KEN",
+        "to": "LBN",
+        "w": 16.248
+      },
+      {
+        "c": "#d43f5f",
+        "from": "MDA",
+        "to": "TUR",
+        "w": 16.125
+      },
+      {
+        "from": "CIV",
+        "to": "TUN",
+        "w": 16.093
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "PHL",
+        "to": "MYS",
+        "w": 15.811
+      },
+      {
+        "c": "#d43f5f",
+        "from": "MDA",
+        "to": "SRB",
+        "w": 15.684
+      },
+      {
+        "from": "JAM",
+        "to": "USA",
+        "w": 15.46
+      },
+      {
+        "from": "PHL",
+        "to": "KWT",
+        "w": 15.297
+      },
+      {
+        "from": "ETH",
+        "to": "LBN",
+        "w": 15.166
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "ETH",
+        "to": "LBY",
+        "w": 15.166
+      },
+      {
+        "c": "#d43f5f",
+        "from": "VNM",
+        "to": "MMR",
+        "w": 14.799
+      },
+      {
+        "from": "NGA",
+        "to": "USA",
+        "w": 14.629
+      },
+      {
+        "c": "#d43f5f",
+        "from": "THA",
+        "to": "USA",
+        "w": 13.675
+      },
+      {
+        "c": "#d43f5f",
+        "from": "MDA",
+        "to": "RUS",
+        "w": 13.528
+      },
+      {
+        "from": "IDN",
+        "to": "SAU",
+        "w": 13.342
+      },
+      {
+        "c": "#d43f5f",
+        "from": "RUS",
+        "to": "USA",
+        "w": 13.304
+      },
+      {
+        "c": "#8f7fc4",
+        "from": "PHL",
+        "to": "JPN",
+        "w": 13.266
+      },
+      {
+        "from": "VNM",
+        "to": "KHM",
+        "w": 13.153
+      },
+      {
+        "c": "#d43f5f",
+        "from": "UKR",
+        "to": "USA",
+        "w": 12.767
+      },
+      {
+        "from": "BDI",
+        "to": "OMN",
+        "w": 12.207
+      },
+      {
+        "from": "UZB",
+        "to": "RUS",
+        "w": 12.207
+      },
+      {
+        "c": "#d43f5f",
+        "from": "KOR",
+        "to": "USA",
+        "w": 12.042
+      },
+      {
+        "from": "NGA",
+        "to": "LBN",
+        "w": 11.958
+      },
+      {
+        "c": "#d43f5f",
+        "from": "UKR",
+        "to": "ITA",
+        "w": 11.832
+      },
+      {
+        "from": "UKR",
+        "to": "CZE",
+        "w": 11.705
+      },
+      {
+        "from": "IDN",
+        "to": "USA",
+        "w": 11.662
+      },
+      {
+        "from": "UKR",
+        "to": "MDA",
+        "w": 11.662
+      },
+      {
+        "c": "#d43f5f",
+        "from": "BRA",
+        "to": "USA",
+        "w": 11.619
+      },
+      {
+        "from": "TKM",
+        "to": "TUR",
+        "w": 11.358
+      },
+      {
+        "c": "#d43f5f",
+        "from": "ROU",
+        "to": "BIH",
+        "w": 11.269
+      },
+      {
+        "c": "#d43f5f",
+        "from": "ROU",
+        "to": "MKD",
+        "w": 11.269
+      },
+      {
+        "c": "#d43f5f",
+        "from": "KGZ",
+        "to": "TUR",
+        "w": 11.091
+      },
+      {
+        "c": "#d43f5f",
+        "from": "ROU",
+        "to": "ITA",
+        "w": 11.091
+      },
+      {
+        "c": "#d43f5f",
+        "from": "ROU",
+        "to": "SRB",
+        "w": 10.909
+      },
+      {
+        "c": "#d43f5f",
+        "from": "ROU",
+        "to": "USA",
+        "w": 10.77
+      },
+      {
+        "c": "#d43f5f",
+        "from": "BLR",
+        "to": "POL",
+        "w": 10.63
+      },
+      {
+        "c": "#d43f5f",
+        "from": "UKR",
+        "to": "ARE",
+        "w": 10.63
+      },
+      {
+        "from": "PHL",
+        "to": "SAU",
+        "w": 10.583
+      },
+      {
+        "from": "BGD",
+        "to": "MYS",
+        "w": 10.536
+      },
+      {
+        "from": "NGA",
+        "to": "NER",
+        "w": 10.488
+      },
+      {
+        "c": "#d43f5f",
+        "from": "VNM",
+        "to": "MYS",
+        "w": 10.392
+      },
+      {
+        "from": "IDN",
+        "to": "CHN",
+        "w": 10.344
+      },
+      {
+        "c": "#d43f5f",
+        "from": "BLR",
+        "to": "TUR",
+        "w": 10.344
+      },
+      {
+        "c": "#d43f5f",
+        "from": "BLR",
+        "to": "ARE",
+        "w": 10
+      }
+    ],
+    "group": "Illicit flows",
+    "label": "Human trafficking",
+    "legend": "Each arc is a documented cross-border corridor with 100+ victim case records (2002–2024). Thickness scales with case count (square-root scale, so smaller real corridors stay visible next to the largest). Color = dominant exploitation type: pink = forced labour, red = sexual exploitation, violet = other/mixed.",
+    "note": "Every corridor with at least 100 documented victim case records, 2002–2024, from the Counter Trafficking Data Collaborative's Global Synthetic Dataset v2026 (IOM, Polaris Project, A21, RecollectiV, OTSH). Counts are case records referred to these specific partner organizations, not a measure of true prevalence — they reflect where these partners operate and where cases get reported, which favors some corridors over others with real but less-documented trafficking. Individual case records are released as a differentially private synthetic dataset (statistically representative, not real people) specifically to protect victim identities — standard practice for data this sensitive, not a limitation unique to this layer. Corridor directions and widths are indicative of documented detection patterns, not measured trafficking magnitudes — detection data severely undercount true flows and are shaped by enforcement and reporting capacity. For global scale, UNODC's Global Report on Trafficking in Persons 2024 reports detected victims worldwide rose 25% in 2022 vs 2019, with victims of 162 nationalities detected in 128 destination countries.",
+    "sources": [
+      {
+        "label": "CTDC — Counter Trafficking Data Collaborative, Global Synthetic Dataset v2026",
+        "url": "https://www.ctdatacollaborative.org/page/global-synthetic-dataset"
+      },
+      {
+        "label": "UNODC — Global Report on Trafficking in Persons 2024",
+        "url": "https://www.unodc.org/documents/data-and-analysis/glotip/2024/GLOTIP2024_BOOK.pdf"
+      }
+    ],
+    "unit": "documented victim case records (2002–2024, synthetic/differentially private)"
+  },
+  "voyages": {
+    "color": "#6ec6b0",
+    "desc": "Four voyages that stitched the world together: Zheng He's treasure fleets, da Gama to India, Columbus to the Americas, and Magellan's circumnavigation.",
+    "dotColor": "#e6fff7",
+    "edges": [
+      {
+        "amt": "62 treasure ships · 27,800 crew · 1405",
+        "c": "#6ec6b0",
+        "nm": "Zheng He treasure fleet",
+        "path": [
+          [
+            120,
+            32
+          ],
+          [
+            110,
+            15
+          ],
+          [
+            100,
+            6
+          ],
+          [
+            80,
+            8
+          ],
+          [
+            60,
+            18
+          ],
+          [
+            45,
+            12
+          ],
+          [
+            40,
+            -4
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "4 ships · 170 crew · 55 survived · 1497",
+        "c": "#5fae5f",
+        "nm": "Vasco da Gama",
+        "path": [
+          [
+            -9,
+            38
+          ],
+          [
+            -17,
+            15
+          ],
+          [
+            -10,
+            -15
+          ],
+          [
+            18,
+            -35
+          ],
+          [
+            35,
+            -25
+          ],
+          [
+            45,
+            -5
+          ],
+          [
+            73,
+            15
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "3 ships · ~87 crew · 1492",
+        "c": "#e0a93a",
+        "nm": "Columbus",
+        "path": [
+          [
+            -6,
+            37
+          ],
+          [
+            -18,
+            28
+          ],
+          [
+            -40,
+            21
+          ],
+          [
+            -60,
+            18
+          ],
+          [
+            -74,
+            20
+          ]
+        ],
+        "w": 2
+      },
+      {
+        "amt": "5 ships · 18 of ~270 returned · 1519–22",
+        "c": "#c45fae",
+        "nm": "Magellan–Elcano",
+        "path": [
+          [
+            -6,
+            37
+          ],
+          [
+            -25,
+            5
+          ],
+          [
+            -48,
+            -25
+          ],
+          [
+            -68,
+            -53
+          ],
+          [
+            -100,
+            -33
+          ],
+          [
+            -150,
+            -8
+          ],
+          [
+            123,
+            11
+          ]
+        ],
+        "w": 2
+      }
+    ],
+    "geo": true,
+    "group": "Historic routes",
+    "label": "Age of Exploration",
+    "legend": "Each colored track is one expedition; dots follow the direction of the outward voyage.",
+    "note": "Approximate tracks of Zheng He (1405-33), da Gama (1497-99), Columbus (1492), and the Magellan-Elcano circumnavigation (1519-22). Crew figures vary slightly across sources, and Zheng He's ~400 ft treasure-ship length is disputed (from a 1597 novel; scholars say 250-300 ft).",
+    "sources": [
+      {
+        "label": "Mariners' Museum — Zheng He / Columbus / Magellan",
+        "url": "https://exploration.marinersmuseum.org/subject/zheng-he/"
+      },
+      {
+        "label": "Britannica — Vasco da Gama",
+        "url": "https://www.britannica.com/biography/Vasco-da-Gama"
+      },
+      {
+        "label": "Royal Museums Greenwich — Ferdinand Magellan",
+        "url": "https://www.rmg.co.uk/stories/topics/ferdinand-magellan"
+      }
+    ],
+    "unit": "landmark voyages, 1405-1522"
+  },
+  "wildlife": {
+    "color": "#5fae5f",
+    "desc": "Illegal wildlife trade — ivory, rhino horn, pangolin scales and more, moved from source (poaching) countries through transit hubs to demand markets, overwhelmingly China and Vietnam.",
+    "dotColor": "#d6f0c4",
+    "edges": [
+      {
+        "from": "KEN",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "~45 t ivory since 2009",
+        "from": "TZA",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "352 rhinos poached in ZA · 2025",
+        "from": "ZAF",
+        "to": "VNM",
+        "w": 2.5
+      },
+      {
+        "from": "MOZ",
+        "to": "VNM",
+        "w": 1.5
+      },
+      {
+        "from": "COD",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "CMR",
+        "to": "VNM",
+        "w": 1.5
+      },
+      {
+        "from": "AGO",
+        "to": "VNM",
+        "w": 1.5
+      },
+      {
+        "amt": "754,234 m³ rosewood · 2017",
+        "from": "NGA",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "167 t pangolin scales · 2015–2020",
+        "from": "NGA",
+        "to": "VNM",
+        "w": 2
+      },
+      {
+        "from": "UGA",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "TGO",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "MMR",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "from": "LAO",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "IDN",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "MYS",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "THA",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "VNM",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "from": "ARE",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "SGP",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "IND",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "NPL",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "BRA",
+        "to": "CHN",
+        "w": 1
+      },
+      {
+        "from": "MDG",
+        "to": "CHN",
+        "w": 1
+      }
+    ],
+    "group": "Illicit flows",
+    "label": "Wildlife trafficking",
+    "legend": "Each arc is a major wildlife-trafficking route; dots flow from source toward the demand market.",
+    "note": "Routes are direction-indicative, anchored to official poaching counts and seizure data — not total flow. Most China-specific corridor tonnages aren't published (destination attributed, not quantified). Vietnam, Malaysia, UAE and Singapore act as transit hubs; Nigeria's pangolin route has been disrupted since ~2022. Magnitudes are relative.",
+    "sources": [
+      {
+        "label": "South Africa DFFE / SANParks — rhino poaching",
+        "url": "https://www.sanparks.org/"
+      },
+      {
+        "label": "EIA — Out of Africa (pangolin/ivory)",
+        "url": "https://reports.eia-international.org/out-of-africa/"
+      },
+      {
+        "label": "UNODC — World Wildlife Crime Report 2024",
+        "url": "https://www.unodc.org/documents/data-and-analysis/wildlife/2024/Wildlife2024_Final.pdf"
+      }
+    ],
+    "unit": "relative corridor prominence (seizures)"
+  },
+  "wood": {
+    "color": "#8a9a4a",
+    "desc": "Where wood comes from and goes: boreal and tropical timber, lumber and pulp moving to the big manufacturing and construction markets.",
+    "dotColor": "#e2ecc4",
+    "edges": [
+      {
+        "amt": "12.2M m³ · sawnwood · 2024",
+        "from": "RUS",
+        "to": "CHN",
+        "w": 4
+      },
+      {
+        "amt": "28.3M m³ · softwood lumber · 2024",
+        "from": "CAN",
+        "to": "USA",
+        "w": 4
+      },
+      {
+        "amt": "1.18M m³ · logs · 2024",
+        "from": "CAN",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "2.2M m³ · logs · 2024",
+        "from": "USA",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "8.2M t · wood pulp (not logs) · 2024",
+        "from": "BRA",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "18.2M m³ · logs · 2024",
+        "from": "NZL",
+        "to": "CHN",
+        "w": 2.5
+      },
+      {
+        "amt": "70k m³ · sawnwood · 2024",
+        "from": "IDN",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "129k m³ · sawnwood · 2024",
+        "from": "MYS",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "1.4M m³ · logs · 2024",
+        "from": "DEU",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "2.7M m³ · sawnwood · 2024",
+        "from": "SWE",
+        "to": "GBR",
+        "w": 1.5
+      },
+      {
+        "amt": "435k m³ · sawnwood · 2024",
+        "from": "FIN",
+        "to": "DEU",
+        "w": 1.5
+      },
+      {
+        "from": "RUS",
+        "to": "FIN",
+        "w": 1.5
+      },
+      {
+        "amt": "2.9M t · wood pulp (not logs) · 2024",
+        "from": "CHL",
+        "to": "CHN",
+        "w": 2
+      },
+      {
+        "amt": "768k m³ · sawnwood · 2024",
+        "from": "GAB",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "407k m³ · logs · 2024",
+        "from": "COG",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "from": "MMR",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "2.1M m³ · tropical hardwood logs · 2024",
+        "from": "PNG",
+        "to": "CHN",
+        "w": 1.5
+      },
+      {
+        "amt": "1.1M m³ · logs · 2024",
+        "from": "USA",
+        "to": "JPN",
+        "w": 1.5
+      },
+      {
+        "amt": "830k m³ · sawnwood · 2024",
+        "from": "CAN",
+        "to": "JPN",
+        "w": 1.5
+      },
+      {
+        "amt": "3.0M m³ · sawnwood · 2024",
+        "from": "AUT",
+        "to": "ITA",
+        "w": 1.5
+      },
+      {
+        "from": "RUS",
+        "to": "JPN",
+        "w": 1.5
+      }
+    ],
+    "group": "Resources",
+    "label": "Timber & wood",
+    "legend": "Each arc is a major timber/wood-products trade route; dots flow from exporter toward importer.",
+    "note": "Largest bilateral timber, lumber and pulp corridors, 2024, raw UN Comtrade — m³ for logs and sawnwood, tonnes for pulp. Brazil→China and Chile→China are wood pulp, not logs. Russia stopped reporting to Comtrade after 2022, so Russian corridors use China-mirror import data. Several corridors are on the cusp of change from export bans (US→China logs, PNG→China, Gabon/Congo→China). Unlabelled arcs are relative weight only: Russia→Finland collapsed after 2022 sanctions (2021 baseline 4.6M m³ of logs), Myanmar→China's real teak trade moves informally overland outside customs data, and Russia→Japan has no sourced 2024 figure.",
+    "sources": [
+      {
+        "label": "UN Comtrade — HS4403 (logs), HS4407 (sawnwood), HS4703 (pulp)",
+        "url": "https://comtradeplus.un.org/"
+      },
+      {
+        "label": "USDA FAS — China wood products",
+        "url": "https://www.fas.usda.gov/data"
+      }
+    ],
+    "unit": "mixed (m³ for logs & sawnwood, tonnes for pulp — see tooltip)"
+  }
+}
