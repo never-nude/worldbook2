@@ -8,12 +8,14 @@
     "node": ">=20"
   },
   "scripts": {
+    "build:v2": "node scripts/build-v2-release.mjs",
     "legacy:inventory": "node scripts/create-legacy-inventory.mjs --accept",
     "legacy:export": "node scripts/export-legacy-data.mjs",
     "verify:legacy-baseline": "node scripts/verify-legacy-baseline.mjs",
     "verify:legacy-source": "node --input-type=commonjs < source_audit.js",
     "verify:data": "npm run verify:legacy-baseline && npm run legacy:export -- --check",
     "test": "node --test tests/*.test.mjs",
-    "check": "npm run verify:legacy-source && npm run verify:data && npm test"
+    "verify:v2": "npm run build:v2 && node scripts/build-v2-release.mjs --check",
+    "check": "npm run verify:legacy-source && npm run verify:data && npm run verify:v2 && npm test"
   }
 }

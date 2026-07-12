@@ -22,6 +22,21 @@ This branch establishes a data-equivalence boundary before changing the renderer
 3. Build the new static application in parallel: base geometry first, then country profiles, numeric/categorical layers, and flows.
 4. Switch GitHub Pages from repository-root deployment to validated `dist/` deployment only after visual and data parity pass.
 
+## V2 interaction boundary
+
+The first V2 slice deliberately reuses the proven legacy renderer while replacing its control-led shell:
+
+- Explorer derives its Places, Connections, and reference-map groupings from runtime `META.layers`; it does not hard-code the layer count.
+- Country search retains the full feature record and joins camera targets by country name to `COUNTRY_LABELS`. It never treats ISO3 as a unique geometry key.
+- Guide, search, Sources, country detail, and the mobile Explorer are mutually coordinated surfaces. Guide, search, and Sources are modal; the country inspector remains non-modal so the map stays usable.
+- Modal state controls `inert`, `aria-hidden`, focus trapping, Escape dismissal, and exact-trigger focus restoration together.
+- Sources opens on the active layer. The complete methodology catalog remains available behind an explicit disclosure.
+- Missing data is announced as “No reported value — not zero.” Reduced-motion users start with globe rotation paused.
+- Decorative and off-canvas elements are viewport-contained; document width must equal viewport width at 320, 390, 430, tablet, and desktop sizes.
+- Initial load performs no automatic IP geolocation request.
+
+Until the modular renderer reaches parity, the renovated shell is published as an isolated `/v2/` preview. The root site remains byte-identical to production. V2 should stay `noindex,follow` to avoid duplicate indexing while both URLs contain the same underlying reference work.
+
 ## Commands
 
 ```sh
