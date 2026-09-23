@@ -1,35 +1,31 @@
-# Codex task spec — Worldbook layer/fix (prepend to any request)
+# Worldbook implementation brief
 
-You are editing **Worldbook**: `github.com/never-nude/worldbook2`, branch `main` → **worldbook.earth**.
-One self-contained `index.html` (~2 MB, mostly inline data): MapLibre GL v5.6.1 globe + Three.js r128, GitHub Pages.
-**You are the only tool pushing to this repo.** Do the work, verify, commit to `main`, push.
+Read [AGENTS.md](../AGENTS.md), [CLAUDE.md](../CLAUDE.md), [STATUS.md](../STATUS.md), [WORKFLOW.md](WORKFLOW.md), and the relevant [backlog item](TRAIL_BACKLOG.md). Canonical repository: `never-nude/worldbook2`. Work on task branches; merging `main` ships through Pages. Older direct-main examples do not apply.
 
-## Deliver the change as ONE idempotent, pure-ASCII Python patch script
-- String-edits `index.html` in place (`python3 patch.py index.html index.html`). No heredocs.
-- Idempotent: a sentinel check makes a re-run a no-op (print "already-applied", exit 0), never a double-apply or error.
-- Pure ASCII source; use `\uXXXX` in any JS string for non-ASCII glyphs.
+## Before editing
 
-## Patterns (match house style exactly)
-**Numeric choropleth** (e.g. an index or rate):
-1. Parse the `const MAPDATA = {...};` line; for each feature set `properties["<key>"]=value` and `properties["color_<key>"]=ramp(value)`. Re-dump with `json.dumps(...,separators=(",",":"))`.
-2. Parse `const META = {...};`; splice into `META.layers` a config: `{group, key:"<key>", label, type:"numeric", prop:"<key>", short, fmtType, unit, stops:[{v,color}...]}` (place it in the right group).
-3. Add the format to `labelFor` if new (e.g. a `dec3` branch for a 0–1 index).
-4. Add a `LAYER_PROV["<key>"]` card: `{label, metric, unit, higherIs, colorMeaning, primarySource:{org,datasetTitle,url,year}, additionalSources:[], dataKind, provenance, updateFrequency, methodology, limitations, confidence}`.
+- Check worktree, branch, and user changes. Preserve unrelated work.
+- Define the bounded outcome and files owned by this task.
+- Reuse existing research and renderer capabilities before introducing replacements.
+- Read the evidence packet for content changes. Existing citations and model-generated figures are not automatically verified.
 
-**Flow / arc layer**:
-1. Add to `FLOWS` a `<k>:{label, group, unit, desc, color, dotColor, legend, note, sources:[...], edges:[{from,to,w,c?}...]}`.
-2. Splice a `{group, key:"flow_<k>", label, type:"flow", flowKey:"<k>"}` into `META.layers`.
-3. Arcs render via the existing lifted-3D ribbon system automatically — do NOT add visible surface lines.
+## Implement
 
-## Sourcing bar (mandatory)
-- Real values from a **named dataset** (org · title · URL · year). No invented numbers.
-- **Grey (NODATA) for countries without a reported value** — never interpolate. If the legend shows it, the map must show it.
-- **Color = information, not good/bad.** Single-hue or diverging that encodes the actual quantity; legend states the mapping.
-- Round displayed numbers; always show units. Sensitive topics: consensus ranges + sources.
+- Use a task branch; use an isolated worktree when implementation runs alongside another writer. One integration owner decides what lands. Fetch and compare main before integrating, preserving existing work.
+- The atlas is `v2/index.html`; root `index.html` redirects to `/v2/`. Put reader/runtime assets under `v2/`; preserve the redirect. Separate content from rendering incrementally, with a compatibility adapter. Do not run historical patch scripts indiscriminately.
+- Deliver inline atlas changes as an idempotent pure-ASCII Python patch with an exact baseline guard. New external files are normal tracked assets. Bump `window.WB_BUILD` on application changes and preserve GA4, social metadata, attribution and runtime fallbacks.
+- Keep stop order, relationship semantics, subject identity, dates, and measurement scope explicit.
+- Derive tooltips, legends, and source summaries from the same records.
+- Preserve map attribution and the distinction between lifted visible ribbons and invisible surface hit-test geometry.
 
-## Verify, then ship
-- Extract the inline `<script>` and run `node --check` on it (must pass).
-- Re-run the patch; confirm the output is **byte-identical** (idempotent).
-- `git add -A && git commit -m "..." && git push`, then open `https://worldbook.earth/?v=$(date +%s)` to confirm live.
+## Verify and hand off
 
-State what you changed, the source(s) used, and how many countries/corridors got data.
+- Run relevant syntax/build checks and focused data/interaction checks. Test desktop and phone layouts for UI work.
+- Add regressions for substantive defects, not tests that merely mirror the implementation.
+- Prove the inline patch's second run is byte-identical; reject unexpected baselines. Extract inline scripts and run `node --check`; run relevant external syntax and regression checks.
+- Keep the locked border-containment invariants in CLAUDE.md. Border/glow work requires its documented North Atlantic, Western Europe, Aegean, Adriatic, and ZAF/LSO checks.
+- Test canonical `/v2/` URLs and runtime asset paths, then update STATUS.md with actual validation, blockers, and delivery state. Stage only intended files.
+- Report changes, evidence corrections, checks, gaps, and preview/revision.
+- Verify deployment target and rollback before release; follow the user's release authorization, not old boilerplate.
+
+For research-only work, use [TRAIL_RESEARCH_TEMPLATE.md](TRAIL_RESEARCH_TEMPLATE.md) and do not change production data.

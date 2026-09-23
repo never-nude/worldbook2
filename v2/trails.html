@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b151b">
+  <title>Follow the trail — Worldbook</title>
+  <meta name="description" content="Follow the evidence across a living globe. Discover where things come from, where they go, and what happens along the way.">
+  <link rel="stylesheet" href="css/trails.css?v=4">
+  <script src="js/trail-model.js?v=5" defer></script>
+  <script src="js/trail-reader.js?v=4" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#reader">Skip to the trail</a>
+  <header class="masthead">
+    <a class="brand" href="trails.html">Worldbook<span class="brand-dot">.</span></a>
+    <span class="brand-caption">FOLLOW WHAT MOVES</span>
+    <a class="atlas-link" href="index.html">Explore the atlas <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="experience">
+    <section class="globe-stage" id="globe" tabindex="-1" aria-label="Trail globe">
+      <div class="story-heading">
+        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> FIELDNOTES / 001 <span class="subject">OBJECTS & OWNERSHIP</span></p>
+        <h1 id="trail-question">How did a temple statue reach the art market?</h1>
+        <p id="map-caption">One object. Six stops. A trail through the records.</p>
+      </div>
+      <iframe id="atlas" title="Interactive globe showing the trail’s numbered stops" src="index.html?embed=1&amp;reader=1&amp;layer=countries&amp;center=30,28&amp;zoom=1.1&amp;readerStyle=5" loading="eager"></iframe>
+      <p class="globe-status" id="globe-status" role="status">Preparing the globe. The story is ready to read.</p>
+      <div class="map-tools" aria-label="Globe controls">
+        <button id="overview" type="button" aria-pressed="true" aria-label="Show the whole trail" title="Show the whole trail">↗ <span>Whole trail</span></button>
+        <button id="motion" type="button" aria-pressed="false">↻ <span>Rotate globe</span></button>
+        <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+        <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+      </div>
+      <div class="map-key"><span class="key-line" aria-hidden="true"></span> Lines connect records, not a reconstructed shipping route.</div>
+      <nav class="itinerary" aria-label="Trail stops"><ol id="stop-list"></ol></nav>
+    </section>
+    <section class="reader" id="reader" aria-label="Trail story">
+      <div class="reader-topline">
+        <span id="chapter-label">The question</span>
+        <div class="reader-actions">
+          <button id="return-globe" type="button" aria-label="Return to the globe">Globe <span aria-hidden="true">↑</span></button>
+          <button id="share" type="button">Copy link <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+      <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+      <article id="chapter" tabindex="-1"><p>Loading the evidence…</p></article>
+      <nav class="chapter-nav" aria-label="Read the trail">
+        <button id="previous" type="button">← Back</button>
+        <span id="step-count" aria-live="polite"></span>
+        <button id="next" type="button">Follow the trail <span aria-hidden="true">→</span></button>
+      </nav>
+      <p id="reader-status" class="reader-status" role="status"></p>
+    </section>
+  </main>
+  <noscript><p class="no-script">The interactive reader needs JavaScript. Read the <a href="../docs/trails/duryodhana.md">research packet</a> instead.</p></noscript>
+</body>
+</html>
