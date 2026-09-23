@@ -17,7 +17,7 @@ Production `v2/index.html` is byte-identical to `index.html` at `b0dc9c9` in the
 
 `1e0bf2fc2e44624bccb9804efd546cb4fd6333cced689450df96548bd3d4a019`
 
-The final reviewed pilot checkout at `/Users/mike/Projects/worldbook-forensic-trails` was pinned to `04f127b9f0a95e2b41ca6dedac19af44fcd637c0` for integration. Its atlas and integrated `v2/index.html` are byte-identical, SHA-256 `3e5b80cc6ab44edb03511017c262ddc90988a3b4de828cc7f83bbf5c3c004b30`. Application files were read from that commit, not copied from a moving working tree.
+The final reviewed recovered pilot checkout was pinned to `04f127b9f0a95e2b41ca6dedac19af44fcd637c0` for integration. Its atlas and integrated `v2/index.html` are byte-identical, SHA-256 `3e5b80cc6ab44edb03511017c262ddc90988a3b4de828cc7f83bbf5c3c004b30`. Application files were read from that commit, not copied from a moving working tree.
 
 The production root redirect must be preserved. Whole-repository copying or directly applying the pilot commits to production root paths would put the atlas in the wrong location. The byte-identical application baseline supports a narrowly mapped application delta; it does not establish whole-tree equivalence or Git ancestry between repositories.
 
@@ -66,3 +66,7 @@ The parent completed canonical-path desktop and phone browser checks, including 
 ## Subsequent local correction — 2026-09-23
 
 Integration was saved as `f200a7042801e123450adcf65c27ca3670f0f0e8`. The next local change anchors reader junctions and lifted-line endpoints to the same source coordinates at ground level, replaces offset geographic badges with nearby collision-managed number labels, and keeps all legacy flow geometry defaults. Its guarded incremental patch is `scripts/connect_trail_stops.py`; the build label is `2026-09-23.1 connected-stops`. The original hashes and counts above describe the earlier integration, not this subsequent atlas revision. Current test count is 29 passing; detailed browser and geometry checks are in VERIFICATION.md. Origin main was fetched and remains `bfae443`; no release has occurred.
+
+## Branch publication — 2026-09-23
+
+The user authorized pushing. Local Git lacked credentials, while the connected GitHub account had verified push access. The GitHub connector published application commit `6765cd9ecc7cb2ab350c1edfc1a43b02331b50dc` on `codex/forensic-trails`, with tree `355ff154b0a0865dd67e0add858ded879cd108df` verified byte-for-byte against the tested local snapshot. [Pull request #2](https://github.com/never-nude/worldbook2/pull/2) is open against main. The original local commits remain on `codex/forensic-trails-local-fb1c19b`; the active checkout tracks the published branch. This following documentation-only commit records delivery. No merge, production deployment, or live deployment verification has occurred.

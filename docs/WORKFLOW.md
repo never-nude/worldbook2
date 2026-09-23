@@ -85,4 +85,4 @@ The reviewed inline delta is reproducible with `python3 scripts/apply_forensic_a
 
 The subsequent connected-stop correction is `python3 scripts/connect_trail_stops.py v2/index.html v2/index.html`, starting from the atlas at `f200a70` (the first patch's target). Apply these patches in order only when reconstructing those exact historical revisions; ordinary development uses the tracked current files.
 
-Current delivery remains on the local task branch. Canonical-path desktop/phone checks are recorded in VERIFICATION.md; legacy coastline glow still needs follow-up. Authenticated release work is pending. The other computer does not yet have these changes.
+Current delivery is `origin/codex/forensic-trails`, available in [pull request #2](https://github.com/never-nude/worldbook2/pull/2). Canonical-path desktop/phone checks are recorded in VERIFICATION.md; legacy coastline glow still needs follow-up. Publication used the authenticated GitHub connector because the local Git CLI is not signed in. Other computers can fetch the branch. Merge and deployment verification have not occurred.
