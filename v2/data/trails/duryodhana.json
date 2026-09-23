@@ -1,0 +1,287 @@
+{
+  "id": "duryodhana",
+  "title": "A Cambodian statue’s paper trail",
+  "question": "How did a temple statue reach the art market—and find its way home?",
+  "summary": "Follow six records connecting a Cambodian temple, a Bangkok dealer, a British auction house, a Belgian collection, a New York sale, and a return to Cambodia. The early journey is alleged in a U.S. complaint; the civil case ended in settlement.",
+  "lesson": "A sale or ownership record can help trace an object without proving every mile it travelled. Following the evidence means showing both the connections and their limits.",
+  "period": "c. 1972–2014",
+  "atlasFlowKey": "weekly_duryodhana_trail",
+  "reviewedAt": "2026-09-22",
+  "geometryNote": "Lines connect records, not a verified shipping itinerary. Marker precision varies; displaced number badges are labels only. Number and color show sequence; equal line widths do not encode quantity, value, or certainty.",
+  "sources": [
+    {
+      "id": "doj-amended-complaint-2013",
+      "publisher": "U.S. District Court, Southern District of New York / DOJ",
+      "title": "Amended civil forfeiture complaint",
+      "url": "https://www.justice.gov/usao/nys/pressreleases/May14/CambodianSculptureReturn/Duryodhana%20-%20Cambodian%20Scupture%20-%20Amended%20Complaint.pdf",
+      "published": "2013-04-09",
+      "locator": "Case 1:12-cv-02600-GBD, Document 47; printed pp. 5–9, paragraphs 11–13 and 17–21. These are allegations, not trial findings."
+    },
+    {
+      "id": "doj-civil-action-2012",
+      "publisher": "U.S. Attorney’s Office, Southern District of New York",
+      "title": "Civil action seeking return of the Duryodhana",
+      "url": "https://www.justice.gov/archive/usao/nys/pressreleases/April12/duryodhanastatueforfeiture.html",
+      "published": "2012-04-04",
+      "locator": "Under the complaint summary: temple feet, 1975 purchase, March/April 2010 consignment/import, and March 2011 auction withdrawal. Read with the later settlement."
+    },
+    {
+      "id": "court-settlement-2013",
+      "publisher": "U.S. District Court, Southern District of New York / DOJ",
+      "title": "Stipulation and order of settlement",
+      "url": "https://www.justice.gov/usao/nys/pressreleases/May14/CambodianSculptureReturn/Duryodhana%20-%20Cambodian%20Sculpture%20-%20Settlement%20Stipulation%20and%20Order%20(Executed).pdf",
+      "published": "2013-12-13",
+      "locator": "Document 76: p. 2 records the parties’ positions; p. 3, paragraphs 1–3, sets the New York handover and dismissal terms. Date is the filing date."
+    },
+    {
+      "id": "doj-return-2014",
+      "publisher": "U.S. Attorney’s Office, Southern District of New York",
+      "title": "Return of the sculpture to Cambodia",
+      "url": "https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-return-10th-century-sandstone-sculpture-kingdom",
+      "published": "2014-05-07",
+      "locator": "Opening return/settlement announcement and the subsequent summary of the amended complaint. The text describes physical departure as imminent."
+    },
+    {
+      "id": "unesco-museum-2021",
+      "publisher": "UNESCO",
+      "title": "National Museum of Cambodia anniversary",
+      "url": "https://www.unesco.org/en/articles/cambodia-commemorates-101st-anniversary-national-museum-cambodia",
+      "published": "2021-04-21",
+      "locator": "Section “The Duryodhana statue”: confirms its return in 2014 and presence at the National Museum when this account was published."
+    }
+  ],
+  "stops": [
+    {
+      "id": "koh-ker",
+      "number": 1,
+      "title": "A missing statue leaves evidence behind",
+      "place": "Prasat Chen, Koh Ker, Cambodia",
+      "countryIso": "KHM",
+      "coordinates": [
+        104.5367,
+        13.783
+      ],
+      "displayCoordinates": [
+        106.5,
+        19
+      ],
+      "locationPrecision": "Approximate temple-site marker",
+      "date": "c. 1972",
+      "role": "Origin and alleged removal",
+      "summary": "The amended complaint alleges removal around 1972. It describes feet left on the pedestal and an archaeologist’s comparison linking them to the Duryodhana. Physical traces helped connect the market object to its temple setting.",
+      "evidenceStatus": "Allegation and expert assessment reported in a court filing",
+      "sourceIds": [
+        "doj-amended-complaint-2013",
+        "doj-civil-action-2012"
+      ],
+      "limitations": "The complaint is not a trial finding. The marker identifies the temple area, not a surveyed removal point.",
+      "shortLabel": "Koh Ker"
+    },
+    {
+      "id": "bangkok",
+      "number": 2,
+      "title": "The pieces reach a dealer",
+      "place": "Bangkok, Thailand",
+      "countryIso": "THA",
+      "coordinates": [
+        100.5018,
+        13.7563
+      ],
+      "displayCoordinates": [
+        97.5,
+        15.5
+      ],
+      "locationPrecision": "City only; dealer address unknown",
+      "date": "c. 1972 onward",
+      "role": "Alleged intermediary",
+      "summary": "Prosecutors describe the head travelling first and the torso later to a Bangkok dealer. A collector then obtained the statue. This is a reported handoff in the case narrative, not a complete itinerary.",
+      "evidenceStatus": "Allegation in the amended complaint",
+      "sourceIds": [
+        "doj-amended-complaint-2013",
+        "doj-return-2014"
+      ],
+      "limitations": "Exact arrival dates, crossing point, dealer premises, and every intermediary are not established by the displayed evidence.",
+      "shortLabel": "Bangkok"
+    },
+    {
+      "id": "uk-auction-house",
+      "number": 3,
+      "title": "An auction house enters the record",
+      "place": "United Kingdom · auction-house country",
+      "countryIso": "GBR",
+      "coordinates": [
+        -1.5,
+        52.4
+      ],
+      "displayCoordinates": [
+        -5,
+        57
+      ],
+      "locationPrecision": "Country only; schematic marker",
+      "date": "By 1975",
+      "role": "Sale intermediary",
+      "summary": "The case record connects the collector to a British auction house, which sold the statue in 1975. The trail now follows a commercial relationship; a country-level marker avoids inventing a city or freight route.",
+      "evidenceStatus": "Sale chronology reported in the case record",
+      "sourceIds": [
+        "doj-amended-complaint-2013",
+        "doj-civil-action-2012"
+      ],
+      "limitations": "The cited passages do not identify the auction-house city. A consignment or sale does not by itself document the transport taken.",
+      "shortLabel": "Britain"
+    },
+    {
+      "id": "belgian-collection",
+      "number": 4,
+      "title": "A sale becomes an ownership history",
+      "place": "Belgian collector · location schematic",
+      "countryIso": "BEL",
+      "coordinates": [
+        4.5,
+        50.8
+      ],
+      "displayCoordinates": [
+        8,
+        47
+      ],
+      "locationPrecision": "Collector association; storage location unknown",
+      "date": "1975–2010",
+      "role": "Collection and subsequent transfers",
+      "summary": "The 2012 account places the statue with a private Belgian collector and later heirs until the 2010 consignment. This long interval is an ownership history, not evidence that it stayed at one address.",
+      "evidenceStatus": "Ownership chronology reported by prosecutors",
+      "sourceIds": [
+        "doj-civil-action-2012",
+        "doj-amended-complaint-2013"
+      ],
+      "limitations": "No precise storage location is established here. Later transfers appear in the complaint; the Belgian marker represents the collection’s association, not every owner’s residence.",
+      "shortLabel": "Belgium"
+    },
+    {
+      "id": "new-york",
+      "number": 5,
+      "title": "A planned sale becomes a disputed case",
+      "place": "New York, United States",
+      "countryIso": "USA",
+      "coordinates": [
+        -73.9857,
+        40.7484
+      ],
+      "locationPrecision": "City only; not the auction-house address",
+      "date": "2010–2014",
+      "role": "Consignment, auction withdrawal, and settlement",
+      "summary": "Sotheby’s imported the statue in 2010 and withdrew the planned 2011 auction after Cambodia intervened. The ensuing civil case ended in a December 2013 settlement providing for transfer to a Cambodian representative in New York.",
+      "evidenceStatus": "Reported auction events and documented settlement",
+      "sourceIds": [
+        "doj-civil-action-2012",
+        "court-settlement-2013",
+        "doj-return-2014"
+      ],
+      "limitations": "No trial verdict. In the settlement, Sotheby’s and Ruspoli maintained that Ruspoli held clear legal title; the U.S. did not contend that they knew Cambodia owned the statue or knowingly supplied false provenance.",
+      "shortLabel": "New York"
+    },
+    {
+      "id": "phnom-penh",
+      "number": 6,
+      "title": "The object returns to public heritage",
+      "place": "National Museum, Phnom Penh, Cambodia",
+      "countryIso": "KHM",
+      "coordinates": [
+        104.916,
+        11.565
+      ],
+      "displayCoordinates": [
+        108,
+        7
+      ],
+      "locationPrecision": "Approximate museum-site marker",
+      "date": "2014 return · museum record in 2021",
+      "role": "Repatriation and museum record",
+      "summary": "UNESCO confirms the statue returned in 2014 and describes it at the National Museum in 2021. The object’s story continues as cultural heritage, beyond its sequence of dealers, collectors, and sale records.",
+      "evidenceStatus": "Return and museum presence confirmed by UNESCO",
+      "sourceIds": [
+        "unesco-museum-2021",
+        "doj-return-2014",
+        "court-settlement-2013"
+      ],
+      "limitations": "The settlement’s New York handover is distinct from physical repatriation. The exact transport itinerary and present-day display status are not established here.",
+      "shortLabel": "Phnom Penh"
+    }
+  ],
+  "legs": [
+    {
+      "id": "koh-ker-to-bangkok",
+      "from": "koh-ker",
+      "to": "bangkok",
+      "relationship": "Alleged physical movement",
+      "geometryBasis": "Schematic connection between reported places",
+      "summary": "The complaint connects the same statue’s alleged removal to its delivery in Bangkok.",
+      "sourceIds": [
+        "doj-amended-complaint-2013",
+        "doj-return-2014"
+      ],
+      "limitations": "The line does not reconstruct roads, a border crossing, or separate journeys of the head and torso."
+    },
+    {
+      "id": "bangkok-to-uk-auction-house",
+      "from": "bangkok",
+      "to": "uk-auction-house",
+      "relationship": "Case-record chronology and consignment",
+      "geometryBasis": "Schematic relationship; UK location is country only",
+      "summary": "The case narrative follows the statue from the dealer through a collector to a British auction house.",
+      "sourceIds": [
+        "doj-amended-complaint-2013"
+      ],
+      "limitations": "The collector is part of the connection, not a separately located stop. Exact transport and timing remain unknown."
+    },
+    {
+      "id": "uk-auction-house-to-belgian-collection",
+      "from": "uk-auction-house",
+      "to": "belgian-collection",
+      "relationship": "Sale and ownership link",
+      "geometryBasis": "Schematic relationship between country associations",
+      "summary": "The 1975 purchase connects the British seller with the Belgian collection.",
+      "sourceIds": [
+        "doj-civil-action-2012",
+        "doj-amended-complaint-2013"
+      ],
+      "limitations": "This link does not establish a shipment, sale price, payment route, or storage address."
+    },
+    {
+      "id": "belgian-collection-to-new-york",
+      "from": "belgian-collection",
+      "to": "new-york",
+      "relationship": "Consignment and reported U.S. import",
+      "geometryBasis": "Schematic relationship; export origin not established",
+      "summary": "Ruspoli’s consignment and Sotheby’s U.S. import link the ownership record to the New York sale attempt.",
+      "sourceIds": [
+        "doj-civil-action-2012",
+        "doj-return-2014"
+      ],
+      "limitations": "Belgium represents the earlier collection. It is not evidence that the 2010 shipment departed from Belgium."
+    },
+    {
+      "id": "new-york-to-phnom-penh",
+      "from": "new-york",
+      "to": "phnom-penh",
+      "relationship": "Settlement handover followed by repatriation",
+      "geometryBasis": "Schematic connection between legal handover and museum record",
+      "summary": "The settlement provided for a New York handover; UNESCO’s later account confirms the return to Cambodia.",
+      "sourceIds": [
+        "court-settlement-2013",
+        "doj-return-2014",
+        "unesco-museum-2021"
+      ],
+      "limitations": "The two events are distinct. No intermediate transport stops or exact arrival date are claimed."
+    }
+  ],
+  "takeaways": [
+    "Physical traces, sale records, and court documents answer different questions about the same object.",
+    "Following the paper trail can reveal meaningful connections while leaving parts of the physical route unknown.",
+    "An allegation, a settlement, and a confirmed return have different evidentiary meanings."
+  ],
+  "unknowns": [
+    "The complete transport itinerary, including border crossings, ports, carriers, and intermediate storage.",
+    "The British auction-house city and the statue’s storage locations during the collection period.",
+    "Sale amounts and the payment trail connecting the intermediaries.",
+    "The exact physical repatriation date and present-day museum display status."
+  ]
+}

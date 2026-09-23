@@ -24,6 +24,19 @@ function extractConst(name) {
       else if (ch === quote) quote = null;
       continue;
     }
+    // Atlas literals contain comments with apostrophes and braces. They are
+    // neither string delimiters nor structure in the declaration being read.
+    if (ch === "/" && html[i + 1] === "/") {
+      const end = html.indexOf("\n", i + 2);
+      i = end < 0 ? html.length : end;
+      continue;
+    }
+    if (ch === "/" && html[i + 1] === "*") {
+      const end = html.indexOf("*/", i + 2);
+      if (end < 0) throw new Error(`unclosed comment in const ${name}`);
+      i = end + 1;
+      continue;
+    }
     if (ch === "\"" || ch === "'" || ch === "`") {
       quote = ch;
       continue;
