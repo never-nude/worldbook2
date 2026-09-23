@@ -4,7 +4,7 @@
 
 **Live site:** https://worldbook.earth
 
-`v2/trails.html` is the first trail reader: a six-stop Cambodian statue case, with evidence, uncertainty, shareable stops, and a concluding lesson. `v2/index.html` retains the atlas and its existing layer URLs, with a link into the reader. Root `index.html` remains the redirect to `/v2/`. There is no build step. This branch is available in [pull request #2](https://github.com/never-nude/worldbook2/pull/2); it has not been merged or deployed.
+`v2/trails.html` is the first trail reader: a six-stop Cambodian statue case, with evidence, uncertainty, shareable stops, and a concluding lesson. `v2/index.html` retains the atlas and its existing layer URLs, with a link into the reader. Root `index.html` remains the redirect to `/v2/`. There is no build step. The reader shipped in [pull request #2](https://github.com/never-nude/worldbook2/pull/2) and is [live here](https://worldbook.earth/v2/trails.html?trail=duryodhana).
 
 The normalized case is in `v2/data/trails/duryodhana.json`; its research packet is in `docs/trails/duryodhana.md`. `v2/js/trail-model.js` validates and adapts the content, `v2/js/trail-atlas.js` connects the existing renderer to the reader, and `v2/js/trail-reader.js` presents the story. Existing drug and shipping display corrections live in `v2/js/flow-evidence.js`; original inline research is preserved.
 

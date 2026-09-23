@@ -74,3 +74,9 @@ Browser checks passed around Britain/Belgium and Thailand/Cambodia, including cl
 The inline change is reproduced from the integrated `f200a70` atlas by `scripts/connect_trail_stops.py`, a seven-hunk ASCII patch with exact input/output hashes. Separate-output application, a byte-identical second run and refusal of unknown input passed. Three inline scripts and all four external scripts pass syntax checks. Inventory verification and diff whitespace checks pass. Build is `2026-09-23.1 connected-stops`; nothing has been published. Country border/glow code is untouched by this fix.
 
 The label placement uses MapLibre's documented [variable anchors and radial offsets](https://maplibre.org/maplibre-style-spec/layers/#text-variable-anchor); geographic junction positions do not change with label placement.
+
+## Production release verification — 2026-09-23
+
+PR #2 merged at `e40ac19819017d592421a7f09b1f9d78df3668c7`. [Deploy Pages run 35873358186](https://github.com/never-nude/worldbook2/actions/runs/35873358186) completed successfully. The root redirect and eight runtime resources (atlas, reader, four scripts, stylesheet and case JSON) all returned HTTP 200 and matched the merged release bytes. Atlas SHA-256: `e95f61d8da4376e9ecd0ed2f7dd6f9be8718afa6dfb60c97086fab63d53cd955`.
+
+The live browser loaded the Bangkok direct link with its joined geographic junctions, source-qualified chapter and visible attribution. Next selected Britain and updated the URL; Whole trail retained that chapter and URL. Build is `2026-09-23.1 connected-stops`. Existing legacy-glow and second-browser/touch-device limits remain as documented above. This subsequent release record changes documentation only, not the tested runtime.
